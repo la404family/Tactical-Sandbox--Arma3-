@@ -64,6 +64,7 @@ class CfgFunctions
             class task_x_enemies_memory {};
             class task_1_launch {};
             class task_2_launch {};
+            class task_3_launch {};
             class spawn_missions {};
             class spawn_arsenal {};
         };

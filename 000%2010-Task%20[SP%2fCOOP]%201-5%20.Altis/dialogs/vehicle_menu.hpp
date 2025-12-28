@@ -50,6 +50,17 @@ class Refour_Vehicle_Dialog
             action = "['SPAWN'] call MISSION_fnc_spawn_vehicles;";
         };
 
+        class ButtonDelete: RscButton
+        {
+            idc = 5503;
+            text = "$STR_BTN_DELETE";
+            x = 0.4395 * safezoneW + safezoneX;
+            y = 0.72 * safezoneH + safezoneY;
+            w = 0.12 * safezoneW;
+            h = 0.04 * safezoneH;
+            action = "['DELETE'] call MISSION_fnc_spawn_vehicles;";
+        };
+
         class ButtonClose: RscButton
         {
             idc = -1;

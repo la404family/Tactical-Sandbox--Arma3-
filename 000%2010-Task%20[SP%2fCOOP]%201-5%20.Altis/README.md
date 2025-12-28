@@ -145,7 +145,6 @@ dialogs/
 ### Types d’objectifs de mission à ajouter
 
 - Extraction de VIP : Escorter un officier, scientifique ou informateur jusqu’à la base alliée.
-
 - Récupération de personnel isolé : Secourir un prisonnier de guerre derrière les lignes ennemies.
 - Assassinat et récupération de documents : Éliminer un officier ennemi de haut rang. + récuperation de documents dans son inventaire.
 - Chasse à l’homme (HVT) : Traquer un commandant ennemi mobile entre plusieurs bases ou convois.
@@ -154,7 +153,6 @@ dialogs/
 - Reconquête : Reprendre une base alliée (QG ennemie) tombée aux mains de l’ennemi.
 - Récupération de renseignements : Infiltrer un QG ennemi pour pirater un ordinateur.
 - Enquête mystérieuse : Explorer un laboratoire secret pour comprendre une anomalie.
-- defendre le QG allié : Si l'officier meurt, la partie est perdue.
 
 **Options de mission**
 

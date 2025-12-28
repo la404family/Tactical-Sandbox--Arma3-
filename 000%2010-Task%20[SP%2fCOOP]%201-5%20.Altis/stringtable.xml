@@ -482,6 +482,32 @@
             <Chinese>文檔</Chinese>
             <Chinesesimp>文档</Chinesesimp>
         </Key>
+        <Key ID="STR_TASK_3_TITLE">
+            <English>Total War!</English>
+            <French>Guerre totale !</French>
+            <German>Totaler Krieg!</German>
+            <Spanish>¡Guerra total!</Spanish>
+            <Italian>Guerra totale!</Italian>
+            <Russian>Тотальная война!</Russian>
+            <Polish>Wojna totalna!</Polish>
+            <Czech>Totální válka!</Czech>
+            <Turkish>Topyekün Savaş!</Turkish>
+            <Chinese>全面戰爭！</Chinese>
+            <Chinesesimp>全面战争！</Chinesesimp>
+        </Key>
+        <Key ID="STR_TASK_3_DESC">
+            <English>Warning: Advanced conflict, total war. Allied air support deployed. Enemy presence heavily reinforced: heavy armor, patrols, and rapid response units. High risk mission. Objective: Neutralize enemy tanks.</English>
+            <French>Attention : conflit avancé, guerre totale. Appui aérien déployé sur zone. Présence ennemie fortement renforcée : blindés lourds, Patrouilles et unités d’intervention rapide. Mission à haut risque. Objectif : neutraliser les tanks ennemis</French>
+            <German>Warnung: Fortgeschrittener Konflikt, totaler Krieg. Alliierte Luftunterstützung eingesetzt. Feindliche Präsenz stark verstärkt: schwere Panzerung, Patrouillen und schnelle Eingreiftruppen. Hochrisikomission. Ziel: Feindliche Panzer neutralisieren.</German>
+            <Spanish>Advertencia: Conflicto avanzado, guerra total. Apoyo aéreo aliado desplegado. Presencia enemiga fuertemente reforzada: blindados pesados, patrullas y unidades de respuesta rápida. Misión de alto riesgo. Objetivo: Neutralizar tanques enemigos.</Spanish>
+            <Italian>Attenzione: Conflitto avanzato, guerra totale. Supporto aereo alleato schierato. Presenza nemica fortemente rinforzata: armature pesanti, pattuglie e unità di intervento rapido. Missione ad alto rischio. Obiettivo: Neutralizzare i carri armati nemici.</Italian>
+            <Russian>Внимание: Продвинутый конфликт, тотальная война. Развернута союзная авиаподдержка. Присутствие врага сильно усилено: тяжелая бронетехника, патрули и группы быстрого реагирования. Миссия высокого риска. Цель: Нейтрализовать вражеские танки.</Russian>
+            <Polish>Uwaga: Zaawansowany konflikt, wojna totalna. Rozmieszczono sojusznicze wsparcie lotnicze. Obecność wroga silnie wzmocniona: ciężki pancerz, patrole i jednostki szybkiego reagowania. Misja wysokiego ryzyka. Cel: Zneutralizuj czołgi wroga.</Polish>
+            <Czech>Varování: Pokročilý konflikt, totální válka. Nasazena spojenecká letecká podpora. Nepřátelská přítomnost silně posílena: těžké obrněné vozy, hlídky a jednotky rychlé reakce. Mise s vysokým rizikem. Cíl: Neutralizovat nepřátelské tanky.</Czech>
+            <Turkish>Uyarı: Gelişmiş çatışma, topyekün savaş. Müttefik hava desteği konuşlandırıldı. Düşman varlığı büyük ölçüde güçlendirildi: ağır zırhlılar, devriyeler ve hızlı müdahale birimleri. Yüksek riskli görev. Hedef: Düşman tanklarını etkisiz hale getir.</Turkish>
+            <Chinese>警告：高級衝突，全面戰爭。盟軍空中支援已部署。敵軍存在大幅增強：重型裝甲，巡邏隊和快速反應部隊。高風險任務。目標：消滅敵軍坦克。</Chinese>
+            <Chinesesimp>警告：高级冲突，全面战争。盟军空中支援已部署。敌军存在大幅增强：重型装甲，巡逻队和快速反应部队。高风险任务。目标：消灭敌军坦克。</Chinesesimp>
+        </Key>
         <Key ID="STR_TASK_X_TITLE">
             <English>XXX</English>
             <French>XXX</French>
@@ -507,6 +533,71 @@
             <Turkish>XXX</Turkish>
             <Chinese>XXX</Chinese>
             <Chinesesimp>XXX</Chinesesimp>
+        </Key>
+        <Key ID="STR_BTN_DELETE">
+            <English>Delete</English>
+            <French>Supprimer</French>
+            <German>Löschen</German>
+            <Spanish>Eliminar</Spanish>
+            <Italian>Elimina</Italian>
+            <Russian>Удалить</Russian>
+            <Polish>Usuń</Polish>
+            <Czech>Smazat</Czech>
+            <Turkish>Sil</Turkish>
+            <Chinese>刪除</Chinese>
+            <Chinesesimp>删除</Chinesesimp>
+        </Key>
+        <Key ID="STR_VEHICLES_DELETED">
+            <English>%1 vehicle(s) deleted.</English>
+            <French>%1 véhicule(s) supprimé(s).</French>
+            <German>%1 Fahrzeug(e) gelöscht.</German>
+            <Spanish>%1 vehículo(s) eliminado(s).</Spanish>
+            <Italian>%1 veicolo/i eliminato/i.</Italian>
+            <Russian>%1 транспорт(а/ов) удалено.</Russian>
+            <Polish>Usunięto %1 pojazd(ów).</Polish>
+            <Czech>%1 vozidlo/vozidel smazáno.</Czech>
+            <Turkish>%1 araç silindi.</Turkish>
+            <Chinese>已刪除 %1 輛載具。</Chinese>
+            <Chinesesimp>已删除 %1 辆载具。</Chinesesimp>
+        </Key>
+        <Key ID="STR_TASK_ALREADY_ACTIVE">
+            <English>Mission %1 is already active!</English>
+            <French>La mission %1 est déjà active !</French>
+            <German>Mission %1 ist bereits aktiv!</German>
+            <Spanish>¡La misión %1 ya está activa!</Spanish>
+            <Italian>La missione %1 è già attiva!</Italian>
+            <Russian>Миссия %1 уже активна!</Russian>
+            <Polish>Misja %1 jest już aktywna!</Polish>
+            <Czech>Mise %1 je již aktivní!</Czech>
+            <Turkish>Görev %1 zaten aktif!</Turkish>
+            <Chinese>任務 %1 已經啟動！</Chinese>
+            <Chinesesimp>任务 %1 已经启动！</Chinesesimp>
+        </Key>
+        <Key ID="STR_MARKER_TANK">
+            <English>Tank</English>
+            <French>Char</French>
+            <German>Panzer</German>
+            <Spanish>Tanque</Spanish>
+            <Italian>Carro armato</Italian>
+            <Russian>Танк</Russian>
+            <Polish>Czołg</Polish>
+            <Czech>Tank</Czech>
+            <Turkish>Tank</Turkish>
+            <Chinese>坦克</Chinese>
+            <Chinesesimp>坦克</Chinesesimp>
+        </Key>
+        <Key ID="STR_HINT_AIR_SUPPORT_END">
+            <English>End of Air Support</English>
+            <French>Fin de support aérien</French>
+            <German>Ende der Luftunterstützung</German>
+            <Spanish>Fin del apoyo aéreo</Spanish>
+            <Italian>Fine del supporto aereo</Italian>
+            <Russian>Конец поддержки с воздуха</Russian>
+            <Polish>Koniec wsparcia lotniczego</Polish>
+            <Czech>Konec letecké podpory</Czech>
+            <Turkish>Hava desteğinin sonu</Turkish>
+            <Chinese>空中支援結束</Chinese>
+            <Chinesesimp>空中支援结束</Chinesesimp>
         </Key>
     </Package>
 </Project>

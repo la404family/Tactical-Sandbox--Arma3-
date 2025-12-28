@@ -53,17 +53,29 @@
 // task_x_tank_1 est le tank ennemi
 
 //-------------------------------------------
-// Les éléments de la tache 1 :
+// Les éléments de la tache 1 : (spawn a positionner sur des routes)
 //-------------------------------------------
 
 // task_1_spawn_01 à task_1_spawn_06 sont des héliports qui servent de lieux de spawn ennemi pour la tache 1
 
 //-------------------------------------------
-// Les éléments de la tache 2 :
+// Les éléments de la tache 2 : (spawn a positionner autours de bâtiments)
 //-------------------------------------------
 
 // task_2_spawn_01 à task_2_spawn_06 sont des héliports qui servent de lieux de spawn ennemi pour la tache 2
 // task_2_document est un document à récupérer dans l'inventaire de l'officier ennemis
+
+//-------------------------------------------
+// Les éléments de la tache 3 : (spawn a positionner dans des zones couvertes)
+//-------------------------------------------
+
+// task_3_spawn_01 à task_3_spawn_12 sont des héliports qui servent de lieux de spawn pour la tache 3
+// task_3_spawn_01 fait apparaitre un avion allié : A149 Gryphon (EMP_A149_Gryphon)
+// task_3_spawn_02 à task_  3_spawn_12 fait apparaître des ennemis aléatoirement :
+//          task_x_officer_1 à task_x_officer_3 sont les officiers ennemis
+//          task_x_enemy_00 à task_x_enemy_15 sont des unités ennemies
+//          task_x_vehicle_1 et task_x_vehicle_2 sont les véhicules ennemis
+//          task_x_tank_1 est le tank ennemi
 
 //-------------------------------------------
 // Les fonctions de tache :

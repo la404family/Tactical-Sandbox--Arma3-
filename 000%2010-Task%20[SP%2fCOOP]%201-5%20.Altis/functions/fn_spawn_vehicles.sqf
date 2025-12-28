@@ -1,13 +1,24 @@
 
+/*
+    Fichier : fn_spawn_vehicles.sqf
+    Auteur : [Votre Nom]
+    Description :
+    Cette fonction gère le système de spawn de véhicules (garage).
+    Elle permet l'apparition de véhicules terrestres et aériens, et gère leur suppression.
+    Modes : INIT, OPEN_UI, SPAWN, DELETE.
+*/
+
 params ["_mode", ["_params", []]];
 
 switch (_mode) do {
     case "INIT": {
+        // Condition : Interface uniquement (joueur)
         if (!hasInterface) exitWith {};
         
-        // Wait for player and mission objects
+        // Attend que le joueur soit prêt
         waitUntil { !isNull player };
         
+        // Ajoute l'action d'ouverture du garage
         player addAction [
             localize "STR_ACTION_GARAGE", 
             {
@@ -18,14 +29,14 @@ switch (_mode) do {
             true, 
             true, 
             "",
-            "player inArea vehicles_request"
+            "player inArea vehicles_request" // Visible dans la zone dédiée
         ];
     };
 
     case "OPEN_UI": {
         createDialog "Refour_Vehicle_Dialog";
         
-        // Wait for dialog to open
+        // Attend l'ouverture réelle du dialogue
         waitUntil {!isNull (findDisplay 8888)};
         
         private _display = findDisplay 8888;
@@ -33,31 +44,30 @@ switch (_mode) do {
         
         lbClear _ctrlList;
 
-        // Get config classes - Filter by Side
+        // Récupération des véhicules
         private _sideInt = (side player) call BIS_fnc_sideID;
         private _cfgVehicles = configFile >> "CfgVehicles";
         
-        // Initial broad filter
+        // Filtre initial : portée publique et même camp
         private _units = "
             (getNumber (_x >> 'scope') >= 2) && 
             (getNumber (_x >> 'side') == _sideInt)
         " configClasses _cfgVehicles;
 
-        // Prepare a sortable array
         private _sortableUnits = [];
 
         {
             private _class = _x;
             private _className = configName _class;
             
-            // Logic for filtering Vehicles specifically
-            // Include: Car, Tank, Helicopter
-            // Exclude: UAV, Ship, Plane, StaticWeapon, Men
+            // Logique de filtrage spécifique
+            // Inclus : Voitures, Tanks, Hélicoptères
+            // Exclus : Drones (UAV), Navires, Avions, Armes statiques, Hommes
             
             private _isLandOrAir = (_className isKindOf "Car") || (_className isKindOf "Tank") || (_className isKindOf "Helicopter");
             
             if (_isLandOrAir) then {
-                // Check exclusions
+                // Vérification des exclusions
                 private _isExcluded = 
                     (_className isKindOf "UAV") ||          
                     (_className isKindOf "Ship") ||         
@@ -80,10 +90,10 @@ switch (_mode) do {
 
         } forEach _units;
 
-        // Sort alphabetically
+        // Tri alphabétique
         _sortableUnits sort true;
 
-        // Add to Listbox
+        // Ajout à la listbox avec icônes si disponibles
         {
             _x params ["_text", "_data"];
             private _index = _ctrlList lbAdd _text;
@@ -111,37 +121,73 @@ switch (_mode) do {
             systemChat (localize "STR_ERR_NO_VEHICLE_SELECTED");
         };
 
-        // Data Retrieval
+        // Récupération des données sélectionnés
         private _classname = _listBox lbData _indexSelection;
         private _displayName = _listBox lbText _indexSelection;
 
-        // Close Dialog
+        // Ferme le dialogue
         closeDialog 1;
 
-        // Define Spawn Position
-        private _spawnPos = [];
-        private _spawnDir = 0;
+        // Spawn dans un nouveau thread pour permettre l'attente (sleep)
+        [_classname, _displayName] spawn {
+            params ["_classname", "_displayName"];
 
-        if (!isNil "vehicles_spawner" && {!isNull vehicles_spawner}) then {
-            _spawnPos = getPosATL vehicles_spawner;
-            _spawnDir = getDir vehicles_spawner;
+            // Suppression des véhicules existants dans la zone "vehicles_request" pour éviter l'empilement
+            if (!isNil "vehicles_request" && {!isNull vehicles_request}) then {
+                private _existingVehicles = vehicles select {_x inArea vehicles_request};
+                if (count _existingVehicles > 0) then {
+                    {
+                        deleteVehicle _x;
+                    } forEach _existingVehicles;
+                    
+                    // Attente pour éviter les collisions physique
+                    sleep 0.5;
+                };
+            };
+
+            // Définition de la position d'apparition
+            private _spawnPos = [];
+            private _spawnDir = 0;
+
+            if (!isNil "vehicles_spawner" && {!isNull vehicles_spawner}) then {
+                _spawnPos = getPosATL vehicles_spawner;
+                _spawnDir = getDir vehicles_spawner;
+                
+                // Ajuste la hauteur (Z) légèrement pour éviter que le véhicule soit "dans" le sol
+                _spawnPos = [_spawnPos select 0, _spawnPos select 1, (_spawnPos select 2) + 0.1];
+            } else {
+                systemChat (localize "STR_DEBUG_NO_SPAWNER");
+                // Position par défaut derrière le joueur
+                _spawnPos = player getRelPos [10, 0]; 
+                _spawnDir = getDir player;
+                _spawnPos = [_spawnPos select 0, _spawnPos select 1, (_spawnPos select 2) + 0.1];
+            };
+
+            // Processus de création du véhicule (vide)
+            private _veh = createVehicle [_classname, _spawnPos, [], 0, "CAN_COLLIDE"];
+            _veh setDir _spawnDir;
+            _veh setPosATL _spawnPos;
             
-            // Adjust Z slightly to prevent ground clipping
-            _spawnPos = [_spawnPos select 0, _spawnPos select 1, (_spawnPos select 2) + 0.1];
-        } else {
-            systemChat (localize "STR_DEBUG_NO_SPAWNER");
-            // Fallback
-            _spawnPos = player getRelPos [10, 0]; 
-            _spawnDir = getDir player;
-            _spawnPos = [_spawnPos select 0, _spawnPos select 1, (_spawnPos select 2) + 0.1];
+            // Notification
+            hint format [localize "STR_VEHICLE_AVAILABLE", _displayName];
         };
+    };
 
-        // Spawn Process - Empty vehicle
-        private _veh = createVehicle [_classname, _spawnPos, [], 0, "CAN_COLLIDE"];
-        _veh setDir _spawnDir;
-        _veh setPosATL _spawnPos;
+    case "DELETE": {
+        // Supprime tous les véhicules présents dans la zone du déclencheur (trigger)
+        private _deletedCount = 0;
         
-        // Notification
-        hint format [localize "STR_VEHICLE_AVAILABLE", _displayName];
+        if (!isNil "vehicles_request" && {!isNull vehicles_request}) then {
+            private _vehiclesInArea = vehicles select {_x inArea vehicles_request};
+            
+            {
+                deleteVehicle _x;
+                _deletedCount = _deletedCount + 1;
+            } forEach _vehiclesInArea;
+            
+            hint format [localize "STR_VEHICLES_DELETED", _deletedCount];
+        } else {
+            systemChat "DEBUG: vehicles_request trigger not found.";
+        };
     };
 };

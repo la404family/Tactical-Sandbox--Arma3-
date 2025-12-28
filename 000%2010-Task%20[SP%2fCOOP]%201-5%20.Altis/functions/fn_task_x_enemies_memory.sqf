@@ -1,24 +1,35 @@
+/*
+    Fonction: MISSION_fnc_task_x_enemies_memory
+    Description:
+    Sauvegarde ("SAVE") les unités placées dans l'éditeur (officiers, ennemis, véhicules) dans des variables globales
+    pour pouvoir les utiliser plus tard comme "templates" lors des spawns de mission.
+    Une fois sauvegardées, les unités d'origine sont supprimées pour nettoyer la carte.
+*/
+
 params [["_mode", ""]];
 
-// Variables globales pour stocker les données par catégorie
+// Variables globales pour stocker les données par catégorie (templates)
 if (isNil "MISSION_var_officers") then { MISSION_var_officers = []; };
 if (isNil "MISSION_var_enemies") then { MISSION_var_enemies = []; };
 if (isNil "MISSION_var_vehicles") then { MISSION_var_vehicles = []; };
 if (isNil "MISSION_var_tanks") then { MISSION_var_tanks = []; };
+if (isNil "MISSION_var_planes") then { MISSION_var_planes = []; };
+if (isNil "MISSION_var_airtargets") then { MISSION_var_airtargets = []; };
 
 if (_mode == "SAVE") exitWith {
     
-    // ---- Officiers ----
+    // ---- Sauvegarde des Officiers ----
     private _officerNames = ["task_x_officer_1", "task_x_officer_2", "task_x_officer_3"];
     {
         private _unit = missionNamespace getVariable [_x, objNull];
         if (!isNull _unit) then {
+            // [NomVariable, ClassName, Position, Direction, Camp, Loadout]
             MISSION_var_officers pushBack [_x, typeOf _unit, getPosWorld _unit, getDir _unit, side group _unit, getUnitLoadout _unit];
-            deleteVehicle _unit;
+            deleteVehicle _unit; // Supprime l'original
         };
     } forEach _officerNames;
 
-    // ---- Ennemis (infanterie) ----
+    // ---- Sauvegarde des Ennemis (infanterie standard) ----
     for "_i" from 0 to 15 do {
         private _numStr = if (_i < 10) then { format ["0%1", _i] } else { str _i };
         private _varName = format ["task_x_enemy_%1", _numStr];
@@ -29,7 +40,7 @@ if (_mode == "SAVE") exitWith {
         };
     };
 
-    // ---- Véhicules (pas de tanks) ----
+    // ---- Sauvegarde des Véhicules (légers, transport) ----
     private _vehicleNames = ["task_x_vehicle_1", "task_x_vehicle_2"];
     {
         private _veh = missionNamespace getVariable [_x, objNull];
@@ -39,7 +50,7 @@ if (_mode == "SAVE") exitWith {
         };
     } forEach _vehicleNames;
 
-    // ---- Tanks ----
+    // ---- Sauvegarde des Tanks (Tâche 3) ----
     private _tankNames = ["task_x_tank_1"];
     {
         private _tank = missionNamespace getVariable [_x, objNull];
@@ -49,7 +60,29 @@ if (_mode == "SAVE") exitWith {
         };
     } forEach _tankNames;
 
-    // Debug (désactivé)
+    // ---- Sauvegarde des Avions (Support Allié Tâche 3) ----
+    private _planeNames = ["task_x_avion_1"];
+    {
+        private _plane = missionNamespace getVariable [_x, objNull];
+        if (!isNull _plane) then {
+            // Sauvegarde spécifique des pylônes (armement)
+            private _pylons = getPylonMagazines _plane;
+            MISSION_var_planes pushBack [_x, typeOf _plane, getPosWorld _plane, getDir _plane, west, _pylons];
+            deleteVehicle _plane;
+        };
+    } forEach _planeNames;
+
+    // ---- Sauvegarde des Cibles Aériennes (pour Tâche 3) ----
+    private _airTargetNames = ["task_x_cible_avion"];
+    {
+        private _target = missionNamespace getVariable [_x, objNull];
+        if (!isNull _target) then {
+            MISSION_var_airtargets pushBack [_x, typeOf _target, getPosWorld _target, getDir _target, east, []];
+            deleteVehicle _target;
+        };
+    } forEach _airTargetNames;
+
+    // Debug (désactivé) - Affiche le nombre d'éléments sauvegardés
     // systemChat format ["Memory: Officers=%1, Enemies=%2, Vehicles=%3, Tanks=%4", 
     //     count MISSION_var_officers, 
     //     count MISSION_var_enemies, 
@@ -59,6 +92,6 @@ if (_mode == "SAVE") exitWith {
 };
 
 if (_mode == "SPAWN") exitWith {
-    // Respawn tout (si besoin à l'avenir)
+    // Respawn tout (fonctionnalité future possible pour reset la mission)
     // À implémenter selon les besoins
 };
