@@ -1,5 +1,4 @@
 /*
-    Auteur : Antigravity
     Description :
     Lance la Tâche 3 : "Guerre totale !"
     Enclenche un affrontement majeur avec support aérien allié contre des défenses blindées.

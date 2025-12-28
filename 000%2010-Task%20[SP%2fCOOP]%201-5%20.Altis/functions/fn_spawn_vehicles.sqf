@@ -1,7 +1,5 @@
 
 /*
-    Fichier : fn_spawn_vehicles.sqf
-    Auteur : [Votre Nom]
     Description :
     Cette fonction gère le système de spawn de véhicules (garage).
     Elle permet l'apparition de véhicules terrestres et aériens, et gère leur suppression.

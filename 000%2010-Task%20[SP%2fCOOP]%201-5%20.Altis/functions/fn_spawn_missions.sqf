@@ -1,6 +1,4 @@
 /*
-    Fichier : fn_spawn_missions.sqf
-    Auteur : [Votre Nom]
     Description :
     Cette fonction gère le système de sélection et de lancement de missions.
     Elle comprend l'interface utilisateur, la sélection multiple de tâches et leur exécution.

@@ -1,5 +1,4 @@
 /*
-    Fonction: MISSION_fnc_task_x_enemies_memory
     Description:
     Sauvegarde ("SAVE") les unités placées dans l'éditeur (officiers, ennemis, véhicules) dans des variables globales
     pour pouvoir les utiliser plus tard comme "templates" lors des spawns de mission.

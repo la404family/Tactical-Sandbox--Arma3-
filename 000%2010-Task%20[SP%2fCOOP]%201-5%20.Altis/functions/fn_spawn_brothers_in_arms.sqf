@@ -1,7 +1,5 @@
 
 /*
-    Fichier : fn_spawn_brothers_in_arms.sqf
-    Auteur : [Votre Nom]
     Description :
     Cette fonction gère le système de recrutement "Frères d'armes".
     Elle permet au joueur de recruter des unités IA de sa faction pour l'accompagner.

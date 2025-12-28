@@ -1,6 +1,4 @@
 /*
-    Fichier : fn_lang_marker_name.sqf
-    Auteur : [Votre Nom]
     Description :
     Cette fonction se charge de localiser les noms des marqueurs sur la carte en fonction de la langue du client.
     Elle utilise les clés définies dans le fichier stringtable.xml.

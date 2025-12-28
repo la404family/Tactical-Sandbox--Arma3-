@@ -1,7 +1,5 @@
 
 /*
-    Fichier : fn_spawn_arsenal.sqf
-    Auteur : [Votre Nom]
     Description :
     Cette fonction initialise l'arsenal virtuel pour le joueur.
     Elle ajoute une action au joueur qui n'est visible que lorsqu'il se trouve dans la zone "arsenal_request".

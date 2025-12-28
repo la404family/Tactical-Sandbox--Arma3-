@@ -1,6 +1,4 @@
 /*
-    Fichier : fn_spawn_weather_and_time.sqf
-    Auteur : [Votre Nom]
     Description :
     Cette fonction permet de modifier l'heure et la météo (nuages, brouillard) via une interface.
     Modes : INIT, OPEN, APPLY.
