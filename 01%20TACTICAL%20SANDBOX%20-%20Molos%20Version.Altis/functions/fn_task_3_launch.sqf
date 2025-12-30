@@ -170,7 +170,24 @@ switch (_mode) do {
                 [_pilot, _plane, _planeGrp] spawn {
                     params ["_unit", "_vehicle", "_group"];
                     
-                    sleep 360; // 6 minutes sur zone
+                    // Attente : 4 minutes OU s'il ne reste qu'un seul char (ou moins)
+                    private _endTime = time + 280;
+                    
+                    // On attend un peu pour être sûr que les chars ont spawn (sécurité)
+                    sleep 15; 
+                    
+                    waitUntil {
+                        sleep 2;
+                        
+                        private _timeExpired = time > _endTime;
+                        
+                        // Check chars vivants
+                        private _aliveTanksCount = { alive _x } count MISSION_var_task3_activeTanks;
+                        private _totalTanksRecorded = count MISSION_var_task3_activeTanks;
+                        
+                        // Condition de fin : Temps écoulé OU (Des chars ont spawn ET il en reste <= 1)
+                        _timeExpired || (_totalTanksRecorded > 0 && _aliveTanksCount <= 1)
+                    };
                     
                     if (alive _unit) then {
                         hint (localize "STR_HINT_AIR_SUPPORT_END");
@@ -189,7 +206,7 @@ switch (_mode) do {
                         _group setCurrentWaypoint _wp;
                         
                         // Attend le départ puis supprime
-                        sleep 60;
+                        sleep 80;
                         if (alive _vehicle) then { deleteVehicle _vehicle; };
                         if (alive _unit) then { deleteVehicle _unit; }; // supprime le pilote
                     };
@@ -220,10 +237,10 @@ switch (_mode) do {
         private _tankSpawns = [];
         private _infantrySpawns = [];
         
-        // Les 3 premiers spawns aléatoires pour les chars, le reste pour l'infanterie
-        if (count _allSpawns >= 3) then {
-            _tankSpawns = _allSpawns select [0, 3];
-            _infantrySpawns = _allSpawns select [3, 999];
+        // Les 4 premiers spawns aléatoires pour les chars, le reste pour l'infanterie
+        if (count _allSpawns >= 4) then {
+            _tankSpawns = _allSpawns select [0, 4];
+            _infantrySpawns = _allSpawns select [4, 999];
         } else {
             _tankSpawns = _allSpawns;
         };
@@ -363,7 +380,7 @@ switch (_mode) do {
             };
             
             ["task_3", "SUCCEEDED"] call BIS_fnc_taskSetState;
-            hint format [localize "STR_TASK_3_TITLE" + " - COMPLETED"];
+            hint format ["%1 - %2", localize "STR_TASK_3_TITLE", localize "STR_TASK_COMPLETED"];
             
             // Nettoyage global
             MISSION_var_task3_activeTanks = nil;

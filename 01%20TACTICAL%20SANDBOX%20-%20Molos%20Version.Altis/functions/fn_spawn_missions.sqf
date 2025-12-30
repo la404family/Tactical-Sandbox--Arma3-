@@ -55,7 +55,13 @@ if (_mode == "OPEN") exitWith {
         if (_i == 3) then {
             _taskName = format ["Tâche %1 - %2", _i, localize "STR_TASK_3_TITLE"];
         };
-        if (_i > 3) then {
+        if (_i == 4) then {
+            _taskName = format ["Tâche %1 - %2", _i, localize "STR_TASK_4_TITLE"];
+        };
+        if (_i == 5) then {
+            _taskName = format ["Tâche %1 - %2", _i, localize "STR_TASK_5_TITLE"];
+        };
+        if (_i > 5) then {
             _taskName = format ["Tâche %1 - %2", _i, localize "STR_TASK_X_TITLE"];
         };
         
@@ -99,7 +105,15 @@ if (_mode == "SELECT") exitWith {
         _titleCtrl ctrlSetText (localize "STR_TASK_3_TITLE");
         _descCtrl ctrlSetText (localize "STR_TASK_3_DESC");
     };
-    if (_taskNum > 3) then {
+    if (_taskNum == 4) then {
+        _titleCtrl ctrlSetText (localize "STR_TASK_4_TITLE");
+        _descCtrl ctrlSetText (localize "STR_TASK_4_DESC");
+    };
+    if (_taskNum == 5) then {
+        _titleCtrl ctrlSetText (localize "STR_TASK_5_TITLE");
+        _descCtrl ctrlSetText (localize "STR_TASK_5_DESC");
+    };
+    if (_taskNum > 5) then {
         _titleCtrl ctrlSetText (localize "STR_TASK_X_TITLE");
         _descCtrl ctrlSetText (localize "STR_TASK_X_DESC");
     };
@@ -174,7 +188,15 @@ if (_mode == "LAUNCH") exitWith {
                     // Tâche 3 - Guerre totale
                     ["INIT"] call MISSION_fnc_task_3_launch;
                 };
-                // Tâches 3-20 : à implémenter plus tard
+                case 4: {
+                    // Tâche 4 - Exfiltration otages
+                    [] spawn MISSION_fnc_task_4_launch;
+                };
+                case 5: {
+                    // Tâche 5 - Présence Civile & Désamorçage
+                    [] spawn MISSION_fnc_task_5_launch;
+                };
+                // Tâches 6-20 : à implémenter plus tard
                 default {};
             };
         };

@@ -14,6 +14,9 @@ if (isNil "MISSION_var_vehicles") then { MISSION_var_vehicles = []; };
 if (isNil "MISSION_var_tanks") then { MISSION_var_tanks = []; };
 if (isNil "MISSION_var_planes") then { MISSION_var_planes = []; };
 if (isNil "MISSION_var_airtargets") then { MISSION_var_airtargets = []; };
+if (isNil "MISSION_var_civilians") then { MISSION_var_civilians = []; };
+if (isNil "MISSION_var_helicopters") then { MISSION_var_helicopters = []; };
+if (isNil "MISSION_var_explosives") then { MISSION_var_explosives = []; };
 
 if (_mode == "SAVE") exitWith {
     
@@ -80,6 +83,40 @@ if (_mode == "SAVE") exitWith {
             deleteVehicle _target;
         };
     } forEach _airTargetNames;
+
+    // ---- Sauvegarde des Civils (pour Tâche 4) ----
+    private _civilNames = ["task_x_civil_01", "task_x_civil_02"];
+    {
+        private _civil = missionNamespace getVariable [_x, objNull];
+        if (!isNull _civil) then {
+            // [NomVariable, ClassName, Position, Direction, Camp, Loadout]
+            MISSION_var_civilians pushBack [_x, typeOf _civil, getPosWorld _civil, getDir _civil, civilian, getUnitLoadout _civil];
+            deleteVehicle _civil;
+        };
+    } forEach _civilNames;
+
+    // ---- Sauvegarde des Hélicoptères (pour Tâche 4) ----
+    private _heliNames = ["task_x_helicoptere"];
+    {
+        private _heli = missionNamespace getVariable [_x, objNull];
+        if (!isNull _heli) then {
+            MISSION_var_helicopters pushBack [_x, typeOf _heli, getPosWorld _heli, getDir _heli, east, []];
+            deleteVehicle _heli;
+        };
+    } forEach _heliNames;
+
+    // ---- Sauvegarde des Explosifs (pour Tâche 5) ----
+    // task_x_explosif_00 est une charge explosive
+    // task_x_explosif_01 est une caisse d'explosif
+    // task_x_explosif_02 et task_x_explosif_03 sont des éclairages portatifs pour héliport (simule le signal visuel de la bombe)
+    private _explosiveNames = ["task_x_explosif_00", "task_x_explosif_01", "task_x_explosif_02", "task_x_explosif_03"];
+    {
+        private _obj = missionNamespace getVariable [_x, objNull];
+        if (!isNull _obj) then {
+            MISSION_var_explosives pushBack [_x, typeOf _obj, getPosWorld _obj, getDir _obj, side group _obj, []];
+            deleteVehicle _obj;
+        };
+    } forEach _explosiveNames;
 
     // Debug (désactivé) - Affiche le nombre d'éléments sauvegardés
     // systemChat format ["Memory: Officers=%1, Enemies=%2, Vehicles=%3, Tanks=%4", 

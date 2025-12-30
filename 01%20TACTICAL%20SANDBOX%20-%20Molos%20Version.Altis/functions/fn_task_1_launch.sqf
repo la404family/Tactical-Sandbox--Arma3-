@@ -32,7 +32,7 @@ private _taskID = "task_1_hq_defense";
         localize "STR_TASK_1_TITLE",                // Titre
         ""                                          // Marqueur (optionnel)
     ],
-    getPosWorld officier_task_giver,                // Position de la tâche (sur l'officier)
+    getPosWorld QG_Center,                          // Position de la tâche (sur QG_Center)
     "CREATED",                                      // État initial
     1,                                              // Priorité
     true,                                           // Afficher notification
@@ -82,12 +82,9 @@ MISSION_var_task1_spawned_enemies = [];
                 private _unit = _grpInf createUnit [_tType, _spawnPos, [], 5, "NONE"];
                 _unit setUnitLoadout _tLoadout;
                 
-                // Révéler la cible (Officier) à l'unité pour qu'elle la traque
-                _unit reveal [officier_task_giver, 4];
-                
-                // Donner l'ordre d'attaquer directement la cible
-                _unit doTarget officier_task_giver;
-                _unit doFire officier_task_giver;
+                // Révéler la cible (QG_Center)
+                _unit reveal [QG_Center, 4];
+                _unit doMove (getPos QG_Center);
                 
                 _spawnedInfantry = _spawnedInfantry + 1;
                 _totalSpawns = _totalSpawns + 1;
@@ -106,53 +103,37 @@ MISSION_var_task1_spawned_enemies = [];
                     _grpInf setCombatMode "RED";
                     _grpInf setSpeedMode "FULL";    // Courir
                     
-                    // Création waypoint SAD (Search and Destroy) sur l'officier
-                    private _wp = _grpInf addWaypoint [getPosWorld officier_task_giver, 5];
+                    // Création waypoint SAD (Search and Destroy) sur QG_Center
+                    private _wp = _grpInf addWaypoint [getPosWorld QG_Center, 5];
                     _wp setWaypointType "SAD";
                     _wp setWaypointBehaviour "AWARE";
                     _wp setWaypointCombatMode "RED";
                     _wp setWaypointCompletionRadius 3;
                 };
                 
-                // Thread individuel (micro-skill) pour la gestion du combat en intérieur (CQB)
+                // Thread individuel de patrouille autour du QG
                 [_unit] spawn {
                     params ["_unit"];
                     
-                    // Attendre que l'unité soit proche du bâtiment cible (30m)
-                    waitUntil { sleep 1; (!alive _unit) || (_unit distance batiment_officer < 30) };
+                    // Attendre que l'unité soit proche du QG (50m)
+                    waitUntil { sleep 1; (!alive _unit) || (_unit distance QG_Center < 50) };
                     if (!alive _unit) exitWith {};
                     
-                    // Récupérer les positions tactiques intérieures du bâtiment
-                    private _positions = batiment_officer buildingPos -1;
-                    if (count _positions == 0) exitWith {};
-                    
-                    // Forcer le mode debout ("UP") pour éviter que l'IA rampe et se bloque
-                    _unit setUnitPos "UP";
+                    _unit setUnitPos "AUTO";
                     (group _unit) setBehaviour "AWARE";
                     
-                    // Faire parcourir les positions du bâtiment (nettoyage pièce par pièce)
-                    {
-                        if (!alive _unit) exitWith {};
-                        if (!alive officier_task_giver) exitWith {};
+                    // Boucle de recherche aléatoire autour du QG
+                    while {alive _unit} do {
+                        // Position aléatoire entre 2 et 10 mètres du QG_Center
+                        private _dist = 2 + random 8;
+                        private _dir = random 360;
+                        private _searchPos = QG_Center getRelPos [_dist, _dir];
                         
-                        _unit doMove _x;
+                        _unit doMove _searchPos;
                         
-                        // Attendre max 10s pour atteindre la position (évite blocage infini)
-                        private _timeout = time + 10;
-                        waitUntil { sleep 0.5; (!alive _unit) || (_unit distance _x < 2) || (time > _timeout) };
-                        
-                        // Si contact visuel avec l'officier, engager immédiatement
-                        if (alive _unit && alive officier_task_giver) then {
-                            _unit reveal [officier_task_giver, 4];
-                            _unit doTarget officier_task_giver;
-                            _unit doFire officier_task_giver;
-                        };
-                        
-                        sleep 0.5;
-                    } forEach _positions;
-                    
-                    // Revenir au mode de posture automatique après la fouille
-                    _unit setUnitPos "AUTO";
+                        // Change de lieu toutes les 35 secondes
+                        sleep 35;
+                    };
                 };
             };
         };
@@ -199,13 +180,13 @@ MISSION_var_task1_spawned_enemies = [];
                     };
                     
                     // Ordre de mouvement vers le QG
-                    _grpVeh move (getPosWorld officier_task_giver);
+                    _grpVeh move (getPosWorld QG_Center);
                     
                     // Script IA véhicule : Combattre une fois arrivé
                     [_veh, _grpVeh] spawn {
                         params ["_veh", "_grp"];
                         // Attendre arrivée
-                        waitUntil { sleep 1; (!alive _veh) || (_veh distance officier_task_giver < 20) };
+                        waitUntil { sleep 1; (!alive _veh) || (_veh distance QG_Center < 30) };
                         
                         if (alive _veh) then {
                             // Débarquer
@@ -216,9 +197,10 @@ MISSION_var_task1_spawned_enemies = [];
                             
                             // Passer en mode combat
                             _grp setBehaviour "COMBAT";
-                            // Révéler et attaquer la cible
-                            { _x reveal [officier_task_giver, 4]; _x doTarget officier_task_giver; } forEach (units _grp);
-                            private _wp = _grp addWaypoint [getPosWorld officier_task_giver, 5];
+                            
+                            // Attaque QG
+                            { _x reveal [QG_Center, 4]; _x doMove (getPos QG_Center); } forEach (units _grp);
+                            private _wp = _grp addWaypoint [getPosWorld QG_Center, 5];
                             _wp setWaypointType "SAD";
                             _wp setWaypointBehaviour "COMBAT";
                         };
@@ -246,15 +228,15 @@ MISSION_var_task1_spawned_enemies = [];
     waitUntil { 
         sleep 3; 
         _spawnComplete = (count MISSION_var_task1_spawned_enemies >= 10) || (time - _startTime > 60);
-        _spawnComplete || !alive officier_task_giver || !alive player 
+        _spawnComplete || !alive player 
     };
     
     // Boucle de vérification principale (toutes les 5 secondes)
     while {true} do {
         sleep 5;
         
-        // Condition d'échec : officier (VIP) ou joueur mort
-        if (!alive officier_task_giver || !alive player) exitWith {
+        // Condition d'échec : joueur mort
+        if (!alive player) exitWith {
             [_taskID, "FAILED"] call BIS_fnc_taskSetState;
         };
         

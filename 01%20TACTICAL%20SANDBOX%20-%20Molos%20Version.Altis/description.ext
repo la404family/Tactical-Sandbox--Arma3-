@@ -1,0 +1,136 @@
+#include "dialogs\defines.hpp"
+#include "dialogs\recruit_menu.hpp"
+#include "dialogs\vehicle_menu.hpp"
+#include "dialogs\weather_time_menu.hpp"
+#include "dialogs\missions_menu.hpp"
+
+class CfgMusic
+{
+    tracks[] = {00intro, 00outro, 00suspense, 00liberation, 00mortOtage, 00mortConduc, 00actionRapide, 00espoir};
+
+    class 00intro
+    {
+        name = "00intro";
+        sound[] = {"music\00intro.ogg", db+10, 1.0};
+    };
+    class 00outro
+    {
+        name = "00outro";
+        sound[] = {"music\00outro.ogg", db+10, 1.0};
+    };
+    class 00suspense
+    {
+        name = "00suspense";
+        sound[] = {"music\00suspense.ogg", db+10, 1.0};
+    };
+    class 00liberation
+    {
+        name = "00liberation";
+        sound[] = {"music\00liberation.ogg", db+10, 1.0};
+    };
+    class 00mortOtage
+    {
+        name = "00mortOtage";
+        sound[] = {"music\00mortOtage.ogg", db+10, 1.0};
+    };
+    class 00mortConduc
+    {
+        name = "00mortConduc";
+        sound[] = {"music\00mortConduc.ogg", db+10, 1.0};
+    };
+    class 00actionRapide
+    {
+        name = "00actionRapide";
+        sound[] = {"music\00actionRapide.ogg", db+10, 1.0};
+    };
+    class 00espoir
+    {
+        name = "00espoir";
+        sound[] = {"music\00espoir.ogg", db+10, 1.0};
+    };
+};
+
+class CfgFunctions
+{
+    class MISSION
+    {
+        class Localization
+        {
+            file = "functions";
+            class expel_spawn {};
+            class lang_marker_name {};
+            class spawn_brothers_in_arms {};
+            class spawn_vehicles {};
+            class spawn_weather_and_time {};
+            class task_x_memory {};
+            class task_1_launch {};
+            class task_2_launch {};
+            class task_3_launch {};
+            class task_4_launch {};
+            class task_5_launch {};
+            class spawn_missions {};
+            class spawn_arsenal {};
+        };
+    };
+};
+
+class CfgNotifications
+{
+    class Default
+    {
+        title = ""; // Top text
+        iconPicture = ""; // Icon
+        iconText = ""; // Short text replacing icon
+        description = ""; // Main text
+        color[] = {1,1,1,1}; // Icon and text color
+        duration = 5; // Display duration
+        priority = 0; // Priority
+        difficulty[] = {}; // Difficulty restrictions
+    };
+    
+    class Tache5_Start
+    {
+        title = "$STR_NOTIF_TASK5_START_TITLE";
+        iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+        description = "%1";
+        priority = 7;
+        color[] = {1,1,1,1};
+    };
+    
+    class Tache5_BombFound
+    {
+        title = "$STR_NOTIF_BOMB_FOUND_TITLE";
+        iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+        description = "%1";
+        priority = 7;
+        color[] = {1,0,0,1};
+        sound = "Alarm";
+    };
+    
+    class Tache5_CivKilled
+    {
+        title = "$STR_NOTIF_CIV_KILLED_TITLE";
+        iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconFailed_ca.paa";
+        description = "$STR_NOTIF_CIV_KILLED_DESC";
+        priority = 5;
+        color[] = {1,0,0,1};
+    };
+
+    class Tache5_Fail
+    {
+        title = "$STR_NOTIF_FAIL_TITLE";
+        iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconFailed_ca.paa";
+        description = "%1";
+        priority = 9;
+        color[] = {1,0,0,1};
+    };
+
+    class Tache5_Win
+    {
+        title = "$STR_NOTIF_WIN_TITLE";
+        iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconDone_ca.paa";
+        description = "%1";
+        priority = 9;
+        color[] = {0,1,0,1};
+    };
+};

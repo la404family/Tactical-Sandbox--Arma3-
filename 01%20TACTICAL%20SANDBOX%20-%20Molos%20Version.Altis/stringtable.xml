@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Mission1-5">
+    <Package name="Markers">
+        <Key ID="STR_MARKER_ZONE_1">
+            <English>Weapons</English>
+            <French>Armes</French>
+            <German>Waffen</German>
+            <Spanish>Armas</Spanish>
+            <Italian>Armi</Italian>
+            <Russian>Оружие</Russian>
+            <Polish>Broń</Polish>
+            <Czech>Zbraně</Czech>
+            <Turkish>Silahlar</Turkish>
+            <Chinese>武器</Chinese>
+            <Chinesesimp>武器</Chinesesimp>
+        </Key>
+        <Key ID="STR_MARKER_ZONE_2">
+            <English>Missions</English>
+            <French>Missions</French>
+            <German>Missionen</German>
+            <Spanish>Misiones</Spanish>
+            <Italian>Missioni</Italian>
+            <Russian>Миссии</Russian>
+            <Polish>Misje</Polish>
+            <Czech>Mise</Czech>
+            <Turkish>Görevler</Turkish>
+            <Chinese>任務</Chinese>
+            <Chinesesimp>任务</Chinesesimp>
+        </Key>
+        <Key ID="STR_MARKER_ZONE_3">
+            <English>Brothers in Arms</English>
+            <French>Frères d&apos;armes</French>
+            <German>Waffenbrüder</German>
+            <Spanish>Hermanos de armas</Spanish>
+            <Italian>Fratelli d&apos;armi</Italian>
+            <Russian>Братья по оружию</Russian>
+            <Polish>Towarzysze broni</Polish>
+            <Czech>Bratři ve zbrani</Czech>
+            <Turkish>Silah arkadaşları</Turkish>
+            <Chinese>戰友</Chinese>
+            <Chinesesimp>战友</Chinesesimp>
+        </Key>
+        <Key ID="STR_MARKER_ZONE_4">
+            <English>Vehicles</English>
+            <French>Véhicules</French>
+            <German>Fahrzeuge</German>
+            <Spanish>Vehículos</Spanish>
+            <Italian>Veicoli</Italian>
+            <Russian>Техника</Russian>
+            <Polish>Pojazdy</Polish>
+            <Czech>Vozidla</Czech>
+            <Turkish>Araçlar</Turkish>
+            <Chinese>載具</Chinese>
+            <Chinesesimp>载具</Chinesesimp>
+        </Key>
+        <Key ID="STR_MARKER_ZONE_5">
+            <English>Weather and Time</English>
+            <French>Temps et heure</French>
+            <German>Wetter und Uhrzeit</German>
+            <Spanish>Clima y hora</Spanish>
+            <Italian>Tempo e ora</Italian>
+            <Russian>Погода и время</Russian>
+            <Polish>Wiatr i godzina</Polish>
+            <Czech>Procházka a čas</Czech>
+            <Turkish>Hava durumu ve saat</Turkish>
+            <Chinese>天氣和時間</Chinese>
+            <Chinesesimp>天气和时间</Chinesesimp>
+        </Key>
+        <Key ID="STR_MARKER_ZONE_6">
+            <English>Spawn point</English>
+            <French>Point d’apparition</French>
+            <German>Spawnpunkt</German>
+            <Spanish>Punto de aparición</Spanish>
+            <Italian>Punto di apparizione</Italian>
+            <Russian>Точка появления</Russian>
+            <Polish>Punkt odrodzenia</Polish>
+            <Czech>Místo objevení</Czech>
+            <Turkish>Doğma noktası</Turkish>
+            <Chinese>出生点</Chinese>
+            <Chinesesimp>出生点</Chinesesimp>
+        </Key>
+        <Key ID="STR_ADD_BROTHER">
+            <English>Add a brother in arms</English>
+            <French>Ajouter un frère d&apos;arme</French>
+            <German>Waffenbruder hinzufügen</German>
+            <Spanish>Añadir un hermano de armas</Spanish>
+            <Italian>Aggiungi un fratello d&apos;armi</Italian>
+            <Russian>Добавить брата по оружию</Russian>
+            <Polish>Dodaj towarzysza broni</Polish>
+            <Czech>Přidat bratra ve zbrani</Czech>
+            <Turkish>Silah arkadaşı ekle</Turkish>
+            <Chinese>添加戰友</Chinese>
+            <Chinesesimp>添加战友</Chinesesimp>
+        </Key>
+        <Key ID="STR_RECRUIT_TITLE">
+            <English>Recruit Unit</English>
+            <French>Recruter une unité</French>
+            <German>Einheit rekrutieren</German>
+            <Spanish>Reclutar unidad</Spanish>
+            <Italian>Recluta unità</Italian>
+            <Russian>Рекрутировать</Russian>
+            <Polish>Rekrutuj jednostkę</Polish>
+            <Czech>Zverbovat jednotku</Czech>
+            <Turkish>Birim kirala</Turkish>
+            <Chinese>招募單位</Chinese>
+            <Chinesesimp>招募单位</Chinesesimp>
+        </Key>
+        <Key ID="STR_RECRUIT_BUTTON">
+            <English>Recruit</English>
+            <French>Recruter</French>
+            <German>Rekrutieren</German>
+            <Spanish>Reclutar</Spanish>
+            <Italian>Recluta</Italian>
+            <Russian>Нанять</Russian>
+            <Polish>Rekrutuj</Polish>
+            <Czech>Zverbovat</Czech>
+            <Turkish>Kirala</Turkish>
+            <Chinese>招募</Chinese>
+            <Chinesesimp>招募</Chinesesimp>
+        </Key>
+        <Key ID="STR_CLOSE">
+            <English>Close</English>
+            <French>Fermer</French>
+            <German>Schließen</German>
+            <Spanish>Cerrar</Spanish>
+            <Italian>Chiudi</Italian>
+            <Russian>Закрыть</Russian>
+            <Polish>Zamknij</Polish>
+            <Czech>Zavřít</Czech>
+            <Turkish>Kapat</Turkish>
+            <Chinese>關閉</Chinese>
+            <Chinesesimp>关闭</Chinesesimp>
+        </Key>
+        <Key ID="STR_ACTION_GARAGE">
+            <English>Garage</English>
+            <French>Garage</French>
+            <German>Garage</German>
+            <Spanish>Garaje</Spanish>
+            <Italian>Garage</Italian>
+            <Russian>Гараж</Russian>
+            <Polish>Garaż</Polish>
+            <Czech>Garáž</Czech>
+            <Turkish>Garaj</Turkish>
+            <Chinese>車庫</Chinese>
+            <Chinesesimp>车库</Chinesesimp>
+        </Key>
+        <Key ID="STR_GARAGE_TITLE">
+            <English>Garage</English>
+            <French>Garage</French>
+            <German>Garage</German>
+            <Spanish>Garaje</Spanish>
+            <Italian>Garage</Italian>
+            <Russian>Гараж</Russian>
+            <Polish>Garaż</Polish>
+            <Czech>Garáž</Czech>
+            <Turkish>Garaj</Turkish>
+            <Chinese>車庫</Chinese>
+            <Chinesesimp>车库</Chinesesimp>
+        </Key>
+        <Key ID="STR_GARAGE_TAKE_OUT">
+            <English>Spawn</English>
+            <French>Déployer</French>
+            <German>Spawnen</German>
+            <Spanish>Generar</Spanish>
+            <Italian>Genera</Italian>
+            <Russian>Создать</Russian>
+            <Polish>Stwórz</Polish>
+            <Czech>Vytvořit</Czech>
+            <Turkish>Oluştur</Turkish>
+            <Chinese>生成</Chinese>
+            <Chinesesimp>生成</Chinesesimp>
+        </Key>
+        <Key ID="STR_ERR_NO_UNIT_SELECTED">
+            <English>Error: No unit selected.</English>
+            <French>Erreur : Aucune unité sélectionnée.</French>
+            <German>Fehler: Keine Einheit ausgewählt.</German>
+            <Spanish>Error: Ninguna unidad seleccionada.</Spanish>
+            <Italian>Errore: Nessuna unità selezionata.</Italian>
+            <Russian>Ошибка: Юнит не выбран.</Russian>
+            <Polish>Błąd: Nie wybrano jednostki.</Polish>
+            <Czech>Chyba: Nebyla vybrána žádná jednotka.</Czech>
+            <Turkish>Hata: Birim seçilmedi.</Turkish>
+            <Chinese>錯誤：未選擇單位。</Chinese>
+            <Chinesesimp>错误：未选择单位。</Chinesesimp>
+        </Key>
+        <Key ID="STR_ERR_NO_VEHICLE_SELECTED">
+            <English>Error: No vehicle selected.</English>
+            <French>Erreur : Aucun véhicule sélectionné.</French>
+            <German>Fehler: Kein Fahrzeug ausgewählt.</German>
+            <Spanish>Error: Ningún vehículo seleccionado.</Spanish>
+            <Italian>Errore: Nessun veicolo selezionato.</Italian>
+            <Russian>Ошибка: Техника не выбрана.</Russian>
+            <Polish>Błąd: Nie wybrano pojazdu.</Polish>
+            <Czech>Chyba: Nebylo vybráno žádné vozidlo.</Czech>
+            <Turkish>Hata: Araç seçilmedi.</Turkish>
+            <Chinese>錯誤：未選擇載具。</Chinese>
+            <Chinesesimp>错误：未选择载具。</Chinesesimp>
+        </Key>
+        <Key ID="STR_UNIT_ARRIVING">
+            <English>%1 is arriving...</English>
+            <French>%1 arrive sur zone...</French>
+            <German>%1 trifft ein...</German>
+            <Spanish>%1 está llegando...</Spanish>
+            <Italian>%1 sta arrivando...</Italian>
+            <Russian>%1 прибывает...</Russian>
+            <Polish>%1 przybywa...</Polish>
+            <Czech>%1 přijíždí...</Czech>
+            <Turkish>%1 geliyor...</Turkish>
+            <Chinese>%1 正在抵達...</Chinese>
+            <Chinesesimp>%1 正在抵达...</Chinesesimp>
+        </Key>
+        <Key ID="STR_UNIT_JOINED">
+            <English>%1 has joined your squad.</English>
+            <French>%1 a rejoint votre escouade.</French>
+            <German>%1 ist Ihrem Trupp beigetreten.</German>
+            <Spanish>%1 se ha unido a tu escuadra.</Spanish>
+            <Italian>%1 si è unito alla tua squadra.</Italian>
+            <Russian>%1 присоединился к вашему отряду.</Russian>
+            <Polish>%1 dołączył do twojego oddziału.</Polish>
+            <Czech>%1 se připojil k vaší jednotce.</Czech>
+            <Turkish>%1 takımınıza katıldı.</Turkish>
+            <Chinese>%1 加入了你的小隊。</Chinese>
+            <Chinesesimp>%1 加入了你的小队。</Chinesesimp>
+        </Key>
+        <Key ID="STR_VEHICLE_AVAILABLE">
+            <English>Vehicle %1 available.</English>
+            <French>Véhicule %1 disponible.</French>
+            <German>Fahrzeug %1 verfügbar.</German>
+            <Spanish>Vehículo %1 disponible.</Spanish>
+            <Italian>Veicolo %1 disponibile.</Italian>
+            <Russian>Техника %1 доступна.</Russian>
+            <Polish>Pojazd %1 dostępny.</Polish>
+            <Czech>Vozidlo %1 k dispozici.</Czech>
+            <Turkish>Araç %1 mevcut.</Turkish>
+            <Chinese>載具 %1 可用。</Chinese>
+            <Chinesesimp>载具 %1 可用。</Chinesesimp>
+        </Key>
+        <Key ID="STR_DEBUG_NO_SPAWNER">
+            <English>DEBUG: vehicles_spawner not found, spawning on player.</English>
+            <French>DEBUG: vehicles_spawner introuvable, spawn sur le joueur.</French>
+            <German>DEBUG: vehicles_spawner nicht gefunden, spawne beim Spieler.</German>
+            <Spanish>DEBUG: vehicles_spawner no encontrado, generando en el jugador.</Spanish>
+            <Italian>DEBUG: vehicles_spawner non trovato, spawn sul giocatore.</Italian>
+            <Russian>DEBUG: vehicles_spawner не найден, спавн на игроке.</Russian>
+            <Polish>DEBUG: nie znaleziono vehicles_spawner, odradzanie na graczu.</Polish>
+            <Czech>DEBUG: vehicles_spawner nenalezen, spawnuji u hráče.</Czech>
+            <Turkish>DEBUG: vehicles_spawner bulunamadı, oyuncunun üzerinde oluşturuluyor.</Turkish>
+            <Chinese>DEBUG: 未找到 vehicles_spawner, 在玩家位置生成。</Chinese>
+            <Chinesesimp>DEBUG: 未找到 vehicles_spawner, 在玩家位置生成。</Chinesesimp>
+        </Key>
+        <Key ID="STR_ACTION_ARSENAL">
+            <English>Virtual Arsenal</English>
+            <French>Arsenal Virtuel</French>
+            <German>Virtual Arsenal</German>
+            <Spanish>Arsenal Virtual</Spanish>
+            <Italian>Arsenale Virtuale</Italian>
+            <Russian>Виртуальный Арсенал</Russian>
+            <Polish>Wirtualny Arsenał</Polish>
+            <Czech>Virtuální Arzenál</Czech>
+            <Turkish>Sanal Cephanelik</Turkish>
+            <Chinese>虛擬軍火庫</Chinese>
+            <Chinesesimp>虚拟军火库</Chinesesimp>
+        </Key>
+        <Key ID="STR_ACTION_WEATHER">
+            <English>Modify time or weather</English>
+            <French>Modifier le temps ou la météo</French>
+            <German>Zeit oder Wetter ändern</German>
+            <Spanish>Modificar hora o clima</Spanish>
+            <Italian>Modifica tempo o meteo</Italian>
+            <Russian>Изменить время или погоду</Russian>
+            <Polish>Zmień czas lub pogodę</Polish>
+            <Czech>Změnit čas nebo počasí</Czech>
+            <Turkish>Zamanı veya hava durumunu değiştir</Turkish>
+            <Chinese>修改時間或天氣</Chinese>
+            <Chinesesimp>修改时间或天气</Chinesesimp>
+        </Key>
+        <Key ID="STR_LABEL_TIME">
+            <English>Time</English>
+            <French>Heure</French>
+            <German>Zeit</German>
+            <Spanish>Hora</Spanish>
+            <Italian>Ora</Italian>
+            <Russian>Время</Russian>
+            <Polish>Czas</Polish>
+            <Czech>Čas</Czech>
+            <Turkish>Zaman</Turkish>
+            <Chinese>時間</Chinese>
+            <Chinesesimp>时间</Chinesesimp>
+        </Key>
+        <Key ID="STR_LABEL_CLOUDS">
+            <English>Cloud Cover</English>
+            <French>Couverture nuageuse</French>
+            <German>Bewölkung</German>
+            <Spanish>Nubosidad</Spanish>
+            <Italian>Copertura nuvolosa</Italian>
+            <Russian>Облачность</Russian>
+            <Polish>Zachmurzenie</Polish>
+            <Czech>Oblačnost</Czech>
+            <Turkish>Bulut Kaplaması</Turkish>
+            <Chinese>雲量</Chinese>
+            <Chinesesimp>云量</Chinesesimp>
+        </Key>
+        <Key ID="STR_LABEL_FOG">
+            <English>Fog</English>
+            <French>Brouillard</French>
+            <German>Nebel</German>
+            <Spanish>Niebla</Spanish>
+            <Italian>Nebbia</Italian>
+            <Russian>Туман</Russian>
+            <Polish>Mgła</Polish>
+            <Czech>Mlha</Czech>
+            <Turkish>Sis</Turkish>
+            <Chinese>霧</Chinese>
+            <Chinesesimp>雾</Chinesesimp>
+        </Key>
+        <Key ID="STR_BTN_MODIFY">
+            <English>Modify</English>
+            <French>Modifier</French>
+            <German>Ändern</German>
+            <Spanish>Modificar</Spanish>
+            <Italian>Modifica</Italian>
+            <Russian>Изменить</Russian>
+            <Polish>Zmień</Polish>
+            <Czech>Změnit</Czech>
+            <Turkish>Değiştir</Turkish>
+            <Chinese>修改</Chinese>
+            <Chinesesimp>修改</Chinesesimp>
+        </Key>
+        <Key ID="STR_BTN_SELECT">
+            <English>Select</English>
+            <French>Sélectionner</French>
+            <German>Auswählen</German>
+            <Spanish>Seleccionar</Spanish>
+            <Italian>Seleziona</Italian>
+            <Russian>Выбрать</Russian>
+            <Polish>Wybierz</Polish>
+            <Czech>Vybrat</Czech>
+            <Turkish>Seç</Turkish>
+            <Chinese>選擇</Chinese>
+            <Chinesesimp>选择</Chinesesimp>
+        </Key>
+        <Key ID="STR_BTN_DESELECT">
+            <English>Deselect</English>
+            <French>Désélectionner</French>
+            <German>Abwählen</German>
+            <Spanish>Deseleccionar</Spanish>
+            <Italian>Deseleziona</Italian>
+            <Russian>Отменить выбор</Russian>
+            <Polish>Odznacz</Polish>
+            <Czech>Odznačit</Czech>
+            <Turkish>Seçimi Kaldır</Turkish>
+            <Chinese>取消選擇</Chinese>
+            <Chinesesimp>取消选择</Chinesesimp>
+        </Key>
+        <Key ID="STR_MISSIONS_MENU_TITLE">
+            <English>Mission Command Center</English>
+            <French>Centre de Commandement des Missions</French>
+            <German>Missions-Kommandozentrale</German>
+            <Spanish>Centro de Mando de Misiones</Spanish>
+            <Italian>Centro Comando Missioni</Italian>
+            <Russian>Командный центр миссий</Russian>
+            <Polish>Centrum Dowodzenia Misjami</Polish>
+            <Czech>Velitelské centrum misí</Czech>
+            <Turkish>Görev Komuta Merkezi</Turkish>
+            <Chinese>任務指揮中心</Chinese>
+            <Chinesesimp>任务指挥中心</Chinesesimp>
+        </Key>
+        <Key ID="STR_MISSIONS_LIST_LABEL">
+            <English>Available Missions</English>
+            <French>Missions Disponibles</French>
+            <German>Verfügbare Missionen</German>
+            <Spanish>Misiones Disponibles</Spanish>
+            <Italian>Missioni Disponibili</Italian>
+            <Russian>Доступные миссии</Russian>
+            <Polish>Dostępne Misje</Polish>
+            <Czech>Dostupné mise</Czech>
+            <Turkish>Mevcut Görevler</Turkish>
+            <Chinese>可用任務</Chinese>
+            <Chinesesimp>可用任务</Chinesesimp>
+        </Key>
+        <Key ID="STR_MISSIONS_SELECT">
+            <English>Select for deployment:</English>
+            <French>Sélectionner pour déploiement :</French>
+            <German>Für Einsatz auswählen:</German>
+            <Spanish>Seleccionar para despliegue:</Spanish>
+            <Italian>Seleziona per dispiegamento:</Italian>
+            <Russian>Выбрать для развертывания:</Russian>
+            <Polish>Wybierz do wdrożenia:</Polish>
+            <Czech>Vybrat k nasazení:</Czech>
+            <Turkish>Dağıtım için seç:</Turkish>
+            <Chinese>選擇部署：</Chinese>
+            <Chinesesimp>选择部署：</Chinesesimp>
+        </Key>
+        <Key ID="STR_MISSIONS_LAUNCH">
+            <English>LAUNCH</English>
+            <French>LANCER</French>
+            <German>STARTEN</German>
+            <Spanish>LANZAR</Spanish>
+            <Italian>AVVIA</Italian>
+            <Russian>ЗАПУСК</Russian>
+            <Polish>URUCHOM</Polish>
+            <Czech>SPUSTIT</Czech>
+            <Turkish>BAŞLAT</Turkish>
+            <Chinese>啟動</Chinese>
+            <Chinesesimp>启动</Chinesesimp>
+        </Key>
+        <Key ID="STR_MISSIONS_QUIT">
+            <English>QUIT</English>
+            <French>QUITTER</French>
+            <German>BEENDEN</German>
+            <Spanish>SALIR</Spanish>
+            <Italian>ESCI</Italian>
+            <Russian>ВЫХОД</Russian>
+            <Polish>WYJDŹ</Polish>
+            <Czech>UKONČIT</Czech>
+            <Turkish>ÇIK</Turkish>
+            <Chinese>退出</Chinese>
+            <Chinesesimp>退出</Chinesesimp>
+        </Key>
+        <Key ID="STR_ACTION_MISSIONS">
+            <English>Access Mission Command</English>
+            <French>Accéder au Commandement des Missions</French>
+            <German>Missionskommando aufrufen</German>
+            <Spanish>Acceder al Mando de Misiones</Spanish>
+            <Italian>Accedi al Comando Missioni</Italian>
+            <Russian>Доступ к командованию миссий</Russian>
+            <Polish>Dostęp do Dowództwa Misji</Polish>
+            <Czech>Přístup k velení misí</Czech>
+            <Turkish>Görev Komutasına Eriş</Turkish>
+            <Chinese>進入任務指揮</Chinese>
+            <Chinesesimp>进入任务指挥</Chinesesimp>
+        </Key>
+        <Key ID="STR_TASK_1_TITLE">
+            <English>HQ Defense</English>
+            <French>Défense du Quartier Général</French>
+            <German>Hauptquartier-Verteidigung</German>
+            <Spanish>Defensa del Cuartel General</Spanish>
+            <Italian>Difesa del Quartier Generale</Italian>
+            <Russian>Защита штаба</Russian>
+            <Polish>Obrona Kwatery Głównej</Polish>
+            <Czech>Obrana velitelství</Czech>
+            <Turkish>Karargah Savunması</Turkish>
+            <Chinese>總部防禦</Chinese>
+            <Chinesesimp>总部防御</Chinesesimp>
+        </Key>
+        <Key ID="STR_TASK_1_DESC">
+            <English>Defend the allied HQ against an enemy attack. Enemies will attempt to neutralize the command post and eliminate the officer in charge. Success: Eliminate all enemy threats. Failure: Death of the allied officer or player death. (Enemy forces: ~10 Infantry, 1-2 Light Vehicles)</English>
+            <French>Assurer la défense du Quartier Général allié face à une attaque ennemie. Les forces ennemies tenteront de neutraliser le poste de commandement et d&apos;éliminer l&apos;officier en charge. Réussite : Éliminer l&apos;ensemble des menaces ennemies. Échec : Mort de l&apos;officier allié ou de vous-même. (Forces ennemies : ~10 Infanterie, 1-2 Véhicules légers)</French>
+            <German>Verteidigen Sie das alliierte HQ gegen einen Angriff. Die Feinde werden versuchen, den Kommandoposten zu neutralisieren und den verantwortlichen Offizier zu eliminieren. Erfolg: Alle feindlichen Bedrohungen eliminieren. Misserfolg: Tod des alliierten Offiziers oder des Spielers. (Feindliche Kräfte: ~10 Infanterie, 1-2 leichte Fahrzeuge)</German>
+            <Spanish>Defender el cuartel general aliado contra un ataque enemigo. Los enemigos intentarán neutralizar el puesto de mando y eliminar al oficial a cargo. Éxito: Eliminar todas las amenazas enemigas. Fracaso: Muerte del oficial aliado o del jugador. (Fuerzas enemigas: ~10 Infantería, 1-2 Vehículos ligeros)</Spanish>
+            <Italian>Difendere il QG alleato da un attacco nemico. I nemici tenteranno di neutralizzare il posto di comando ed eliminare l&apos;ufficiale responsabile. Successo: Eliminare tutte le minacce nemiche. Fallimento: Morte dell&apos;ufficiale alleato o del giocatore. (Forze nemiche: ~10 Fanteria, 1-2 Veicoli leggeri)</Italian>
+            <Russian>Защитите союзный штаб от атаки. Противник попытается нейтрализовать командный пункт и устранить ответственного офицера. Успех: Уничтожить все вражеские угрозы. Провал: Смерть союзного офицера или игрока. (Вражеские силы: ~10 Пехота, 1-2 Легкая техника)</Russian>
+            <Polish>Broń aliancką kwaterę główną przed atakiem. Wrogowie będą próbowali zneutralizować stanowisko dowodzenia i wyeliminować oficera. Sukces: Wyeliminuj wszystkie zagrożenia. Porażka: Śmierć aliancego oficera lub gracza. (Siły wroga: ~10 Piechota, 1-2 Lekkie pojazdy)</Polish>
+            <Czech>Braňte spojenecké velitelství před útokem. Nepřátelé se pokusí neutralizovat velitelské stanoviště a eliminovat odpovědného důstojníka. Úspěch: Eliminovat všechny nepřátelské hrozby. Neúspěch: Smrt spojeneckého důstojníka nebo hráče. (Nepřátelské síly: ~10 Pěchota, 1-2 Lehká vozidla)</Czech>
+            <Turkish>Müttefik karargahı saldırıya karşı savunun. Düşmanlar komuta merkezini etkisiz hale getirmeye ve sorumlu subayı öldürmeye çalışacak. Başarı: Tüm düşman tehditleri ortadan kaldırın. Başarısızlık: Müttefik subayın veya oyuncunun ölümü. (Düşman güçleri: ~10 Piyade, 1-2 Hafif Araç)</Turkish>
+            <Chinese>保衛盟軍總部免受攻擊。敵人將試圖摧毀指揮所並消滅負責的軍官。成功：消滅所有敵人威脅。失敗：盟軍軍官或玩家死亡。（敵軍：~10 步兵，1-2 輕型載具）</Chinese>
+            <Chinesesimp>保卫盟军总部免受攻击。敌人将试图摧毁指挥所并消灭负责的军官。成功：消灭所有敌人威胁。失败：盟军军官或玩家死亡。（敌军：~10 步兵，1-2 轻型载具）</Chinesesimp>
+        </Key>
+        <Key ID="STR_TASK_2_TITLE">
+            <English>Assassination and Recovery</English>
+            <French>Assassinat et récupération</French>
+            <German>Mord und Bergung</German>
+            <Spanish>Asesinato y Recuperación</Spanish>
+            <Italian>Assassinio e Recupero</Italian>
+            <Russian>Убийство и восстановление</Russian>
+            <Polish>Zabójstwo i odzyskiwanie</Polish>
+            <Czech>Vražda a zotavení</Czech>
+            <Turkish>Suikast ve Kurtarma</Turkish>
+            <Chinese>暗殺與恢復</Chinese>
+            <Chinesesimp>暗杀与恢复</Chinesesimp>
+        </Key>
+        <Key ID="STR_TASK_2_DESC">
+            <English>A high-ranking enemy officer coordinates operations in the area. His elimination will disrupt opposing forces. He is carrying essential confidential documents. Infiltrate the area, neutralize the target and recover the information. (Enemy forces: 1 Officer, 5 Bodyguards)</English>
+            <French>Un officier ennemi de haut rang coordonne les opérations dans la zone. Son élimination désorganisera les forces adverses. Il transporte des documents confidentiels essentiels. Infiltrez la zone, neutralisez la cible et récupérez les informations. (Forces ennemies : 1 Officier, 5 Gardes du corps)</French>
+            <German>Ein hochrangiger feindlicher Offizier koordiniert Operationen in der Region. Seine Beseitigung wird gegnerische Kräfte stören. Er trägt wesentliche vertrauliche Dokumente. Infiltrieren Sie den Bereich, neutralisieren Sie das Ziel und stellen Sie die Informationen wieder her. (Feindliche Kräfte: 1 Offizier, 5 Leibwächter)</German>
+            <Spanish>Un oficial enemigo de alto rango coordina las operaciones en el área. Su eliminación interrumpirá fuerzas opuestas. Lleva documentos confidenciales esenciales. Infiltrarse en el área, neutralizar el objetivo y recuperar la información. (Fuerzas enemigas: 1 Oficial, 5 Guardaespaldas)</Spanish>
+            <Italian>Un ufficiale nemico di alto livello coordina le operazioni nell&apos;area. La sua eliminazione interromperà le forze opposte. Trasporta documenti riservati essenziali. Infiltra l&apos;area, neutralizza l&apos;obiettivo e recupera le informazioni. (Forze nemiche: 1 Ufficiale, 5 Guardie del corpo)</Italian>
+            <Russian>Высокопоставленный вражеский офицер координирует операции в этом районе. Его устранение нарушит противостоящие силы. Он несет основные конфиденциальные документы. Проникнуть в область, нейтрализовать цель и восстановить информацию. (Вражеские силы: 1 офицер, 5 телохранителей)</Russian>
+            <Polish>Wysoki stopień oficer wroga koordynuje działania w tym obszarze. Jego eliminacja zakłóci przeciwne siły. Posiada niezbędne poufne dokumenty. Infiltruj obszar, zneutralizuj cel i odzyskaj informacje. (Siły wroga: 1 oficer, 5 ochroniarzy)</Polish>
+            <Czech>Vysoce postavený nepřátelský důstojník koordinuje operace v této oblasti. Jeho eliminace naruší protichůdné síly. Nosí základní důvěrné dokumenty. Infiltrujte oblast, neutralizujte cíl a obnovte informace. (Nepřátelské síly: 1 důstojník, 5 bodyguardů)</Czech>
+            <Turkish>Üst düzey bir düşman subayı bölgedeki operasyonları koordine eder. Ortadan kaldırılması karşıt güçleri bozacaktır. Temel gizli belgeler taşıyor. Bölgeye sızın, hedefi etkisiz hale getirin ve bilgileri kurtarın. (Düşman güçleri: 1 Subay, 5 Koruma)</Turkish>
+            <Chinese>一名高級敵方軍官協調該地區的行動。 他的淘汰將破壞反對部隊。 他攜帶必要的機密文件。 滲透該區域，中和目標並恢復信息。（敵軍：1 軍官，5 保鏢）</Chinese>
+            <Chinesesimp>一名高级敌方军官协调该地区的行动。 他的淘汰将破坏反对部队。 他携带必要的机密文件。 渗透该区域，中和目标并恢复信息。（敌军：1 军官，5 保镖）</Chinesesimp>
+        </Key>
+        <Key ID="STR_MARKER_DOCUMENT">
+            <English>Document</English>
+            <French>Document</French>
+            <German>Dokument</German>
+            <Spanish>Documento</Spanish>
+            <Italian>Documento</Italian>
+            <Russian>Документ</Russian>
+            <Polish>Dokument</Polish>
+            <Czech>Dokument</Czech>
+            <Turkish>Belge</Turkish>
+            <Chinese>文檔</Chinese>
+            <Chinesesimp>文档</Chinesesimp>
+        </Key>
+        <Key ID="STR_TASK_3_TITLE">
+            <English>Total War!</English>
+            <French>Guerre totale !</French>
+            <German>Totaler Krieg!</German>
+            <Spanish>¡Guerra total!</Spanish>
+            <Italian>Guerra totale!</Italian>
+            <Russian>Тотальная война!</Russian>
+            <Polish>Wojna totalna!</Polish>
+            <Czech>Totální válka!</Czech>
+            <Turkish>Topyekün Savaş!</Turkish>
+            <Chinese>全面戰爭！</Chinese>
+            <Chinesesimp>全面战争！</Chinesesimp>
+        </Key>
+        <Key ID="STR_TASK_3_DESC">
+            <English>Warning: Advanced conflict, total war. Allied air support deployed. Enemy presence heavily reinforced: heavy armor, patrols, and rapid response units. High risk mission. Objective: Neutralize enemy tanks. (Enemy forces: ~50 Infantry, 3 Tanks)</English>
+            <French>Attention : conflit avancé, guerre totale. Appui aérien déployé sur zone. Présence ennemie fortement renforcée : blindés lourds, Patrouilles et unités d&apos;intervention rapide. Mission à haut risque. Objectif : neutraliser les tanks ennemis (Forces ennemies : ~50 Infanterie, 3 Tanks)</French>
+            <German>Warnung: Fortgeschrittener Konflikt, totaler Krieg. Alliierte Luftunterstützung eingesetzt. Feindliche Präsenz stark verstärkt: schwere Panzerung, Patrouillen und schnelle Eingreiftruppen. Hochrisikomission. Ziel: Feindliche Panzer neutralisieren. (Feindliche Kräfte: ~50 Infanterie, 3 Panzer)</German>
+            <Spanish>Advertencia: Conflicto avanzado, guerra total. Apoyo aéreo aliado desplegado. Presencia enemiga fuertemente reforzada: blindados pesados, patrullas y unidades de respuesta rápida. Misión de alto riesgo. Objetivo: Neutralizar tanques enemigos. (Fuerzas enemigas: ~50 Infantería, 3 Tanques)</Spanish>
+            <Italian>Attenzione: Conflitto avanzato, guerra totale. Supporto aereo alleato schierato. Presenza nemica fortemente rinforzata: armature pesanti, pattuglie e unità di intervento rapido. Missione ad alto rischio. Obiettivo: Neutralizzare i carri armati nemici. (Forze nemiche: ~50 Fanteria, 3 Carri armati)</Italian>
+            <Russian>Внимание: Продвинутый конфликт, тотальная война. Развернута союзная авиаподдержка. Присутствие врага сильно усилено: тяжелая бронетехника, патрули и группы быстрого реагирования. Миссия высокого риска. Цель: Нейтрализовать вражеские танки. (Вражеские силы: ~50 Пехота, 3 Танка)</Russian>
+            <Polish>Uwaga: Zaawansowany konflikt, wojna totalna. Rozmieszczono sojusznicze wsparcie lotnicze. Obecność wroga silnie wzmocniona: ciężki pancerz, patrole i jednostki szybkiego reagowania. Misja wysokiego ryzyka. Cel: Zneutralizuj czołgi wroga. (Siły wroga: ~50 Piechota, 3 Czołgi)</Polish>
+            <Czech>Varování: Pokročilý konflikt, totální válka. Nasazena spojenecká letecká podpora. Nepřátelská přítomnost silně posílena: těžké obrněné vozy, hlídky a jednotky rychlé reakce. Mise s vysokým rizikem. Cíl: Neutralizovat nepřátelské tanky. (Nepřátelské síly: ~50 Pěchota, 3 Tanky)</Czech>
+            <Turkish>Uyarı: Gelişmiş çatışma, topyekün savaş. Müttefik hava desteği konuşlandırıldı. Düşman varlığı büyük ölçüde güçlendirildi: ağır zırhlılar, devriyeler ve hızlı müdahale birimleri. Yüksek riskli görev. Hedef: Düşman tanklarını etkisiz hale getir. (Düşman güçleri: ~50 Piyade, 3 Tank)</Turkish>
+            <Chinese>警告：高級衝突，全面戰爭。盟軍空中支援已部署。敵軍存在大幅增強：重型裝甲，巡邏隊和快速反應部隊。高風險任務。目標：消滅敵軍坦克。（敵軍：~50 步兵，3 坦克）</Chinese>
+            <Chinesesimp>警告：高级冲突，全面战争。盟军空中支援已部署。敌军存在大幅增强：重型装甲，巡逻队和快速反应部队。高风险任务。目标：消灭敌军坦克。（敌军：~50 步兵，3 坦克）</Chinesesimp>
+        </Key>
+        <Key ID="STR_TASK_X_TITLE">
+            <English>XXX</English>
+            <French>XXX</French>
+            <German>XXX</German>
+            <Spanish>XXX</Spanish>
+            <Italian>XXX</Italian>
+            <Russian>XXX</Russian>
+            <Polish>XXX</Polish>
+            <Czech>XXX</Czech>
+            <Turkish>XXX</Turkish>
+            <Chinese>XXX</Chinese>
+            <Chinesesimp>XXX</Chinesesimp>
+        </Key>
+        <Key ID="STR_TASK_X_DESC">
+            <English>XXX</English>
+            <French>XXX</French>
+            <German>XXX</German>
+            <Spanish>XXX</Spanish>
+            <Italian>XXX</Italian>
+            <Russian>XXX</Russian>
+            <Polish>XXX</Polish>
+            <Czech>XXX</Czech>
+            <Turkish>XXX</Turkish>
+            <Chinese>XXX</Chinese>
+            <Chinesesimp>XXX</Chinesesimp>
+        </Key>
+        <Key ID="STR_BTN_DELETE">
+            <English>Delete</English>
+            <French>Supprimer</French>
+            <German>Löschen</German>
+            <Spanish>Eliminar</Spanish>
+            <Italian>Elimina</Italian>
+            <Russian>Удалить</Russian>
+            <Polish>Usuń</Polish>
+            <Czech>Smazat</Czech>
+            <Turkish>Sil</Turkish>
+            <Chinese>刪除</Chinese>
+            <Chinesesimp>删除</Chinesesimp>
+        </Key>
+        <Key ID="STR_VEHICLES_DELETED">
+            <English>%1 vehicle(s) deleted.</English>
+            <French>%1 véhicule(s) supprimé(s).</French>
+            <German>%1 Fahrzeug(e) gelöscht.</German>
+            <Spanish>%1 vehículo(s) eliminado(s).</Spanish>
+            <Italian>%1 veicolo/i eliminato/i.</Italian>
+            <Russian>%1 транспорт(а/ов) удалено.</Russian>
+            <Polish>Usunięto %1 pojazd(ów).</Polish>
+            <Czech>%1 vozidlo/vozidel smazáno.</Czech>
+            <Turkish>%1 araç silindi.</Turkish>
+            <Chinese>已刪除 %1 輛載具。</Chinese>
+            <Chinesesimp>已删除 %1 辆载具。</Chinesesimp>
+        </Key>
+        <Key ID="STR_TASK_ALREADY_ACTIVE">
+            <English>Mission %1 is already active!</English>
+            <French>La mission %1 est déjà active !</French>
+            <German>Mission %1 ist bereits aktiv!</German>
+            <Spanish>¡La misión %1 ya está activa!</Spanish>
+            <Italian>La missione %1 è già attiva!</Italian>
+            <Russian>Миссия %1 уже активна!</Russian>
+            <Polish>Misja %1 jest już aktywna!</Polish>
+            <Czech>Mise %1 je již aktivní!</Czech>
+            <Turkish>Görev %1 zaten aktif!</Turkish>
+            <Chinese>任務 %1 已經啟動！</Chinese>
+            <Chinesesimp>任务 %1 已经启动！</Chinesesimp>
+        </Key>
+        <Key ID="STR_MARKER_TANK">
+            <English>Tank</English>
+            <French>Char</French>
+            <German>Panzer</German>
+            <Spanish>Tanque</Spanish>
+            <Italian>Carro armato</Italian>
+            <Russian>Танк</Russian>
+            <Polish>Czołg</Polish>
+            <Czech>Tank</Czech>
+            <Turkish>Tank</Turkish>
+            <Chinese>坦克</Chinese>
+            <Chinesesimp>坦克</Chinesesimp>
+        </Key>
+        <Key ID="STR_HINT_AIR_SUPPORT_END">
+            <English>End of Air Support</English>
+            <French>Fin de support aérien</French>
+            <German>Ende der Luftunterstützung</German>
+            <Spanish>Fin del apoyo aéreo</Spanish>
+            <Italian>Fine del supporto aereo</Italian>
+            <Russian>Конец поддержки с воздуха</Russian>
+            <Polish>Koniec wsparcia lotniczego</Polish>
+            <Czech>Konec letecké podpory</Czech>
+            <Turkish>Hava desteğinin sonu</Turkish>
+            <Chinese>空中支援結束</Chinese>
+            <Chinesesimp>空中支援结束</Chinesesimp>
+        </Key>
+        <Key ID="STR_TASK_4_TITLE">
+            <English>Hostage Exfiltration</English>
+            <French>Exfiltration d&apos;otages</French>
+            <German>Geiselbefreiung</German>
+            <Spanish>Rescate de rehenes</Spanish>
+            <Italian>Esfiltrazione ostaggi</Italian>
+            <Russian>Эксфильтрация заложников</Russian>
+            <Polish>Eksfiltracja zakładników</Polish>
+            <Czech>Exfiltrace rukojmích</Czech>
+            <Turkish>Rehine Kurtarma</Turkish>
+            <Chinese>人質撤離</Chinese>
+            <Chinesesimp>人质撤离</Chinesesimp>
+        </Key>
+        <Key ID="STR_TASK_4_DESC">
+            <English>Two civilians have been captured by enemy forces. They are being held at separate locations. Your mission is to locate them, neutralize the guards, and secure the hostages (a helicopter is provided for exfiltration). Be careful, the guards are heavily armed. (Enemy forces: ~8 Guards)</English>
+            <French>Deux civils ont été capturés par les forces ennemies. Ils sont retenus à des endroits séparés. Votre mission est de les localiser, de neutraliser les gardes et de sécuriser les otages (un hélicoptère est prévu pour l&apos;exfiltration). Attention, les gardes sont lourdement armés. (Forces ennemies : ~8 Gardes)</French>
+            <German>Zwei Zivilisten wurden von feindlichen Kräften gefangen genommen. Sie werden an getrennten Orten festgehalten. Ihre Mission ist es, sie zu finden, die Wachen zu neutralisieren und die Geiseln zu sichern (ein Hubschrauber steht für die Exfiltration bereit). Seien Sie vorsichtig, die Wachen sind schwer bewaffnet. (Feindliche Kräfte: ~8 Wachen)</German>
+            <Spanish>Dos civiles han sido capturados por las fuerzas enemigas. Están retenidos en lugares separados. Su misión es localizarlos, neutralizar a los guardias y asegurar a los rehenes (se proporciona un helicóptero para la exfiltración). Tenga cuidado, los guardias están fuertemente armados. (Fuerzas enemigas: ~8 Guardias)</Spanish>
+            <Italian>Due civili sono stati catturati dalle forze nemiche. Sono detenuti in luoghi separati. La tua missione è individuarli, neutralizzare le guardie e mettere al sicuro gli ostaggi (è previsto un elicottero per l&apos;esfiltrazione). Attenzione, le guardie sono pesantemente armate. (Forze nemiche: ~8 Guardie)</Italian>
+            <Russian>Двое гражданских были захвачены вражескими силами. Их удерживают в разных местах. Ваша задача - найти их, нейтрализовать охрану и освободить заложников (вертолет предусмотрен для эвакуации). Будьте осторожны, охрана хорошо вооружена. (Вражеские силы: ~8 охранников)</Russian>
+            <Polish>Dwóch cywilów zostało schwytanych przez siły wroga. Są przetrzymywani w oddzielnych miejscach. Twoim zadaniem jest ich zlokalizowanie, zneutralizowanie strażników i zabezpieczenie zakładników (helikopter jest przewidziany do ewakuacji). Bądź ostrożny, strażnicy są ciężko uzbrojeni. (Siły wroga: ~8 strażników)</Polish>
+            <Czech>Dva civilisté byli zajati nepřátelskými silami. Jsou drženi na oddělených místech. Vaším úkolem je najít je, neutralizovat stráže a zajistit rukojmí (pro exfiltraci je k dispozici vrtulník). Buďte opatrní, stráže jsou těžce ozbrojené. (Nepřátelské síly: ~8 strážců)</Czech>
+            <Turkish>İki sivil düşman güçleri tarafından yakalandı. Ayrı yerlerde tutuluyorlar. Göreviniz onları bulmak, korumaları etkisiz hale getirmek ve rehineleri güvenceye almaktır (tahliye için bir helikopter sağlanmıştır). Dikkatli olun, korumalar ağır silahlı. (Düşman güçleri: ~8 Koruma)</Turkish>
+            <Chinese>兩名平民被敵軍俘虜。他們被關押在不同的地點。你的任務是找到他們，消滅守衛並解救人質（已提供直升機用於撤離）。小心，守衛全副武裝。（敵軍：~8 守衛）</Chinese>
+            <Chinesesimp>两名平民被敌军俘虏。他们被关押在不同的地点。你的任务是找到他们，消灭守卫并解救人质（已提供直升机用于撤离）。小心，守卫全副武装。（敌军：~8 守卫）</Chinesesimp>
+        </Key>
+        <Key ID="STR_TASK_5_TITLE">
+            <English>Molos Defusal</English>
+            <French>Désamorçage à Molos</French>
+            <German>Entschärfung in Molos</German>
+            <Spanish>Desactivación en Molos</Spanish>
+            <Italian>Disinnesco a Molos</Italian>
+            <Russian>Обезвреживание в Молосе</Russian>
+            <Polish>Rozbrojenie w Molos</Polish>
+            <Czech>Zneškodnění v Molosu</Czech>
+            <Turkish>Molos İmhası</Turkish>
+            <Chinese>莫洛斯拆彈</Chinese>
+            <Chinesesimp>莫洛斯拆弹</Chinesesimp>
+        </Key>
+        <Key ID="STR_ACTION_FREE_HOSTAGE">
+            <English>Free the hostage</English>
+            <French>Libérer l&apos;otage</French>
+            <German>Geisel befreien</German>
+            <Spanish>Liberar al rehén</Spanish>
+            <Italian>Liberare l&apos;ostaggio</Italian>
+            <Russian>Освободить заложника</Russian>
+            <Polish>Uwolnij zakładnika</Polish>
+            <Czech>Osvobodit rukojmí</Czech>
+            <Turkish>Rehineyi kurtar</Turkish>
+            <Chinese>解救人質</Chinese>
+            <Chinesesimp>解救人质</Chinesesimp>
+        </Key>
+        <Key ID="STR_MARKER_SEARCH_ZONE">
+            <English>Search Zone</English>
+            <French>Zone de Recherche</French>
+            <German>Suchgebiet</German>
+            <Spanish>Zona de Búsqueda</Spanish>
+            <Italian>Zona di Ricerca</Italian>
+            <Russian>Зона поиска</Russian>
+            <Polish>Strefa poszukiwań</Polish>
+            <Czech>Oblast hledání</Czech>
+            <Turkish>Arama Bölgesi</Turkish>
+            <Chinese>搜索區域</Chinese>
+            <Chinesesimp>搜索区域</Chinesesimp>
+        </Key>
+        <Key ID="STR_HINT_EXTRACTION_INCOMING">
+            <English>Extraction incoming!</English>
+            <French>Extraction en approche !</French>
+            <German>Extraktion im Anflug!</German>
+            <Spanish>¡Extracción en camino!</Spanish>
+            <Italian>Estrazione in arrivo!</Italian>
+            <Russian>Эвакуация приближается!</Russian>
+            <Polish>Ekstrakcja nadchodzi!</Polish>
+            <Czech>Extrakce se blíží!</Czech>
+            <Turkish>Çıkarma geliyor!</Turkish>
+            <Chinese>撤離即將到達！</Chinese>
+            <Chinesesimp>撤离即将到达！</Chinesesimp>
+        </Key>
+        <Key ID="STR_MARKER_EXTRACTION">
+            <English>Extraction</English>
+            <French>Extraction</French>
+            <German>Extraktion</German>
+            <Spanish>Extracción</Spanish>
+            <Italian>Estrazione</Italian>
+            <Russian>Эвакуация</Russian>
+            <Polish>Ekstrakcja</Polish>
+            <Czech>Extrakce</Czech>
+            <Turkish>Çıkarma</Turkish>
+            <Chinese>撤離</Chinese>
+            <Chinesesimp>撤离</Chinesesimp>
+        </Key>
+        <Key ID="STR_HINT_HELI_PLAYER_ONBOARD">
+            <English>The helicopter will not leave while a player is on board!</English>
+            <French>L&apos;hélicoptère ne partira pas tant qu&apos;un joueur est à bord !</French>
+            <German>Der Hubschrauber fliegt nicht ab, solange ein Spieler an Bord ist!</German>
+            <Spanish>¡El helicóptero no despegará mientras haya un jugador a bordo!</Spanish>
+            <Italian>L&apos;elicottero non partirà finché un giocatore è a bordo!</Italian>
+            <Russian>Вертолет не улетит, пока на борту есть игрок!</Russian>
+            <Polish>Helikopter nie odleci, dopóki gracz jest na pokładzie!</Polish>
+            <Czech>Vrtulník neodletí, dokud je hráč na palubě!</Czech>
+            <Turkish>Bir oyuncu gemideyken helikopter kalkmaz!</Turkish>
+            <Chinese>有玩家在機上時直升機不會起飛！</Chinese>
+            <Chinesesimp>有玩家在机上时直升机不会起飞！</Chinesesimp>
+        </Key>
+        <Key ID="STR_HINT_EXTRACTION_TAKEOFF">
+            <English>Extraction takeoff!</English>
+            <French>Décollage extraction !</French>
+            <German>Extraktion startet!</German>
+            <Spanish>¡Despegue de extracción!</Spanish>
+            <Italian>Decollo estrazione!</Italian>
+            <Russian>Взлет эвакуации!</Russian>
+            <Polish>Start ekstrakcji!</Polish>
+            <Czech>Vzlet extrakce!</Czech>
+            <Turkish>Çıkarma kalkış!</Turkish>
+            <Chinese>撤離起飛！</Chinese>
+            <Chinesesimp>撤离起飞！</Chinesesimp>
+        </Key>
+        <Key ID="STR_TASK_COMPLETED">
+            <English>COMPLETED</English>
+            <French>ACCOMPLIE</French>
+            <German>ABGESCHLOSSEN</German>
+            <Spanish>COMPLETADA</Spanish>
+            <Italian>COMPLETATA</Italian>
+            <Russian>ВЫПОЛНЕНО</Russian>
+            <Polish>UKOŃCZONO</Polish>
+            <Czech>DOKONČENO</Czech>
+            <Turkish>TAMAMLANDI</Turkish>
+            <Chinese>已完成</Chinese>
+            <Chinesesimp>已完成</Chinesesimp>
+        </Key>
+        <Key ID="STR_TASK_5_DESC">
+            <English>Search for and defuse the two bombs hidden in the homes of Molos. Be advised, intelligence suggests 3 terrorists disguised as civilians are in the area. You have 35 minutes before detonation.</English>
+            <French>Cherchez et désamorcez les deux bombes cachées dans les habitations de Molos. Attention, des renseignements indiquent que 3 terroristes déguisés en civils sont présents sur zone. Vous avez 35 minutes avant la détonation.</French>
+            <German>Suchen und entschärfen Sie die zwei Bomben, die in den Häusern von Molos versteckt sind. Achtung, Geheimdienste deuten darauf hin, dass sich 3 als Zivilisten verkleidete Terroristen im Gebiet befinden. Sie haben 35 Minuten bis zur Detonation.</German>
+            <Spanish>Busque y desactive las dos bombas ocultas en las casas de Molos. Tenga en cuenta que la inteligencia sugiere que hay 3 terroristas disfrazados de civiles en la zona. Tiene 35 minutos antes de la detonación.</Spanish>
+            <Italian>Cerca e disinnesca le due bombe nascoste nelle case di Molos. Attenzione, l&apos;intelligence suggerisce che ci sono 3 terroristi travestiti da civili nell&apos;area. Hai 35 minuti prima della detonazione.</Italian>
+            <Russian>Найдите и обезвредьте две бомбы, спрятанные в домах в Молосе. Внимание, разведка сообщает, что в этом районе находятся 3 террориста, замаскированных под гражданских. У вас 35 минут до детонации.</Russian>
+            <Polish>Znajdź i rozbrój dwie bomby ukryte w domach w Molos. Uwaga, wywiad sugeruje, że w okolicy znajduje się 3 terrorystów przebranych za cywilów. Masz 35 minut do detonacji.</Polish>
+            <Czech>Najděte a zneškodněte dvě bomby ukryté v domech v Molosu. Pozor, zpravodajské informace naznačují, že v oblasti jsou 3 teroristé převlečení za civilisty. Máte 35 minut do detonace.</Czech>
+            <Turkish>Molos&apos;taki evlerde gizlenmiş iki bombayı bulun ve etkisiz hale getirin. Dikkat, istihbarat bölgede sivil kılığına girmiş 3 terörist olduğunu gösteriyor. Patlamaya kadar 35 dakikanız var.</Turkish>
+            <Chinese>搜尋並拆除隱藏在莫洛斯房屋中的兩枚炸彈。注意，情報顯示該地區有 3 名偽裝成平民的恐怖分子。距離引爆還有 35 分鐘。</Chinese>
+            <Chinesesimp>搜寻并拆除隐藏在莫洛斯房屋中的两枚炸弹。注意，情报显示该地区有 3 名伪装成平民的恐怖分子。距离引爆还有 35 分钟。</Chinesesimp>
+        </Key>
+        <Key ID="STR_ACTION_DEFUSE_EXPLOSIVE">
+            <English>Defuse the explosive</English>
+            <French>Désamorcer l&apos;explosif</French>
+            <German>Sprengstoff entschärfen</German>
+            <Spanish>Desactivar el explosivo</Spanish>
+            <Italian>Disinnescare l&apos;esplosivo</Italian>
+            <Russian>Обезвредить взрывчатку</Russian>
+            <Polish>Rozbrój ładunek</Polish>
+            <Czech>Zneškodnit výbuch</Czech>
+            <Turkish>Patlayıcıyı etkisiz hale getir</Turkish>
+            <Chinese>拆除爆裂物</Chinese>
+            <Chinesesimp>拆除爆裂物</Chinesesimp>
+        </Key>
+        <Key ID="STR_HINT_EXPLOSIVE_DEFUSED">
+            <English>Explosive defused!</English>
+            <French>Explosif désamorcé !</French>
+            <German>Sprengstoff entschärft!</German>
+            <Spanish>¡Explosivo desactivado!</Spanish>
+            <Italian>Esplosivo disinnescato!</Italian>
+            <Russian>Взрывчатка обезврежена!</Russian>
+            <Polish>Ładunek rozbrojony!</Polish>
+            <Czech>Výbuch zneškodněn!</Czech>
+            <Turkish>Patlayıcı etkisiz hale getirildi!</Turkish>
+            <Chinese>爆裂物已拆除！</Chinese>
+            <Chinesesimp>爆裂物已拆除！</Chinesesimp>
+        </Key>
+        <Key ID="STR_NOTIF_TASK5_START_TITLE">
+            <English>TASK 5 ACTIVATED</English>
+            <French>TÂCHE 5 ACTIVÉE</French>
+            <German>AUFGABE 5 AKTIVIERT</German>
+            <Spanish>TAREA 5 ACTIVADA</Spanish>
+            <Italian>COMPITO 5 ATTIVATO</Italian>
+            <Russian>ЗАДАНИЕ 5 АКТИВИРОВАНО</Russian>
+            <Polish>ZADANIE 5 AKTYWOWANE</Polish>
+            <Czech>ÚKOL 5 AKTIVOVÁN</Czech>
+            <Turkish>GÖREV 5 AKTİF</Turkish>
+            <Chinese>任務 5 已啟動</Chinese>
+            <Chinesesimp>任务 5 已启动</Chinesesimp>
+        </Key>
+        <Key ID="STR_NOTIF_TASK5_START_DESC">
+            <English>CITY SECURITY AND DEFUSAL</English>
+            <French>SÉCURISATION VILLE ET DÉSAMORÇAGE</French>
+            <German>STADTSICHERUNG UND ENTSCHÄRFUNG</German>
+            <Spanish>SEGURIDAD URBANA Y DESACTIVACIÓN</Spanish>
+            <Italian>SICUREZZA CITTÀ E DISINNESCO</Italian>
+            <Russian>БЕЗОПАСНОСТЬ ГОРОДА И ОБЕЗВРЕЖИВАНИЕ</Russian>
+            <Polish>ZABEZPIECZENIE MIASTA I ROZBROJENIE</Polish>
+            <Czech>ZABEZPEČENÍ MĚSTA A ZNEŠKODNĚNÍ</Czech>
+            <Turkish>ŞEHİR GÜVENLİĞİ VE ETKİSİZLEŞTİRME</Turkish>
+            <Chinese>城市安全與拆除</Chinese>
+            <Chinesesimp>城市安全与拆除</Chinesesimp>
+        </Key>
+        <Key ID="STR_NOTIF_BOMB_FOUND_TITLE">
+            <English>BOMB DISCOVERED</English>
+            <French>BOMBE DÉCOUVERTE</French>
+            <German>BOMBE ENTDECKT</German>
+            <Spanish>BOMBA DESCUBIERTA</Spanish>
+            <Italian>BOMBA SCOPERTA</Italian>
+            <Russian>БОМБА ОБНАРУЖЕНА</Russian>
+            <Polish>WYKRYTO BOMBĘ</Polish>
+            <Czech>NALEZENA BOMBA</Czech>
+            <Turkish>BOMBA BULUNDU</Turkish>
+            <Chinese>發現炸彈</Chinese>
+            <Chinesesimp>发现炸弹</Chinesesimp>
+        </Key>
+        <Key ID="STR_NOTIF_CIV_KILLED_TITLE">
+            <English>CIVILIAN KILLED</English>
+            <French>CIVIL TUÉ</French>
+            <German>ZIVILIST GETÖTET</German>
+            <Spanish>CIVIL MUERTO</Spanish>
+            <Italian>CIVILE UCCISO</Italian>
+            <Russian>ГРАЖДАНСКИЙ УБИТ</Russian>
+            <Polish>CYWIL ZABITY</Polish>
+            <Czech>CIVILİSTA ZABIT</Czech>
+            <Turkish>SİVİL ÖLDÜRÜLDÜ</Turkish>
+            <Chinese>平民死亡</Chinese>
+            <Chinesesimp>平民死亡</Chinesesimp>
+        </Key>
+        <Key ID="STR_NOTIF_CIV_KILLED_DESC">
+            <English>Civilian casualties: %1 / 2</English>
+            <French>Pertes civiles : %1 / 2</French>
+            <German>Zivile Opfer: %1 / 2</German>
+            <Spanish>Bajas civiles: %1 / 2</Spanish>
+            <Italian>Vittime civili: %1 / 2</Italian>
+            <Russian>Жертвы среди гражданских: %1 / 2</Russian>
+            <Polish>Ofiary cywilne: %1 / 2</Polish>
+            <Czech>Civilní oběti: %1 / 2</Czech>
+            <Turkish>Sivil kayıplar: %1 / 2</Turkish>
+            <Chinese>平民傷亡：%1 / 2</Chinese>
+            <Chinesesimp>平民伤亡：%1 / 2</Chinesesimp>
+        </Key>
+        <Key ID="STR_NOTIF_FAIL_TITLE">
+            <English>MISSION FAILED</English>
+            <French>ÉCHEC MISSION</French>
+            <German>MISSION FEHLGESCHLAGEN</German>
+            <Spanish>MISIÓN FALLIDA</Spanish>
+            <Italian>MISSIONE FALLITA</Italian>
+            <Russian>МИССИЯ ПРОВАЛЕНА</Russian>
+            <Polish>MISJA NIEUDANA</Polish>
+            <Czech>MISE SELHALA</Czech>
+            <Turkish>GÖREV BAŞARISIZ</Turkish>
+            <Chinese>任務失敗</Chinese>
+            <Chinesesimp>任务失败</Chinesesimp>
+        </Key>
+        <Key ID="STR_NOTIF_FAIL_CIVILIANS">
+            <English>FAILURE: Critical civilian casualties (5)!</English>
+            <French>ÉCHEC : Pertes civiles critiques (5) !</French>
+            <German>FEHLSCHLAG: Kritische zivile Opfer (5)!</German>
+            <Spanish>¡FRACASO: Bajas civiles críticas (5)!</Spanish>
+            <Italian>FALLIMENTO: Vittime civili critiche (5)!</Italian>
+            <Russian>ПРОВАЛ: Критические жертвы среди гражданских (5)!</Russian>
+            <Polish>PORAŻKA: Krytyczne ofiary cywilne (5)!</Polish>
+            <Czech>SELHÁNÍ: Kritické civilní oběti (5)!</Czech>
+            <Turkish>BAŞARISIZLIK: Kritik sivil kayıplar (5)!</Turkish>
+            <Chinese>失敗：重大平民傷亡 (5)！</Chinese>
+            <Chinesesimp>失败：重大平民伤亡 (5)！</Chinesesimp>
+        </Key>
+        <Key ID="STR_NOTIF_FAIL_BOMB">
+            <English>FAILURE: Bomb exploded!</English>
+            <French>ÉCHEC : Bombe explosée !</French>
+            <German>FEHLSCHLAG: Bombe explodiert!</German>
+            <Spanish>¡FRACASO: Bomba explotada!</Spanish>
+            <Italian>FALLIMENTO: Bomba esplosa!</Italian>
+            <Russian>ПРОВАЛ: Бомба взорвалась!</Russian>
+            <Polish>PORAŻKA: Bomba wybuchła!</Polish>
+            <Czech>SELHÁNÍ: Bomba vybuchla!</Czech>
+            <Turkish>BAŞARISIZLIK: Bomba patladı!</Turkish>
+            <Chinese>失敗：炸彈爆炸！</Chinese>
+            <Chinesesimp>失败：炸弹爆炸！</Chinesesimp>
+        </Key>
+        <Key ID="STR_NOTIF_WIN_TITLE">
+            <English>MISSION ACCOMPLISHED</English>
+            <French>MISSION ACCOMPLIE</French>
+            <German>MISSION ERFOLGREICH</German>
+            <Spanish>MISIÓN CUMPLIDA</Spanish>
+            <Italian>MISSIONE COMPIUTA</Italian>
+            <Russian>МИССИЯ ВЫПОЛНЕНА</Russian>
+            <Polish>MISJA WYKONANA</Polish>
+            <Czech>MISE SPLŠNĚNA</Czech>
+            <Turkish>GÖREV TAMAMLANDI</Turkish>
+            <Chinese>任務完成</Chinese>
+            <Chinesesimp>任务完成</Chinesesimp>
+        </Key>
+        <Key ID="STR_NOTIF_WIN_SECURED">
+            <English>SUCCESS: Zone secured!</English>
+            <French>SUCCÈS : Zone sécurisée !</French>
+            <German>ERFOLG: Zone gesichert!</German>
+            <Spanish>¡ÉXITO: Zona asegurada!</Spanish>
+            <Italian>SUCCESSO: Zona messa in sicurezza!</Italian>
+            <Russian>УСПЕХ: Зона защищена!</Russian>
+            <Polish>SUKCES: Strefa zabezpieczona!</Polish>
+            <Czech>ÚspĚCH: Zóna zajištěna!</Czech>
+            <Turkish>BAŞARI: Bölge güvence altında!</Turkish>
+            <Chinese>成功：區域已安全！</Chinese>
+            <Chinesesimp>成功：区域已安全！</Chinesesimp>
+        </Key>
+        <Key ID="GAME_DESCRIPTION">
+            <English>TACTICAL SANDBOX: Manage your operations from A to Z from the HQ. Solo or Coop (1-10 players). The game loop: EQUIPMENT: Choose weapons, vehicles (ground/air) and recruit your AI allies. SETTINGS: Adjust time and weather according to your strategy. OBJECTIVE: Activate dynamic and stackable missions (assassination, destruction...). ACTION: Deploy, fight and return to HQ. COMPATIBILITY with essential mods: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</English>
+            <French>TACTICAL SANBOX : Gérez vos opérations de A à Z depuis le QG. Solo ou Coop (1-10 joueurs). La boucle de jeu : EQUIPEMENENT : Choisissez armes, véhicules (sol/air) et recrutez vos alliés IA. PARAMETRES : Réglez l&apos;heure et la météo selon votre stratégie. OBJECTIF : Activez des missions dynamiques et cumulables (assassinat, destruction...).  ACTION : Déployez-vous, combattez et revenez au QG. COMPATIBILITE avec les mods incontournables : RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</French>
+            <German>TACTICAL SANDBOX: Verwalten Sie Ihre Operationen von A bis Z vom HQ aus. Einzelspieler oder Koop (1-10 Spieler). Der Spielablauf: AUSRÜSTUNG: Wählen Sie Waffen, Fahrzeuge (Boden/Luft) und rekrutieren Sie Ihre KI-Verbündeten. EINSTELLUNGEN: Stellen Sie Zeit und Wetter entsprechend Ihrer Strategie ein. ZIEL: Aktivieren Sie dynamische und stapelbare Missionen (Attentat, Zerstörung...). AKTION: Einsatz, Kampf und Rückkehr zum HQ. KOMPATIBILITÄT mit unverzichtbaren Mods: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</German>
+            <Spanish>SANDBOX TÁCTICO: Gestiona tus operaciones de la A a la Z desde el Cuartel General. Solo o Cooperativo (1-10 jugadores). El ciclo de juego: EQUIPAMIENTO: Elige armas, vehículos (tierra/aire) y recluta a tus aliados de la IA. AJUSTES: Configura la hora y el clima según tu estrategia. OBJETIVO: Activa misiones dinámicas y acumulables (asesinato, destrucción...). ACCIÓN: Despliégate, combate y regresa al Cuartel General. COMPATIBILIDAD con mods imprescindibles: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Spanish>
+            <Italian>SANDBOX TATTICO: Gestisci le tue operazioni dalla A alla Z dal QG. Singolo o Coop (1-10 giocatori). Il ciclo di gioco: EQUIPAGGIAMENTO: Scegli armi, veicoli (terra/aria) e recluta i tuoi alleati IA. IMPOSTAZIONI: Regola l&apos;ora e il meteo secondo la tua strategia. OBIETTIVO: Attiva missioni dinamiche e cumulabili (assassinio, distruzione...). AZIONE: Schieramento, combattimento e ritorno al QG. COMPATIBILITÀ con mod essenziali: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Italian>
+            <Russian>ТАКТИЧЕСКАЯ ПЕСОЧНИЦА: Управляйте своими операциями от А до Я из штаба. Одиночная или кооперативная игра (1-10 игроков). Игровой цикл: СНАРЯЖЕНИЕ: Выбирайте оружие, технику (наземную/воздушную) и нанимайте союзников ИИ. НАСТРОЙКИ: Настраивайте время и погоду в соответствии с вашей стратегией. ЦЕЛЬ: Активируйте динамические и суммируемые миссии (убийство, уничтожение...). ДЕЙСТВИЕ: Развертывание, бой и возвращение в штаб. СОВМЕСТИМОСТЬ с основными модами: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Russian>
+            <Polish>TAKTYCZNA PIASKOWNICA: Zarządzaj operacjami od A do Z z Kwatery Głównej. Solo lub Kooperacja (1-10 graczy). Pętla gry: WYPOSAŻENIE: Wybierz broń, pojazdy (lądowe/powietrzne) i rekrutuj sojuszników AI. USTAWIENIA: Dostosuj czas i pogodę do swojej strategii. CEL: Aktywuj dynamiczne i możliwe do łączenia misje (zabójstwo, zniszczenie...). AKCJA: Rozmieszczenie, walka i powrót do KG. KOMPATYBILNOŚĆ z niezbędnymi modami: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Polish>
+            <Czech>TAKTICKÝ SANDBOX: Spravujte své operace od A do Z z velitelství. Sólo nebo Kooperace (1-10 hráčů). Herní smyčka: VYBAVENÍ: Vyberte zbraně, vozidla (pozemní/vzdušná) a naverbujte AI spojence. NASTAVENÍ: Upravte čas a počasí podle své strategie. CÍL: Aktivujte dynamické a stohovatelné mise (atentát, zničení...). AKCE: Nasadit, bojovat a vrátit se na velitelství. KOMPATIBILITA s nezbytnými mody: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Czech>
+            <Turkish>TAKTİKSEL SANDBOX: Operasyonlarınızı A&apos;dan Z&apos;ye Karargah&apos;tan yönetin. Tekli veya İşbirliği (1-10 oyuncu). Oyun döngüsü: EKİPMAN: Silahları, araçları (kara/hava) seçin ve yapay zeka müttefiklerinizi toplayın. AYARLAR: Stratejinize göre zamanı ve hava durumunu ayarlayın. HEDEF: Dinamik ve birleştirilebilir görevleri etkinleştirin (suikast, imha...). EYLEM: Konuşlanın, savaşın ve Karargah&apos;a dönün. Temel modlarla UYUMLULUK: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Turkish>
+            <Chinese>戰術沙盒：從總部全權管理您的行動。單人或合作（1-10 名玩家）。遊戲循環：裝備：選擇武器、載具（地面/空中）並招募 AI 盟友。設置：根據您的策略調整時間和天氣。目標：啟動動態和可疊加的任務（暗殺、破壞...）。行動：部署、戰鬥並返回總部。兼容必備模組：RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Chinese>
+            <Chinesesimp>战术沙盒：从总部全权管理您的行动。单人或合作（1-10 名玩家）。游戏循环：装备：选择武器、载具（地面/空中）并招募 AI 盟友。设置：根据您的策略调整时间和天气。目标：启动动态和可叠加的任务（暗杀、破坏...）。行动：部署、战斗并返回总部。兼容必备模组：RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Chinesesimp>
+        </Key>
+    </Package>
+</Project>
