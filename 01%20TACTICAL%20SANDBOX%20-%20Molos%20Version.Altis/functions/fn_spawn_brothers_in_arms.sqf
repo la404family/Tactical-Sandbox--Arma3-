@@ -209,4 +209,37 @@ switch (_mode) do {
             deleteGroup _tempGroup;
         };
     };
+
+    // ==========================================================================================
+    // MODE RESET : Supprime toutes les unités I.A. du groupe du joueur
+    // ==========================================================================================
+    case "RESET": {
+        disableSerialization;
+        
+        // Récupérer toutes les unités du groupe du joueur
+        private _playerGroup = group player;
+        private _unitsToDelete = [];
+        
+        // Collecter les unités I.A. (pas le joueur lui-même)
+        {
+            if (!isPlayer _x && alive _x) then {
+                _unitsToDelete pushBack _x;
+            };
+        } forEach (units _playerGroup);
+        
+        // Compter les unités supprimées
+        private _count = count _unitsToDelete;
+        
+        // Supprimer les unités I.A.
+        {
+            deleteVehicle _x;
+        } forEach _unitsToDelete;
+        
+        // Notification du nombre d'unités supprimées
+        if (_count > 0) then {
+            hint format [localize "STR_AI_RESET_COUNT", _count];
+        } else {
+            hint localize "STR_AI_RESET_NONE";
+        };
+    };
 };

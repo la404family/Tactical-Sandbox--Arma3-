@@ -119,91 +119,95 @@ if (hasInterface) then {
         3 fadeSound 1;         // Remonte le volume à 100% en 3 secondes (fondu audio progressif)
 
         // ##############################################################################################
-        // PLAN 1 : VUE AERIENNE DU QG ALLIE (8 secondes)
+        // PLAN 1 : VUE AERIENNE DE LA VILLE (15 secondes)
         // ##############################################################################################
-        // Description : Vue plongeante avec panoramique lent au-dessus du quartier général.
-        //               Effet de dézoom progressif pour une sensation épique.
+        // Description : Survol fluide de la ville avec affichage des crédits.
+        // Séquence : 3s vue pure -> 5s texte auteur -> 1s pause -> 5s titre -> 1s pause
         
-        private _posHQ = getPos _targetHQ;  // Position 3D du QG
+        private _targetCityMid = if (!isNil "task_3_spawn_12") then { task_3_spawn_12 } else { _targetHQ };
+        private _targetCityEnd = if (!isNil "task_2_spawn_17") then { task_2_spawn_17 } else { _targetHQ };
         
-        // Création de la caméra cinématique
-        // camCreate [type, position] - Crée une caméra à la position spécifiée
-        private _cam = "camera" camCreate [_posHQ select 0, _posHQ select 1, 100];
+        private _posCityStart = getPos _targetCityMid;
         
-        // Active la caméra et la lie au rendu principal
-        // "INTERNAL" = vue première personne de la caméra, "BACK" = canal de rendu principal
+        // Création de la caméra
+        private _cam = "camera" camCreate [(_posCityStart select 0), (_posCityStart select 1), 100];
         _cam cameraEffect ["INTERNAL", "BACK"];
         
-        // Position initiale : décalée de 80m sur X, -80m sur Y, à 60m de hauteur
-        _cam camSetPos [(_posHQ select 0) + 80, (_posHQ select 1) - 80, 60];
-        _cam camSetTarget _targetHQ;  // La caméra vise le QG
-        _cam camSetFov 0.6;           // Champ de vision réduit (zoom avant) - valeur normale = 0.74
-        _cam camCommit 0;             // Application immédiate des paramètres
+        // Position de DEPART
+        _cam camSetPos [(_posCityStart select 0) + 200, (_posCityStart select 1) - 200, 150];
+        _cam camSetTarget _targetCityMid; 
+        _cam camSetFov 0.65;
+        _cam camCommit 0;
+        waitUntil { camCommitted _cam };  // Attendre que la caméra soit en place
         
-        // ----------------------------------------------------------------------------------------------
-        // TEXTE : AUTEUR ET "PRÉSENTE"
-        // ----------------------------------------------------------------------------------------------
-        // BIS_fnc_dynamicText affiche du texte formaté avec des effets de fondu
-        // Paramètres : [texte, posX, posY, durée, fonduIn, fonduOut, calque]
-        [
+        // FAIRE APPARAITRE L'IMAGE (depuis le noir initial)
+        cutText ["", "BLACK IN", 2];  // Fondu depuis le noir en 2 secondes
+        
+        // Démarrer le mouvement de caméra PENDANT le fondu
+        private _posCityEnd = getPos _targetCityEnd;
+        _cam camSetPos [(_posCityEnd select 0) + 80, (_posCityEnd select 1) + 80, 120];
+        _cam camSetTarget _targetCityEnd;
+        _cam camCommit 15; 
+        
+        // === PAUSE : 3 secondes pour admirer la vue (fondu + vue) ===
+        sleep 3;
+        
+        // TEXTE 1 : Auteur & Présente (5 secondes)
+        titleText [
             format [
-                "<t size='1.6' color='#bbbbbb' font='PuristaMedium'>%1</t><br />" +  // Nom auteur
-                "<t size='1.2' color='#a0a0a0' font='PuristaLight'>%2</t>",          // "Présente"
-                localize "STR_INTRO_AUTHOR",    // Texte localisé depuis stringtable.xml
+                "<t size='1.6' color='#bbbbbb' font='PuristaMedium'>%1</t><br/>" +
+                "<t size='1.2' color='#a0a0a0' font='PuristaLight'>%2</t>",
+                localize "STR_INTRO_AUTHOR",
                 localize "STR_INTRO_PRESENTS"
             ],
-            safeZoneX + 0.1,                    // Position X : coin gauche + marge
-            safeZoneY + safeZoneH - 0.3,        // Position Y : bas de l'écran
-            6,                                   // Durée d'affichage : 6 secondes
-            1,                                   // Durée du fondu d'entrée : 1 seconde
-            0,                                   // Durée du fondu de sortie : 0 seconde
-            789                                  // ID du calque (pour éviter les conflits)
-        ] spawn BIS_fnc_dynamicText;
-
-        sleep 6;  // Attendre la fin du Plan 1
-
-        // ----------------------------------------------------------------------------------------------
-        // TRANSITION ENTRE PLANS 1 ET 2
-        // ----------------------------------------------------------------------------------------------
-        cutText ["", "BLACK FADED", 0.5];  // Fondu vers le noir en 0.5s
-        sleep 0.8;
-        cutText ["", "BLACK IN", 1];       // Fondu depuis le noir en 1s
-
-        [
+            "PLAIN", 1, true, true
+        ];
+        
+        sleep 5;
+        titleText ["", "PLAIN", 0.5];
+        sleep 1;
+        
+        // TEXTE 2 : Titre de la Mission (5 secondes)
+        titleText [
             format [
                 "<t size='3.0' color='#ffffff' font='PuristaBold' shadow='2'>%1</t>",
-                localize "STR_INTRO_TITLE"  // Titre principal de la mission
+                localize "STR_INTRO_TITLE"
             ],
-            -1,      // Position X centrée (-1 = auto-centrage)
-            -1,      // Position Y centrée
-            5,       // Durée : 5 secondes
-            1,       // Fondu entrée : 1 seconde
-            0,       // Fondu sortie : 0 seconde
-            790      // ID calque
-        ] spawn BIS_fnc_dynamicText;
-
+            "PLAIN", 1, true, true
+        ];
+        
         sleep 5;
+        titleText ["", "PLAIN", 0.5];
 
         // ##############################################################################################
         // PLAN 3 : VUE INTERIEURE DE L'HELICOPTERE (15 secondes)
         // ##############################################################################################
-        cutText ["", "BLACK FADED", 0.5];  // Fondu vers le noir en 0.5s
-        sleep 0.8;
-        cutText ["", "BLACK IN", 1];       // Fondu depuis le noir en 1s
         // Description : Caméra à l'intérieur de l'hélicoptère regardant vers l'arrière (cargo).
         //               Mouvement progressif avec balancement subtil pour le réalisme.
         
-        // Attendre que le joueur soit bien à bord de l'hélicoptère
-        waitUntil { vehicle player != player };
-        private _heli = vehicle player;  // Référence à l'hélicoptère
+        // ==============================================================================================
+        // CORRECTION : OUVERTURE ROBUSTE DE LA RAMPE
+        // ==============================================================================================
+        private _heli = vehicle player; 
+
+        // 1. On utilise remoteExec avec l'argument 'true' (JIP) pour forcer la synchro même en cas de lag
+        // Le Huron utilise principalement "Door_Rear_Source"
+        [_heli, ["Door_Rear_Source", 1]] remoteExec ["animateSource", 0, true];
+        
+        // 2. Sécurité : On force aussi l'animation "Ramp" qui est parfois utilisée par certaines variantes
+        [_heli, ["Ramp", 1]] remoteExec ["animateSource", 0, true];
+
+        // 3. Petite pause pour laisser le moteur initier l'animation avant de détacher la caméra
+        sleep 0.1;
 
         // Détacher la caméra de toute attache précédente
         detach _cam;
         
         // Transition visuelle
-        cutText ["", "BLACK FADED", 0.5];
-        sleep 0.5;
-
+        sleep 1;
+        cutText ["", "BLACK FADED", 1];  // Fondu vers le noir en 1s
+        sleep 1;
+        cutText ["", "BLACK IN", 1];       // Fondu depuis le noir en 1s
         // ----------------------------------------------------------------------------------------------
         // TEXTE : SOUS-TITRE
         // ----------------------------------------------------------------------------------------------
@@ -219,8 +223,6 @@ if (hasInterface) then {
             0, 
             791
         ] spawn BIS_fnc_dynamicText;
-
-        cutText ["", "BLACK IN", 1];
         
         // ----------------------------------------------------------------------------------------------
         // AJUSTEMENT PP POUR L'INTERIEUR : Plus sombre, plus contrasté
@@ -284,6 +286,10 @@ if (hasInterface) then {
         private _orbDuration = 14;
         private _orbitAngle = -90;  // Angle initial : côté gauche de l'hélico
         
+        // Configuration initiale pour un mouvement fluide
+        private _updateInterval = 0.1;  // Intervalle de mise à jour (100ms)
+        private _commitTime = 0.5;      // Temps de transition entre positions (plus long = plus fluide)
+        
         while { time < _orbStartTime + _orbDuration } do {
             private _progress = (time - _orbStartTime) / _orbDuration;
             
@@ -291,24 +297,23 @@ if (hasInterface) then {
             // CALCUL DE L'ANGLE D'ORBITE AVEC EASING
             // -----------------------------------------------------------------------------------------
             // Rotation de -90° à +45° (total 135°) avec fonction sinus pour un mouvement fluide
-            // sin(_progress * 90) crée une accélération douce au début et décélération à la fin
-            _orbitAngle = -90 + (sin(_progress * 90) * 135);
+            _orbitAngle = -90 + (_progress * 135);
             
             // -----------------------------------------------------------------------------------------
-            // DISTANCE ET HAUTEUR DYNAMIQUES
+            // DISTANCE ET HAUTEUR DYNAMIQUES (simplifiées pour moins de saccades)
             // -----------------------------------------------------------------------------------------
-            // Distance : de 35m à 25m (rapprochement progressif avec easing)
-            private _distance = 35 - (sin(_progress * 90) * 10);
+            // Distance : de 35m à 25m (rapprochement linéaire progressif)
+            private _distance = 35 - (_progress * 10);
             
-            // Hauteur : oscillation entre 9m et 15m (mouvement de vague)
-            private _height = 12 + (sin(_progress * 180) * 3);
+            // Hauteur : fixe pour éviter les oscillations saccadées
+            private _height = 12;
             
             // -----------------------------------------------------------------------------------------
             // CALCUL DE LA POSITION ORBITALE
             // -----------------------------------------------------------------------------------------
-            private _heliPos = getPosATL _heli;       // Position actuelle de l'hélico
-            private _heliDir = getDir _heli;           // Direction de l'hélico (cap)
-            private _finalAngle = _heliDir + _orbitAngle;  // Angle absolu de la caméra
+            private _heliPos = getPosATL _heli;
+            private _heliDir = getDir _heli;
+            private _finalAngle = _heliDir + _orbitAngle;
             
             // Conversion polaire -> cartésienne pour la position de la caméra
             private _camX = (_heliPos select 0) + (sin _finalAngle * _distance);
@@ -316,93 +321,72 @@ if (hasInterface) then {
             private _camZ = (_heliPos select 2) + _height;
             
             // -----------------------------------------------------------------------------------------
-            // CIBLE DECALEE POUR EFFET DE MOUVEMENT
+            // CIBLE FIXE SUR L'HELICOPTERE (sans décalage pour éviter les tremblements)
             // -----------------------------------------------------------------------------------------
-            // La caméra vise légèrement devant l'hélico pour donner une sensation de vitesse
-            // modelToWorld convertit des coordonnées locales (relatives à l'hélico) en coordonnées monde
-            private _targetOffset = _heli modelToWorld [0, 3, 0];  // 3m devant l'hélico
-            
-            // Application de la position et de la cible
             _cam camSetPos [_camX, _camY, _camZ];
-            _cam camSetTarget _targetOffset;
+            _cam camSetTarget _heli;
             _cam camSetFov 0.75;
-            _cam camCommit 0.2;  // Commit court pour fluidité
+            _cam camCommit _commitTime;  // Temps de transition plus long pour fluidité
             
-            sleep 0.03;  // Haute fréquence de mise à jour
+            sleep _updateInterval;  // Fréquence de mise à jour réduite
         };
 
+       // ##############################################################################################
+        // PLAN 5 : VUE AERIENNE PLONGEANTE SUR LE QG - ✅ MODIFIÉ
         // ##############################################################################################
-        // PLAN 5 : VUE AERIENNE PLONGEANTE SUR LE QG (durée variable)
-        // ##############################################################################################
-        // Description : Caméra fixe haute dans les airs, regardant vers le bas sur QG_Center.
-        //               On voit l'hélicoptère arriver et atterrir dans le champ de vision.
-        //               Ouverture de la rampe pendant l'approche finale.
-        //               Fondu au noir jusqu'à ce que le joueur reprenne le contrôle.
         
         detach _cam;
-        
         cutText ["", "BLACK FADED", 0.5];
         sleep 0.5;
         
-        // ----------------------------------------------------------------------------------------------
-        // POSITIONNEMENT DE LA CAMERA - VUE PLONGEANTE SUR QG_CENTER
-        // ----------------------------------------------------------------------------------------------
-        
-        // Récupération de la position du QG (variable de l'éditeur)
         private _qgPos = if (!isNil "QG_Center") then { getPos QG_Center } else { getPos vehicles_spawner };
         
-        // Position de la caméra : DIRECTEMENT au-dessus du QG, haute altitude
-        // On se décale légèrement pour avoir un angle plus cinématique
         private _aerialCamPos = [
-            (_qgPos select 0),        // Centré sur le QG (axe X)
-            (_qgPos select 1) - 30,   // 30m en arrière pour voir l'arrivée
-            (_qgPos select 2) + 60    // 60m de hauteur (vue plongeante)
+            (_qgPos select 0),
+            (_qgPos select 1) - 90,
+            (_qgPos select 2) + 35
         ];
         
         _cam camSetPos _aerialCamPos;
-        
-        // CIBLER LE QG (pas l'hélicoptère) - Vue fixe sur le QG
         _cam camSetTarget _qgPos;
-        _cam camSetFov 0.55;  // FOV large pour voir toute la zone
+        _cam camSetFov 0.55;
         _cam camCommit 0;
-        
-        // Forcer une mise à jour immédiate
         waitUntil { camCommitted _cam };
         
         cutText ["", "BLACK IN", 1];
         
-        // Variable pour tracker si la rampe a été ouverte
         private _rampOpened = false;
-        
-        // ----------------------------------------------------------------------------------------------
-        // BOUCLE D'ATTENTE AVEC OUVERTURE DE RAMPE
-        // ----------------------------------------------------------------------------------------------
-        // La caméra reste fixe sur le QG, on attend juste l'atterrissage
-        // L'hélicoptère entre dans le champ de vision naturellement
+        private _plan5StartTime = time;
         
         while { !isTouchingGround _heli && (getPos _heli select 2) > 1 } do {
             
-            // La caméra reste fixe - pas besoin de mise à jour de cible
-            // Elle vise toujours QG_Center
+            // ✅ MOUVEMENT AMPLIFIÉ : Oscillations et descente plus prononcées
+            private _progress = (time - _plan5StartTime) / 10;
+            private _newCamPos = [
+                (_qgPos select 0) + (sin (time * 5) * 12),
+                (_qgPos select 1) - 90 + (cos (time * 5) * 12),
+                (_qgPos select 2) + 35 - (_progress * 11.7)
+            ];
+            _cam camSetPos _newCamPos;
+            _cam camSetFov (0.55 + (_progress * 0.15));  // Au lieu de 0.1 - zoom out plus prononcé
+            _cam camCommit 0.5;
             
-            // -----------------------------------------------------------------------------------------
-            // OUVERTURE DE LA RAMPE ARRIERE
-            // -----------------------------------------------------------------------------------------
+            // Ouverture de la rampe
+            _heli animateSource ["door_rear_source", 1];
+            // Remplacement pour les lignes 91 à 94
             if (!_rampOpened && (getPos _heli select 2) < 30) then {
-                // Animation de la rampe arrière (plusieurs noms selon le type d'hélico)
-                _heli animateDoor ["door_back", 1];
-                _heli animateDoor ["door_back_ramp", 1];
-                _heli animateDoor ["ramp", 1];
-                _heli animateDoor ["ramp_door", 1];
-                _heli animateDoor ["CargoRamp_Open", 1];  // Nom pour certains hélicos
+                // Force l'ouverture de la rampe arrière (Huron spécifique) sur toutes les machines
+                [_heli, ["Door_Rear_Source", 1]] remoteExec ["animateSource", 0, true];
+                
+                // Sécurité : Force aussi l'animation "Ramp" qui existe sur certaines variantes
+                [_heli, ["Ramp", 1]] remoteExec ["animateSource", 0, true];
                 
                 _rampOpened = true;
             };
             
-            sleep 0.2;  // Pas besoin d'update fréquent car caméra fixe
+            sleep 0.2;
         };
         
-        // Courte pause pour voir l'atterrissage complet
         sleep 2;
         
         // ----------------------------------------------------------------------------------------------
@@ -445,7 +429,7 @@ if (hasInterface) then {
         disableUserInput false;
 
         // Fondu depuis le noir vers le jeu normal
-        cutText ["", "BLACK IN", 2];
+        cutText ["", "BLACK IN", 3];  // Augmenté à 3 secondes pour une transition plus douce
 
         // ----------------------------------------------------------------------------------------------
         // TEXTE FINAL : DEBUT DE MISSION
@@ -505,8 +489,8 @@ if (isServer) then {
         // ----------------------------------------------------------------------------------------------
         private _destPos = getPosATL vehicles_spawner;  // Position de la zone d'atterrissage
         
-        // Position de départ : 1500m de distance, direction aléatoire, à 200m d'altitude
-        private _startDist = 1500; 
+        // Position de départ : 1300m de distance, direction aléatoire, à 200m d'altitude
+        private _startDist = 1300; 
         private _startDir = random 360;  // Direction aléatoire (pour varier les entrées)
         private _startPos = vehicles_spawner getPos [_startDist, _startDir];
         _startPos set [2, 200];  // Force l'altitude à 200m
@@ -521,9 +505,8 @@ if (isServer) then {
         _heli setPos _startPos;
         _heli setDir (_heli getDir _destPos);  // Orienter vers la destination
         _heli flyInHeight 150;                  // Altitude de croisière
-        _heli lock true;                        // Véhicule verrouillé (pas d'entrée/sortie libre)
-        _heli lockCargo true;                   // Cargo verrouillé également
         _heli allowDamage false;                // Invulnérable pendant l'intro
+        
 
         // ----------------------------------------------------------------------------------------------
         // CREATION ET CONFIGURATION DE L'EQUIPAGE
@@ -546,24 +529,65 @@ if (isServer) then {
         _grpHeli setCombatMode "BLUE";     // Ne jamais engager (mode passif total)
 
         // ----------------------------------------------------------------------------------------------
-        // EMBARQUEMENT DES JOUEURS
+        // EMBARQUEMENT DES JOUEURS ET DE LEURS GROUPES I.A.
         // ----------------------------------------------------------------------------------------------
+        // Cette section embarque :
+        // 1. Tous les joueurs connectés au serveur (playableUnits)
+        // 2. Toutes les unités I.A. appartenant aux groupes des joueurs
+        
         private _players = playableUnits;
         // En solo, playableUnits peut être vide, donc on ajoute le joueur local
         if (count _players == 0 && hasInterface) then { _players = [player]; };
-
+        
+        // Collecter toutes les unités à embarquer (joueurs + I.A. de leurs groupes)
+        private _allUnitsToBoard = [];
+        private _processedGroups = [];  // Pour éviter de traiter le même groupe plusieurs fois
+        
+        // Parcourir tous les joueurs pour récupérer leurs groupes
         {
-            if (isPlayer _x) then {
-                // Application de l'équipement si disponible
-                if (count _modelPlayerData > 0) then { _x setUnitLoadout (_modelPlayerData select 5); };
+            private _playerUnit = _x;
+            private _playerGroup = group _playerUnit;
+            
+            // Vérifier si ce groupe n'a pas déjà été traité
+            if !(_playerGroup in _processedGroups) then {
+                _processedGroups pushBack _playerGroup;
                 
-                // Placement dans l'hélicoptère
-                _x moveInCargo _heli;
-                // Fallback si le cargo est plein : essayer n'importe quel siège
-                if (vehicle _x == _x) then { _x moveInAny _heli; };
-                _x assignAsCargo _heli;
+                // Ajouter toutes les unités du groupe (joueurs ET I.A.)
+                {
+                    if (alive _x && !(_x in _allUnitsToBoard)) then {
+                        _allUnitsToBoard pushBack _x;
+                    };
+                } forEach (units _playerGroup);
             };
         } forEach _players;
+        
+        // Ajouter aussi les joueurs qui ne sont peut-être pas dans un groupe standard
+        {
+            if (alive _x && !(_x in _allUnitsToBoard)) then {
+                _allUnitsToBoard pushBack _x;
+            };
+        } forEach _players;
+        
+        // Embarquer toutes les unités collectées
+        {
+            private _unit = _x;
+            
+            // Application de l'équipement si disponible
+            if (count _modelPlayerData > 0) then { _unit setUnitLoadout (_modelPlayerData select 5); };
+            
+            // Placement dans l'hélicoptère (cargo en priorité)
+            _unit moveInCargo _heli;
+            
+            // Fallback si le cargo est plein : essayer n'importe quel siège disponible
+            if (vehicle _unit == _unit) then { _unit moveInAny _heli; };
+            
+            // Assigner comme cargo
+            _unit assignAsCargo _heli;
+            
+        } forEach _allUnitsToBoard;
+        
+        // Log pour debug (optionnel - décommenter si besoin)
+        // systemChat format ["INTRO: %1 unités embarquées dans l'hélicoptère", count _allUnitsToBoard];
 
         sleep 1;  // Petit délai pour stabilisation
 
@@ -607,31 +631,55 @@ if (isServer) then {
         
         sleep 1;
         
-        // Débloquer les portes pour permettre la sortie
-        _heli lock false; 
-        _heli lockCargo false;
+        // ----------------------------------------------------------------------------------------------
+        // DEBARQUEMENT SECURISE DES JOUEURS ET DE LEURS GROUPES I.A.
+        // ----------------------------------------------------------------------------------------------
+        // Éjecter chaque joueur ET ses unités I.A. groupées, puis les positionner autour de l'hélico
         
-        // ----------------------------------------------------------------------------------------------
-        // DEBARQUEMENT SECURISE DES JOUEURS
-        // ----------------------------------------------------------------------------------------------
-        // Éjecter chaque joueur manuellement et le positionner à côté de l'hélico
+        // Collecter toutes les unités à débarquer (même logique que l'embarquement)
+        private _unitsToDisembark = [];
+        private _processedGroupsDisembark = [];
+        
         {
-            if (isPlayer _x) then {
-                moveOut _x;              // Forcer la sortie du véhicule
-                unassignVehicle _x;      // Désassigner du véhicule
+            private _playerUnit = _x;
+            private _playerGroup = group _playerUnit;
+            
+            if !(_playerGroup in _processedGroupsDisembark) then {
+                _processedGroupsDisembark pushBack _playerGroup;
                 
-                // Positionner le joueur 6m sur le côté droit de l'hélico
-                private _dir = getDir _heli;
-                private _dist = 6;
-                private _pos = _heli getPos [_dist, _dir + 90];  // 90° = droite
-                _pos set [2, 0];  // Forcer au niveau du sol
-                _x setPos _pos;
-                _x setDir _dir;   // Orienter dans la même direction que l'hélico
+                // Ajouter toutes les unités du groupe (joueurs + I.A.)
+                {
+                    if (alive _x && vehicle _x == _heli && !(_x in _unitsToDisembark)) then {
+                        _unitsToDisembark pushBack _x;
+                    };
+                } forEach (units _playerGroup);
             };
         } forEach _players;
         
-        sleep 5;  // Pause pour permettre au joueur de s'orienter
+        // Variable pour espacer les unités lors du débarquement
+        private _unitIndex = 0;
         
+        {
+            private _unit = _x;
+            
+            moveOut _unit;              // Forcer la sortie du véhicule
+            unassignVehicle _unit;      // Désassigner du véhicule
+            
+            // Positionner les unités en arc autour du côté droit de l'hélico
+            private _dir = getDir _heli;
+            private _dist = 6 + (_unitIndex mod 3);  // Distance variable : 6, 7, 8m
+            private _angleOffset = 70 + (_unitIndex * 12);  // Arc de 70° à ~210° (côté droit en éventail)
+            
+            private _pos = _heli getPos [_dist, _dir + _angleOffset];
+            _pos set [2, 0];  // Forcer au niveau du sol
+            _unit setPos _pos;
+            _unit setDir _dir;   // Orienter dans la même direction que l'hélico
+            
+            _unitIndex = _unitIndex + 1;
+        } forEach _unitsToDisembark;
+        
+        sleep 5;  // Pause pour permettre au joueur de s'orienter
+        _heli animateSource ["door_rear_source", 0];
         // ----------------------------------------------------------------------------------------------
         // DEPART DE L'HELICOPTERE
         // ----------------------------------------------------------------------------------------------

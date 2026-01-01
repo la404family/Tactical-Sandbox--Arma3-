@@ -381,6 +381,7 @@ switch (_mode) do {
             };
             
             ["task_3", "SUCCEEDED"] call BIS_fnc_taskSetState;
+            [] spawn MISSION_fnc_task_x_finish;
             hint format ["%1 - %2", localize "STR_TASK_3_TITLE", localize "STR_TASK_COMPLETED"];
             
             // Nettoyage global

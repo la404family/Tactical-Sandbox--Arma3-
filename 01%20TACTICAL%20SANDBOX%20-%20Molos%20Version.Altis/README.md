@@ -35,6 +35,8 @@ Ce scénario est conçu pour être joué en Solo ou en Coopération (1-15 joueur
 
 fonction pour modifier les capacités des IA et constence ! 
 modifier IA ennemi et allié pour qu'ils soient plus intelligents !
-fonction pour quitter la mission !
 modiifier le menu des missions pour ne pas pouvoir cumuler.
 corriger la cinématique d'introduction !
+améliorer la base QG allié ! (simulation etc...)
+supprimer (desmorçage de bombe)
+revoir les objectif de mission !

@@ -13,6 +13,19 @@ if (!isServer) exitWith {};
 waitUntil { !isNil "MISSION_var_enemies" };
 if (count MISSION_var_enemies == 0) exitWith {}; // Arrête si pas d'ennemis configurés
 
+// Vérification de QG_Center avec fallback
+if (isNil "QG_Center") then {
+    if (!isNil "batiment_officer") then {
+        QG_Center = batiment_officer;
+    } else {
+        if (!isNil "vehicles_spawner") then {
+            QG_Center = vehicles_spawner;
+        } else {
+            systemChat "ERREUR: QG_Center non défini!";
+        };
+    };
+};
+
 // Liste des marqueurs possibles pour l'apparition des ennemis
 private _spawnMarkers = [
     "task_1_spawn_01", "task_1_spawn_02", "task_1_spawn_03", 
@@ -253,6 +266,7 @@ MISSION_var_task1_spawned_enemies = [];
         // Condition de succès : tous les ennemis sont éliminés ET la phase de spawn est finie
         if (_aliveEnemies == 0 && _spawnComplete) exitWith {
             [_taskID, "SUCCEEDED"] call BIS_fnc_taskSetState;
+            [] spawn MISSION_fnc_task_x_finish;
         };
     };
 };

@@ -507,6 +507,7 @@ MISSION_var_task5_traitorGroup = createGroup [east, true];
         if (MISSION_var_task5_explosivesDefused >= 2) exitWith {
             ["task_5", "SUCCEEDED"] call BIS_fnc_taskSetState;
             ["Tache5_Win", [localize "STR_NOTIF_WIN_SECURED"]] call BIS_fnc_showNotification;
+            [] spawn MISSION_fnc_task_x_finish;
             MISSION_var_task5_running = false;
         };
         

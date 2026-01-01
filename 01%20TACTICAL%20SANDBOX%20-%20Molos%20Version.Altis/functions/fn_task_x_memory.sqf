@@ -86,7 +86,7 @@ if (_mode == "SAVE") exitWith {
     } forEach _airTargetNames;
 
     // ---- Sauvegarde des Civils (pour Tâche 4) ----
-    private _civilNames = ["task_x_civil_01", "task_x_civil_02"];
+    private _civilNames = ["task_x_civil_01", "task_x_civil_02", "task_x_civil_03", "task_x_civil_04", "task_x_civil_05", "task_x_civil_06", "task_x_civil_07", "task_x_civil_08"];
     {
         private _civil = missionNamespace getVariable [_x, objNull];
         if (!isNull _civil) then {

@@ -6,12 +6,18 @@
 
 class CfgMusic
 {
-    tracks[] = {00intro};
+    tracks[] = {00intro, 00outro};
 
     class 00intro
     {
         name = "00intro";
         sound[] = {"music\00intro.ogg", db+10, 1.0};
+    };
+    
+    class 00outro
+    {
+        name = "00outro";
+        sound[] = {"music\00outro.ogg", db+10, 1.0};
     };
 };
 
@@ -22,7 +28,6 @@ class CfgFunctions
         class Localization
         {
             file = "functions";
-            class expel_spawn {};
             class lang_marker_name {};
             class spawn_brothers_in_arms {};
             class spawn_vehicles {};
@@ -36,6 +41,7 @@ class CfgFunctions
             class task_5_launch {};
             class spawn_missions {};
             class spawn_arsenal {};
+            class task_x_finish {};
         };
     };
 };

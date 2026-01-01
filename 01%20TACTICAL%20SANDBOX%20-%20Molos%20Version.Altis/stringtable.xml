@@ -53,6 +53,58 @@
             <Chinese>你的任務，你的武器，你的條件...</Chinese>
             <Chinesesimp>你的任务，你的武器，你的条件...</Chinesesimp>
         </Key>
+        <Key ID="STR_FINISH_MISSION_SUCCESS">
+            <English>MISSION ACCOMPLISHED.</English>
+            <French>MISSION ACCOMPLIE.</French>
+            <German>MISSION ERFÜLLT.</German>
+            <Spanish>MISIÓN CUMPLIDA.</Spanish>
+            <Italian>MISSIONE COMPIUTA.</Italian>
+            <Russian>МИССИЯ ВЫПОЛНЕНА.</Russian>
+            <Polish>MISJA UKOŃCZONA.</Polish>
+            <Czech>MISE SPLNĚNA.</Czech>
+            <Turkish>GÖREV TAMAMLANDI.</Turkish>
+            <Chinese>任務完成。</Chinese>
+            <Chinesesimp>任务完成。</Chinesesimp>
+        </Key>
+        <Key ID="STR_FINISH_CONGRATULATIONS">
+            <English>Congratulations for your efficiency.</English>
+            <French>Félicitations pour votre efficacité.</French>
+            <German>Herzlichen Glückwunsch zu Ihrer Effizienz.</German>
+            <Spanish>Felicitaciones por su eficiencia.</Spanish>
+            <Italian>Congratulazioni per la vostra efficienza.</Italian>
+            <Russian>Поздравляем с вашей эффективностью.</Russian>
+            <Polish>Gratulacje za wydajność.</Polish>
+            <Czech>Gratulujeme k vaší efektivitě.</Czech>
+            <Turkish>Verimliliğiniz için tebrikler.</Turkish>
+            <Chinese>恭喜您的效率。</Chinese>
+            <Chinesesimp>恭喜您的效率。</Chinesesimp>
+        </Key>
+        <Key ID="STR_FINISH_NEW_MISSIONS">
+            <English>New missions will be entrusted to you soon....</English>
+            <French>De nouvelles missions vous seront confiées prochainement....</French>
+            <German>Neue Missionen werden Ihnen bald anvertraut....</German>
+            <Spanish>Nuevas misiones le serán confiadas pronto....</Spanish>
+            <Italian>Nuove missioni vi saranno affidate presto....</Italian>
+            <Russian>Новые миссии будут поручены вам в ближайшее время....</Russian>
+            <Polish>Nowe misje zostaną Ci wkrótce powierzone....</Polish>
+            <Czech>Nové mise vám budou brzy svěřeny....</Czech>
+            <Turkish>Yeni görevler yakında size emanet edilecek....</Turkish>
+            <Chinese>新任務即將交付給您....</Chinese>
+            <Chinesesimp>新任务即将交付给您....</Chinesesimp>
+        </Key>
+        <Key ID="STR_FINISH_SEE_YOU">
+            <English>See you soon on...</English>
+            <French>À bientôt sur...</French>
+            <German>Bis bald auf...</German>
+            <Spanish>Hasta pronto en...</Spanish>
+            <Italian>A presto su...</Italian>
+            <Russian>До скорой встречи на...</Russian>
+            <Polish>Do zobaczenia wkrótce na...</Polish>
+            <Czech>Brzy na viděnou na...</Czech>
+            <Turkish>Yakında görüşürüz...</Turkish>
+            <Chinese>再見於...</Chinese>
+            <Chinesesimp>再见于...</Chinesesimp>
+        </Key>
         <Key ID="STR_INTRO_AUTHOR">
             <Original>@la404family</Original>
             <French>@la404family</French>
@@ -183,6 +235,19 @@
             <Chinese>招募</Chinese>
             <Chinesesimp>招募</Chinesesimp>
         </Key>
+        <Key ID="STR_BTN_RESET">
+            <English>Reset</English>
+            <French>Réinitialiser</French>
+            <German>Zurücksetzen</German>
+            <Spanish>Reiniciar</Spanish>
+            <Italian>Resetta</Italian>
+            <Russian>Сбросить</Russian>
+            <Polish>Resetuj</Polish>
+            <Czech>Resetovat</Czech>
+            <Turkish>Sıfırla</Turkish>
+            <Chinese>重置</Chinese>
+            <Chinesesimp>重置</Chinesesimp>
+        </Key>
         <Key ID="STR_CLOSE">
             <English>Close</English>
             <French>Fermer</French>
@@ -286,6 +351,32 @@
             <Turkish>%1 takımınıza katıldı.</Turkish>
             <Chinese>%1 加入了你的小隊。</Chinese>
             <Chinesesimp>%1 加入了你的小队。</Chinesesimp>
+        </Key>
+        <Key ID="STR_AI_RESET_COUNT">
+            <English>%1 AI unit(s) removed from your squad.</English>
+            <French>%1 unité(s) I.A. supprimée(s) de votre escouade.</French>
+            <German>%1 KI-Einheit(en) aus Ihrem Trupp entfernt.</German>
+            <Spanish>%1 unidad(es) IA eliminada(s) de tu escuadra.</Spanish>
+            <Italian>%1 unità IA rimossa/e dalla tua squadra.</Italian>
+            <Russian>%1 единиц(а) ИИ удалено из вашего отряда.</Russian>
+            <Polish>%1 jednostek AI usunięto z twojego oddziału.</Polish>
+            <Czech>%1 AI jednotek odstraněno z vaší jednotky.</Czech>
+            <Turkish>%1 yapay zeka birimi takımınızdan kaldırıldı.</Turkish>
+            <Chinese>已從你的小隊移除 %1 個AI單位。</Chinese>
+            <Chinesesimp>已从你的小队移除 %1 个AI单位。</Chinesesimp>
+        </Key>
+        <Key ID="STR_AI_RESET_NONE">
+            <English>No AI units to remove.</English>
+            <French>Aucune unité I.A. à supprimer.</French>
+            <German>Keine KI-Einheiten zum Entfernen.</German>
+            <Spanish>No hay unidades IA para eliminar.</Spanish>
+            <Italian>Nessuna unità IA da rimuovere.</Italian>
+            <Russian>Нет единиц ИИ для удаления.</Russian>
+            <Polish>Brak jednostek AI do usunięcia.</Polish>
+            <Czech>Žádné AI jednotky k odstranění.</Czech>
+            <Turkish>Kaldırılacak yapay zeka birimi yok.</Turkish>
+            <Chinese>沒有AI單位可移除。</Chinese>
+            <Chinesesimp>没有AI单位可移除。</Chinesesimp>
         </Key>
         <Key ID="STR_VEHICLE_AVAILABLE">
             <English>Vehicle %1 available.</English>
@@ -535,17 +626,17 @@
             <Chinesesimp>暗杀与恢复</Chinesesimp>
         </Key>
         <Key ID="STR_TASK_2_DESC">
-            <English>A high-ranking enemy officer coordinates operations in the area. His elimination will disrupt opposing forces. He is carrying essential confidential documents. Infiltrate the area, neutralize the target and recover the information. (Enemy forces: 1 Officer, 5 Bodyguards)</English>
-            <French>Un officier ennemi de haut rang coordonne les opérations dans la zone. Son élimination désorganisera les forces adverses. Il transporte des documents confidentiels essentiels. Infiltrez la zone, neutralisez la cible et récupérez les informations. (Forces ennemies : 1 Officier, 5 Gardes du corps)</French>
-            <German>Ein hochrangiger feindlicher Offizier koordiniert Operationen in der Region. Seine Beseitigung wird gegnerische Kräfte stören. Er trägt wesentliche vertrauliche Dokumente. Infiltrieren Sie den Bereich, neutralisieren Sie das Ziel und stellen Sie die Informationen wieder her. (Feindliche Kräfte: 1 Offizier, 5 Leibwächter)</German>
-            <Spanish>Un oficial enemigo de alto rango coordina las operaciones en el área. Su eliminación interrumpirá fuerzas opuestas. Lleva documentos confidenciales esenciales. Infiltrarse en el área, neutralizar el objetivo y recuperar la información. (Fuerzas enemigas: 1 Oficial, 5 Guardaespaldas)</Spanish>
-            <Italian>Un ufficiale nemico di alto livello coordina le operazioni nell&apos;area. La sua eliminazione interromperà le forze opposte. Trasporta documenti riservati essenziali. Infiltra l&apos;area, neutralizza l&apos;obiettivo e recupera le informazioni. (Forze nemiche: 1 Ufficiale, 5 Guardie del corpo)</Italian>
-            <Russian>Высокопоставленный вражеский офицер координирует операции в этом районе. Его устранение нарушит противостоящие силы. Он несет основные конфиденциальные документы. Проникнуть в область, нейтрализовать цель и восстановить информацию. (Вражеские силы: 1 офицер, 5 телохранителей)</Russian>
-            <Polish>Wysoki stopień oficer wroga koordynuje działania w tym obszarze. Jego eliminacja zakłóci przeciwne siły. Posiada niezbędne poufne dokumenty. Infiltruj obszar, zneutralizuj cel i odzyskaj informacje. (Siły wroga: 1 oficer, 5 ochroniarzy)</Polish>
-            <Czech>Vysoce postavený nepřátelský důstojník koordinuje operace v této oblasti. Jeho eliminace naruší protichůdné síly. Nosí základní důvěrné dokumenty. Infiltrujte oblast, neutralizujte cíl a obnovte informace. (Nepřátelské síly: 1 důstojník, 5 bodyguardů)</Czech>
-            <Turkish>Üst düzey bir düşman subayı bölgedeki operasyonları koordine eder. Ortadan kaldırılması karşıt güçleri bozacaktır. Temel gizli belgeler taşıyor. Bölgeye sızın, hedefi etkisiz hale getirin ve bilgileri kurtarın. (Düşman güçleri: 1 Subay, 5 Koruma)</Turkish>
-            <Chinese>一名高級敵方軍官協調該地區的行動。 他的淘汰將破壞反對部隊。 他攜帶必要的機密文件。 滲透該區域，中和目標並恢復信息。（敵軍：1 軍官，5 保鏢）</Chinese>
-            <Chinesesimp>一名高级敌方军官协调该地区的行动。 他的淘汰将破坏反对部队。 他携带必要的机密文件。 渗透该区域，中和目标并恢复信息。（敌军：1 军官，5 保镖）</Chinesesimp>
+            <English>CLASSIFIED INTEL: An enemy officer is carrying top secret defense documents. Our intelligence has identified 3 potential targets, but only ONE of them holds the documents. Your mission: 1) Locate the 3 marked targets on the map 2) Neutralize the officers and their guards 3) Search each officer&apos;s body to recover the classified documents. The documents will only appear on the correct target. (Enemy forces: 3 Officers, ~9 Guards)</English>
+            <French>RENSEIGNEMENT CLASSIFIÉ : Un officier ennemi transporte des documents classés secret défense. Nos informations indiquent 3 cibles potentielles, mais UNE SEULE d&apos;entre elles détient les documents. Votre mission : 1) Localiser les 3 cibles marquées sur la carte 2) Neutraliser les officiers et leurs gardes 3) Fouiller le corps de chaque officier pour récupérer les documents classifiés. Les documents n&apos;apparaîtront que sur la bonne cible. (Forces ennemies : 3 Officiers, ~9 Gardes)</French>
+            <German>GEHEIMDIENSTINFORMATION: Ein feindlicher Offizier trägt streng geheime Verteidigungsdokumente. Unsere Geheimdienste haben 3 potenzielle Ziele identifiziert, aber nur EINES davon hat die Dokumente. Ihre Mission: 1) Lokalisieren Sie die 3 markierten Ziele auf der Karte 2) Neutralisieren Sie die Offiziere und ihre Wachen 3) Durchsuchen Sie jeden Körper, um die geheimen Dokumente zu bergen. Die Dokumente erscheinen nur beim richtigen Ziel. (Feindliche Kräfte: 3 Offiziere, ~9 Wachen)</German>
+            <Spanish>INTELIGENCIA CLASIFICADA: Un oficial enemigo lleva documentos de defensa ultra secretos. Nuestra inteligencia ha identificado 3 objetivos potenciales, pero solo UNO de ellos tiene los documentos. Tu misión: 1) Localiza los 3 objetivos marcados en el mapa 2) Neutraliza a los oficiales y sus guardias 3) Registra el cuerpo de cada oficial para recuperar los documentos clasificados. Los documentos solo aparecerán en el objetivo correcto. (Fuerzas enemigas: 3 Oficiales, ~9 Guardias)</Spanish>
+            <Italian>INTELLIGENCE CLASSIFICATA: Un ufficiale nemico trasporta documenti di difesa top secret. La nostra intelligence ha identificato 3 potenziali bersagli, ma solo UNO di loro ha i documenti. La tua missione: 1) Localizza i 3 obiettivi segnati sulla mappa 2) Neutralizza gli ufficiali e le loro guardie 3) Perquisisci ogni corpo per recuperare i documenti classificati. I documenti appariranno solo sull&apos;obiettivo corretto. (Forze nemiche: 3 Ufficiali, ~9 Guardie)</Italian>
+            <Russian>СЕКРЕТНАЯ РАЗВЕДКА: Вражеский офицер несет сверхсекретные оборонные документы. Наша разведка определила 3 потенциальные цели, но документы есть только у ОДНОЙ из них. Ваша миссия: 1) Найдите 3 отмеченные цели на карте 2) Нейтрализуйте офицеров и их охрану 3) Обыщите тело каждого офицера для получения секретных документов. Документы появятся только у правильной цели. (Вражеские силы: 3 офицера, ~9 охранников)</Russian>
+            <Polish>WYWIAD NIEJAWNY: Oficer wroga przewozi ściśle tajne dokumenty obronne. Nasz wywiad zidentyfikował 3 potencjalne cele, ale tylko JEDEN z nich ma dokumenty. Twoja misja: 1) Zlokalizuj 3 oznaczone cele na mapie 2) Zneutralizuj oficerów i ich ochronę 3) Przeszukaj ciało każdego oficera, aby odzyskać tajne dokumenty. Dokumenty pojawią się tylko przy właściwym celu. (Siły wroga: 3 oficerów, ~9 strażników)</Polish>
+            <Czech>UTAJOVANÁ ZPRÁVA: Nepřátelský důstojník nese přísně tajné obranné dokumenty. Naše zpravodajství identifikovalo 3 potenciální cíle, ale dokumenty má pouze JEDEN z nich. Vaše mise: 1) Najděte 3 označené cíle na mapě 2) Neutralizujte důstojníky a jejich stráže 3) Prohledejte tělo každého důstojníka pro získání tajných dokumentů. Dokumenty se objeví pouze u správného cíle. (Nepřátelské síly: 3 důstojníci, ~9 strážců)</Czech>
+            <Turkish>GİZLİ İSTİHBARAT: Bir düşman subayı çok gizli savunma belgeleri taşıyor. İstihbaratımız 3 potansiyel hedef belirledi, ancak belgeler yalnızca BİRİNDE. Göreviniz: 1) Haritada işaretli 3 hedefi bulun 2) Subayları ve korumalarını etkisiz hale getirin 3) Gizli belgeleri almak için her subayın cesedini arayın. Belgeler yalnızca doğru hedefte görünecek. (Düşman güçleri: 3 Subay, ~9 Koruma)</Turkish>
+            <Chinese>機密情報：一名敵軍軍官攜帶絕密國防文件。我們的情報已確定3個潛在目標，但只有其中一個持有文件。你的任務：1) 在地圖上找到3個標記的目標 2) 消滅軍官及其警衛 3) 搜索每位軍官的屍體以取回機密文件。文件只會出現在正確的目標上。（敵軍：3名軍官，約9名警衛）</Chinese>
+            <Chinesesimp>机密情报：一名敌军军官携带绝密国防文件。我们的情报已确定3个潜在目标，但只有其中一个持有文件。你的任务：1) 在地图上找到3个标记的目标 2) 消灭军官及其警卫 3) 搜索每位军官的尸体以取回机密文件。文件只会出现在正确的目标上。（敌军：3名军官，约9名警卫）</Chinesesimp>
         </Key>
         <Key ID="STR_MARKER_DOCUMENT">
             <English>Document</English>
@@ -559,6 +650,19 @@
             <Turkish>Belge</Turkish>
             <Chinese>文檔</Chinese>
             <Chinesesimp>文档</Chinesesimp>
+        </Key>
+        <Key ID="STR_MARKER_TARGET">
+            <English>Target</English>
+            <French>Cible</French>
+            <German>Ziel</German>
+            <Spanish>Objetivo</Spanish>
+            <Italian>Obiettivo</Italian>
+            <Russian>Цель</Russian>
+            <Polish>Cel</Polish>
+            <Czech>Cíl</Czech>
+            <Turkish>Hedef</Turkish>
+            <Chinese>目標</Chinese>
+            <Chinesesimp>目标</Chinesesimp>
         </Key>
         <Key ID="STR_TASK_3_TITLE">
             <English>Total War!</English>
@@ -691,17 +795,17 @@
             <Chinesesimp>人质撤离</Chinesesimp>
         </Key>
         <Key ID="STR_TASK_4_DESC">
-            <English>Two civilians have been captured by enemy forces. They are being held at separate locations. Your mission is to locate them, neutralize the guards, and secure the hostages (a helicopter is provided for exfiltration). Be careful, the guards are heavily armed. (Enemy forces: ~8 Guards)</English>
-            <French>Deux civils ont été capturés par les forces ennemies. Ils sont retenus à des endroits séparés. Votre mission est de les localiser, de neutraliser les gardes et de sécuriser les otages (un hélicoptère est prévu pour l&apos;exfiltration). Attention, les gardes sont lourdement armés. (Forces ennemies : ~8 Gardes)</French>
-            <German>Zwei Zivilisten wurden von feindlichen Kräften gefangen genommen. Sie werden an getrennten Orten festgehalten. Ihre Mission ist es, sie zu finden, die Wachen zu neutralisieren und die Geiseln zu sichern (ein Hubschrauber steht für die Exfiltration bereit). Seien Sie vorsichtig, die Wachen sind schwer bewaffnet. (Feindliche Kräfte: ~8 Wachen)</German>
-            <Spanish>Dos civiles han sido capturados por las fuerzas enemigas. Están retenidos en lugares separados. Su misión es localizarlos, neutralizar a los guardias y asegurar a los rehenes (se proporciona un helicóptero para la exfiltración). Tenga cuidado, los guardias están fuertemente armados. (Fuerzas enemigas: ~8 Guardias)</Spanish>
-            <Italian>Due civili sono stati catturati dalle forze nemiche. Sono detenuti in luoghi separati. La tua missione è individuarli, neutralizzare le guardie e mettere al sicuro gli ostaggi (è previsto un elicottero per l&apos;esfiltrazione). Attenzione, le guardie sono pesantemente armate. (Forze nemiche: ~8 Guardie)</Italian>
-            <Russian>Двое гражданских были захвачены вражескими силами. Их удерживают в разных местах. Ваша задача - найти их, нейтрализовать охрану и освободить заложников (вертолет предусмотрен для эвакуации). Будьте осторожны, охрана хорошо вооружена. (Вражеские силы: ~8 охранников)</Russian>
-            <Polish>Dwóch cywilów zostało schwytanych przez siły wroga. Są przetrzymywani w oddzielnych miejscach. Twoim zadaniem jest ich zlokalizowanie, zneutralizowanie strażników i zabezpieczenie zakładników (helikopter jest przewidziany do ewakuacji). Bądź ostrożny, strażnicy są ciężko uzbrojeni. (Siły wroga: ~8 strażników)</Polish>
-            <Czech>Dva civilisté byli zajati nepřátelskými silami. Jsou drženi na oddělených místech. Vaším úkolem je najít je, neutralizovat stráže a zajistit rukojmí (pro exfiltraci je k dispozici vrtulník). Buďte opatrní, stráže jsou těžce ozbrojené. (Nepřátelské síly: ~8 strážců)</Czech>
-            <Turkish>İki sivil düşman güçleri tarafından yakalandı. Ayrı yerlerde tutuluyorlar. Göreviniz onları bulmak, korumaları etkisiz hale getirmek ve rehineleri güvenceye almaktır (tahliye için bir helikopter sağlanmıştır). Dikkatli olun, korumalar ağır silahlı. (Düşman güçleri: ~8 Koruma)</Turkish>
-            <Chinese>兩名平民被敵軍俘虜。他們被關押在不同的地點。你的任務是找到他們，消滅守衛並解救人質（已提供直升機用於撤離）。小心，守衛全副武裝。（敵軍：~8 守衛）</Chinese>
-            <Chinesesimp>两名平民被敌军俘虏。他们被关押在不同的地点。你的任务是找到他们，消灭守卫并解救人质（已提供直升机用于撤离）。小心，守卫全副武装。（敌军：~8 守卫）</Chinesesimp>
+            <English>Three civilians have been captured by enemy forces and are held at separate unknown locations. Your mission: 1) Locate the hostages on the map 2) Secure each area by neutralizing all guards 3) IMPORTANT: Do NOT free the hostages until ALL search zones are secured 4) Free the hostages and escort them to the extraction point. An exfiltration helicopter will be dispatched automatically. At least one hostage must survive for mission success. (Enemy forces: 3 Guard Groups, ~6 Guards)</English>
+            <French>Trois civils ont été capturés par les forces ennemies et sont détenus dans des lieux séparés inconnus. Votre mission : 1) Localiser les otages sur la carte 2) Sécuriser chaque zone en neutralisant tous les gardes 3) IMPORTANT : Ne PAS libérer les otages avant que TOUTES les zones de recherche soient sécurisées 4) Libérer les otages et les escorter jusqu&apos;au point d&apos;extraction. Un hélicoptère d&apos;exfiltration sera envoyé automatiquement. Au moins un otage doit survivre pour réussir la mission. (Forces ennemies : 3 Groupes de gardes, ~6 Gardes)</French>
+            <German>Drei Zivilisten wurden von feindlichen Kräften gefangen genommen und werden an verschiedenen unbekannten Orten festgehalten. Ihre Mission: 1) Lokalisieren Sie die Geiseln auf der Karte 2) Sichern Sie jeden Bereich durch Neutralisierung aller Wachen 3) WICHTIG: Befreien Sie die Geiseln NICHT, bevor ALLE Suchzonen gesichert sind 4) Befreien Sie die Geiseln und eskortieren Sie sie zum Extraktionspunkt. Ein Evakuierungshubschrauber wird automatisch entsandt. Mindestens eine Geisel muss für den Missionserfolg überleben. (Feindliche Kräfte: 3 Wachgruppen, ~6 Wachen)</German>
+            <Spanish>Tres civiles han sido capturados por fuerzas enemigas y están retenidos en ubicaciones separadas desconocidas. Tu misión: 1) Localizar a los rehenes en el mapa 2) Asegurar cada zona neutralizando a todos los guardias 3) IMPORTANTE: NO liberar a los rehenes hasta que TODAS las zonas de búsqueda estén aseguradas 4) Liberar a los rehenes y escoltarlos al punto de extracción. Un helicóptero de exfiltración será enviado automáticamente. Al menos un rehén debe sobrevivir para completar la misión. (Fuerzas enemigas: 3 Grupos de guardias, ~6 Guardias)</Spanish>
+            <Italian>Tre civili sono stati catturati dalle forze nemiche e sono detenuti in luoghi separati sconosciuti. La tua missione: 1) Localizza gli ostaggi sulla mappa 2) Metti in sicurezza ogni area neutralizzando tutte le guardie 3) IMPORTANTE: NON liberare gli ostaggi finché TUTTE le zone di ricerca non sono state messe in sicurezza 4) Libera gli ostaggi e scortali al punto di estrazione. Un elicottero di esfiltrazione sarà inviato automaticamente. Almeno un ostaggio deve sopravvivere per il successo della missione. (Forze nemiche: 3 Gruppi di guardie, ~6 Guardie)</Italian>
+            <Russian>Трое гражданских были захвачены вражескими силами и удерживаются в разных неизвестных местах. Ваша миссия: 1) Найдите заложников на карте 2) Обезопасьте каждую зону, нейтрализовав всех охранников 3) ВАЖНО: НЕ освобождайте заложников, пока ВСЕ зоны поиска не будут зачищены 4) Освободите заложников и сопроводите их к точке эвакуации. Эвакуационный вертолет будет отправлен автоматически. Для успеха миссии должен выжить хотя бы один заложник. (Вражеские силы: 3 группы охраны, ~6 охранников)</Russian>
+            <Polish>Trzech cywilów zostało schwytanych przez siły wroga i jest przetrzymywanych w oddzielnych, nieznanych lokalizacjach. Twoja misja: 1) Zlokalizuj zakładników na mapie 2) Zabezpiecz każdy obszar neutralizując wszystkich strażników 3) WAŻNE: NIE uwalniaj zakładników, dopóki WSZYSTKIE strefy poszukiwań nie zostaną zabezpieczone 4) Uwolnij zakładników i eskortuj ich do punktu ekstrakcji. Helikopter ewakuacyjny zostanie automatycznie wysłany. Co najmniej jeden zakładnik musi przeżyć, aby misja zakończyła się sukcesem. (Siły wroga: 3 grupy strażników, ~6 strażników)</Polish>
+            <Czech>Tři civilisté byli zajati nepřátelskými silami a jsou drženi na oddělených neznámých místech. Vaše mise: 1) Najděte rukojmí na mapě 2) Zajistěte každou oblast neutralizací všech strážců 3) DŮLEŽITÉ: NEosvobozujte rukojmí, dokud VŠECHNY prohledávané zóny nebudou zajištěny 4) Osvoboďte rukojmí a doprovoďte je k extrakčnímu bodu. Evakuační vrtulník bude automaticky vyslán. Pro úspěch mise musí přežít alespoň jeden rukojmí. (Nepřátelské síly: 3 skupiny strážců, ~6 strážců)</Czech>
+            <Turkish>Üç sivil düşman güçleri tarafından yakalandı ve ayrı bilinmeyen yerlerde tutuluyor. Göreviniz: 1) Haritada rehineleri bulun 2) Tüm korumaları etkisiz hale getirerek her bölgeyi güvence altına alın 3) ÖNEMLİ: TÜM arama bölgeleri güvence altına alınmadan rehineleri kurtarmayın 4) Rehineleri kurtarın ve tahliye noktasına kadar eşlik edin. Tahliye helikopteri otomatik olarak gönderilecek. Görev başarısı için en az bir rehine hayatta kalmalı. (Düşman güçleri: 3 Koruma Grubu, ~6 Koruma)</Turkish>
+            <Chinese>三名平民被敵軍俘虜並被關押在不同的未知地點。你的任務：1) 在地圖上找到人質 2) 通過消滅所有守衛來確保每個區域的安全 3) 重要：在所有搜索區域都安全之前不要釋放人質 4) 釋放人質並護送他們到撤離點。撤離直升機將自動派遣。任務成功至少需要一名人質存活。（敵軍：3 個守衛小組，約6 名守衛）</Chinese>
+            <Chinesesimp>三名平民被敌军俘虏并被关押在不同的未知地点。你的任务：1) 在地图上找到人质 2) 通过消灭所有守卫来确保每个区域的安全 3) 重要：在所有搜索区域都安全之前不要释放人质 4) 释放人质并护送他们到撤离点。撤离直升机将自动派遣。任务成功至少需要一名人质存活。（敌军：3 个守卫小组，约6 名守卫）</Chinesesimp>
         </Key>
         <Key ID="STR_TASK_5_TITLE">
             <English>Molos Defusal</English>

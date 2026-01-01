@@ -1,7 +1,7 @@
 /*
     Fonction: MISSION_fnc_task_4_launch
     Description: Lance la Tâche 4 - Exfiltration d'otages.
-    - 2 Otages civils sur 2 spawns aléatoires (01-12).
+    - 3 Otages civils sur 3 spawns aléatoires (01-12).
     - Gardes ennemis sur les autres points (01-12).
     - Phase 1: Libération.
     - Phase 2: Suivre joueur + Extraction Hélico (13-18).
@@ -41,15 +41,15 @@ for "_i" from 13 to 18 do {
     };
 };
 
-if (count _unitSpawns < 2) exitWith { systemChat "Erreur: Pas assez de points d'apparition pour la Tâche 4 (Unités)"; };
+if (count _unitSpawns < 3) exitWith { systemChat "Erreur: Pas assez de points d'apparition pour la Tâche 4 (Unités)"; };
 if (count _lzSpawns == 0) exitWith { systemChat "Erreur: Pas assez de points d'apparition pour la Tâche 4 (LZ)"; };
 
 // Mélange pour l'aléatoire
 _unitSpawns = _unitSpawns call BIS_fnc_arrayShuffle;
 
-// Sélection des 2 points pour les otages, le reste pour les gardes
-private _hostageSpawns = _unitSpawns select [0, 2];
-private _guardSpawns = _unitSpawns select [2, 999];
+// Sélection des 3 points pour les otages, le reste pour les gardes (3 groupes)
+private _hostageSpawns = _unitSpawns select [0, 3];
+private _guardSpawns = _unitSpawns select [3, 3];
 
 // 2. Création de la Tâche Arma 3
 [
@@ -189,6 +189,7 @@ if (isNil "MISSION_var_enemies") then { MISSION_var_enemies = []; };
 
 private _hostage1 = MISSION_var_task4_hostages select 0;
 private _hostage2 = MISSION_var_task4_hostages select 1;
+private _hostage3 = MISSION_var_task4_hostages select 2;
 private _guardsSpawnRate = 0;
 
 {
@@ -206,7 +207,12 @@ private _guardsSpawnRate = 0;
         };
         MISSION_var_task4_guards pushBack _unit;
         
-        private _myHostage = if (_guardsSpawnRate % 2 == 0) then { _hostage1 } else { _hostage2 };
+        // Assigner un otage au garde (rotation entre les 3 otages)
+        private _myHostage = switch (_guardsSpawnRate mod 3) do {
+            case 0: { _hostage1 };
+            case 1: { _hostage2 };
+            case 2: { _hostage3 };
+        };
         _unit setVariable ["assignedHostage", _myHostage];
         _guardsSpawnRate = _guardsSpawnRate + 1;
     };
@@ -395,7 +401,15 @@ private _guardsSpawnRate = 0;
 
     while { ({ isPlayer _x } count (crew MISSION_var_task4_heli)) > 0 } do {
         hint (localize "STR_HINT_HELI_PLAYER_ONBOARD");
+        MISSION_var_task4_heli setFuel 0;
+        MISSION_var_task4_heli engineOn false;
         sleep 2;
+        MISSION_var_task4_heli setFuel 1;
+        MISSION_var_task4_heli engineOn true;
+        //si le joueur n'est plus dans l'hélicoptère il sort de la boucle
+        if (!({ isPlayer _x } count (crew MISSION_var_task4_heli)) > 0) then {
+            break;
+        }
     };
     
     hint (localize "STR_HINT_EXTRACTION_TAKEOFF");
@@ -424,6 +438,7 @@ private _guardsSpawnRate = 0;
     // Vérification Finale et Victoire - MODIFIE: Au moins 1 survivant
     if (({alive _x} count MISSION_var_task4_hostages) >= 1) then {
         ["task_4", "SUCCEEDED"] call BIS_fnc_taskSetState;
+        [] spawn MISSION_fnc_task_x_finish;
         
         { deleteVehicle _x } forEach MISSION_var_task4_hostages;
         { deleteVehicle _x } forEach MISSION_var_task4_crew;
@@ -432,7 +447,7 @@ private _guardsSpawnRate = 0;
          ["task_4", "FAILED"] call BIS_fnc_taskSetState;
     };
     
-    for "_i" from 0 to 1 do {
+    for "_i" from 0 to 2 do {
         deleteMarker format ["m_hostage_area_%1", _i];
     };
 };
@@ -445,14 +460,14 @@ private _guardsSpawnRate = 0;
         // Stop si la tâche est déjà terminée (Succès)
         if (["task_4"] call BIS_fnc_taskCompleted) exitWith { true };
         
-        // Echec: 2 Otages morts OU 2 Pilotes morts
+        // Echec: 3 Otages morts OU Pilotes morts
         private _hostagesDead = { !alive _x } count MISSION_var_task4_hostages;
         private _crewDead = { !alive _x } count MISSION_var_task4_crew; 
         
         private _crewWiped = (count MISSION_var_task4_crew > 0) && (_crewDead == count MISSION_var_task4_crew);
         
-        // Echec seulement si TOUS les otages sont morts (2)
-        if (_hostagesDead == 2 || _crewWiped) exitWith {
+        // Echec seulement si TOUS les otages sont morts (3)
+        if (_hostagesDead == 3 || _crewWiped) exitWith {
             // Check de sécurité pour éviter le spam FAILED si SUCCEEDED en même temps
             if !(["task_4"] call BIS_fnc_taskCompleted) then {
                 ["task_4", "FAILED"] call BIS_fnc_taskSetState;

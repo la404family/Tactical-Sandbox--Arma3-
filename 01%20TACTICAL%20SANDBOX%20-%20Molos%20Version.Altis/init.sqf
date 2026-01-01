@@ -18,7 +18,7 @@
 // missions_request est un trigger (lorsqu'on y entre on peut choisir la mission et ses paramètres)
 // weather_and_time_request est un trigger (lorsqu'on y entre on peut choisir l'heure et le temps)
 
-// expel_spawn est un trigger (lorsqu'on y entre on est expulser du trigger)
+
 
 //-------------------------------------------
 // Les fonctions de préparation de mission :
@@ -36,8 +36,6 @@
 ["INIT"] call MISSION_fnc_spawn_arsenal;
 // fonction qui spawn les taches séléctionnées
 ["INIT"] call MISSION_fnc_spawn_missions;
-// fonction qui expulse les joueurs du spawn
-[] spawn MISSION_fnc_expel_spawn;
 
 //-------------------------------------------
 // Les éléments du QG allié :
@@ -71,7 +69,7 @@
 // Les éléments de la tache 2 : (spawn a positionner autours de bâtiments)
 //-------------------------------------------
 
-// task_2_spawn_01 à task_2_spawn_18 sont des héliports qui servent de lieux de spawn ennemi pour la tache 2
+// task_2_spawn_01 à task_2_spawn_30 sont des héliports qui servent de lieux de spawn ennemi pour la tache 2
 // task_2_document est un document à récupérer dans l'inventaire de l'officier ennemis
 
 //-------------------------------------------
@@ -125,8 +123,10 @@
 // [] call MISSION_fnc_task_5_launch;
 
 
-// Lancement de l'intro
-[] spawn MISSION_fnc_task_0_intro;
+//-------------------------------------------
+// Les fonctions de tache : (A remettre à la fin du développement)
+//-------------------------------------------
+// [] spawn MISSION_fnc_task_0_intro;
 
 
 

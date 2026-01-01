@@ -50,6 +50,20 @@ class Refour_Recruit_Dialog
             action = "['SPAWN'] call MISSION_fnc_spawn_brothers_in_arms;";
         };
 
+        class ButtonReset: RscButton
+        {
+            idc = 5503;
+            text = "$STR_BTN_RESET";
+            x = 0.4395 * safezoneW + safezoneX;
+            y = 0.72 * safezoneH + safezoneY;
+            w = 0.12 * safezoneW;
+            h = 0.04 * safezoneH;
+            colorBackground[] = {0.8, 0.7, 0, 1};
+            colorBackgroundActive[] = {1, 0.85, 0, 1};
+            colorFocused[] = {0.9, 0.75, 0, 1};
+            action = "['RESET'] call MISSION_fnc_spawn_brothers_in_arms;";
+        };
+
         class ButtonClose: RscButton
         {
             idc = -1;
