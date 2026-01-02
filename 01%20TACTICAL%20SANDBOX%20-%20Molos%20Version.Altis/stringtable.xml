@@ -1029,277 +1029,277 @@
             <Chinesesimp>爆裂物已拆除！</Chinesesimp>
         </Key>
         <Key ID="STR_NOTIF_TASK1_START">
-            <English>MANHUNT INITIATED - Await intelligence on fugitive locations (5 min)</English>
-            <French>CHASSE À L&apos;HOMME LANCÉE - Attendez les renseignements sur les fugitifs (5 min)</French>
-            <German>MENSCHENJAGD GESTARTET - Warten Sie auf Informationen über die Flüchtlinge (5 min)</German>
-            <Spanish>CACERÍA INICIADA - Espera información sobre los fugitivos (5 min)</Spanish>
-            <Italian>CACCIA INIZIATA - Attendi informazioni sui fuggitivi (5 min)</Italian>
-            <Russian>ОХОТА НАЧАТА - Ждите разведданных о беглецах (5 мин)</Russian>
-            <Polish>POLOWANIE ROZPOCZĘTE - Czekaj na informacje o zbiegach (5 min)</Polish>
-            <Czech>HON ZAHÁJEN - Čekejte na informace o uprchlících (5 min)</Czech>
-            <Turkish>AV BAŞLATILDI - Kaçaklar hakkında istihbarat bekleyin (5 dk)</Turkish>
-            <Chinese>追捕開始 - 等待逃犯位置情報（5分鐘）</Chinese>
-            <Chinesesimp>追捕开始 - 等待逃犯位置情报（5分钟）</Chinesesimp>
-        </Key>
-        <Key ID="STR_HINT_FUGITIVES_SPOTTED">
-            <English>INTEL: Fugitives spotted! Intercept them before they escape!</English>
-            <French>RENSEIGNEMENT : Fugitifs repérés ! Interceptez-les avant qu&apos;ils ne s&apos;échappent !</French>
-            <German>INTEL: Flüchtlinge gesichtet! Fangen Sie sie ab, bevor sie entkommen!</German>
-            <Spanish>INTEL: ¡Fugitivos avistados! ¡Intercéptalos antes de que escapen!</Spanish>
-            <Italian>INTEL: Fuggitivi avvistati! Intercettali prima che scappino!</Italian>
-            <Russian>РАЗВЕДКА: Беглецы обнаружены! Перехватите их до побега!</Russian>
-            <Polish>WYWIAD: Zbiegi zauważeni! Przechwyć ich przed ucieczką!</Polish>
-            <Czech>INTEL: Uprchlíci spatřeni! Zachyťte je, než uniknou!</Czech>
-            <Turkish>İSTİHBARAT: Kaçaklar görüldü! Kaçmadan önce yakalayın!</Turkish>
-            <Chinese>情報：發現逃犯！在他們逃脫前攔截！</Chinese>
-            <Chinesesimp>情报：发现逃犯！在他们逃脱前拦截！</Chinesesimp>
-        </Key>
-        <Key ID="STR_HINT_FUGITIVE_ARMED">
-            <English>WARNING: A fugitive has armed himself!</English>
-            <French>ATTENTION : Un fugitif s&apos;est armé !</French>
-            <German>WARNUNG: Ein Flüchtling hat sich bewaffnet!</German>
-            <Spanish>ADVERTENCIA: ¡Un fugitivo se ha armado!</Spanish>
-            <Italian>ATTENZIONE: Un fuggitivo si è armato!</Italian>
-            <Russian>ВНИМАНИЕ: Беглец вооружился!</Russian>
-            <Polish>OSTRZEŻENIE: Zbieg się uzbaja!</Polish>
-            <Czech>VAROVÁNÍ: Uprchlík se vyzbrojil!</Czech>
-            <Turkish>UYARI: Bir kaçak silahlandı!</Turkish>
-            <Chinese>警告：一名逃犯已武裝！</Chinese>
-            <Chinesesimp>警告：一名逃犯已武装！</Chinesesimp>
-        </Key>
-        <Key ID="STR_HINT_FUGITIVE_SURRENDERED">
-            <English>A fugitive has surrendered!</English>
-            <French>Un fugitif s&apos;est rendu !</French>
-            <German>Ein Flüchtling hat sich ergeben!</German>
-            <Spanish>¡Un fugitivo se ha rendido!</Spanish>
-            <Italian>Un fuggitivo si è arreso!</Italian>
-            <Russian>Беглец сдался!</Russian>
-            <Polish>Zbieg się poddał!</Polish>
-            <Czech>Uprchlík se vzdal!</Czech>
-            <Turkish>Bir kaçak teslim oldu!</Turkish>
-            <Chinese>一名逃犯已投降！</Chinese>
-            <Chinesesimp>一名逃犯已投降！</Chinesesimp>
-        </Key>
-        <Key ID="STR_NOTIF_TASK1_FAILED">
-            <English>MISSION FAILED - A fugitive has escaped!</English>
-            <French>MISSION ÉCHOUÉE - Un fugitif s&apos;est échappé !</French>
-            <German>MISSION GESCHEITERT - Ein Flüchtling ist entkommen!</German>
-            <Spanish>MISIÓN FALLIDA - ¡Un fugitivo ha escapado!</Spanish>
-            <Italian>MISSIONE FALLITA - Un fuggitivo è scappato!</Italian>
-            <Russian>МИССИЯ ПРОВАЛЕНА - Беглец сбежал!</Russian>
-            <Polish>MISJA NIEUDANA - Zbieg uciekł!</Polish>
-            <Czech>MISE SELHALA - Uprchlík unikl!</Czech>
-            <Turkish>GÖREV BAŞARISIZ - Bir kaçak kaçtı!</Turkish>
-            <Chinese>任務失敗 - 一名逃犯逃脫了！</Chinese>
-            <Chinesesimp>任务失败 - 一名逃犯逃脱了！</Chinesesimp>
-        </Key>
-        <Key ID="STR_MARKER_CAPTIVE">
-            <English>Captive</English>
-            <French>Captif</French>
-            <German>Gefangener</German>
-            <Spanish>Cautivo</Spanish>
-            <Italian>Prigioniero</Italian>
-            <Russian>Пленный</Russian>
-            <Polish>Jeniec</Polish>
-            <Czech>Zajatec</Czech>
-            <Turkish>Esir</Turkish>
-            <Chinese>俘虜</Chinese>
-            <Chinesesimp>俘虏</Chinesesimp>
-        </Key>
-        <Key ID="STR_HINT_FUGITIVE_CAPTURED">
-            <English>TARGET NEUTRALIZED - Fugitive captured!</English>
-            <French>CIBLE NEUTRALISÉE - Fugitif capturé !</French>
-            <German>ZIEL NEUTRALISIERT - Flüchtling gefangen!</German>
-            <Spanish>OBJETIVO NEUTRALIZADO - ¡Fugitivo capturado!</Spanish>
-            <Italian>OBIETTIVO NEUTRALIZZATO - Fuggitivo catturato!</Italian>
-            <Russian>ЦЕЛЬ НЕЙТРАЛИЗОВАНА - Беглец пойман!</Russian>
-            <Polish>CEL ZNEUTRALIZOWANY - Zbieg schwytany!</Polish>
-            <Czech>CÍL NEUTRALIZOVÁN - Uprchlík zajat!</Czech>
-            <Turkish>HEDEF ETKİSİZ - Kaçak yakalandı!</Turkish>
-            <Chinese>目標已制伏 - 逃犯被捕！</Chinese>
-            <Chinesesimp>目标已制伏 - 逃犯被捕！</Chinesesimp>
-        </Key>
-        <Key ID="STR_HINT_FUGITIVE_ESCAPED">
-            <English>MISSION FAILED - A fugitive has escaped by boat!</English>
-            <French>MISSION ÉCHOUÉE - Un fugitif s&apos;est échappé en bateau !</French>
-            <German>MISSION GESCHEITERT - Ein Flüchtling ist mit dem Boot entkommen!</German>
-            <Spanish>MISIÓN FALLIDA - ¡Un fugitivo ha escapado en barco!</Spanish>
-            <Italian>MISSIONE FALLITA - Un fuggitivo è scappato in barca!</Italian>
-            <Russian>МИССИЯ ПРОВАЛЕНА - Беглец сбежал на лодке!</Russian>
-            <Polish>MISJA NIEUDANA - Zbieg uciekł łodzią!</Polish>
-            <Czech>MISE SELHALA - Uprchlík unikl na člunu!</Czech>
-            <Turkish>GÖREV BAŞARISIZ - Bir kaçak tekneyle kaçtı!</Turkish>
-            <Chinese>任務失敗 - 一名逃犯乘船逃脫！</Chinese>
-            <Chinesesimp>任务失败 - 一名逃犯乘船逃脱！</Chinesesimp>
-        </Key>
-        <Key ID="STR_HINT_ALL_FUGITIVES_NEUTRALIZED">
-            <English>ALL TARGETS NEUTRALIZED - Mission accomplished!</English>
-            <French>TOUTES LES CIBLES NEUTRALISÉES - Mission accomplie !</French>
-            <German>ALLE ZIELE NEUTRALISIERT - Mission erfüllt!</German>
-            <Spanish>TODOS LOS OBJETIVOS NEUTRALIZADOS - ¡Misión cumplida!</Spanish>
-            <Italian>TUTTI GLI OBIETTIVI NEUTRALIZZATI - Missione compiuta!</Italian>
-            <Russian>ВСЕ ЦЕЛИ НЕЙТРАЛИЗОВАНЫ - Миссия выполнена!</Russian>
-            <Polish>WSZYSTKIE CELE ZNEUTRALIZOWANE - Misja zakończona!</Polish>
-            <Czech>VŠECHNY CÍLE NEUTRALIZOVÁNY - Mise splněna!</Czech>
-            <Turkish>TÜM HEDEFLER ETKİSİZ - Görev tamamlandı!</Turkish>
-            <Chinese>所有目標已制伏 - 任務完成！</Chinese>
-            <Chinesesimp>所有目标已制伏 - 任务完成！</Chinesesimp>
-        </Key>
-        <Key ID="STR_ACTION_SUBMIT">
-            <English>Subdue suspect</English>
-            <French>Soumettre le suspect</French>
-            <German>Verdächtigen überwältigen</German>
-            <Spanish>Someter al sospechoso</Spanish>
-            <Italian>Sottomettere il sospetto</Italian>
-            <Russian>Задержать подозреваемого</Russian>
-            <Polish>Obezwładnij podejrzanego</Polish>
-            <Czech>Zpacifikovat podezřelého</Czech>
-            <Turkish>Şüpheliyi bastır</Turkish>
-            <Chinese>制服嫌疑人</Chinese>
-            <Chinesesimp>制服嫌疑人</Chinesesimp>
-        </Key>
-        <Key ID="STR_NOTIF_TASK5_START_TITLE">
-            <English>TASK 5 ACTIVATED</English>
-            <French>TÂCHE 5 ACTIVÉE</French>
-            <German>AUFGABE 5 AKTIVIERT</German>
-            <Spanish>TAREA 5 ACTIVADA</Spanish>
-            <Italian>COMPITO 5 ATTIVATO</Italian>
-            <Russian>ЗАДАНИЕ 5 АКТИВИРОВАНО</Russian>
-            <Polish>ZADANIE 5 AKTYWOWANE</Polish>
-            <Czech>ÚKOL 5 AKTIVOVÁN</Czech>
-            <Turkish>GÖREV 5 AKTİF</Turkish>
-            <Chinese>任務 5 已啟動</Chinese>
-            <Chinesesimp>任务 5 已启动</Chinesesimp>
-        </Key>
-        <Key ID="STR_NOTIF_TASK5_START_DESC">
-            <English>CITY SECURITY AND DEFUSAL</English>
-            <French>SÉCURISATION VILLE ET DÉSAMORÇAGE</French>
-            <German>STADTSICHERUNG UND ENTSCHÄRFUNG</German>
-            <Spanish>SEGURIDAD URBANA Y DESACTIVACIÓN</Spanish>
-            <Italian>SICUREZZA CITTÀ E DISINNESCO</Italian>
-            <Russian>БЕЗОПАСНОСТЬ ГОРОДА И ОБЕЗВРЕЖИВАНИЕ</Russian>
-            <Polish>ZABEZPIECZENIE MIASTA I ROZBROJENIE</Polish>
-            <Czech>ZABEZPEČENÍ MĚSTA A ZNEŠKODNĚNÍ</Czech>
-            <Turkish>ŞEHİR GÜVENLİĞİ VE ETKİSİZLEŞTİRME</Turkish>
-            <Chinese>城市安全與拆除</Chinese>
-            <Chinesesimp>城市安全与拆除</Chinesesimp>
-        </Key>
-        <Key ID="STR_NOTIF_BOMB_FOUND_TITLE">
-            <English>BOMB DISCOVERED</English>
-            <French>BOMBE DÉCOUVERTE</French>
-            <German>BOMBE ENTDECKT</German>
-            <Spanish>BOMBA DESCUBIERTA</Spanish>
-            <Italian>BOMBA SCOPERTA</Italian>
-            <Russian>БОМБА ОБНАРУЖЕНА</Russian>
-            <Polish>WYKRYTO BOMBĘ</Polish>
-            <Czech>NALEZENA BOMBA</Czech>
-            <Turkish>BOMBA BULUNDU</Turkish>
-            <Chinese>發現炸彈</Chinese>
-            <Chinesesimp>发现炸弹</Chinesesimp>
-        </Key>
-        <Key ID="STR_NOTIF_CIV_KILLED_TITLE">
-            <English>CIVILIAN KILLED</English>
-            <French>CIVIL TUÉ</French>
-            <German>ZIVILIST GETÖTET</German>
-            <Spanish>CIVIL MUERTO</Spanish>
-            <Italian>CIVILE UCCISO</Italian>
-            <Russian>ГРАЖДАНСКИЙ УБИТ</Russian>
-            <Polish>CYWIL ZABITY</Polish>
-            <Czech>CIVILİSTA ZABIT</Czech>
-            <Turkish>SİVİL ÖLDÜRÜLDÜ</Turkish>
-            <Chinese>平民死亡</Chinese>
-            <Chinesesimp>平民死亡</Chinesesimp>
-        </Key>
-        <Key ID="STR_NOTIF_CIV_KILLED_DESC">
-            <English>Civilian casualties: %1 / 2</English>
-            <French>Pertes civiles : %1 / 2</French>
-            <German>Zivile Opfer: %1 / 2</German>
-            <Spanish>Bajas civiles: %1 / 2</Spanish>
-            <Italian>Vittime civili: %1 / 2</Italian>
-            <Russian>Жертвы среди гражданских: %1 / 2</Russian>
-            <Polish>Ofiary cywilne: %1 / 2</Polish>
-            <Czech>Civilní oběti: %1 / 2</Czech>
-            <Turkish>Sivil kayıplar: %1 / 2</Turkish>
-            <Chinese>平民傷亡：%1 / 2</Chinese>
-            <Chinesesimp>平民伤亡：%1 / 2</Chinesesimp>
-        </Key>
-        <Key ID="STR_NOTIF_FAIL_TITLE">
-            <English>MISSION FAILED</English>
-            <French>ÉCHEC MISSION</French>
-            <German>MISSION FEHLGESCHLAGEN</German>
-            <Spanish>MISIÓN FALLIDA</Spanish>
-            <Italian>MISSIONE FALLITA</Italian>
-            <Russian>МИССИЯ ПРОВАЛЕНА</Russian>
-            <Polish>MISJA NIEUDANA</Polish>
-            <Czech>MISE SELHALA</Czech>
-            <Turkish>GÖREV BAŞARISIZ</Turkish>
-            <Chinese>任務失敗</Chinese>
-            <Chinesesimp>任务失败</Chinesesimp>
-        </Key>
-        <Key ID="STR_NOTIF_FAIL_CIVILIANS">
-            <English>FAILURE: Critical civilian casualties (5)!</English>
-            <French>ÉCHEC : Pertes civiles critiques (5) !</French>
-            <German>FEHLSCHLAG: Kritische zivile Opfer (5)!</German>
-            <Spanish>¡FRACASO: Bajas civiles críticas (5)!</Spanish>
-            <Italian>FALLIMENTO: Vittime civili critiche (5)!</Italian>
-            <Russian>ПРОВАЛ: Критические жертвы среди гражданских (5)!</Russian>
-            <Polish>PORAŻKA: Krytyczne ofiary cywilne (5)!</Polish>
-            <Czech>SELHÁNÍ: Kritické civilní oběti (5)!</Czech>
-            <Turkish>BAŞARISIZLIK: Kritik sivil kayıplar (5)!</Turkish>
-            <Chinese>失敗：重大平民傷亡 (5)！</Chinese>
-            <Chinesesimp>失败：重大平民伤亡 (5)！</Chinesesimp>
-        </Key>
-        <Key ID="STR_NOTIF_FAIL_BOMB">
-            <English>FAILURE: Bomb exploded!</English>
-            <French>ÉCHEC : Bombe explosée !</French>
-            <German>FEHLSCHLAG: Bombe explodiert!</German>
-            <Spanish>¡FRACASO: Bomba explotada!</Spanish>
-            <Italian>FALLIMENTO: Bomba esplosa!</Italian>
-            <Russian>ПРОВАЛ: Бомба взорвалась!</Russian>
-            <Polish>PORAŻKA: Bomba wybuchła!</Polish>
-            <Czech>SELHÁNÍ: Bomba vybuchla!</Czech>
-            <Turkish>BAŞARISIZLIK: Bomba patladı!</Turkish>
-            <Chinese>失敗：炸彈爆炸！</Chinese>
-            <Chinesesimp>失败：炸弹爆炸！</Chinesesimp>
-        </Key>
-        <Key ID="STR_NOTIF_WIN_TITLE">
-            <English>MISSION ACCOMPLISHED</English>
-            <French>MISSION ACCOMPLIE</French>
-            <German>MISSION ERFOLGREICH</German>
-            <Spanish>MISIÓN CUMPLIDA</Spanish>
-            <Italian>MISSIONE COMPIUTA</Italian>
-            <Russian>МИССИЯ ВЫПОЛНЕНА</Russian>
-            <Polish>MISJA WYKONANA</Polish>
-            <Czech>MISE SPLŠNĚNA</Czech>
-            <Turkish>GÖREV TAMAMLANDI</Turkish>
-            <Chinese>任務完成</Chinese>
-            <Chinesesimp>任务完成</Chinesesimp>
-        </Key>
-        <Key ID="STR_NOTIF_WIN_SECURED">
-            <English>SUCCESS: Zone secured!</English>
-            <French>SUCCÈS : Zone sécurisée !</French>
-            <German>ERFOLG: Zone gesichert!</German>
-            <Spanish>¡ÉXITO: Zona asegurada!</Spanish>
-            <Italian>SUCCESSO: Zona messa in sicurezza!</Italian>
-            <Russian>УСПЕХ: Зона защищена!</Russian>
-            <Polish>SUKCES: Strefa zabezpieczona!</Polish>
-            <Czech>ÚspĚCH: Zóna zajištěna!</Czech>
-            <Turkish>BAŞARI: Bölge güvence altında!</Turkish>
-            <Chinese>成功：區域已安全！</Chinese>
-            <Chinesesimp>成功：区域已安全！</Chinesesimp>
-        </Key>
-        <Key ID="GAME_DESCRIPTION">
-            <English>TACTICAL SANDBOX: Manage your operations from A to Z from the HQ. Solo or Coop (1-10 players). The game loop: EQUIPMENT: Choose weapons, vehicles (ground/air) and recruit your AI allies. SETTINGS: Adjust time and weather according to your strategy. OBJECTIVE: Activate dynamic and stackable missions (assassination, destruction...). ACTION: Deploy, fight and return to HQ. COMPATIBILITY with essential mods: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</English>
-            <French>TACTICAL SANBOX : Gérez vos opérations de A à Z depuis le QG. Solo ou Coop (1-10 joueurs). La boucle de jeu : EQUIPEMENENT : Choisissez armes, véhicules (sol/air) et recrutez vos alliés IA. PARAMETRES : Réglez l&apos;heure et la météo selon votre stratégie. OBJECTIF : Activez des missions dynamiques et cumulables (assassinat, destruction...).  ACTION : Déployez-vous, combattez et revenez au QG. COMPATIBILITE avec les mods incontournables : RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</French>
-            <German>TACTICAL SANDBOX: Verwalten Sie Ihre Operationen von A bis Z vom HQ aus. Einzelspieler oder Koop (1-10 Spieler). Der Spielablauf: AUSRÜSTUNG: Wählen Sie Waffen, Fahrzeuge (Boden/Luft) und rekrutieren Sie Ihre KI-Verbündeten. EINSTELLUNGEN: Stellen Sie Zeit und Wetter entsprechend Ihrer Strategie ein. ZIEL: Aktivieren Sie dynamische und stapelbare Missionen (Attentat, Zerstörung...). AKTION: Einsatz, Kampf und Rückkehr zum HQ. KOMPATIBILITÄT mit unverzichtbaren Mods: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</German>
-            <Spanish>SANDBOX TÁCTICO: Gestiona tus operaciones de la A a la Z desde el Cuartel General. Solo o Cooperativo (1-10 jugadores). El ciclo de juego: EQUIPAMIENTO: Elige armas, vehículos (tierra/aire) y recluta a tus aliados de la IA. AJUSTES: Configura la hora y el clima según tu estrategia. OBJETIVO: Activa misiones dinámicas y acumulables (asesinato, destrucción...). ACCIÓN: Despliégate, combate y regresa al Cuartel General. COMPATIBILIDAD con mods imprescindibles: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Spanish>
-            <Italian>SANDBOX TATTICO: Gestisci le tue operazioni dalla A alla Z dal QG. Singolo o Coop (1-10 giocatori). Il ciclo di gioco: EQUIPAGGIAMENTO: Scegli armi, veicoli (terra/aria) e recluta i tuoi alleati IA. IMPOSTAZIONI: Regola l&apos;ora e il meteo secondo la tua strategia. OBIETTIVO: Attiva missioni dinamiche e cumulabili (assassinio, distruzione...). AZIONE: Schieramento, combattimento e ritorno al QG. COMPATIBILITÀ con mod essenziali: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Italian>
-            <Russian>ТАКТИЧЕСКАЯ ПЕСОЧНИЦА: Управляйте своими операциями от А до Я из штаба. Одиночная или кооперативная игра (1-10 игроков). Игровой цикл: СНАРЯЖЕНИЕ: Выбирайте оружие, технику (наземную/воздушную) и нанимайте союзников ИИ. НАСТРОЙКИ: Настраивайте время и погоду в соответствии с вашей стратегией. ЦЕЛЬ: Активируйте динамические и суммируемые миссии (убийство, уничтожение...). ДЕЙСТВИЕ: Развертывание, бой и возвращение в штаб. СОВМЕСТИМОСТЬ с основными модами: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Russian>
-            <Polish>TAKTYCZNA PIASKOWNICA: Zarządzaj operacjami od A do Z z Kwatery Głównej. Solo lub Kooperacja (1-10 graczy). Pętla gry: WYPOSAŻENIE: Wybierz broń, pojazdy (lądowe/powietrzne) i rekrutuj sojuszników AI. USTAWIENIA: Dostosuj czas i pogodę do swojej strategii. CEL: Aktywuj dynamiczne i możliwe do łączenia misje (zabójstwo, zniszczenie...). AKCJA: Rozmieszczenie, walka i powrót do KG. KOMPATYBILNOŚĆ z niezbędnymi modami: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Polish>
-            <Czech>TAKTICKÝ SANDBOX: Spravujte své operace od A do Z z velitelství. Sólo nebo Kooperace (1-10 hráčů). Herní smyčka: VYBAVENÍ: Vyberte zbraně, vozidla (pozemní/vzdušná) a naverbujte AI spojence. NASTAVENÍ: Upravte čas a počasí podle své strategie. CÍL: Aktivujte dynamické a stohovatelné mise (atentát, zničení...). AKCE: Nasadit, bojovat a vrátit se na velitelství. KOMPATIBILITA s nezbytnými mody: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Czech>
-            <Turkish>TAKTİKSEL SANDBOX: Operasyonlarınızı A&apos;dan Z&apos;ye Karargah&apos;tan yönetin. Tekli veya İşbirliği (1-10 oyuncu). Oyun döngüsü: EKİPMAN: Silahları, araçları (kara/hava) seçin ve yapay zeka müttefiklerinizi toplayın. AYARLAR: Stratejinize göre zamanı ve hava durumunu ayarlayın. HEDEF: Dinamik ve birleştirilebilir görevleri etkinleştirin (suikast, imha...). EYLEM: Konuşlanın, savaşın ve Karargah&apos;a dönün. Temel modlarla UYUMLULUK: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Turkish>
-            <Chinese>戰術沙盒：從總部全權管理您的行動。單人或合作（1-10 名玩家）。遊戲循環：裝備：選擇武器、載具（地面/空中）並招募 AI 盟友。設置：根據您的策略調整時間和天氣。目標：啟動動態和可疊加的任務（暗殺、破壞...）。行動：部署、戰鬥並返回總部。兼容必備模組：RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Chinese>
-            <Chinesesimp>战术沙盒：从总部全权管理您的行动。单人或合作（1-10 名玩家）。游戏循环：装备：选择武器、载具（地面/空中）并招募 AI 盟友。设置：根据您的策略调整时间和天气。目标：启动动态和可叠加的任务（暗杀、破坏...）。行动：部署、战斗并返回总部。兼容必备模组：RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Chinesesimp>
+            <English>Await intelligence on fugitive locations</English>
+            <French>Attendez les renseignements sur les fugitifs</French>
+            <German>Warten Sie auf Informationen über die Flüchtlinge</German>
+            <Spanish>Espera información sobre los fugitivos</Spanish>
+            <Italian>Attendi informazioni sui fuggitivi</Italian>
+            <Russian>Ждите разведданных о беглецах</Russian>
+            <Polish>Czekaj na informacje o zbiegach</Polish>
+            <Czech>Čekejte na informace o uprchlících</Czech>
+            <Turkish>Kaçaklar hakkında istihbarat bekleyin</Turkish>
+            <Chinese>等待逃犯位置情报</Chinese>
+            <Chinesesimp>等待逃犯位置情报</Chinesesimp>
+            <Key ID="STR_MARKER_FUGITIVE">
+                <English>FUGITIVE</English>
+                <French>FUGITIF</French>
+                <German>FLÜCHTLING</German>
+                <Spanish>FUGITIVO</Spanish>
+                <Italian>FUGGITIVO</Italian>
+                <Russian>БЕГЛЕЦ</Russian>
+                <Polish>ZBIEG</Polish>
+                <Czech>UPRCHLÍK</Czech>
+                <Turkish>KAÇAK</Turkish>
+                <Chinese>逃犯</Chinese>
+                <Chinesesimp>逃犯</Chinesesimp>
+            </Key>
+            <Key ID="STR_MARKER_EXECUTED">
+                <English>EXECUTED</English>
+                <French>EXÉCUTÉ</French>
+                <German>HINGERICHTET</German>
+                <Spanish>EJECUTADO</Spanish>
+                <Italian>GIUSTIZIATO</Italian>
+                <Russian>КАЗНЕН</Russian>
+                <Polish>STRACONY</Polish>
+                <Czech>POPRAVEN</Czech>
+                <Turkish>İNFAZ EDİLDİ</Turkish>
+                <Chinese>已被處決</Chinese>
+                <Chinesesimp>已被处决</Chinesesimp>
+            </Key>
+            <Key ID="STR_MARKER_CAPTIVE">
+                <English>CAPTIVE</English>
+                <French>CAPTIF</French>
+                <German>GEFANGENER</German>
+                <Spanish>CAUTIVO</Spanish>
+                <Italian>PRIGIONIERO</Italian>
+                <Russian>ПЛЕННИК</Russian>
+                <Polish>JENIEC</Polish>
+                <Czech>ZAJATEC</Czech>
+                <Turkish>ESİR</Turkish>
+                <Chinese>俘虜</Chinese>
+                <Chinesesimp>俘虏</Chinesesimp>
+            </Key>
+            <Key ID="STR_HINT_FUGITIVES_SPOTTED">
+                <English>Satellite data conversion in progress... Check your map!</English>
+                <French>Conversion des données satellites en cours... Vérifiez votre carte !</French>
+                <German>Satellitendaten werden konvertiert... Überprüfen Sie Ihre Karte!</German>
+                <Spanish>Conversión de datos satelitales en curso... ¡Revise su mapa!</Spanish>
+                <Italian>Conversione dati satellitari in corso... Controlla la tua mappa!</Italian>
+                <Russian>Идет конвертация спутниковых данных... Проверьте карту!</Russian>
+                <Polish>Trwa konwersja danych satelitarnych... Sprawdź mapę!</Polish>
+                <Czech>Probíhá převod satelitních dat... Zkontrolujte mapu!</Czech>
+                <Turkish>Uydu verileri dönüştürülüyor... Haritanızı kontrol edin!</Turkish>
+                <Chinese>衛星數據轉換中... 檢查地圖！</Chinese>
+                <Chinesesimp>卫星数据转换中... 检查地图！</Chinesesimp>
+            </Key>
+            <Key ID="STR_HINT_FUGITIVE_SURRENDERED">
+                <English>A fugitive has surrendered!</English>
+                <French>Un fugitif s&apos;est rendu !</French>
+                <German>Ein Flüchtling hat sich ergeben!</German>
+                <Spanish>¡Un fugitivo se ha rendido!</Spanish>
+                <Italian>Un fuggitivo si è arreso!</Italian>
+                <Russian>Беглец сдался!</Russian>
+                <Polish>Zbieg się poddał!</Polish>
+                <Czech>Uprchlík se vzdal!</Czech>
+                <Turkish>Bir kaçak teslim oldu!</Turkish>
+                <Chinese>一名逃犯已投降！</Chinese>
+                <Chinesesimp>一名逃犯已投降！</Chinesesimp>
+            </Key>
+            <Key ID="STR_NOTIF_TASK1_FAILED">
+                <English>MISSION FAILED - A fugitive has escaped!</English>
+                <French>MISSION ÉCHOUÉE - Un fugitif s&apos;est échappé !</French>
+                <German>MISSION GESCHEITERT - Ein Flüchtling ist entkommen!</German>
+                <Spanish>MISIÓN FALLIDA - ¡Un fugitivo ha escapado!</Spanish>
+                <Italian>MISSIONE FALLITA - Un fuggitivo è scappato!</Italian>
+                <Russian>МИССИЯ ПРОВАЛЕНА - Беглец сбежал!</Russian>
+                <Polish>MISJA NIEUDANA - Zbieg uciekł!</Polish>
+                <Czech>MISE SELHALA - Uprchlík unikl!</Czech>
+                <Turkish>GÖREV BAŞARISIZ - Bir kaçak kaçtı!</Turkish>
+                <Chinese>任務失敗 - 一名逃犯逃脫了！</Chinese>
+                <Chinesesimp>任务失败 - 一名逃犯逃脱了！</Chinesesimp>
+            </Key>
+            <Key ID="STR_MARKER_CAPTIVE">
+                <English>Captive</English>
+                <French>Captif</French>
+                <German>Gefangener</German>
+                <Spanish>Cautivo</Spanish>
+                <Italian>Prigioniero</Italian>
+                <Russian>Пленный</Russian>
+                <Polish>Jeniec</Polish>
+                <Czech>Zajatec</Czech>
+                <Turkish>Esir</Turkish>
+                <Chinese>俘虜</Chinese>
+                <Chinesesimp>俘虏</Chinesesimp>
+            </Key>
+            <Key ID="STR_HINT_FUGITIVE_CAPTURED">
+                <English>TARGET NEUTRALIZED</English>
+                <French>CIBLE NEUTRALISÉE</French>
+                <German>ZIEL NEUTRALISIERT</German>
+                <Spanish>OBJETIVO NEUTRALIZADO</Spanish>
+                <Italian>OBIETTIVO NEUTRALIZZATO</Italian>
+                <Russian>ЦЕЛЬ НЕЙТРАЛИЗОВАНА</Russian>
+                <Polish>CEL ZNEUTRALIZOWANY</Polish>
+                <Czech>CÍL NEUTRALIZOVÁN</Czech>
+                <Turkish>HEDEF ETKİSİZ</Turkish>
+                <Chinese>目标已制伏</Chinese>
+                <Chinesesimp>目标已制伏</Chinesesimp>
+            </Key>
+            <Key ID="STR_ACTION_SUBMIT">
+                <English>Subdue suspect</English>
+                <French>Soumettre le suspect</French>
+                <German>Verdächtigen überwältigen</German>
+                <Spanish>Someter al sospechoso</Spanish>
+                <Italian>Sottomettere il sospetto</Italian>
+                <Russian>Задержать подозреваемого</Russian>
+                <Polish>Obezwładnij podejrzanego</Polish>
+                <Czech>Zpacifikovat podezřelého</Czech>
+                <Turkish>Şüpheliyi bastır</Turkish>
+                <Chinese>制服嫌疑人</Chinese>
+                <Chinesesimp>制服嫌疑人</Chinesesimp>
+            </Key>
+            <Key ID="STR_NOTIF_TASK5_START_TITLE">
+                <English>TASK 5 ACTIVATED</English>
+                <French>TÂCHE 5 ACTIVÉE</French>
+                <German>AUFGABE 5 AKTIVIERT</German>
+                <Spanish>TAREA 5 ACTIVADA</Spanish>
+                <Italian>COMPITO 5 ATTIVATO</Italian>
+                <Russian>ЗАДАНИЕ 5 АКТИВИРОВАНО</Russian>
+                <Polish>ZADANIE 5 AKTYWOWANE</Polish>
+                <Czech>ÚKOL 5 AKTIVOVÁN</Czech>
+                <Turkish>GÖREV 5 AKTİF</Turkish>
+                <Chinese>任務 5 已啟動</Chinese>
+                <Chinesesimp>任务 5 已启动</Chinesesimp>
+            </Key>
+            <Key ID="STR_NOTIF_TASK5_START_DESC">
+                <English>CITY SECURITY AND DEFUSAL</English>
+                <French>SÉCURISATION VILLE ET DÉSAMORÇAGE</French>
+                <German>STADTSICHERUNG UND ENTSCHÄRFUNG</German>
+                <Spanish>SEGURIDAD URBANA Y DESACTIVACIÓN</Spanish>
+                <Italian>SICUREZZA CITTÀ E DISINNESCO</Italian>
+                <Russian>БЕЗОПАСНОСТЬ ГОРОДА И ОБЕЗВРЕЖИВАНИЕ</Russian>
+                <Polish>ZABEZPIECZENIE MIASTA I ROZBROJENIE</Polish>
+                <Czech>ZABEZPEČENÍ MĚSTA A ZNEŠKODNĚNÍ</Czech>
+                <Turkish>ŞEHİR GÜVENLİĞİ VE ETKİSİZLEŞTİRME</Turkish>
+                <Chinese>城市安全與拆除</Chinese>
+                <Chinesesimp>城市安全与拆除</Chinesesimp>
+            </Key>
+            <Key ID="STR_NOTIF_BOMB_FOUND_TITLE">
+                <English>BOMB DISCOVERED</English>
+                <French>BOMBE DÉCOUVERTE</French>
+                <German>BOMBE ENTDECKT</German>
+                <Spanish>BOMBA DESCUBIERTA</Spanish>
+                <Italian>BOMBA SCOPERTA</Italian>
+                <Russian>БОМБА ОБНАРУЖЕНА</Russian>
+                <Polish>WYKRYTO BOMBĘ</Polish>
+                <Czech>NALEZENA BOMBA</Czech>
+                <Turkish>BOMBA BULUNDU</Turkish>
+                <Chinese>發現炸彈</Chinese>
+                <Chinesesimp>发现炸弹</Chinesesimp>
+            </Key>
+            <Key ID="STR_NOTIF_CIV_KILLED_TITLE">
+                <English>CIVILIAN KILLED</English>
+                <French>CIVIL TUÉ</French>
+                <German>ZIVILIST GETÖTET</German>
+                <Spanish>CIVIL MUERTO</Spanish>
+                <Italian>CIVILE UCCISO</Italian>
+                <Russian>ГРАЖДАНСКИЙ УБИТ</Russian>
+                <Polish>CYWIL ZABITY</Polish>
+                <Czech>CIVILİSTA ZABIT</Czech>
+                <Turkish>SİVİL ÖLDÜRÜLDÜ</Turkish>
+                <Chinese>平民死亡</Chinese>
+                <Chinesesimp>平民死亡</Chinesesimp>
+            </Key>
+            <Key ID="STR_NOTIF_CIV_KILLED_DESC">
+                <English>Civilian casualties: %1 / 2</English>
+                <French>Pertes civiles : %1 / 2</French>
+                <German>Zivile Opfer: %1 / 2</German>
+                <Spanish>Bajas civiles: %1 / 2</Spanish>
+                <Italian>Vittime civili: %1 / 2</Italian>
+                <Russian>Жертвы среди гражданских: %1 / 2</Russian>
+                <Polish>Ofiary cywilne: %1 / 2</Polish>
+                <Czech>Civilní oběti: %1 / 2</Czech>
+                <Turkish>Sivil kayıplar: %1 / 2</Turkish>
+                <Chinese>平民傷亡：%1 / 2</Chinese>
+                <Chinesesimp>平民伤亡：%1 / 2</Chinesesimp>
+            </Key>
+            <Key ID="STR_NOTIF_FAIL_TITLE">
+                <English>MISSION FAILED</English>
+                <French>ÉCHEC MISSION</French>
+                <German>MISSION FEHLGESCHLAGEN</German>
+                <Spanish>MISIÓN FALLIDA</Spanish>
+                <Italian>MISSIONE FALLITA</Italian>
+                <Russian>МИССИЯ ПРОВАЛЕНА</Russian>
+                <Polish>MISJA NIEUDANA</Polish>
+                <Czech>MISE SELHALA</Czech>
+                <Turkish>GÖREV BAŞARISIZ</Turkish>
+                <Chinese>任務失敗</Chinese>
+                <Chinesesimp>任务失败</Chinesesimp>
+            </Key>
+            <Key ID="STR_NOTIF_FAIL_CIVILIANS">
+                <English>FAILURE: Critical civilian casualties (5)!</English>
+                <French>ÉCHEC : Pertes civiles critiques (5) !</French>
+                <German>FEHLSCHLAG: Kritische zivile Opfer (5)!</German>
+                <Spanish>¡FRACASO: Bajas civiles críticas (5)!</Spanish>
+                <Italian>FALLIMENTO: Vittime civili critiche (5)!</Italian>
+                <Russian>ПРОВАЛ: Критические жертвы среди гражданских (5)!</Russian>
+                <Polish>PORAŻKA: Krytyczne ofiary cywilne (5)!</Polish>
+                <Czech>SELHÁNÍ: Kritické civilní oběti (5)!</Czech>
+                <Turkish>BAŞARISIZLIK: Kritik sivil kayıplar (5)!</Turkish>
+                <Chinese>失敗：重大平民傷亡 (5)！</Chinese>
+                <Chinesesimp>失败：重大平民伤亡 (5)！</Chinesesimp>
+            </Key>
+            <Key ID="STR_NOTIF_FAIL_BOMB">
+                <English>FAILURE: Bomb exploded!</English>
+                <French>ÉCHEC : Bombe explosée !</French>
+                <German>FEHLSCHLAG: Bombe explodiert!</German>
+                <Spanish>¡FRACASO: Bomba explotada!</Spanish>
+                <Italian>FALLIMENTO: Bomba esplosa!</Italian>
+                <Russian>ПРОВАЛ: Бомба взорвалась!</Russian>
+                <Polish>PORAŻKA: Bomba wybuchła!</Polish>
+                <Czech>SELHÁNÍ: Bomba vybuchla!</Czech>
+                <Turkish>BAŞARISIZLIK: Bomba patladı!</Turkish>
+                <Chinese>失敗：炸彈爆炸！</Chinese>
+                <Chinesesimp>失败：炸弹爆炸！</Chinesesimp>
+            </Key>
+            <Key ID="STR_NOTIF_WIN_TITLE">
+                <English>MISSION ACCOMPLISHED</English>
+                <French>MISSION ACCOMPLIE</French>
+                <German>MISSION ERFOLGREICH</German>
+                <Spanish>MISIÓN CUMPLIDA</Spanish>
+                <Italian>MISSIONE COMPIUTA</Italian>
+                <Russian>МИССИЯ ВЫПОЛНЕНА</Russian>
+                <Polish>MISJA WYKONANA</Polish>
+                <Czech>MISE SPLŠNĚNA</Czech>
+                <Turkish>GÖREV TAMAMLANDI</Turkish>
+                <Chinese>任務完成</Chinese>
+                <Chinesesimp>任务完成</Chinesesimp>
+            </Key>
+            <Key ID="STR_NOTIF_WIN_SECURED">
+                <English>SUCCESS: Zone secured!</English>
+                <French>SUCCÈS : Zone sécurisée !</French>
+                <German>ERFOLG: Zone gesichert!</German>
+                <Spanish>¡ÉXITO: Zona asegurada!</Spanish>
+                <Italian>SUCCESSO: Zona messa in sicurezza!</Italian>
+                <Russian>УСПЕХ: Зона защищена!</Russian>
+                <Polish>SUKCES: Strefa zabezpieczona!</Polish>
+                <Czech>ÚspĚCH: Zóna zajištěna!</Czech>
+                <Turkish>BAŞARI: Bölge güvence altında!</Turkish>
+                <Chinese>成功：區域已安全！</Chinese>
+                <Chinesesimp>成功：区域已安全！</Chinesesimp>
+            </Key>
+            <Key ID="GAME_DESCRIPTION">
+                <English>TACTICAL SANDBOX: Manage your operations from A to Z from the HQ. Solo or Coop (1-10 players). The game loop: EQUIPMENT: Choose weapons, vehicles (ground/air) and recruit your AI allies. SETTINGS: Adjust time and weather according to your strategy. OBJECTIVE: Activate dynamic and stackable missions (assassination, destruction...). ACTION: Deploy, fight and return to HQ. COMPATIBILITY with essential mods: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</English>
+                <French>TACTICAL SANBOX : Gérez vos opérations de A à Z depuis le QG. Solo ou Coop (1-10 joueurs). La boucle de jeu : EQUIPEMENENT : Choisissez armes, véhicules (sol/air) et recrutez vos alliés IA. PARAMETRES : Réglez l&apos;heure et la météo selon votre stratégie. OBJECTIF : Activez des missions dynamiques et cumulables (assassinat, destruction...).  ACTION : Déployez-vous, combattez et revenez au QG. COMPATIBILITE avec les mods incontournables : RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</French>
+                <German>TACTICAL SANDBOX: Verwalten Sie Ihre Operationen von A bis Z vom HQ aus. Einzelspieler oder Koop (1-10 Spieler). Der Spielablauf: AUSRÜSTUNG: Wählen Sie Waffen, Fahrzeuge (Boden/Luft) und rekrutieren Sie Ihre KI-Verbündeten. EINSTELLUNGEN: Stellen Sie Zeit und Wetter entsprechend Ihrer Strategie ein. ZIEL: Aktivieren Sie dynamische und stapelbare Missionen (Attentat, Zerstörung...). AKTION: Einsatz, Kampf und Rückkehr zum HQ. KOMPATIBILITÄT mit unverzichtbaren Mods: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</German>
+                <Spanish>SANDBOX TÁCTICO: Gestiona tus operaciones de la A a la Z desde el Cuartel General. Solo o Cooperativo (1-10 jugadores). El ciclo de juego: EQUIPAMIENTO: Elige armas, vehículos (tierra/aire) y recluta a tus aliados de la IA. AJUSTES: Configura la hora y el clima según tu estrategia. OBJETIVO: Activa misiones dinámicas y acumulables (asesinato, destrucción...). ACCIÓN: Despliégate, combate y regresa al Cuartel General. COMPATIBILIDAD con mods imprescindibles: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Spanish>
+                <Italian>SANDBOX TATTICO: Gestisci le tue operazioni dalla A alla Z dal QG. Singolo o Coop (1-10 giocatori). Il ciclo di gioco: EQUIPAGGIAMENTO: Scegli armi, veicoli (terra/aria) e recluta i tuoi alleati IA. IMPOSTAZIONI: Regola l&apos;ora e il meteo secondo la tua strategia. OBIETTIVO: Attiva missioni dinamiche e cumulabili (assassinio, distruzione...). AZIONE: Schieramento, combattimento e ritorno al QG. COMPATIBILITÀ con mod essenziali: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Italian>
+                <Russian>ТАКТИЧЕСКАЯ ПЕСОЧНИЦА: Управляйте своими операциями от А до Я из штаба. Одиночная или кооперативная игра (1-10 игроков). Игровой цикл: СНАРЯЖЕНИЕ: Выбирайте оружие, технику (наземную/воздушную) и нанимайте союзников ИИ. НАСТРОЙКИ: Настраивайте время и погоду в соответствии с вашей стратегией. ЦЕЛЬ: Активируйте динамические и суммируемые миссии (убийство, уничтожение...). ДЕЙСТВИЕ: Развертывание, бой и возвращение в штаб. СОВМЕСТИМОСТЬ с основными модами: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Russian>
+                <Polish>TAKTYCZNA PIASKOWNICA: Zarządzaj operacjami od A do Z z Kwatery Głównej. Solo lub Kooperacja (1-10 graczy). Pętla gry: WYPOSAŻENIE: Wybierz broń, pojazdy (lądowe/powietrzne) i rekrutuj sojuszników AI. USTAWIENIA: Dostosuj czas i pogodę do swojej strategii. CEL: Aktywuj dynamiczne i możliwe do łączenia misje (zabójstwo, zniszczenie...). AKCJA: Rozmieszczenie, walka i powrót do KG. KOMPATYBILNOŚĆ z niezbędnymi modami: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Polish>
+                <Czech>TAKTICKÝ SANDBOX: Spravujte své operace od A do Z z velitelství. Sólo nebo Kooperace (1-10 hráčů). Herní smyčka: VYBAVENÍ: Vyberte zbraně, vozidla (pozemní/vzdušná) a naverbujte AI spojence. NASTAVENÍ: Upravte čas a počasí podle své strategie. CÍL: Aktivujte dynamické a stohovatelné mise (atentát, zničení...). AKCE: Nasadit, bojovat a vrátit se na velitelství. KOMPATIBILITA s nezbytnými mody: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Czech>
+                <Turkish>TAKTİKSEL SANDBOX: Operasyonlarınızı A&apos;dan Z&apos;ye Karargah&apos;tan yönetin. Tekli veya İşbirliği (1-10 oyuncu). Oyun döngüsü: EKİPMAN: Silahları, araçları (kara/hava) seçin ve yapay zeka müttefiklerinizi toplayın. AYARLAR: Stratejinize göre zamanı ve hava durumunu ayarlayın. HEDEF: Dinamik ve birleştirilebilir görevleri etkinleştirin (suikast, imha...). EYLEM: Konuşlanın, savaşın ve Karargah&apos;a dönün. Temel modlarla UYUMLULUK: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Turkish>
+                <Chinese>戰術沙盒：從總部全權管理您的行動。單人或合作（1-10 名玩家）。遊戲循環：裝備：選擇武器、載具（地面/空中）並招募 AI 盟友。設置：根據您的策略調整時間和天氣。目標：啟動動態和可疊加的任務（暗殺、破壞...）。行動：部署、戰鬥並返回總部。兼容必備模組：RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Chinese>
+                <Chinesesimp>战术沙盒：从总部全权管理您的行动。单人或合作（1-10 名玩家）。游戏循环：装备：选择武器、载具（地面/空中）并招募 AI 盟友。设置：根据您的策略调整时间和天气。目标：启动动态和可叠加的任务（暗杀、破坏...）。行动：部署、战斗并返回总部。兼容必备模组：RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Chinesesimp>
+            </Key>
         </Key>
     </Package>
 </Project>

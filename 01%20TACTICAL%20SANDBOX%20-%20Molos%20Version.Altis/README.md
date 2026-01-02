@@ -44,6 +44,7 @@ fonction si le QG est detruit !
 Tache 1 à refaire, 
 TAche 5 a corriger ! 
 Modifier les équipements des ennemis !
+TESTER LA MORT DU FUGITIF !
 
 idée : 
 

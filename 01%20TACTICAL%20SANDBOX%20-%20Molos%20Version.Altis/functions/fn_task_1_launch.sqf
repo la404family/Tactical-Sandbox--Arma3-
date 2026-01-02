@@ -161,38 +161,66 @@ private _selectedPaths = _availablePaths select [0, 2];
             MISSION_var_task1_fugitives pushBack _fugitive;
 
             // --- SUIVI DU FUGITIF (MARQUEUR CROIX ROUGE ALÉATOIRE) ---
+            // --- SUIVI DU FUGITIF (MARQUEUR CROIX ROUGE & JAUNE) ---
             [_fugitive, _pathIndex] spawn {
                 params ["_fugitive", "_pathIndex"];
                 private _markerName = format ["task1_track_%1", _pathIndex];
                 
-                // Délai d'apparition initial (2 à 3 minutes)
-                sleep (120 + random 60);
-
-                while {alive _fugitive && !(_fugitive getVariable ["isCaptured", false]) && MISSION_var_task1_running} do {
-                    // Création ou Mise à jour
-                    if (getMarkerColor _markerName == "") then {
-                        createMarker [_markerName, getPos _fugitive];
-                        _markerName setMarkerType "hd_destroy";
-                        _markerName setMarkerColor "ColorRed";
-                        _markerName setMarkerText "FUGITIF";
-                    } else {
-                        _markerName setMarkerPos (getPos _fugitive);
+                // Variables de timing pour le marqueur rouge
+                private _initialDelay = 120 + random 60; // 2 à 3 minutes
+                private _spawnTime = time;
+                private _nextUpdate = _spawnTime + _initialDelay; 
+                
+                // Boucle de surveillance rapide (2s)
+                while {MISSION_var_task1_running} do {
+                    
+                    // 1. CAS: MORT (Priorité absolue)
+                    if (!alive _fugitive) exitWith {
+                        // Supprimer marqueur rouge
+                        if (getMarkerColor _markerName != "") then { deleteMarker _markerName; };
+                        
+                        // Supprimer marqueur captif (bleu) si existant
+                        private _capM = _fugitive getVariable ["captiveMarkerName", ""];
+                        if (_capM != "") then { deleteMarker _capM; };
+                        
+                        // Créer marqueur JAUNE "EXÉCUTÉ"
+                        private _deadMarkerName = format ["task1_dead_%1", _pathIndex];
+                        createMarker [_deadMarkerName, getPos _fugitive];
+                        _deadMarkerName setMarkerType "hd_destroy";
+                        _deadMarkerName setMarkerColor "ColorYellow";
+                        _deadMarkerName setMarkerText (localize "STR_MARKER_EXECUTED");
                     };
                     
-                    // Attente aléatoire (15 à 120 secondes)
-                    sleep (15 + random 105);
+                    // 2. CAS: CAPTURÉ
+                    if (_fugitive getVariable ["isCaptured", false]) then {
+                        // Si capturé, on supprime le marqueur rouge de poursuite (le bleu est géré par le FSM)
+                        if (getMarkerColor _markerName != "") then { deleteMarker _markerName; };
+                    } else {
+                        // 3. CAS: FUGITIF LIBRE (Marqueur Rouge)
+                        
+                        // On vérifie si c'est le moment de la mise à jour (Délai initial + Intervalles)
+                        if (time >= _nextUpdate) then {
+                            // Création ou Mise à jour
+                            if (getMarkerColor _markerName == "") then {
+                                createMarker [_markerName, getPos _fugitive];
+                                _markerName setMarkerType "hd_destroy";
+                                _markerName setMarkerColor "ColorRed";
+                                _markerName setMarkerText (localize "STR_MARKER_FUGITIVE");
+                            } else {
+                                _markerName setMarkerPos (getPos _fugitive);
+                            };
+                            
+                            // Prochaine mise à jour aléatoire (15 à 120 secondes)
+                            _nextUpdate = time + (15 + random 105);
+                        };
+                    };
+                    
+                    sleep 2;
                 };
                 
-                // Suppression du marqueur rouge à la fin de la boucle (mort, capture ou fin de mission)
-                deleteMarker _markerName;
-
-                // Si le fugitif est MORT et non capturé, afficher "EXÉCUTÉ"
-                if (!alive _fugitive && !(_fugitive getVariable ["isCaptured", false]) && MISSION_var_task1_running) then {
-                     private _deadMarkerName = format ["task1_dead_%1", _pathIndex];
-                     createMarker [_deadMarkerName, getPos _fugitive];
-                     _deadMarkerName setMarkerType "hd_destroy";
-                     _deadMarkerName setMarkerColor "ColorYellow";
-                     _deadMarkerName setMarkerText "EXÉCUTÉ";
+                // Nettoyage final si mission terminée proprement mais fugitif en vie
+                if (!MISSION_var_task1_running) then {
+                    deleteMarker _markerName;
                 };
             };
             
@@ -446,8 +474,7 @@ private _selectedPaths = _availablePaths select [0, 2];
                                 [_fugitive] joinSilent (createGroup [east, true]);
                                 _fugitive setBehaviour "CARELESS"; 
                                 _fugitive forceSpeed 6;
-                                
-                                hint (localize "STR_HINT_FUGITIVE_ARMED");
+                            
                             };
                             
                             // Reddition possible (SI NON ARMÉ)
@@ -500,7 +527,6 @@ private _selectedPaths = _availablePaths select [0, 2];
                 [_taskID, "SUCCEEDED"] call BIS_fnc_taskSetState;
                 MISSION_var_task1_running = false;
                 if (!isNull _failTrigger) then { deleteVehicle _failTrigger; };
-                hint (localize "STR_HINT_ALL_FUGITIVES_NEUTRALIZED");
                 [] spawn MISSION_fnc_task_x_finish;
             };
             
@@ -526,7 +552,7 @@ private _selectedPaths = _availablePaths select [0, 2];
                     };
                 } forEach MISSION_var_task1_fugitives;
                 
-                hint (localize "STR_HINT_FUGITIVE_ESCAPED");
+
                 [] spawn MISSION_fnc_task_x_failure;
             };
         };
