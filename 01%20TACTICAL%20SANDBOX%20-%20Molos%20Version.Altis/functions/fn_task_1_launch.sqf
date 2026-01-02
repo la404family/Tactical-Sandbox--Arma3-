@@ -12,7 +12,7 @@ MISSION_var_task1_fugitives = [];
 MISSION_var_task1_boats = [];
 MISSION_var_task1_escaped = false;
 
-// Définition des 7 chemins
+// Définition des 7 chemins (correspondant aux 7 bateaux)
 private _paths = [
     ["task_1_spawn_01", "task_1_spawn_02", "task_1_spawn_03", "task_1_spawn_04", "task_1_spawn_05", "task_1_spawn_06"],
     ["task_1_spawn_07", "task_1_spawn_08", "task_1_spawn_09", "task_1_spawn_10", "task_1_spawn_11", "task_1_spawn_12"],
@@ -49,27 +49,74 @@ hint (localize "STR_NOTIF_TASK1_START");
 // SECTION 3: SÉLECTION ALÉATOIRE DES FUGITIFS ET CHEMINS
 // ============================================================================
 
+// Sélection aléatoire de 2 fugitifs sur 3
 private _fugitiveTemplates = MISSION_var_fugitives call BIS_fnc_arrayShuffle;
 _fugitiveTemplates = _fugitiveTemplates select [0, 2];
 
+// Sélection aléatoire de 2 chemins sur 7 (index 0-6)
 private _availablePaths = [0,1,2,3,4,5,6] call BIS_fnc_arrayShuffle;
 private _selectedPaths = _availablePaths select [0, 2];
 
 // ============================================================================
-// SECTION 4: SPAWN DIFFÉRÉ (5 MINUTES)
+// SECTION 4: SPAWN DIFFÉRÉ (5 MINUTES = 300 SECONDES)
 // ============================================================================
 
 [_fugitiveTemplates, _selectedPaths, _paths, _taskID] spawn {
     params ["_fugitiveTemplates", "_selectedPaths", "_paths", "_taskID"];
     
-    sleep 3; // Délai initial
+    // ========================================================================
+    // ATTENTE DE 5 MINUTES
+    // ========================================================================
+    sleep 3; // 5 minutes
     
     if (!MISSION_var_task1_running) exitWith {};
     
     hint (localize "STR_HINT_FUGITIVES_SPOTTED");
     
-    // ... (Gardez le code de SPAWN DES BATEAUX et du TRIGGER ici) ... 
-    // ... (Je me concentre sur la boucle IA ci-dessous) ...
+    // ========================================================================
+    // SPAWN DES BATEAUX (tous les 7 bateaux aux positions correspondantes)
+    // ========================================================================
+    for "_i" from 1 to 7 do {
+        // Récupérer le bateau en mémoire
+        private _boatVarName = format ["task_x_boat_%1", _i];
+        private _boatTemplate = missionNamespace getVariable [_boatVarName, objNull];
+        
+        // Récupérer la position du bateau (héliport)
+        private _boatPlaceVarName = format ["task_1_boat_place_%1", _i];
+        private _boatPlace = missionNamespace getVariable [_boatPlaceVarName, objNull];
+        
+        // Récupérer la direction d'évasion
+        private _boatDirVarName = format ["task_1_boat_direction_%1", _i];
+        private _boatDirection = missionNamespace getVariable [_boatDirVarName, objNull];
+        
+        if (!isNull _boatTemplate && !isNull _boatPlace) then {
+            // Créer le bateau à la position
+            private _boatType = typeOf _boatTemplate;
+            private _boatPos = getPos _boatPlace;
+            private _boatDir = getDir _boatPlace;
+            
+            private _boat = createVehicle [_boatType, _boatPos, [], 0, "NONE"];
+            _boat setDir _boatDir;
+            _boat setPos _boatPos;
+            
+            // Stocker la direction d'évasion
+            if (!isNull _boatDirection) then {
+                _boat setVariable ["escapeDirection", getPos _boatDirection, true];
+            } else {
+                // Direction par défaut (1000m devant le bateau)
+                private _escapePos = _boatPos vectorAdd [sin(_boatDir) * 1000, cos(_boatDir) * 1000, 0];
+                _boat setVariable ["escapeDirection", _escapePos, true];
+            };
+            
+            // Stocker l'index du chemin correspondant
+            _boat setVariable ["pathIndex", _i - 1, true];
+            
+            MISSION_var_task1_boats pushBack _boat;
+        } else {
+            // Placeholder pour maintenir les index
+            MISSION_var_task1_boats pushBack objNull;
+        };
+    };
 
     // ========================================================================
     // SPAWN DES FUGITIFS ET IA
@@ -78,9 +125,9 @@ private _selectedPaths = _availablePaths select [0, 2];
     
     {
         private _template = _x;
-        private _pathIndex = _selectedPaths select _forEachIndex;
+        private _pathIndex = _selectedPaths select _forEachIndex; // Index du chemin (0-6)
         private _path = _paths select _pathIndex;
-        private _boatIndex = _forEachIndex;
+        private _boatIndex = _pathIndex; // Le bateau correspond au chemin (même index)
         
         _template params ["_name", "_type", "_pos", "_dir", "_side", "_loadout"];
         
@@ -98,11 +145,13 @@ private _selectedPaths = _availablePaths select [0, 2];
             _fugitive setVariable ["isCaptured", false, true];
             _fugitive setVariable ["isArmed", false, true];
             _fugitive setVariable ["boarded", false, true];
-            _fugitive setVariable ["captureActionID", -1]; 
+            _fugitive setVariable ["captureActionID", -1];
+            _fugitive setVariable ["pathIndex", _pathIndex, true];
+            _fugitive setVariable ["boatIndex", _boatIndex, true];
             
             _fugitive setCaptive true;
             _fugitive setBehaviour "CARELESS";
-            _fugitive setUnitPos "UP"; // Force debout pour éviter qu'il rampe
+            _fugitive setUnitPos "UP";
             _fugitive forceSpeed 6;
             removeAllWeapons _fugitive;
             
@@ -298,15 +347,10 @@ private _selectedPaths = _availablePaths select [0, 2];
                                 _fugitive disableAI "ALL";
                                 
                                 // TRANSITION FLUIDE: Genoux -> Couché
-                                // Étape 1: Position à genoux normale (transition)
                                 _fugitive playMove _animKneelIdle;
                                 sleep 0.4;
-                                
-                                // Étape 2: Se coucher
                                 _fugitive playMove _animProne;
                                 sleep 1.0;
-                                
-                                // Verrouiller au sol
                                 _fugitive switchMove _animProne;
                                 _fugitive setUnitPos "DOWN";
                                 
@@ -316,6 +360,21 @@ private _selectedPaths = _availablePaths select [0, 2];
                                     _fugitive removeAction _actID;
                                     _fugitive setVariable ["captureActionID", -1];
                                 };
+                                
+                                // ==========================================
+                                // CRÉER LE MARQUEUR "CAPTIF" SUR LA CARTE
+                                // ==========================================
+                                private _markerName = format ["marker_captive_%1", _fugitive];
+                                private _marker = createMarker [_markerName, getPos _fugitive];
+                                _marker setMarkerType "hd_destroy";
+                                _marker setMarkerColor "ColorBlue";
+                                _marker setMarkerText (localize "STR_MARKER_CAPTIVE");
+                                _marker setMarkerSize [0.7, 0.7];
+                                
+                                _fugitive setVariable ["captiveMarkerName", _markerName, true];
+                                
+                                // Notification
+                                hint (localize "STR_HINT_FUGITIVE_CAPTURED");
                             };
                         };
                         
@@ -356,16 +415,31 @@ private _selectedPaths = _availablePaths select [0, 2];
                                         private _nextObj = missionNamespace getVariable [_path select _wpIndex, objNull];
                                         if (!isNull _nextObj) then { _fugitive doMove (getPos _nextObj); };
                                     } else {
-                                        // Embarquement bateau
-                                        if (_boatIndex < count MISSION_var_task1_boats) then {
-                                            private _boat = MISSION_var_task1_boats select _boatIndex;
+                                        // ==========================================
+                                        // FIN DU CHEMIN: EMBARQUEMENT DANS LE BATEAU
+                                        // ==========================================
+                                        private _boatIdx = _fugitive getVariable ["boatIndex", 0];
+                                        if (_boatIdx < count MISSION_var_task1_boats) then {
+                                            private _boat = MISSION_var_task1_boats select _boatIdx;
                                             if (!isNull _boat && !(_fugitive getVariable ["boarded", false])) then {
                                                 _fugitive doMove (getPos _boat);
+                                                
+                                                // Vérifier si assez proche pour embarquer
                                                 if (_fugitive distance2D _boat < 5) then {
                                                     _fugitive moveInDriver _boat;
                                                     _boat engineOn true;
-                                                    _boat doMove (_boat getVariable ["escapeDirection", [0,0,0]]);
+                                                    
+                                                    // Prendre la direction d'évasion
+                                                    private _escapeDir = _boat getVariable ["escapeDirection", [0,0,0]];
+                                                    _boat doMove _escapeDir;
+                                                    
                                                     _fugitive setVariable ["boarded", true, true];
+                                                    
+                                                    // ==========================================
+                                                    // ÉCHEC DE LA MISSION - FUGITIF S'ÉCHAPPE
+                                                    // ==========================================
+                                                    MISSION_var_task1_escaped = true;
+                                                    hint (localize "STR_HINT_FUGITIVE_ESCAPED");
                                                 };
                                             };
                                         };
@@ -373,13 +447,21 @@ private _selectedPaths = _availablePaths select [0, 2];
                                 };
                             };
                             
-                            // Armement après WP5
-                            if (_wpIndex > 4 && !(_fugitive getVariable ["isArmed", false])) then {
+                            // Armement au point 6 (WP5 = index 5 = 6ème point)
+                            if (_wpIndex >= 5 && !(_fugitive getVariable ["isArmed", false])) then {
+                                _fugitive addMagazine "16Rnd_9x21_Mag";
                                 _fugitive addMagazine "16Rnd_9x21_Mag";
                                 _fugitive addWeapon "hgun_P07_F";
                                 _fugitive setVariable ["isArmed", true, true];
+                                
+                                // Devient hostile (OPFOR)
                                 _fugitive setCaptive false;
-                                _fugitive setBehaviour "COMBAT";
+                                [_fugitive] joinSilent (createGroup [east, true]);
+                                _fugitive setBehaviour "CARELESS"; // Continue de fuir
+                                _fugitive forceSpeed 6;
+                                
+                                // Message d'alerte
+                                hint (localize "STR_HINT_FUGITIVE_ARMED");
                             };
                             
                             // Transition: Reddition si joueur proche et non armé
@@ -437,17 +519,38 @@ private _selectedPaths = _availablePaths select [0, 2];
         while {MISSION_var_task1_running} do {
             sleep 2;
             
-            // Défaite
+            // ==========================================
+            // DÉFAITE: Un fugitif s'est échappé en bateau
+            // ==========================================
             if (MISSION_var_task1_escaped) exitWith {
                 [_taskID, "FAILED"] call BIS_fnc_taskSetState;
                 MISSION_var_task1_running = false;
+                
+                // Nettoyage
+                {
+                    if (!isNull _x) then {
+                        private _markerName = _x getVariable ["captiveMarkerName", ""];
+                        if (_markerName != "") then { deleteMarker _markerName; };
+                    };
+                } forEach MISSION_var_task1_fugitives;
             };
             
-            // Victoire
-            private _remaining = {alive _x && !(_x getVariable ["isCaptured", false])} count MISSION_var_task1_fugitives;
+            // ==========================================
+            // VICTOIRE: Tous les fugitifs sont capturés OU morts
+            // ==========================================
+            private _remaining = {
+                alive _x && !(_x getVariable ["isCaptured", false])
+            } count MISSION_var_task1_fugitives;
+            
             if (_remaining == 0 && count MISSION_var_task1_fugitives > 0) exitWith {
                 [_taskID, "SUCCEEDED"] call BIS_fnc_taskSetState;
                 MISSION_var_task1_running = false;
+                
+                // Notification de victoire
+                hint (localize "STR_HINT_ALL_FUGITIVES_NEUTRALIZED");
+                
+                // Appeler la séquence de fin de mission
+                [] spawn MISSION_fnc_task_x_finish;
             };
         };
     };

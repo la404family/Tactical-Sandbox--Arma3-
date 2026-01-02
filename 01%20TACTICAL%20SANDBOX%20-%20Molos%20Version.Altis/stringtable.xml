@@ -1093,6 +1093,45 @@
             <Chinese>俘虜</Chinese>
             <Chinesesimp>俘虏</Chinesesimp>
         </Key>
+        <Key ID="STR_HINT_FUGITIVE_CAPTURED">
+            <English>TARGET NEUTRALIZED - Fugitive captured!</English>
+            <French>CIBLE NEUTRALISÉE - Fugitif capturé !</French>
+            <German>ZIEL NEUTRALISIERT - Flüchtling gefangen!</German>
+            <Spanish>OBJETIVO NEUTRALIZADO - ¡Fugitivo capturado!</Spanish>
+            <Italian>OBIETTIVO NEUTRALIZZATO - Fuggitivo catturato!</Italian>
+            <Russian>ЦЕЛЬ НЕЙТРАЛИЗОВАНА - Беглец пойман!</Russian>
+            <Polish>CEL ZNEUTRALIZOWANY - Zbieg schwytany!</Polish>
+            <Czech>CÍL NEUTRALIZOVÁN - Uprchlík zajat!</Czech>
+            <Turkish>HEDEF ETKİSİZ - Kaçak yakalandı!</Turkish>
+            <Chinese>目標已制伏 - 逃犯被捕！</Chinese>
+            <Chinesesimp>目标已制伏 - 逃犯被捕！</Chinesesimp>
+        </Key>
+        <Key ID="STR_HINT_FUGITIVE_ESCAPED">
+            <English>MISSION FAILED - A fugitive has escaped by boat!</English>
+            <French>MISSION ÉCHOUÉE - Un fugitif s&apos;est échappé en bateau !</French>
+            <German>MISSION GESCHEITERT - Ein Flüchtling ist mit dem Boot entkommen!</German>
+            <Spanish>MISIÓN FALLIDA - ¡Un fugitivo ha escapado en barco!</Spanish>
+            <Italian>MISSIONE FALLITA - Un fuggitivo è scappato in barca!</Italian>
+            <Russian>МИССИЯ ПРОВАЛЕНА - Беглец сбежал на лодке!</Russian>
+            <Polish>MISJA NIEUDANA - Zbieg uciekł łodzią!</Polish>
+            <Czech>MISE SELHALA - Uprchlík unikl na člunu!</Czech>
+            <Turkish>GÖREV BAŞARISIZ - Bir kaçak tekneyle kaçtı!</Turkish>
+            <Chinese>任務失敗 - 一名逃犯乘船逃脫！</Chinese>
+            <Chinesesimp>任务失败 - 一名逃犯乘船逃脱！</Chinesesimp>
+        </Key>
+        <Key ID="STR_HINT_ALL_FUGITIVES_NEUTRALIZED">
+            <English>ALL TARGETS NEUTRALIZED - Mission accomplished!</English>
+            <French>TOUTES LES CIBLES NEUTRALISÉES - Mission accomplie !</French>
+            <German>ALLE ZIELE NEUTRALISIERT - Mission erfüllt!</German>
+            <Spanish>TODOS LOS OBJETIVOS NEUTRALIZADOS - ¡Misión cumplida!</Spanish>
+            <Italian>TUTTI GLI OBIETTIVI NEUTRALIZZATI - Missione compiuta!</Italian>
+            <Russian>ВСЕ ЦЕЛИ НЕЙТРАЛИЗОВАНЫ - Миссия выполнена!</Russian>
+            <Polish>WSZYSTKIE CELE ZNEUTRALIZOWANE - Misja zakończona!</Polish>
+            <Czech>VŠECHNY CÍLE NEUTRALIZOVÁNY - Mise splněna!</Czech>
+            <Turkish>TÜM HEDEFLER ETKİSİZ - Görev tamamlandı!</Turkish>
+            <Chinese>所有目標已制伏 - 任務完成！</Chinese>
+            <Chinesesimp>所有目标已制伏 - 任务完成！</Chinesesimp>
+        </Key>
         <Key ID="STR_ACTION_SUBMIT">
             <English>Subdue suspect</English>
             <French>Soumettre le suspect</French>
