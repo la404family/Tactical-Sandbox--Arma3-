@@ -112,7 +112,7 @@ MISSION_fnc_addSubmitAction = {
 // Les éléments de la tache 1 : (spawn a positionner sur des routes)
 //-------------------------------------------
 
-// task_x_fugitif_1 à task_x_fugitif_3 sont les fugitifs
+// task_x_fugitif_1 à task_x_fugitif_3 sont les fugitifs en mémoire 
 // task_1_spawn_01 à task_1_spawn_42  sont les héliports qui servent de lieux de passage pour les fugitifs
 // task_1_spawn_01 à task_1_spawn_06 est un chemin 
 // task_1_spawn_07 à task_1_spawn_12 est un chemin 
@@ -173,7 +173,7 @@ MISSION_fnc_addSubmitAction = {
 // mise en memoire et suppression des unités ennemies
 ["SAVE"] call MISSION_fnc_task_x_memory;
 // application de la tache 1 (attaque du QG allié) - Lancé via le menu missions
- [] call MISSION_fnc_task_1_launch;
+[] call MISSION_fnc_task_1_launch;
 // application de la tache 2 (assassinat et récupération) - Lancé via le menu missions
 // [] call MISSION_fnc_task_2_launch;
 // application de la tache 3 (guerre totale) - Lancé via le menu missions
