@@ -89,7 +89,7 @@ private _selectedPaths = _availablePaths select [0, 2];
     params ["_fugitiveTemplates", "_selectedPaths", "_paths", "_taskID"];
     
     // Attendre 5 minutes (300 secondes)
-    sleep 300;
+    sleep 3;
     
     // Vérifier si la tâche est toujours active
     if (!MISSION_var_task1_running) exitWith {};
@@ -180,7 +180,7 @@ private _selectedPaths = _availablePaths select [0, 2];
             // Comportement initial (civil en fuite)
             _fugitive setCaptive true;
             _fugitive setBehaviour "CARELESS";
-            _fugitive setSpeedMode "FULL";
+            _fugitive setSpeedMode "FULL";       
             _fugitive forceSpeed 6;
             
             // Désarmer le fugitif
@@ -194,58 +194,184 @@ private _selectedPaths = _availablePaths select [0, 2];
                 
                 private _wpIndex = 0;
                 
+                // Constantes d'animation pour la cohérence
+                private _animSurrenderStand = "AmovPercMstpSsurWnonDnon";  // Debout, mains sur la tête
+                private _animSurrenderKneel = "AmovPknlMstpSsurWnonDnon";  // À genoux, mains sur la tête
+                
                 while {alive _fugitive && !(_fugitive getVariable ["isCaptured", false]) && MISSION_var_task1_running} do {
                     
-                    // Vérifier la proximité des joueurs (reddition avant WP6)
-                    if (_wpIndex < 5 && !(_fugitive getVariable ["isCaptured", false])) then {
+                    // LOGIQUE DE REDDITION (avant WP6)
+                    if (_wpIndex < 5 && alive _fugitive && !(_fugitive getVariable ["isCaptured", false])) then {
+                        
                         private _nearestPlayer = objNull;
                         private _nearestDist = 9999;
                         
+                        // Trouver le joueur le plus proche
                         {
-                            if (alive _x && _x distance _fugitive < _nearestDist) then {
-                                _nearestDist = _x distance _fugitive;
+                            private _d = _x distance _fugitive;
+                            if (alive _x && _d < _nearestDist) then {
+                                _nearestDist = _d;
                                 _nearestPlayer = _x;
                             };
                         } forEach allPlayers;
                         
-                        // REDDITION si joueur < 15m
-                        if (_nearestDist < 15) then {
-                            _fugitive setVariable ["isCaptured", true, true];
-                            _fugitive setCaptive true;
-                            
-                            // Arrêter le mouvement
-                            doStop _fugitive;
-                            _fugitive disableAI "MOVE";
-                            _fugitive disableAI "PATH";
-                            
-                            // Animation mains levées
-                            _fugitive playMoveNow "AmovPercMstpSsurWnonDnon";
-                            
-                            // Notification
-                            hint (localize "STR_HINT_FUGITIVE_SURRENDERED");
-                            
-                            // Sortir de la boucle
-                            break;
+                        // DEBUG: Afficher la distance
+                        hint format ["DEBUG: Distance = %1m | Surrendered = %2 | HasAction = %3", 
+                            round _nearestDist, 
+                            _fugitive getVariable ["isSurrendered", false],
+                            _fugitive getVariable ["hasSubmitAction", false]];
+                        
+                        // ETAPE 1: REDDITION (15m)
+                        if (!(_fugitive getVariable ["isSurrendered", false])) then {
+                            if (_nearestDist < 15) then {
+                                systemChat "DEBUG: Etape 1 - REDDITION";
+                                _fugitive setVariable ["isSurrendered", true, true];
+                                _fugitive setCaptive true;
+                                doStop _fugitive;
+                                _fugitive disableAI "PATH";
+                                _fugitive disableAI "MOVE";
+                                _fugitive setVelocity [0,0,0];
+                                _fugitive playMoveNow _animSurrenderStand;
+                                _fugitive setCombatMode "BLUE";
+                                _fugitive setBehaviour "CARELESS";
+                                [_fugitive] spawn {
+                                    params ["_unit"];
+                                    sleep 2;
+                                    if (alive _unit) then {
+                                        _unit disableAI "ANIM";
+                                    };
+                                };
+                                hint "ETAPE 1: Le suspect se rend! Approchez a 5m.";
+                            };
+                        } else {
+                            // ---------------------------------------------------------
+                            // ETAPE 2 : INTERCEPTION (5 metres) - Le fugitif s'agenouille
+                            // ---------------------------------------------------------
+                            if (_nearestDist < 5 && !(_fugitive getVariable ["hasSubmitAction", false])) then {
+                                systemChat "DEBUG: Etape 2 - INTERCEPTION";
+                                
+                                // 1. Marquer comme action prete et afficher marqueur IMMEDIATEMENT
+                                _fugitive setVariable ["hasSubmitAction", true, true];
+                                
+                                // 2. Créer un marqueur
+                                private _markerName = format ["captive_marker_%1", floor(random 99999)];
+                                private _marker = createMarker [_markerName, getPos _fugitive];
+                                _marker setMarkerType "hd_dot";
+                                _marker setMarkerColor "ColorBlue";
+                                _marker setMarkerText (localize "STR_MARKER_CAPTIVE");
+                                _fugitive setVariable ["captiveMarker", _markerName, true];
+                                
+                                // 3. Ajouter l'action via remoteExec pour MP
+                                private _actionText = localize "STR_ACTION_SUBMIT";
+                                [
+                                    _fugitive,
+                                    [
+                                        _actionText,
+                                        {
+                                            params ["_target", "_caller", "_actionId"];
+                                            _target setVariable ["isCaptured", true, true];
+                                            _target removeAction _actionId;
+                                            
+                                            private _m = _target getVariable ["captiveMarker", ""];
+                                            if (_m != "") then { deleteMarker _m; };
+                                            
+                                            // Forcer a rester a genoux (capture)
+                                            _target disableAI "MOVE";
+                                            _target disableAI "PATH";
+                                            _target disableAI "FSM";
+                                            _target enableAI "ANIM";
+                                            
+                                            // Animation: A genoux mains sur la tete (capture)
+                                            _target playMoveNow "AmovPknlMstpSsurWnonDnon";
+                                            
+                                            // Verrouiller apres transition
+                                            [_target] spawn {
+                                                params ["_unit"];
+                                                sleep 1;
+                                                if (alive _unit) then {
+                                                    _unit disableAI "ANIM";
+                                                };
+                                            };
+                                            
+                                            hint "CAPTURE REUSSIE!";
+                                            playSound "3DEN_notificationDefault";
+                                        },
+                                        nil, 6, true, true, "",
+                                        "alive _target && _this distance _target < 5"
+                                    ]
+                                ] remoteExec ["addAction", 0, _fugitive];
+                                
+                                systemChat "DEBUG: Action ajoutee!";
+                                hint "ETAPE 2: Utilisez l'action 'Soumettre' (molette)";
+                                
+                                // 4. GESTION DE L'ANIMATION (SPAWN pour ne pas bloquer la boucle)
+                                [_fugitive] spawn {
+                                    params ["_fugitive"];
+                                    
+                                    // REACTIVER COMPLETEMENT L'IA POUR UNE TRANSITION NATURELLE
+                                    _fugitive enableAI "ANIM";
+                                    _fugitive enableAI "MOVE";
+                                    _fugitive enableAI "PATH";
+                                    
+                                    // Forcer le fugitif a s'asseoir naturellement (position a genoux)
+                                    _fugitive action ["SitDown", _fugitive];
+                                    
+                                    // Attendre que l'animation soit terminee (2 secondes)
+                                    sleep 2;
+                                    
+                                    // Une fois assis, jouer l'animation de reddition a genoux
+                                    _fugitive playMoveNow "AmovPknlMstpSsurWnonDnon";
+                                    
+                                    // Figer a nouveau l'IA apres la transition
+                                    sleep 0.5; // Petit delai pour laisser l'animation se stabiliser
+                                    if (alive _fugitive) then {
+                                        _fugitive disableAI "ANIM";
+                                        _fugitive disableAI "MOVE";
+                                        _fugitive disableAI "PATH";
+                                        _fugitive disableAI "FSM";
+                                        _fugitive setVelocity [0,0,0];
+                                    };
+                                };
+                            };
                         };
                     };
                     
-                    // Déplacement vers le waypoint actuel
-                    if (_wpIndex < count _path) then {
-                        private _wpMarker = _path select _wpIndex;
-                        private _wpObj = missionNamespace getVariable [_wpMarker, objNull];
+                    // Ré-appliquer l'animation si l'IA l'a overridée
+                    if (_fugitive getVariable ["isSurrendered", false]) then {
+                        private _currentAnim = animationState _fugitive;
+                        // Utiliser animation a genoux si action deja ajoutee, sinon debout
+                        private _targetAnim = if (_fugitive getVariable ["hasSubmitAction", false]) then { _animSurrenderKneel } else { _animSurrenderStand };
                         
-                        if (!isNull _wpObj) then {
-                            private _wpPos = getPos _wpObj;
-                            _fugitive doMove _wpPos;
-                            
-                            // Attendre d'arriver au waypoint
-                            waitUntil {
-                                sleep 0.5;
-                                !alive _fugitive || 
-                                (_fugitive getVariable ["isCaptured", false]) ||
-                                (_fugitive distance2D _wpPos < 3) ||
-                                !MISSION_var_task1_running
+                        if (_currentAnim != _targetAnim) then {
+                            _fugitive enableAI "ANIM";
+                            _fugitive playMoveNow _targetAnim;
+                            [_fugitive] spawn {
+                                params ["_unit"];
+                                sleep 1;
+                                if (alive _unit) then { _unit disableAI "ANIM"; };
                             };
+                        };
+                        sleep 1;
+                    } else {
+                        // Mouvement uniquement si PAS rendu
+                        // Déplacement vers le waypoint actuel
+                        if (_wpIndex < count _path) then {
+                            private _wpMarker = _path select _wpIndex;
+                            private _wpObj = missionNamespace getVariable [_wpMarker, objNull];
+                            
+                            if (!isNull _wpObj) then {
+                                private _wpPos = getPos _wpObj;
+                                _fugitive doMove _wpPos;
+                                
+                                // Attendre d'arriver au waypoint (avec check de reddition)
+                                waitUntil {
+                                    sleep 0.5;
+                                    !alive _fugitive || 
+                                    (_fugitive getVariable ["isCaptured", false]) ||
+                                    (_fugitive getVariable ["isSurrendered", false]) ||
+                                    (_fugitive distance2D _wpPos < 3) ||
+                                    !MISSION_var_task1_running
+                                };
                             
                             if (!alive _fugitive || _fugitive getVariable ["isCaptured", false] || !MISSION_var_task1_running) exitWith {};
                             
@@ -269,35 +395,37 @@ private _selectedPaths = _availablePaths select [0, 2];
                             
                             _wpIndex = _wpIndex + 1;
                         };
-                    } else {
-                        // Tous les WP parcourus, entrer dans le bateau
-                        private _boat = MISSION_var_task1_boats select _boatIndex;
-                        
-                        if (!isNull _boat && alive _boat) then {
-                            _fugitive doMove (getPos _boat);
+                        } else {
+                            // Tous les WP parcourus, entrer dans le bateau
+                            private _boat = MISSION_var_task1_boats select _boatIndex;
                             
-                            waitUntil {
-                                sleep 0.5;
-                                !alive _fugitive || 
-                                (_fugitive getVariable ["isCaptured", false]) ||
-                                (_fugitive distance _boat < 5) ||
-                                !MISSION_var_task1_running
-                            };
-                            
-                            if (alive _fugitive && !(_fugitive getVariable ["isCaptured", false])) then {
-                                _fugitive moveInDriver _boat;
+                            if (!isNull _boat && alive _boat) then {
+                                _fugitive doMove (getPos _boat);
                                 
-                                // Fuir vers la direction d'échappement
-                                private _escapeDir = _boat getVariable ["escapeDirection", []];
-                                if (count _escapeDir > 0) then {
-                                    _boat doMove _escapeDir;
-                                    _boat setSpeedMode "FULL";
+                                waitUntil {
+                                    sleep 0.5;
+                                    !alive _fugitive || 
+                                    (_fugitive getVariable ["isCaptured", false]) ||
+                                    (_fugitive getVariable ["isSurrendered", false]) ||
+                                    (_fugitive distance _boat < 5) ||
+                                    !MISSION_var_task1_running
+                                };
+                                
+                                if (alive _fugitive && !(_fugitive getVariable ["isCaptured", false]) && !(_fugitive getVariable ["isSurrendered", false])) then {
+                                    _fugitive moveInDriver _boat;
+                                    
+                                    // Fuir vers la direction d'échappement
+                                    private _escapeDir = _boat getVariable ["escapeDirection", []];
+                                    if (count _escapeDir > 0) then {
+                                        _boat doMove _escapeDir;
+                                        _boat setSpeedMode "FULL";
+                                    };
                                 };
                             };
+                            
+                            break;
                         };
-                        
-                        break;
-                    };
+                    };  // Fin du else (mouvement uniquement si PAS rendu)
                 };
             };
         };

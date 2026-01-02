@@ -1080,6 +1080,32 @@
             <Chinese>任務失敗 - 一名逃犯逃脫了！</Chinese>
             <Chinesesimp>任务失败 - 一名逃犯逃脱了！</Chinesesimp>
         </Key>
+        <Key ID="STR_MARKER_CAPTIVE">
+            <English>Captive</English>
+            <French>Captif</French>
+            <German>Gefangener</German>
+            <Spanish>Cautivo</Spanish>
+            <Italian>Prigioniero</Italian>
+            <Russian>Пленный</Russian>
+            <Polish>Jeniec</Polish>
+            <Czech>Zajatec</Czech>
+            <Turkish>Esir</Turkish>
+            <Chinese>俘虜</Chinese>
+            <Chinesesimp>俘虏</Chinesesimp>
+        </Key>
+        <Key ID="STR_ACTION_SUBMIT">
+            <English>Subdue suspect</English>
+            <French>Soumettre le suspect</French>
+            <German>Verdächtigen überwältigen</German>
+            <Spanish>Someter al sospechoso</Spanish>
+            <Italian>Sottomettere il sospetto</Italian>
+            <Russian>Задержать подозреваемого</Russian>
+            <Polish>Obezwładnij podejrzanego</Polish>
+            <Czech>Zpacifikovat podezřelého</Czech>
+            <Turkish>Şüpheliyi bastır</Turkish>
+            <Chinese>制服嫌疑人</Chinese>
+            <Chinesesimp>制服嫌疑人</Chinesesimp>
+        </Key>
         <Key ID="STR_NOTIF_TASK5_START_TITLE">
             <English>TASK 5 ACTIVATED</English>
             <French>TÂCHE 5 ACTIVÉE</French>

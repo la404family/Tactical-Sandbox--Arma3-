@@ -38,6 +38,55 @@
 ["INIT"] call MISSION_fnc_spawn_missions;
 
 //-------------------------------------------
+// Les fonctions helper globales (pour le multijoueur) :
+//-------------------------------------------
+
+// Fonction pour créer un marqueur captif sur tous les clients
+MISSION_fnc_createCaptiveMarker = {
+    params ["_markerName", "_pos", "_text"];
+    private _marker = createMarkerLocal [_markerName, _pos];
+    _marker setMarkerTypeLocal "hd_dot";
+    _marker setMarkerColorLocal "ColorBlue";
+    _marker setMarkerTextLocal _text;
+};
+
+// Fonction pour ajouter l'action "Soumettre" sur un fugitif
+MISSION_fnc_addSubmitAction = {
+    params ["_fugitive", "_actionText"];
+    
+    if (isNull _fugitive) exitWith {};
+    
+    private _actionID = _fugitive addAction [
+        _actionText,
+        {
+            params ["_target", "_caller", "_actionId", "_arguments"];
+            
+            // Marquer comme capturé (publicVariable via setVariable)
+            _target setVariable ["isCaptured", true, true];
+            
+            // Retirer l'action sur ce client
+            _target removeAction _actionId;
+            
+            // Supprimer le marqueur (locale)
+            private _markerName = _target getVariable ["captiveMarker", ""];
+            if (_markerName != "") then {
+                deleteMarkerLocal _markerName;
+            };
+            
+            // Notification finale (son + hint)
+            playSound "3DEN_notificationDefault";
+            hint (localize "STR_HINT_FUGITIVE_SURRENDERED");
+        },
+        nil,
+        6,
+        true,
+        true,
+        "",
+        "alive _target && _this distance _target < 3"
+    ];
+};
+
+//-------------------------------------------
 // Les éléments du QG allié :
 //-------------------------------------------
 
@@ -124,7 +173,7 @@
 // mise en memoire et suppression des unités ennemies
 ["SAVE"] call MISSION_fnc_task_x_memory;
 // application de la tache 1 (attaque du QG allié) - Lancé via le menu missions
-// [] call MISSION_fnc_task_1_launch;
+ [] call MISSION_fnc_task_1_launch;
 // application de la tache 2 (assassinat et récupération) - Lancé via le menu missions
 // [] call MISSION_fnc_task_2_launch;
 // application de la tache 3 (guerre totale) - Lancé via le menu missions
