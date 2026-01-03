@@ -33,15 +33,13 @@ Ce scénario est conçu pour être joué en Solo ou en Coopération (1-15 joueur
 
 ---
 
-fonction pour modifier les capacités des IA et constence ! 
-modifier IA ennemi et allié pour qu'ils soient plus intelligents !
 améliorer la base QG allié ! (simulation etc...)
-supprimer (desmorçage de bombe)
 fonction si le QG est detruit ! 
-Modifier les équipements des ennemis !
-TESTER LA MORT DU FUGITIF !
-un menu pour choisir ses ennemis ! fn_spawn_ennemis.sqf
-fonction command a implémenter.
+Modifier les équipements des ennemis de base (lumière)!
+TESTER tache DU FUGITIF !
+menu brother in arms a revoir (reinitialisation)
+menu ennemis ne doit pas etre accessible pendant une mission.
+mission ottage (ennemis trop peu nombreux)
 
 TASK 6 un hélicoptère allié + pilot a secourir 
 

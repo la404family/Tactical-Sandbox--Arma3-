@@ -36,7 +36,11 @@
 // fonction qui spawn les taches séléctionnées
 ["INIT"] call MISSION_fnc_spawn_missions;
 // fonction qui spawn le menu des ennemis
+// fonction qui spawn le menu des ennemis
 ["INIT"] call MISSION_fnc_spawn_ennemies;
+
+// Lancement automatique de l'ajustement des skills I.A.
+[] spawn MISSION_fnc_ajust_AI_skills;
 
 //-------------------------------------------
 // Les fonctions helper globales (pour le multijoueur) :

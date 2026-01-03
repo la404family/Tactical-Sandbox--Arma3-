@@ -45,6 +45,7 @@ class CfgFunctions
             class task_x_finish {};
             class task_x_failure {};
             class spawn_ennemies {};
+            class ajust_AI_skills {};
         };
     };
 };
