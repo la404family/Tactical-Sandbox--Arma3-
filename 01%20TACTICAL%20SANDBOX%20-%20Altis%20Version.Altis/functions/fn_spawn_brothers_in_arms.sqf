@@ -2,16 +2,28 @@
 /*
     Description :
     Cette fonction gère le système de recrutement "Frères d'armes".
-    Elle permet au joueur de recruter des unités IA de sa faction pour l'accompagner.
-    Trois modes : 
-    - INIT (initialisation de l'action)
-    - OPEN_UI (ouverture et peuplement du menu de recrutement)
-    - SPAWN (création de l'unité sélectionnée)
+    Elle permet au joueur de recruter jusqu'à 14 unités IA de sa faction.
+    Les unités sélectionnées apparaissent avec 2 secondes d'intervalle.
+    
+    Modes disponibles:
+    - INIT : Initialisation de l'action d'interaction
+    - OPEN_UI : Ouverture et peuplement du menu de recrutement
+    - ADD : Ajouter une unité à la liste de sélection
+    - VALIDATE : Confirmer et faire apparaître toutes les unités sélectionnées
+    - RESET : Supprimer toutes les unités I.A. du groupe du joueur
 */
 
-params ["_mode", ["_params", []]];
+params [["_mode", ""], ["_params", []]];
+
+// Variable globale pour stocker les unités sélectionnées
+if (isNil "MISSION_selectedBrothers") then {
+    MISSION_selectedBrothers = [];
+};
 
 switch (_mode) do {
+    // ==========================================================================================
+    // MODE INIT : Initialise l'action de recrutement
+    // ==========================================================================================
     case "INIT": {
         // Condition : Interface uniquement (joueur)
         if (!hasInterface) exitWith {};
@@ -65,36 +77,57 @@ switch (_mode) do {
         };
     };
 
+    // ==========================================================================================
+    // MODE OPEN_UI : Ouvre le dialogue et peuple les listes
+    // ==========================================================================================
     case "OPEN_UI": {
-        // Crée la boîte de dialogue définie dans les fichiers de ressources (terminologie Arma : Dialog)
+        // Réinitialise la liste des unités sélectionnées
+        MISSION_selectedBrothers = [];
+        
+        // Crée la boîte de dialogue
         createDialog "Refour_Recruit_Dialog";
         
         // Attend que le dialogue soit effectivement ouvert (ID 8888)
         waitUntil {!isNull (findDisplay 8888)};
         
         private _display = findDisplay 8888;
-        private _ctrlList = _display displayCtrl 1500; // Contrôle ListBox
+        private _ctrlAvailable = _display displayCtrl 1500; // Liste des unités disponibles
+        private _ctrlSelected = _display displayCtrl 1503;  // Liste des unités sélectionnées
+        private _ctrlCounter = _display displayCtrl 1502;   // Compteur
         
-        // Vide la liste précédente
-        lbClear _ctrlList;
+        // Vide les listes
+        lbClear _ctrlAvailable;
+        lbClear _ctrlSelected;
+        
+        // Compte les unités déjà dans le groupe du joueur (sans le joueur lui-même)
+        private _currentGroupCount = {alive _x && !isPlayer _x} count (units group player);
+        
+        // Met à jour le compteur avec le nombre actuel
+        _ctrlCounter ctrlSetText format ["%1 / 14", _currentGroupCount];
+        
+        // Colore le compteur selon le niveau
+        if (_currentGroupCount >= 14) then {
+            _ctrlCounter ctrlSetTextColor [1, 0.2, 0.2, 1]; // Rouge si max
+        } else {
+            if (_currentGroupCount >= 10) then {
+                _ctrlCounter ctrlSetTextColor [1, 0.8, 0, 1]; // Orange
+            } else {
+                _ctrlCounter ctrlSetTextColor [0.6, 1, 0.2, 1]; // Vert
+            };
+        };
 
         // Récupération des classes de configuration
-        // Filtre par camp (Side) pour n'inclure que les factions amies (NATO, FIA, etc. selon le camp du joueur)
         private _sideInt = (side player) call BIS_fnc_sideID;
         private _cfgVehicles = configFile >> "CfgVehicles";
         
-        // Sélectionne les unités qui :
-        // 1. Ont une portée publique (scope == 2)
-        // 2. Sont des soldats (simulation == 'soldier')
-        // 3. Appartiennent au même camp que le joueur
+        // Sélectionne les unités compatibles
         private _units = "
             (getNumber (_x >> 'scope') == 2) && 
             (getText (_x >> 'simulation') == 'soldier') && 
             (getNumber (_x >> 'side') == _sideInt)
         " configClasses _cfgVehicles;
 
-        // Prépare un tableau triable : [CléDeTri, NomAffiché, NomDeClasse]
-        // La clé de tri sera "NomFaction NomUnité" pour regrouper par faction
+        // Prépare un tableau triable
         private _sortableUnits = [];
 
         {
@@ -105,186 +138,248 @@ switch (_mode) do {
             
             // Récupère le nom affiché de la faction
             private _factionDisplayName = getText (configFile >> "CfgFactionClasses" >> _factionClass >> "displayName");
-            if (_factionDisplayName == "") then { _factionDisplayName = _factionClass; }; // Sécurité si pas de nom
+            if (_factionDisplayName == "") then { _factionDisplayName = _factionClass; };
 
-            // Construit le texte de l'entrée : [Faction] Nom de l'unité
+            // Construit le texte de l'entrée
             private _entryText = format ["[%1] %2", _factionDisplayName, _displayName];
             
-            // Ajoute au tableau temporaire
             _sortableUnits pushBack [_entryText, _className];
 
         } forEach _units;
 
-        // Tri alphabétique du tableau
+        // Tri alphabétique
         _sortableUnits sort true;
 
         // --- AJOUT OPTION SPECIALE "COMME MOI" EN PREMIER ---
-        // On l'ajoute manuellement en haut de la liste
         private _textLikeMe = localize "STR_BROTHERS_LIKE_ME";
-        if (_textLikeMe == "" || _textLikeMe == "STR_BROTHERS_LIKE_ME") then { _textLikeMe = "Comme moi !"; };
+        if (_textLikeMe == "" || _textLikeMe == "STR_BROTHERS_LIKE_ME") then { _textLikeMe = "Un soldat comme moi !"; };
         
-        //systemChat "DEBUG: Adding 'Like Me' option..."; // DEBUG
-        
-        private _likeMeIndex = _ctrlList lbAdd _textLikeMe;
-        _ctrlList lbSetData [_likeMeIndex, "LIKE_ME"];
-        _ctrlList lbSetColor [_likeMeIndex, [0.85, 0.85, 0, 1]]; // Jaune/Doré pour le distinguer
-        
-        //systemChat format ["DEBUG: Added at index %1", _likeMeIndex]; // DEBUG
+        private _likeMeIndex = _ctrlAvailable lbAdd _textLikeMe;
+        _ctrlAvailable lbSetData [_likeMeIndex, "LIKE_ME"];
+        _ctrlAvailable lbSetColor [_likeMeIndex, [0.85, 0.85, 0, 1]];
 
-        // Ajoute les éléments triés dans la ListBox à la suite
+        // Ajoute les éléments triés dans la ListBox
         {
             _x params ["_text", "_data"];
-            private _index = _ctrlList lbAdd _text;
-            _ctrlList lbSetData [_index, _data]; // Stocke la classe (ex: "B_Soldier_F") comme donnée cachée
+            private _index = _ctrlAvailable lbAdd _text;
+            _ctrlAvailable lbSetData [_index, _data];
         } forEach _sortableUnits;
 
-        // Sélectionne le premier élément par default s'il y en a
-        if (lbSize _ctrlList > 0) then {
-            _ctrlList lbSetCurSel 0;
+        // Sélectionne le premier élément par défaut
+        if (lbSize _ctrlAvailable > 0) then {
+            _ctrlAvailable lbSetCurSel 0;
         };
     };
 
-    case "SPAWN": {
-        disableSerialization; // Nécessaire pour manipuler les contrôles UI dans un contexte schedulé
+    // ==========================================================================================
+    // MODE ADD : Ajoute l'unité sélectionnée à la liste de recrutement
+    // ==========================================================================================
+    case "ADD": {
+        disableSerialization;
         private _display = findDisplay 8888;
-        private _listBox = _display displayCtrl 1500;
-
-        // Validation : Vérifie qu'une unité est sélectionnée
-        private _indexSelection = lbCurSel _listBox;
-        if (_indexSelection == -1) exitWith {
-            //systemChat (localize "STR_ERR_NO_UNIT_SELECTED");
+        if (isNull _display) exitWith {};
+        
+        private _ctrlAvailable = _display displayCtrl 1500;
+        private _ctrlSelected = _display displayCtrl 1503;
+        private _ctrlCounter = _display displayCtrl 1502;
+        
+        // Compte les unités déjà dans le groupe (sans le joueur)
+        private _currentGroupCount = {alive _x && !isPlayer _x} count (units group player);
+        private _selectedCount = count MISSION_selectedBrothers;
+        private _totalCount = _currentGroupCount + _selectedCount;
+        
+        // Vérifie la limite de 14 unités (groupe actuel + sélectionnées)
+        if (_totalCount >= 14) exitWith {
+            // Son d'erreur
+            playSound "AddItemFailed";
+            // Hint avec message localisé
+            hint localize "STR_MAX_UNITS_REACHED";
         };
-
-        // Récupération des données (classe et nom)
-        private _classname = _listBox lbData _indexSelection;
-        private _displayName = _listBox lbText _indexSelection;
-
-        // Ferme le dialogue (code de retour 1)
-        closeDialog 1;
-
-        // Définit la position d'apparition
-        private _spawnPos = [];
-        // Si un objet logique "brothers_in_arms_spawner" existe, on l'utilise
-        if (!isNil "brothers_in_arms_spawner" && {!isNull brothers_in_arms_spawner}) then {
-            _spawnPos = getPosATL brothers_in_arms_spawner;
+        
+        // Récupère l'unité sélectionnée
+        private _index = lbCurSel _ctrlAvailable;
+        if (_index == -1) exitWith {};
+        
+        private _className = _ctrlAvailable lbData _index;
+        private _displayName = _ctrlAvailable lbText _index;
+        
+        // Ajoute à la liste des sélectionnées (stocke classe et nom)
+        MISSION_selectedBrothers pushBack [_className, _displayName];
+        
+        // Ajoute à la liste visuelle
+        private _newIndex = _ctrlSelected lbAdd _displayName;
+        _ctrlSelected lbSetData [_newIndex, _className];
+        
+        // Colore en jaune/doré si c'est "Comme moi"
+        if (_className == "LIKE_ME") then {
+            _ctrlSelected lbSetColor [_newIndex, [0.85, 0.85, 0, 1]];
+        };
+        
+        // Met à jour le compteur (groupe actuel + sélectionnées)
+        _selectedCount = count MISSION_selectedBrothers;
+        _totalCount = _currentGroupCount + _selectedCount;
+        _ctrlCounter ctrlSetText format ["%1 / 14", _totalCount];
+        
+        // Change la couleur du compteur selon le niveau
+        if (_totalCount >= 14) then {
+            _ctrlCounter ctrlSetTextColor [1, 0.2, 0.2, 1]; // Rouge si max
         } else {
-            // Sinon, apparait derrière le joueur (fallback)
-            _spawnPos = player getRelPos [5, 0]; 
-        };
-
-        // Processus d'apparition (spawn) dans un nouveau thread
-        [_classname, _spawnPos, _displayName] spawn {
-            params ["_classOrType", "_pos", "_name"];
-            
-            // Crée un groupe temporaire pour éviter les problèmes de "join" immédiat
-            private _tempGroup = createGroup [side player, true];
-            private _newUnit = objNull; // Initialisation
-
-            if (_classOrType == "LIKE_ME") then {
-                // CAS SPECIAL : CLONE DU JOUEUR
-                // Tentative avec la classe du joueur
-                _newUnit = _tempGroup createUnit [typeOf player, _pos, [], 0, "CAN_COLLIDE"];
-                
-                // Si échec (ex: classe joueur invalide pour spawn), on utilise une classe de base standard
-                if (isNull _newUnit) then {
-                    _newUnit = _tempGroup createUnit ["B_Soldier_F", _pos, [], 0, "CAN_COLLIDE"];
-                };
-
-                // On copie l'équipement exact
-                if (!isNull _newUnit) then {
-                    _newUnit setUnitLoadout (getUnitLoadout player);
-                    
-                    // On change le visage avec une liste prédéfinie de visages communs
-                    private _faces = [
-                        "WhiteHead_01", "WhiteHead_02", "WhiteHead_03", "WhiteHead_04", "WhiteHead_05",
-                        "WhiteHead_06", "WhiteHead_07", "WhiteHead_08", "WhiteHead_09", "WhiteHead_10",
-                        "WhiteHead_11", "WhiteHead_12", "WhiteHead_13", "WhiteHead_14", "WhiteHead_15",
-                        "WhiteHead_16", "WhiteHead_17", "WhiteHead_18", "WhiteHead_19", "WhiteHead_20",
-                        "AfricanHead_01", "AfricanHead_02", "AfricanHead_03",
-                        "AsianHead_A3_01", "AsianHead_A3_02", "AsianHead_A3_03",
-                        "GreekHead_A3_01", "GreekHead_A3_02", "GreekHead_A3_03", "GreekHead_A3_04",
-                        "PersianHead_A3_01", "PersianHead_A3_02", "PersianHead_A3_03"
-                    ];
-                    _newUnit setFace (selectRandom _faces);
-                };
+            if (_totalCount >= 10) then {
+                _ctrlCounter ctrlSetTextColor [1, 0.8, 0, 1]; // Orange si proche du max
             } else {
-                // CAS STANDARD
-                _newUnit = _tempGroup createUnit [_classOrType, _pos, [], 0, "CAN_COLLIDE"];
+                _ctrlCounter ctrlSetTextColor [0.6, 1, 0.2, 1]; // Vert sinon
             };
+        };
+    };
 
-            // Vérification finale
-            if (isNull _newUnit) exitWith {
-                //systemChat (localize "STR_ERR_NO_UNIT_SELECTED"); // Réutilisation message erreur générique
-                deleteGroup _tempGroup; // Nettoyage du groupe temporaire
-            };
+    // ==========================================================================================
+    // MODE VALIDATE : Fait apparaître toutes les unités sélectionnées
+    // ==========================================================================================
+    case "VALIDATE": {
+        disableSerialization;
+        
+        // Vérifie qu'il y a des unités à faire apparaître
+        if (count MISSION_selectedBrothers == 0) exitWith {
+            hint localize "STR_NO_UNITS_SELECTED";
+        };
+        
+        // Ferme le dialogue
+        closeDialog 1;
+        
+        // Copie la liste et la vide immédiatement
+        private _unitsToSpawn = +MISSION_selectedBrothers;
+        MISSION_selectedBrothers = [];
+        
+        // Notification du début du spawn
+        private _totalUnits = count _unitsToSpawn;
+        hint format [localize "STR_SPAWNING_UNITS", _totalUnits];
+        
+        // Lance le processus de spawn dans un nouveau thread
+        [_unitsToSpawn] spawn {
+            params ["_units"];
             
-            // Oriente l'unité comme le spawner
-            if (!isNil "brothers_in_arms_spawner" && {!isNull brothers_in_arms_spawner}) then {
-                _newUnit setDir (getDir brothers_in_arms_spawner);
-            };
+            private _spawnIndex = 0;
             
-            // ============================================================
-            // EFFET FUMÉE BLANCHE ÉPAISSE AU SPAWN
-            // ============================================================
-            private _smokePos = getPosATL _newUnit;
-            
-            // Création de l'effet de fumée blanche (SmokeShellWhite est rapide et visible)
-            private _smoke = createVehicle ["SmokeShellWhite", _smokePos, [], 0, "CAN_COLLIDE"];
-            _smoke setPosATL _smokePos;
-            
-            // Ajouter un effet de particules supplémentaire pour plus de densité
-            private _source = "#particlesource" createVehicleLocal _smokePos;
-            _source setParticleParams [
-                ["\A3\Data_F\ParticleEffects\Universal\Universal.p3d", 16, 12, 8, 1], // Matériau
-                "", "Billboard", 1, 2, [0, 0, 0], [0, 0, 1.5], 1, 1.2, 1, 0.5,
-                [1, 3, 6], [[1, 1, 1, 0.5], [1, 1, 1, 0.3], [1, 1, 1, 0]], [1],
-                0.1, 0.5, "", "", _newUnit
-            ];
-            _source setParticleRandom [1, [0.5, 0.5, 0.2], [0.5, 0.5, 0], 0, 0.5, [0, 0, 0, 0.1], 0, 0];
-            _source setDropInterval 0.02;
-            
-            // Suppression de la source de particules après 2 secondes
-            [_source] spawn {
-                params ["_src"];
-                sleep 2;
-                deleteVehicle _src;
-            };
-            
-            // Notification de départ
-            //systemChat format [localize "STR_UNIT_ARRIVING", _name];
-            
-            // Pause critique pour laisser le temps au moteur d'initialiser l'unité
-            sleep 0.5;
-            
-            // ============================================================
-            // DÉPLACEMENT VERS LE POINT DE SORTIE (anti-collision)
-            // ============================================================
-            if (!isNil "brothers_in_arms_spawner_1" && {!isNull brothers_in_arms_spawner_1}) then {
-                private _exitPos = getPosATL brothers_in_arms_spawner_1;
+            {
+                _x params ["_classOrType", "_displayName"];
+                _spawnIndex = _spawnIndex + 1;
                 
-                // Ordonne à l'unité de se déplacer vers le point de sortie
-                _newUnit doMove _exitPos;
-                _newUnit setSpeedMode "FULL";
+                // Définit la position d'apparition
+                private _spawnPos = [];
+                if (!isNil "brothers_in_arms_spawner" && {!isNull brothers_in_arms_spawner}) then {
+                    _spawnPos = getPosATL brothers_in_arms_spawner;
+                } else {
+                    _spawnPos = player getRelPos [5, 0]; 
+                };
+
+                // ============================================================
+                // EFFET FUMÉE BLANCHE - APPARAIT 0.4s AVANT LE SOLDAT
+                // ============================================================
+                // Grenade fumigène blanche
+                private _smoke = "SmokeShellWhite" createVehicle _spawnPos;
                 
-                // Attend que l'unité atteigne la zone de sortie (max 10 secondes)
-                private _timeout = time + 10;
-                waitUntil {
-                    sleep 0.3;
-                    (_newUnit distance2D _exitPos < 2) || (time > _timeout) || !alive _newUnit
+                // Effet de particules supplémentaire pour plus de densité
+                private _source = "#particlesource" createVehicle _spawnPos;
+                _source setParticleParams [
+                    ["\A3\Data_F\ParticleEffects\Universal\Universal.p3d", 16, 12, 8, 1],
+                    "", "Billboard", 1, 3, [0, 0, 0.5], [0, 0, 2], 1, 1.5, 1, 0.3,
+                    [2, 4, 8], [[1, 1, 1, 0.6], [1, 1, 1, 0.4], [1, 1, 1, 0]], [1],
+                    0.1, 0.3, "", "", ""
+                ];
+                _source setParticleRandom [2, [1, 1, 0.5], [1, 1, 0.5], 0, 0.5, [0, 0, 0, 0.1], 0, 0];
+                _source setDropInterval 0.01;
+                
+                // Suppression de la source de particules après 3 secondes
+                [_source] spawn {
+                    params ["_src"];
+                    sleep 3;
+                    if (!isNull _src) then { deleteVehicle _src; };
                 };
                 
-                // Arrêter le mouvement
-                doStop _newUnit;
-            };
+                // Attend 0.4 seconde avant de faire apparaître le soldat
+                sleep 0.4;
+
+                // Crée un groupe temporaire
+                private _tempGroup = createGroup [side player, true];
+                private _newUnit = objNull;
+
+                if (_classOrType == "LIKE_ME") then {
+                    // CAS SPECIAL : CLONE DU JOUEUR
+                    _newUnit = _tempGroup createUnit [typeOf player, _spawnPos, [], 0, "CAN_COLLIDE"];
+                    
+                    if (isNull _newUnit) then {
+                        _newUnit = _tempGroup createUnit ["B_Soldier_F", _spawnPos, [], 0, "CAN_COLLIDE"];
+                    };
+
+                    if (!isNull _newUnit) then {
+                        _newUnit setUnitLoadout (getUnitLoadout player);
+                        
+                        // Change le visage aléatoirement
+                        private _faces = [
+                            "WhiteHead_01", "WhiteHead_02", "WhiteHead_03", "WhiteHead_04", "WhiteHead_05",
+                            "WhiteHead_06", "WhiteHead_07", "WhiteHead_08", "WhiteHead_09", "WhiteHead_10",
+                            "WhiteHead_11", "WhiteHead_12", "WhiteHead_13", "WhiteHead_14", "WhiteHead_15",
+                            "WhiteHead_16", "WhiteHead_17", "WhiteHead_18", "WhiteHead_19", "WhiteHead_20",
+                            "AfricanHead_01", "AfricanHead_02", "AfricanHead_03",
+                            "AsianHead_A3_01", "AsianHead_A3_02", "AsianHead_A3_03",
+                            "GreekHead_A3_01", "GreekHead_A3_02", "GreekHead_A3_03", "GreekHead_A3_04",
+                            "PersianHead_A3_01", "PersianHead_A3_02", "PersianHead_A3_03"
+                        ];
+                        _newUnit setFace (selectRandom _faces);
+                    };
+                } else {
+                    // CAS STANDARD
+                    _newUnit = _tempGroup createUnit [_classOrType, _spawnPos, [], 0, "CAN_COLLIDE"];
+                };
+
+                // Vérification finale
+                if (isNull _newUnit) then {
+                    deleteGroup _tempGroup;
+                } else {
+                    // Oriente l'unité comme le spawner
+                    if (!isNil "brothers_in_arms_spawner" && {!isNull brothers_in_arms_spawner}) then {
+                        _newUnit setDir (getDir brothers_in_arms_spawner);
+                    };
+                    
+                    // Pause pour initialisation
+                    
+                    // ============================================================
+                    // DÉPLACEMENT VERS LE POINT DE SORTIE
+                    // ============================================================
+                    if (!isNil "brothers_in_arms_spawner_1" && {!isNull brothers_in_arms_spawner_1}) then {
+                        private _exitPos = getPosATL brothers_in_arms_spawner_1;
+                        
+                        _newUnit doMove _exitPos;
+                        _newUnit setSpeedMode "FULL";
+                        
+                        private _timeout = time + 10;
+                        waitUntil {
+                            sleep 0.3;
+                            (_newUnit distance2D _exitPos < 2) || (time > _timeout) || !alive _newUnit
+                        };
+                        
+                        doStop _newUnit;
+                    };
+                    
+                    // L'unité rejoint le groupe du joueur
+                    [_newUnit] joinSilent (group player);
+                    
+                    // Notification
+                    hint format [localize "STR_UNIT_JOINED", _displayName];
+                    
+                    // Nettoyage du groupe temporaire
+                    deleteGroup _tempGroup;
+                };
+                
+                // Attend 2 secondes avant de faire apparaître la prochaine unité
+                if (_spawnIndex < count _units) then {
+                    sleep 2;
+                };
+                
+            } forEach _units;
             
-            // L'unité rejoint le groupe du joueur sans message vocal ("joinSilent")
-            [_newUnit] joinSilent (group player);
-            
-            // Notification finale (Hint)
-            hint format [localize "STR_UNIT_JOINED", _name];
-            
-            // Nettoyage du groupe temporaire (maintenant vide)
-            deleteGroup _tempGroup;
+            // Notification finale
+            hint format [localize "STR_ALL_UNITS_SPAWNED", count _units];
         };
     };
 

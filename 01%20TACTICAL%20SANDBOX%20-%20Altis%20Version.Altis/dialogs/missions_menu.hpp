@@ -9,19 +9,19 @@ class Refour_Missions_Dialog
         class MainBackground: RscText
         {
             idc = -1;
-            x = 0.1 * safezoneW + safezoneX;
-            y = 0.1 * safezoneH + safezoneY;
-            w = 0.8 * safezoneW;
-            h = 0.8 * safezoneH;
+            x = 0.15 * safezoneW + safezoneX;
+            y = 0.12 * safezoneH + safezoneY;
+            w = 0.70 * safezoneW;
+            h = 0.78 * safezoneH;
             colorBackground[] = {0,0,0,0.85};
         };
         class Title: RscText
         {
             idc = -1;
             text = "$STR_MISSIONS_MENU_TITLE";
-            x = 0.1 * safezoneW + safezoneX;
-            y = 0.1 * safezoneH + safezoneY;
-            w = 0.8 * safezoneW;
+            x = 0.15 * safezoneW + safezoneX;
+            y = 0.12 * safezoneH + safezoneY;
+            w = 0.70 * safezoneW;
             h = 0.05 * safezoneH;
             colorBackground[] = {0.1,0.3,0.6,1};
             style = ST_CENTER;
@@ -31,19 +31,19 @@ class Refour_Missions_Dialog
         {
             idc = -1;
             text = "$STR_MISSIONS_LIST_LABEL";
-            x = 0.11 * safezoneW + safezoneX;
-            y = 0.16 * safezoneH + safezoneY;
-            w = 0.28 * safezoneW;
+            x = 0.16 * safezoneW + safezoneX;
+            y = 0.18 * safezoneH + safezoneY;
+            w = 0.24 * safezoneW;
             h = 0.03 * safezoneH;
         };
         // Right panel background
         class RightBackground: RscText
         {
             idc = -1;
-            x = 0.41 * safezoneW + safezoneX;
-            y = 0.16 * safezoneH + safezoneY;
-            w = 0.48 * safezoneW;
-            h = 0.62 * safezoneH;
+            x = 0.42 * safezoneW + safezoneX;
+            y = 0.18 * safezoneH + safezoneY;
+            w = 0.42 * safezoneW;
+            h = 0.60 * safezoneH;
             colorBackground[] = {0.1,0.1,0.1,0.5};
         };
     };
@@ -54,10 +54,10 @@ class Refour_Missions_Dialog
         class TaskList: RscListBox
         {
             idc = 2200;
-            x = 0.11 * safezoneW + safezoneX;
-            y = 0.20 * safezoneH + safezoneY;
-            w = 0.28 * safezoneW;
-            h = 0.58 * safezoneH;
+            x = 0.16 * safezoneW + safezoneX;
+            y = 0.22 * safezoneH + safezoneY;
+            w = 0.24 * safezoneW;
+            h = 0.56 * safezoneH;
             onLBSelChanged = "['SELECT', _this] call MISSION_fnc_spawn_missions;";
         };
 
@@ -67,8 +67,8 @@ class Refour_Missions_Dialog
             idc = 2202;
             text = "";
             x = 0.42 * safezoneW + safezoneX;
-            y = 0.17 * safezoneH + safezoneY;
-            w = 0.46 * safezoneW;
+            y = 0.19 * safezoneH + safezoneY;
+            w = 0.42 * safezoneW;
             h = 0.04 * safezoneH;
             colorBackground[] = {0.2,0.4,0.7,1};
             style = ST_CENTER;
@@ -80,9 +80,9 @@ class Refour_Missions_Dialog
             idc = 2203;
             text = "";
             x = 0.42 * safezoneW + safezoneX;
-            y = 0.22 * safezoneH + safezoneY;
-            w = 0.46 * safezoneW;
-            h = 0.55 * safezoneH;
+            y = 0.24 * safezoneH + safezoneY;
+            w = 0.42 * safezoneW;
+            h = 0.53 * safezoneH;
             style = ST_MULTI;
             lineSpacing = 1;
         };
@@ -92,7 +92,7 @@ class Refour_Missions_Dialog
         {
             idc = -1;
             text = "$STR_MISSIONS_LAUNCH";
-            x = 0.35 * safezoneW + safezoneX;
+            x = 0.33 * safezoneW + safezoneX;
             y = 0.82 * safezoneH + safezoneY;
             w = 0.15 * safezoneW;
             h = 0.05 * safezoneH;

@@ -53,7 +53,7 @@ _ctrlClouds lbSetCurSel 0;
 // Remplir la liste du Brouillard
 // Valeurs : 0%, 10%, ..., 75%
 private _ctrlFog = (findDisplay 9999) displayCtrl 2102;
-private _fogs = [0,3,6,9,12,15,18,21,24,27,30];
+private _fogs = [0,0.2,0.4,0.6,0.8,1,1.3,1.6,2,2.5,3,4,5,6,7,8,9,10];
 {
     private _index = _ctrlFog lbAdd format ["%1%2", _x, "%"];
     _ctrlFog lbSetData [_index, str (_x / 100)]; // Stocke la valeur normalisée

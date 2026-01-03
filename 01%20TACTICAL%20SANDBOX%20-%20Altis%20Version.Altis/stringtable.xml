@@ -391,6 +391,110 @@
             <Chinese>沒有AI單位可移除。</Chinese>
             <Chinesesimp>没有AI单位可移除。</Chinesesimp>
         </Key>
+        <Key ID="STR_SELECTED_UNITS">
+            <English>Selected Units</English>
+            <French>Unités sélectionnées</French>
+            <German>Ausgewählte Einheiten</German>
+            <Spanish>Unidades seleccionadas</Spanish>
+            <Italian>Unità selezionate</Italian>
+            <Russian>Выбранные юниты</Russian>
+            <Polish>Wybrane jednostki</Polish>
+            <Czech>Vybrané jednotky</Czech>
+            <Turkish>Seçilen Birimler</Turkish>
+            <Chinese>已選擇的單位</Chinese>
+            <Chinesesimp>已选择的单位</Chinesesimp>
+        </Key>
+        <Key ID="STR_AVAILABLE_UNITS">
+            <English>Available Units</English>
+            <French>Unités disponibles</French>
+            <German>Verfügbare Einheiten</German>
+            <Spanish>Unidades disponibles</Spanish>
+            <Italian>Unità disponibili</Italian>
+            <Russian>Доступные юниты</Russian>
+            <Polish>Dostępne jednostki</Polish>
+            <Czech>Dostupné jednotky</Czech>
+            <Turkish>Mevcut Birimler</Turkish>
+            <Chinese>可用單位</Chinese>
+            <Chinesesimp>可用单位</Chinesesimp>
+        </Key>
+        <Key ID="STR_BTN_ADD">
+            <English>Add Unit</English>
+            <French>Ajouter l&apos;unité</French>
+            <German>Einheit hinzufügen</German>
+            <Spanish>Añadir unidad</Spanish>
+            <Italian>Aggiungi unità</Italian>
+            <Russian>Добавить юнит</Russian>
+            <Polish>Dodaj jednostkę</Polish>
+            <Czech>Přidat jednotku</Czech>
+            <Turkish>Birim Ekle</Turkish>
+            <Chinese>添加單位</Chinese>
+            <Chinesesimp>添加单位</Chinesesimp>
+        </Key>
+        <Key ID="STR_BTN_VALIDATE">
+            <English>Validate</English>
+            <French>Valider</French>
+            <German>Bestätigen</German>
+            <Spanish>Validar</Spanish>
+            <Italian>Conferma</Italian>
+            <Russian>Подтвердить</Russian>
+            <Polish>Zatwierdź</Polish>
+            <Czech>Potvrdit</Czech>
+            <Turkish>Onayla</Turkish>
+            <Chinese>確認</Chinese>
+            <Chinesesimp>确认</Chinesesimp>
+        </Key>
+        <Key ID="STR_MAX_UNITS_REACHED">
+            <English>Maximum group size of 14 units reached!</English>
+            <French>Taille maximale du groupe de 14 unités atteinte !</French>
+            <German>Maximale Gruppengröße von 14 Einheiten erreicht!</German>
+            <Spanish>¡Tamaño máximo del grupo de 14 unidades alcanzado!</Spanish>
+            <Italian>Dimensione massima del gruppo di 14 unità raggiunta!</Italian>
+            <Russian>Достигнут максимальный размер группы в 14 юнитов!</Russian>
+            <Polish>Osiągnięto maksymalny rozmiar grupy 14 jednostek!</Polish>
+            <Czech>Dosažena maximální velikost skupiny 14 jednotek!</Czech>
+            <Turkish>Maksimum grup boyutu 14 birime ulaşıldı!</Turkish>
+            <Chinese>已達到14個單位的群組上限！</Chinese>
+            <Chinesesimp>已达到14个单位的群组上限！</Chinesesimp>
+        </Key>
+        <Key ID="STR_NO_UNITS_SELECTED">
+            <English>No units selected!</English>
+            <French>Aucune unité sélectionnée !</French>
+            <German>Keine Einheiten ausgewählt!</German>
+            <Spanish>¡No hay unidades seleccionadas!</Spanish>
+            <Italian>Nessuna unità selezionata!</Italian>
+            <Russian>Юниты не выбраны!</Russian>
+            <Polish>Nie wybrano jednostek!</Polish>
+            <Czech>Nejsou vybrány žádné jednotky!</Czech>
+            <Turkish>Birim seçilmedi!</Turkish>
+            <Chinese>未選擇任何單位！</Chinese>
+            <Chinesesimp>未选择任何单位！</Chinesesimp>
+        </Key>
+        <Key ID="STR_SPAWNING_UNITS">
+            <English>Deploying %1 unit(s)...</English>
+            <French>Déploiement de %1 unité(s)...</French>
+            <German>Einsetzen von %1 Einheit(en)...</German>
+            <Spanish>Desplegando %1 unidad(es)...</Spanish>
+            <Italian>Dispiegamento di %1 unità...</Italian>
+            <Russian>Развертывание %1 юнит(ов)...</Russian>
+            <Polish>Wdrażanie %1 jednostek...</Polish>
+            <Czech>Nasazení %1 jednotek...</Czech>
+            <Turkish>%1 birim dağıtılıyor...</Turkish>
+            <Chinese>正在部署 %1 個單位...</Chinese>
+            <Chinesesimp>正在部署 %1 个单位...</Chinesesimp>
+        </Key>
+        <Key ID="STR_ALL_UNITS_SPAWNED">
+            <English>%1 unit(s) deployed and ready!</English>
+            <French>%1 unité(s) déployée(s) et prêtes !</French>
+            <German>%1 Einheit(en) eingesetzt und bereit!</German>
+            <Spanish>¡%1 unidad(es) desplegada(s) y lista(s)!</Spanish>
+            <Italian>%1 unità dispiegata/e e pronta/e!</Italian>
+            <Russian>%1 юнит(ов) развернуто и готово!</Russian>
+            <Polish>%1 jednostek wdrożonych i gotowych!</Polish>
+            <Czech>%1 jednotek nasazeno a připraveno!</Czech>
+            <Turkish>%1 birim dağıtıldı ve hazır!</Turkish>
+            <Chinese>%1 個單位已部署並準備就緒！</Chinese>
+            <Chinesesimp>%1 个单位已部署并准备就绪！</Chinesesimp>
+        </Key>
         <Key ID="STR_VEHICLE_AVAILABLE">
             <English>Vehicle %1 available.</English>
             <French>Véhicule %1 disponible.</French>
