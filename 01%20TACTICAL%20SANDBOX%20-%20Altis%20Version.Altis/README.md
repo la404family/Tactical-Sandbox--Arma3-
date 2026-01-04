@@ -33,13 +33,9 @@ Ce scénario est conçu pour être joué en Solo ou en Coopération (1-15 joueur
 
 ---
 
-améliorer la base QG allié ! (simulation etc...)
-fonction si le QG est detruit ! 
-Modifier les équipements des ennemis de base (lumière)!
+
+
 TESTER tache DU FUGITIF !
-menu brother in arms a revoir (reinitialisation)
-menu ennemis ne doit pas etre accessible pendant une mission.
-mission ottage (ennemis trop peu nombreux)
 
 TASK 6 un hélicoptère allié + pilot a secourir 
 

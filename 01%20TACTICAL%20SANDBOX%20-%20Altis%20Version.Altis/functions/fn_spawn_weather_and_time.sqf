@@ -53,7 +53,7 @@ _ctrlClouds lbSetCurSel 0;
 // Remplir la liste du Brouillard
 // Valeurs : 0%, 10%, ..., 75%
 private _ctrlFog = (findDisplay 9999) displayCtrl 2102;
-private _fogs = [0,0.2,0.4,0.6,0.8,1,1.3,1.6,2,2.5,3,4,5,6,7,8,9,10];
+private _fogs = [0,0.2,0.4,0.6,0.8,1,1.3,1.6,2,2.5];
 {
     private _index = _ctrlFog lbAdd format ["%1%2", _x, "%"];
     _ctrlFog lbSetData [_index, str (_x / 100)]; // Stocke la valeur normalisée
@@ -93,8 +93,7 @@ if (_timeSel != "" && _cloudSel != "" && _fogSel != "") then {
         // 3. Appliquer le Brouillard
         // Syntaxe : [Densité, Dégradation (0.01 à 1), Altitude Base]
         // J'ai mis l'altitude à 0 pour que le brouillard soit au sol.
-        0 setFog [_f, 0.05, 250]; 
-        999999 setFog [_f, 0.05, 250]; 
+        0 setFog [_f, 0.05, 150]; 
         
         // 4. SYNCHRONISATION (La ligne manquante)
         // Obligatoire pour que tous les joueurs voient le changement instantanément

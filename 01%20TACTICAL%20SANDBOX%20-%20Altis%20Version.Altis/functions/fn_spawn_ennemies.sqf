@@ -31,6 +31,9 @@ switch (_mode) do {
         player addAction [
             localize "STR_ACTION_ENEMIES",
             {
+                if (missionNamespace getVariable ["MISSION_var_mission_active", false]) exitWith {
+                    hint (localize "STR_MISSION_ALREADY_ACTIVE");
+                };
                 ["OPEN"] call MISSION_fnc_spawn_ennemies;
             },
             [],

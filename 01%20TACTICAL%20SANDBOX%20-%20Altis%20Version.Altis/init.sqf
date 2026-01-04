@@ -7,6 +7,7 @@
 // marker_de_zone_3 est un marker qui affiche la "zone du choix de l'équipe"
 // marker_de_zone_4 est un marker qui affiche la "zone du choix du véhicule"
 // marker_de_zone_5 est un marker qui affiche la "zone du choix du temps"
+// marker_de_zone_6 est un marker qui affiche la "zone du choix des ennemis"
 
 // brothers_in_arms_request est un trigger (lorsqu'on y entre on peut choisir l'équipe)
 // brothers_in_arms_spawner est un héliport invisible (lieu d'apparition des membres de l'équipe)

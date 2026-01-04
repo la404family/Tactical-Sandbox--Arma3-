@@ -15,3 +15,4 @@ if (!hasInterface) exitWith {};
 "marker_de_zone_3" setMarkerTextLocal (localize "STR_MARKER_ZONE_3");
 "marker_de_zone_4" setMarkerTextLocal (localize "STR_MARKER_ZONE_4");
 "marker_de_zone_5" setMarkerTextLocal (localize "STR_MARKER_ZONE_5");
+"marker_de_zone_6" setMarkerTextLocal (localize "STR_MARKER_ZONE_6");

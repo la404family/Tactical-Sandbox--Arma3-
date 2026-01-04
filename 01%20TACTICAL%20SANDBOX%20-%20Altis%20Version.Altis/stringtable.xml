@@ -184,17 +184,17 @@
             <Chinesesimp>天气和时间</Chinesesimp>
         </Key>
         <Key ID="STR_MARKER_ZONE_6">
-            <English>Spawn point</English>
-            <French>Point d’apparition</French>
-            <German>Spawnpunkt</German>
-            <Spanish>Punto de aparición</Spanish>
-            <Italian>Punto di apparizione</Italian>
-            <Russian>Точка появления</Russian>
-            <Polish>Punkt odrodzenia</Polish>
-            <Czech>Místo objevení</Czech>
-            <Turkish>Doğma noktası</Turkish>
-            <Chinese>出生点</Chinese>
-            <Chinesesimp>出生点</Chinesesimp>
+            <English>Enemies</English>
+            <French>Ennemis</French>
+            <German>Feinde</German>
+            <Spanish>Enemigos</Spanish>
+            <Italian>Nemici</Italian>
+            <Russian>Враги</Russian>
+            <Polish>Wrogowie</Polish>
+            <Czech>Nepřátelé</Czech>
+            <Turkish>Düşmanlar</Turkish>
+            <Chinese>敵人</Chinese>
+            <Chinesesimp>敌人</Chinesesimp>
         </Key>
         <Key ID="STR_ADD_BROTHER">
             <English>Add a brother in arms</English>
@@ -964,17 +964,17 @@
             <Chinesesimp>人质撤离</Chinesesimp>
         </Key>
         <Key ID="STR_TASK_4_DESC">
-            <English>Three civilians have been captured by enemy forces and are held at separate unknown locations. Your mission: 1) Locate the hostages on the map 2) Secure each area by neutralizing all guards 3) IMPORTANT: Do NOT free the hostages until ALL search zones are secured 4) Free the hostages and escort them to the extraction point. An exfiltration helicopter will be dispatched automatically. At least one hostage must survive for mission success. (Enemy forces: 3 Guard Groups, ~6 Guards)</English>
-            <French>Trois civils ont été capturés par les forces ennemies et sont détenus dans des lieux séparés inconnus. Votre mission : 1) Localiser les otages sur la carte 2) Sécuriser chaque zone en neutralisant tous les gardes 3) IMPORTANT : Ne PAS libérer les otages avant que TOUTES les zones de recherche soient sécurisées 4) Libérer les otages et les escorter jusqu&apos;au point d&apos;extraction. Un hélicoptère d&apos;exfiltration sera envoyé automatiquement. Au moins un otage doit survivre pour réussir la mission. (Forces ennemies : 3 Groupes de gardes, ~6 Gardes)</French>
-            <German>Drei Zivilisten wurden von feindlichen Kräften gefangen genommen und werden an verschiedenen unbekannten Orten festgehalten. Ihre Mission: 1) Lokalisieren Sie die Geiseln auf der Karte 2) Sichern Sie jeden Bereich durch Neutralisierung aller Wachen 3) WICHTIG: Befreien Sie die Geiseln NICHT, bevor ALLE Suchzonen gesichert sind 4) Befreien Sie die Geiseln und eskortieren Sie sie zum Extraktionspunkt. Ein Evakuierungshubschrauber wird automatisch entsandt. Mindestens eine Geisel muss für den Missionserfolg überleben. (Feindliche Kräfte: 3 Wachgruppen, ~6 Wachen)</German>
-            <Spanish>Tres civiles han sido capturados por fuerzas enemigas y están retenidos en ubicaciones separadas desconocidas. Tu misión: 1) Localizar a los rehenes en el mapa 2) Asegurar cada zona neutralizando a todos los guardias 3) IMPORTANTE: NO liberar a los rehenes hasta que TODAS las zonas de búsqueda estén aseguradas 4) Liberar a los rehenes y escoltarlos al punto de extracción. Un helicóptero de exfiltración será enviado automáticamente. Al menos un rehén debe sobrevivir para completar la misión. (Fuerzas enemigas: 3 Grupos de guardias, ~6 Guardias)</Spanish>
-            <Italian>Tre civili sono stati catturati dalle forze nemiche e sono detenuti in luoghi separati sconosciuti. La tua missione: 1) Localizza gli ostaggi sulla mappa 2) Metti in sicurezza ogni area neutralizzando tutte le guardie 3) IMPORTANTE: NON liberare gli ostaggi finché TUTTE le zone di ricerca non sono state messe in sicurezza 4) Libera gli ostaggi e scortali al punto di estrazione. Un elicottero di esfiltrazione sarà inviato automaticamente. Almeno un ostaggio deve sopravvivere per il successo della missione. (Forze nemiche: 3 Gruppi di guardie, ~6 Guardie)</Italian>
-            <Russian>Трое гражданских были захвачены вражескими силами и удерживаются в разных неизвестных местах. Ваша миссия: 1) Найдите заложников на карте 2) Обезопасьте каждую зону, нейтрализовав всех охранников 3) ВАЖНО: НЕ освобождайте заложников, пока ВСЕ зоны поиска не будут зачищены 4) Освободите заложников и сопроводите их к точке эвакуации. Эвакуационный вертолет будет отправлен автоматически. Для успеха миссии должен выжить хотя бы один заложник. (Вражеские силы: 3 группы охраны, ~6 охранников)</Russian>
-            <Polish>Trzech cywilów zostało schwytanych przez siły wroga i jest przetrzymywanych w oddzielnych, nieznanych lokalizacjach. Twoja misja: 1) Zlokalizuj zakładników na mapie 2) Zabezpiecz każdy obszar neutralizując wszystkich strażników 3) WAŻNE: NIE uwalniaj zakładników, dopóki WSZYSTKIE strefy poszukiwań nie zostaną zabezpieczone 4) Uwolnij zakładników i eskortuj ich do punktu ekstrakcji. Helikopter ewakuacyjny zostanie automatycznie wysłany. Co najmniej jeden zakładnik musi przeżyć, aby misja zakończyła się sukcesem. (Siły wroga: 3 grupy strażników, ~6 strażników)</Polish>
-            <Czech>Tři civilisté byli zajati nepřátelskými silami a jsou drženi na oddělených neznámých místech. Vaše mise: 1) Najděte rukojmí na mapě 2) Zajistěte každou oblast neutralizací všech strážců 3) DŮLEŽITÉ: NEosvobozujte rukojmí, dokud VŠECHNY prohledávané zóny nebudou zajištěny 4) Osvoboďte rukojmí a doprovoďte je k extrakčnímu bodu. Evakuační vrtulník bude automaticky vyslán. Pro úspěch mise musí přežít alespoň jeden rukojmí. (Nepřátelské síly: 3 skupiny strážců, ~6 strážců)</Czech>
-            <Turkish>Üç sivil düşman güçleri tarafından yakalandı ve ayrı bilinmeyen yerlerde tutuluyor. Göreviniz: 1) Haritada rehineleri bulun 2) Tüm korumaları etkisiz hale getirerek her bölgeyi güvence altına alın 3) ÖNEMLİ: TÜM arama bölgeleri güvence altına alınmadan rehineleri kurtarmayın 4) Rehineleri kurtarın ve tahliye noktasına kadar eşlik edin. Tahliye helikopteri otomatik olarak gönderilecek. Görev başarısı için en az bir rehine hayatta kalmalı. (Düşman güçleri: 3 Koruma Grubu, ~6 Koruma)</Turkish>
-            <Chinese>三名平民被敵軍俘虜並被關押在不同的未知地點。你的任務：1) 在地圖上找到人質 2) 通過消滅所有守衛來確保每個區域的安全 3) 重要：在所有搜索區域都安全之前不要釋放人質 4) 釋放人質並護送他們到撤離點。撤離直升機將自動派遣。任務成功至少需要一名人質存活。（敵軍：3 個守衛小組，約6 名守衛）</Chinese>
-            <Chinesesimp>三名平民被敌军俘虏并被关押在不同的未知地点。你的任务：1) 在地图上找到人质 2) 通过消灭所有守卫来确保每个区域的安全 3) 重要：在所有搜索区域都安全之前不要释放人质 4) 释放人质并护送他们到撤离点。撤离直升机将自动派遣。任务成功至少需要一名人质存活。（敌军：3 个守卫小组，约6 名守卫）</Chinesesimp>
+            <English>A civilian has been captured by enemy forces and is held at one of 3 possible locations. Your mission: 1) Search the 3 zones on the map to locate the hostage 2) Secure the area by neutralizing the guards 3) Free the hostage and escort them to the extraction point. An exfiltration helicopter will be dispatched automatically. (Enemy forces: 3 Patrol Zones, ~24 Guards total)</English>
+            <French>Un civil a été capturé par les forces ennemies et est retenu dans l&apos;une des 3 zones possibles. Votre mission : 1) Fouillez les 3 zones sur la carte pour localiser l&apos;otage 2) Sécurisez la zone en neutralisant les gardes 3) Libérez l&apos;otage et escortez-le jusqu&apos;au point d&apos;extraction. Un hélicoptère d&apos;exfiltration sera envoyé automatiquement. (Forces ennemies : 3 Zones de patrouille, ~24 Gardes au total)</French>
+            <German>Ein Zivilist wurde von feindlichen Kräften gefangen genommen und wird an einem von 3 möglichen Orten festgehalten. Ihre Mission: 1) Durchsuchen Sie die 3 Zonen auf der Karte, um die Geisel zu finden 2) Sichern Sie das Gebiet, indem Sie die Wachen neutralisieren 3) Befreien Sie die Geisel und eskortieren Sie sie zum Extraktionspunkt. Ein Evakuierungshubschrauber wird automatisch entsandt. (Feindliche Kräfte: 3 Patrouillenzonen, ~24 Wachen insgesamt)</German>
+            <Spanish>Un civil ha sido capturado por fuerzas enemigas y está retenido en una de las 3 ubicaciones posibles. Tu misión: 1) Busca en las 3 zonas del mapa para localizar al rehén 2) Asegura el área neutralizando a los guardias 3) Libera al rehén y escoltalo al punto de extracción. Un helicóptero de exfiltración será enviado automáticamente. (Fuerzas enemigas: 3 Zonas de patrulla, ~24 Guardias en total)</Spanish>
+            <Italian>Un civile è stato catturato dalle forze nemiche ed è detenuto in una delle 3 possibili posizioni. La tua missione: 1) Cerca nelle 3 zone sulla mappa per localizzare l&apos;ostaggio 2) Metti in sicurezza l&apos;area neutralizzando le guardie 3) Libera l&apos;ostaggio e scortalo al punto di estrazione. Un elicottero di esfiltrazione verrà inviato automaticamente. (Forze nemiche: 3 Zone di pattuglia, ~24 Guardie in totale)</Italian>
+            <Russian>Гражданский был захвачен вражескими силами и удерживается в одной из 3 возможных локаций. Ваша миссия: 1) Обыщите 3 зоны на карте, чтобы найти заложника 2) Обезопасьте район, нейтрализовав охрану 3) Освободите заложника и сопроводите его к точке эвакуации. Эвакуационный вертолет будет отправлен автоматически. (Вражеские силы: 3 зоны патрулирования, всего ~24 охранника)</Russian>
+            <Polish>Cywil został schwytany przez siły wroga i jest przetrzymywany w jednej z 3 możliwych lokalizacji. Twoja misja: 1) Przeszukaj 3 strefy na mapie, aby zlokalizować zakładnika 2) Zabezpiecz obszar neutralizując strażników 3) Uwolnij zakładnika i eskortuj go do punktu ekstrakcji. Helikopter ewakuacyjny zostanie wysłany automatycznie. (Siły wroga: 3 strefy patrolowe, łącznie ~24 strażników)</Polish>
+            <Czech>Civilista byl zajat nepřátelskými silami a je držen na jednom ze 3 možných míst. Vaše mise: 1) Prohledejte 3 zóny na mapě a najděte rukojmí 2) Zajistěte oblast neutralizací stráží 3) Osvoboďte rukojmí a doprovoďte ho na místo vyzvednutí. Evakuační vrtulník bude automaticky vyslán. (Nepřátelské síly: 3 hlídkové zóny, celkem ~24 stráží)</Czech>
+            <Turkish>Bir sivil düşman güçleri tarafından yakalandı ve 3 olası konumdan birinde tutuluyor. Göreviniz: 1) Rehineyi bulmak için haritadaki 3 bölgeyi arayın 2) Korumaları etkisiz hale getirerek bölgeyi güvence altına alın 3) Rehineyi kurtarın ve tahliye noktasına kadar eşlik edin. Tahliye helikopteri otomatik olarak gönderilecek. (Düşman güçleri: 3 Devriye Bölgesi, Toplam ~24 Koruma)</Turkish>
+            <Chinese>一名平民被敵軍俘虜，被關押在 3 個可能地點之一。你的任務：1) 搜索地圖上的 3 個區域以找到人質 2) 通過消滅守衛來確保該區域的安全 3) 釋放人質並將其護送到撤離點。撤離直升機將自動派遣。（敵軍：3 個巡邏區，共約 24 名守衛）</Chinese>
+            <Chinesesimp>一名平民被敌军俘虏，被关押在 3 个可能地点之一。你的任务：1) 搜索地图上的 3 个区域以找到人质 2) 通过消灭守卫来确保该区域的安全 3) 释放人质并将其护送到撤离点。撤离直升机将自动派遣。（敌军：3 个巡逻区，共约 24 名守卫）</Chinesesimp>
         </Key>
         <Key ID="STR_TASK_5_TITLE">
             <English>Molos Defusal</English>

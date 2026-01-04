@@ -21,6 +21,7 @@ if (isNil "MISSION_var_model_player") then { MISSION_var_model_player = []; };
 if (isNil "MISSION_var_fugitives") then { MISSION_var_fugitives = []; };
 if (isNil "MISSION_var_boats") then { MISSION_var_boats = []; };
 if (isNil "MISSION_var_escape_trigger") then { MISSION_var_escape_trigger = []; };
+if (isNil "MISSION_var_documents") then { MISSION_var_documents = []; };
 
 if (_mode == "SAVE") exitWith {
     
@@ -156,6 +157,14 @@ if (_mode == "SAVE") exitWith {
     if (!isNull _escapeTrigger) then {
         MISSION_var_escape_trigger = [getPosWorld _escapeTrigger, getDir _escapeTrigger, triggerArea _escapeTrigger];
         deleteVehicle _escapeTrigger;
+    };
+
+    // ---- Sauvegarde des Documents (pour Tâche 2) ----
+    private _docName = "task_2_document";
+    private _docObj = missionNamespace getVariable [_docName, objNull];
+    if (!isNull _docObj) then {
+        MISSION_var_documents pushBack [_docName, typeOf _docObj, getPosWorld _docObj, getDir _docObj, side group _docObj, []];
+        deleteVehicle _docObj;
     };
 
     // Debug (désactivé) - Affiche le nombre d'éléments sauvegardés

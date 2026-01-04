@@ -23,15 +23,14 @@ if (count MISSION_var_enemies == 0 || count MISSION_var_officers == 0) exitWith 
     // systemChat "ERROR: No memory enemies/officers found for Task 2.";
 };
 
-// 1. Récupération de l'objet "Document physique" placé dans l'éditeur
-private _document = missionNamespace getVariable ["task_2_document", objNull];
-if (isNull _document) exitWith {
-    // systemChat "ERROR: task_2_document not found in editor.";
+// 1. Récupération du template "Document" depuis la mémoire
+if (isNil "MISSION_var_documents" || {count MISSION_var_documents == 0}) exitWith {
+    // systemChat "ERROR: No memory documents found for Task 2.";
 };
+private _docData = MISSION_var_documents select 0;
+_docData params ["_docVarName", "_docType"];
 
-// Masquer le document initialement (il n'apparaît qu'à la mort du bon officier)
-_document hideObjectGlobal true;
-_document enableSimulationGlobal false;
+// Pas de création physique immédiate - on attend la mort de l'officier
 
 // 2. Liste des points de spawn possibles
 private _spawnMarkers = [
@@ -105,9 +104,9 @@ for "_i" from 0 to 2 do {
         _officer setVariable ["hasDocuments", false, true];
     };
     
-    // Spawn des gardes (3 gardes par officier)
+    // Spawn des gardes (8 gardes par officier)
     private _guards = [];
-    for "_g" from 1 to 3 do {
+    for "_g" from 1 to 8 do {
         private _eTemplate = selectRandom MISSION_var_enemies;
         _eTemplate params ["_eVar", "_eType", "", "", "_eSide", "_eLoadout"];
         
@@ -131,18 +130,24 @@ for "_i" from 0 to 2 do {
     _mkrName setMarkerText format ["%1 %2", localize "STR_MARKER_TARGET", _i + 1];
     MISSION_var_task2_markers pushBack _mkrName;
     
-    // Thread de patrouille des gardes
-    [_grpEnemies, _officer, _guards] spawn {
-        params ["_grp", "_officer", "_guards"];
+    // Thread de patrouille des gardes (Autour du point de spawn, 50m radius)
+    [_grpEnemies, _spawnPos, _guards] spawn {
+        params ["_grp", "_centerPos", "_guards"];
         
-        while {alive _officer} do {
-            sleep 45;
-            if (!alive _officer) exitWith {};
+        while {true} do { 
+            // On continue même si l'officier meurt, les gardes patrouillent la zone
+            if ({alive _x} count _guards == 0) exitWith {};
+            
+            sleep (30 + random 30);
+            
             {
                 if (alive _x) then {
-                    private _newPos = _officer getPos [2 + random 5, random 360];
+                    // Mouvement aléatoire dans un rayon de 50m autour du spawn initial
+                    private _newPos = _centerPos getPos [random 50, random 360];
                     _x doMove _newPos;
                     _x setUnitPos "AUTO";
+                    _x setBehaviour "SAFE";
+                    _x setSpeedMode "LIMITED";
                 };
             } forEach _guards;
         };
@@ -167,8 +172,8 @@ private _taskID = "task_2_assassination";
 ] call BIS_fnc_taskCreate;
 
 // 6. Surveillance des conditions - Récupération du document
-[_taskID, _document] spawn {
-    params ["_taskID", "_document"];
+[_taskID, _docType] spawn {
+    params ["_taskID", "_docType"];
     
     private _documentRevealed = false;
     private _documentMarkerCreated = false;
@@ -181,12 +186,16 @@ private _taskID = "task_2_assassination";
             _documentRevealed = true;
             
             private _bodyPos = getPosATL MISSION_var_task2_documentHolder;
-            _bodyPos set [2, 0];
+            // Ne PAS mettre Z à 0 pour éviter le spawn sous le sol des bâtiments
+            // _bodyPos set [2, 0];
             
-            // Déplacer le document sur le corps et le rendre visible
-            _document setPosATL _bodyPos;
-            _document hideObjectGlobal false;
-            _document enableSimulationGlobal true;
+            // Tentative de trouver une position libre très proche pour éviter le clipping corps
+            private _spawnPos = _bodyPos findEmptyPosition [0, 1.5, _docType];
+            if (count _spawnPos == 0) then { _spawnPos = _bodyPos; };
+            
+            // Faire apparaître le document
+            private _document = createVehicle [_docType, _spawnPos, [], 0, "CAN_COLLIDE"];
+            _document setPosATL [_spawnPos select 0, _spawnPos select 1, (_bodyPos select 2) + 0.05]; // Petite élévation pour éviter clipping sol
             
             // Créer un marqueur sur le document
             private _mkrName = createMarker ["mkr_task_2_doc", _bodyPos];
@@ -198,25 +207,41 @@ private _taskID = "task_2_assassination";
             // Mettre à jour la destination de la tâche
             [_taskID, _bodyPos] call BIS_fnc_taskSetDestination;
             
-            // Ajouter l'action de ramassage au document
-            [[_document], {
-                params ["_doc"];
-                _doc addAction [
-                    localize "STR_MARKER_DOCUMENT",
+            // Ajouter l'action de ramassage SUR LE CORPS de l'officier (plus facile à viser)
+            // On passe l'objet visuel "_document" en argument pour pouvoir le supprimer
+            [[MISSION_var_task2_documentHolder, _document], {
+                params ["_corpse", "_visualDoc"];
+                
+                if (isNull _corpse) exitWith {};
+                
+                _corpse addAction [
+                    localize "STR_MARKER_DOCUMENT", // "Documents"
                     {
-                        params ["_target", "_caller", "_actionId"];
+                        params ["_target", "_caller", "_actionId", "_arguments"];
+                        _arguments params ["_visualDoc"];
+                        
                         MISSION_var_task2_completed = true;
                         publicVariable "MISSION_var_task2_completed";
-                        _target hideObjectGlobal true;
-                        _target enableSimulationGlobal false;
+                        
+                        // Supprime le document visuel du sol
+                        if (!isNull _visualDoc) then { deleteVehicle _visualDoc; };
+                        
+                        // Supprime l'action sur le corps pour ne pas le refaire
+                        _target removeAction _actionId;
+                        
+                        // Ajout physique d'un objet (Carte) dans l'inventaire pour simuler la possession des docs
+                        if (_caller canAdd "ItemMap") then {
+                            _caller addItem "ItemMap";
+                        };
+                        
                         hint (localize "STR_MARKER_DOCUMENT" + " - OK");
                     },
-                    nil,
-                    6,
-                    true,
-                    true,
-                    "",
-                    "_this distance _target < 3"
+                    [_visualDoc], // Arguments passés au script de l'action
+                    10,    // Priorité élevée
+                    true,  // showWindow
+                    true,  // hideOnUse
+                    "",    // Shortcut
+                    "_this distance _target < 2" // Condition : être à moins de 2m du corps
                 ];
             }] remoteExec ["call", 0, true];
         };

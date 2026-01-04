@@ -414,5 +414,29 @@ switch (_mode) do {
         } else {
             hint localize "STR_AI_RESET_NONE";
         };
+        
+        // Mise à jour du compteur si l'interface est ouverte
+        private _display = findDisplay 8888;
+        if (!isNull _display) then {
+            private _ctrlCounter = _display displayCtrl 1502;
+            
+            // Recalcul : Groupe (0) + Sélection en cours
+            private _currentGroupCount = 0; // On vient de tout supprimer
+            private _selectedCount = count MISSION_selectedBrothers; // On garde la sélection en cours
+            private _totalCount = _currentGroupCount + _selectedCount;
+            
+            _ctrlCounter ctrlSetText format ["%1 / 14", _totalCount];
+            
+            // Mise à jour couleur (Vert car forcément < 10 si on vient de reset le groupe, sauf si sélection énorme)
+            if (_totalCount >= 14) then {
+                _ctrlCounter ctrlSetTextColor [1, 0.2, 0.2, 1];
+            } else {
+                if (_totalCount >= 10) then {
+                    _ctrlCounter ctrlSetTextColor [1, 0.8, 0, 1];
+                } else {
+                    _ctrlCounter ctrlSetTextColor [0.6, 1, 0.2, 1];
+                };
+            };
+        };
     };
 };

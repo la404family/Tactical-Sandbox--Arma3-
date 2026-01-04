@@ -1,14 +1,13 @@
 /*
     Fonction: MISSION_fnc_task_4_launch
     Description: Lance la Tâche 4 - Exfiltration d'otages.
-    - 3 Otages civils sur 3 spawns aléatoires (01-12).
-    - Gardes ennemis sur les autres points (01-12).
-    - Phase 1: Libération.
+    - 3 Zones de recherche (choisies parmi 01-12).
+    - 1 Otage caché dans l'une de ces 3 zones.
+    - 8 Ennemis patrouillant dans CHAQUE zone (Total 24).
+    - Phase 1: Localisation et Libération.
     - Phase 2: Suivre joueur + Extraction Hélico (13-18).
-      - Sélection du point d'extraction le plus proche des otages.
-      - Création d'un héliport invisible pour forcer l'atterrissage.
     - Phase 3: Départ et validation.
-      - Extraction possible si au moins 1 otage vivant.
+      - Hélicoptère verrouillé pour les joueurs.
 */
 
 if (!isServer) exitWith {};
@@ -47,9 +46,11 @@ if (count _lzSpawns == 0) exitWith { systemChat "Erreur: Pas assez de points d'a
 // Mélange pour l'aléatoire
 _unitSpawns = _unitSpawns call BIS_fnc_arrayShuffle;
 
-// Sélection des 3 points pour les otages, le reste pour les gardes (3 groupes)
-private _hostageSpawns = _unitSpawns select [0, 3];
-private _guardSpawns = _unitSpawns select [3, 3];
+// Sélection des 3 Zones de Recherche
+private _searchZones = _unitSpawns select [0, 3];
+
+// Sélection de la zone de l'otage (parmi les 3)
+private _hostageZone = selectRandom _searchZones;
 
 // 2. Création de la Tâche Arma 3
 [
@@ -68,197 +69,157 @@ private _guardSpawns = _unitSpawns select [3, 3];
     true
 ] call BIS_fnc_taskCreate;
 
-// 3. Spawn des Otages (Civils)
+// 3. Spawn de l'Otage (Unique)
 if (isNil "MISSION_var_civilians") then { MISSION_var_civilians = []; };
 
-{
-    private _spawnObj = _x;
-    private _pos = getPos _spawnObj;
-    
-    // Type civil par défaut
-    private _civType = "C_man_polo_1_F";
-    private _civLoadout = [];
-    
-    if (count MISSION_var_civilians > 0) then {
-        private _data = selectRandom MISSION_var_civilians;
-        _civType = _data select 1;
-        _civLoadout = _data select 5;
-    };
-    
-    private _grpCiv = createGroup [civilian, true];
-    private _hostage = _grpCiv createUnit [_civType, _pos, [], 0, "NONE"];
-    
-    if (count _civLoadout > 0) then { _hostage setUnitLoadout _civLoadout; };
-    
-    // Configuration OTAGE
-    _hostage setCaptive true;
-    removeAllWeapons _hostage;
-    removeBackpack _hostage;
-    
-    _hostage disableAI "ANIM";
-    _hostage disableAI "MOVE";
-    _hostage disableAI "AUTOTARGET";
-    _hostage disableAI "TARGET";
-    
-    _hostage switchMove "Acts_ExecutionVictim_Loop";
+private _posHostage = getPos _hostageZone;
 
-    // Compétences & Moral (Réglés haut pour l'efficacité)
-    _hostage setSkill ["aimingAccuracy", 0.90];
-    _hostage setSkill ["aimingShake", 0.90];
-    _hostage setSkill ["aimingSpeed", 0.90];
-    _hostage setSkill ["spotDistance", 0.90];
-    _hostage setSkill ["spotTime", 0.90];
-    _hostage setSkill ["courage", 1.0];
-    _hostage setSkill ["reloadSpeed", 0.90];
-    _hostage setSkill ["commanding", 0.90];
-    _hostage setSkill ["general", 0.90];
-    _hostage allowFleeing 0.01; // Très peu de chance de fuite
-    
-    // Action Libération
-    [_hostage, 
-        localize "STR_ACTION_FREE_HOSTAGE", 
-        "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_unbind_ca.paa", 
-        "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_unbind_ca.paa", 
-        "alive _target && _target distance _this < 2 && _target getVariable ['isCaptive', true]", 
-        "true", 
-        { params ["_target", "_caller", "_actionId", "_arguments"]; }, 
-        { params ["_target", "_caller", "_actionId", "_arguments"]; }, 
-        { 
-            params ["_target", "_caller", "_actionId", "_arguments"];
+// Type civil par défaut
+private _civType = "C_man_polo_1_F";
+private _civLoadout = [];
+
+if (count MISSION_var_civilians > 0) then {
+    private _data = selectRandom MISSION_var_civilians;
+    _civType = _data select 1;
+    _civLoadout = _data select 5;
+};
+
+private _grpCiv = createGroup [civilian, true];
+private _hostage = _grpCiv createUnit [_civType, _posHostage, [], 0, "NONE"];
+
+if (count _civLoadout > 0) then { _hostage setUnitLoadout _civLoadout; };
+
+// Configuration OTAGE
+_hostage setCaptive true;
+removeAllWeapons _hostage;
+removeBackpack _hostage;
+
+_hostage disableAI "ANIM";
+_hostage disableAI "MOVE";
+_hostage disableAI "AUTOTARGET";
+_hostage disableAI "TARGET";
+
+_hostage switchMove "Acts_ExecutionVictim_Loop";
+
+// Compétences & Moral
+_hostage setSkill ["aimingAccuracy", 0.90];
+_hostage setSkill ["courage", 1.0];
+_hostage allowFleeing 0; // Pas de fuite
+
+// Action Libération
+[_hostage, 
+    localize "STR_ACTION_FREE_HOSTAGE", 
+    "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_unbind_ca.paa", 
+    "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_unbind_ca.paa", 
+    "alive _target && _target distance _this < 2 && _target getVariable ['isCaptive', true]", 
+    "true", 
+    { params ["_target", "_caller", "_actionId", "_arguments"]; }, 
+    { params ["_target", "_caller", "_actionId", "_arguments"]; }, 
+    { 
+        params ["_target", "_caller", "_actionId", "_arguments"];
+        
+        [_target] spawn {
+            params ["_captive"];
             
-            [_target] spawn {
-                params ["_captive"];
+            _captive setVariable ["isCaptive", false, true];
+            removeAllActions _captive;
+            
+            [_captive, "Acts_ExecutionVictim_Unbow"] remoteExec ["switchMove", 0];
+            sleep 8.5; 
+            
+            _captive setCaptive false;
+            { [_captive, _x] remoteExec ["enableAI", 0]; } forEach ["ANIM", "MOVE", "AUTOTARGET", "TARGET"];
+            
+            // --- Logique Suivre le joueur le plus proche ---
+            _captive setBehaviour "SAFE";
+            _captive setUnitPos "AUTO";
+            
+            // Boucle de suivi
+            while { ["task_4"] call BIS_fnc_taskExists && alive _captive && !(_captive getVariable ["inHeli", false]) } do {
                 
-                _captive setVariable ["isCaptive", false, true];
-                removeAllActions _captive;
+                // Trouver le joueur le plus proche
+                private _nearestPlayer = objNull;
+                private _minDist = 99999;
                 
-                [_captive, "Acts_ExecutionVictim_Unbow"] remoteExec ["switchMove", 0];
-                sleep 8.5; 
-                
-                _captive setCaptive false;
-                { [_captive, _x] remoteExec ["enableAI", 0]; } forEach ["ANIM", "MOVE", "AUTOTARGET", "TARGET"];
-                
-                // --- Logique Suivre le joueur le plus proche ---
-                _captive setBehaviour "SAFE";
-                _captive setUnitPos "AUTO";
-                
-                // Boucle de suivi (active tant que la tache tourne et otage vivant)
-                while { ["task_4"] call BIS_fnc_taskExists && alive _captive && !(_captive getVariable ["inHeli", false]) } do {
-                    
-                    // Trouver le joueur le plus proche
-                    private _nearestPlayer = objNull;
-                    private _minDist = 99999;
-                    
-                    {
-                        if (alive _x) then {
-                            private _d = _captive distance _x;
-                            if (_d < _minDist) then {
-                                _minDist = _d;
-                                _nearestPlayer = _x;
-                            };
+                {
+                    if (alive _x) then {
+                        private _d = _captive distance _x;
+                        if (_d < _minDist) then {
+                            _minDist = _d;
+                            _nearestPlayer = _x;
                         };
-                    } forEach allPlayers;
-                    
-                    if (!isNull _nearestPlayer) then {
-                        // On ordonne le mouvement vers le joueur
-                        _captive doMove (getPos _nearestPlayer);
                     };
-                    
-                    sleep 5;
+                } forEach allPlayers;
+                
+                if (!isNull _nearestPlayer) then {
+                    _captive doMove (getPos _nearestPlayer);
                 };
+                
+                sleep 5;
             };
-        }, 
-        { params ["_target", "_caller", "_actionId", "_arguments"]; }, 
-        [], 1.5, 0, false, false
-    ] call BIS_fnc_holdActionAdd;
+        };
+    }, 
+    { params ["_target", "_caller", "_actionId", "_arguments"]; }, 
+    [], 1.5, 0, false, false
+] call BIS_fnc_holdActionAdd;
+
+_hostage setVariable ["isCaptive", true, true];
+MISSION_var_task4_hostages pushBack _hostage;
+
+// 4. Spawn Gardes (8 par zone, sur les 3 zones)
+if (isNil "MISSION_var_enemies") then { MISSION_var_enemies = []; };
+
+{
+    private _zoneObj = _x;
+    private _posZone = getPos _zoneObj;
     
-    _hostage setVariable ["isCaptive", true, true];
-    MISSION_var_task4_hostages pushBack _hostage;
-    
-    // Marqueur approximatif
+    // Marqueur Zone de Recherche
     private _markerName = format ["m_hostage_area_%1", _forEachIndex];
-    createMarker [_markerName, _pos getPos [random 50, random 360]];
+    createMarker [_markerName, _posZone getPos [random 50, random 360]];
     _markerName setMarkerType "hd_unknown";
     _markerName setMarkerColor "ColorOrange";
     _markerName setMarkerText (localize "STR_MARKER_SEARCH_ZONE");
-    
-} forEach _hostageSpawns;
 
-// 4. Spawn Gardes
-if (isNil "MISSION_var_enemies") then { MISSION_var_enemies = []; };
-
-private _hostage1 = MISSION_var_task4_hostages select 0;
-private _hostage2 = MISSION_var_task4_hostages select 1;
-private _hostage3 = MISSION_var_task4_hostages select 2;
-private _guardsSpawnRate = 0;
-
-{
-    private _spawnObj = _x;
-    private _pos = getPos _spawnObj;
-    private _grp = createGroup [east, true];
-    private _infType = "O_Soldier_F";
-    if (count MISSION_var_enemies > 0) then { _infType = (selectRandom MISSION_var_enemies) select 1; };
-
-    for "_k" from 1 to 2 do {
-        sleep 0.8;
-        private _unit = _grp createUnit [_infType, _pos, [], 2, "NONE"];
+    // Création des 8 ennemis
+    for "_k" from 1 to 8 do {
+        private _grp = createGroup [east, true];
+        private _infType = "O_Soldier_F";
+        if (count MISSION_var_enemies > 0) then { _infType = (selectRandom MISSION_var_enemies) select 1; };
+        
+        private _spawnPosUnit = _posZone getPos [random 30, random 360];
+        
+        private _unit = _grp createUnit [_infType, _spawnPosUnit, [], 0, "NONE"];
         if (count MISSION_var_enemies > 0) then {
             _unit setUnitLoadout ((selectRandom MISSION_var_enemies) select 5);
         };
         MISSION_var_task4_guards pushBack _unit;
         
-        // Assigner un otage au garde (rotation entre les 3 otages)
-        private _myHostage = switch (_guardsSpawnRate mod 3) do {
-            case 0: { _hostage1 };
-            case 1: { _hostage2 };
-            case 2: { _hostage3 };
-        };
-        _unit setVariable ["assignedHostage", _myHostage];
-        _guardsSpawnRate = _guardsSpawnRate + 1;
-    };
-    _grp setBehaviour "SAFE"; 
-    _grp setSpeedMode "LIMITED";
-} forEach _guardSpawns;
-
-// 5. IA Gardes
-[] spawn {
-    while { ["task_4"] call BIS_fnc_taskExists && { !(["task_4"] call BIS_fnc_taskCompleted) } } do {
-        {
-            private _guard = _x;
-            if (alive _guard) then {
-                private _targetHostage = _guard getVariable ["assignedHostage", objNull];
-                if (!isNull _targetHostage && {alive _targetHostage}) then {
-                    if (_targetHostage getVariable ["isCaptive", false]) then {
-                        private _dist = 2 + random 5;
-                        private _watchPos = _targetHostage getRelPos [_dist, random 360];
-                        _guard doMove _watchPos;
-                        _guard setUnitPos "UP";
-                        _guard doWatch _targetHostage;
-                    } else {
-                        _guard setUnitPos "AUTO";
-                        _guard setBehaviour "COMBAT";
-                        _guard doMove (getPos _targetHostage);
-                    };
-                };
+        // Logique de patrouille simple autour du centre de la zone
+        [_unit, _posZone] spawn {
+            params ["_u", "_center"];
+            _u setBehaviour "SAFE";
+            _u setSpeedMode "LIMITED";
+            while {alive _u} do {
+                private _movePos = _center getPos [10 + random 40, random 360];
+                _u doMove _movePos;
+                sleep (30 + random 30);
             };
-        } forEach MISSION_var_task4_guards;
-        sleep 45;
+        };
+        
+        sleep 0.2;
     };
-};
+    
+} forEach _searchZones;
 
 // 6. Gestionnaire de Mission (Extraction)
 [_lzSpawns] spawn {
     params ["_lzSpawns"];
     
-    // Attente Libération - MODIFIE: Doit fonctionner si 1 otage meurt mais que l'autre est libre
+    // Attente Libération Otage
     waitUntil {
         sleep 2;
-        
-        private _aliveHostages = MISSION_var_task4_hostages select { alive _x };
-        private _freeHostages = _aliveHostages select { !(_x getVariable ["isCaptive", true]) };
-        
-        // On continue si au moins 1 otage vivant et que tous les otages vivants sont libres
-        (count _aliveHostages > 0) && (count _freeHostages == count _aliveHostages)
+        private _hostage = MISSION_var_task4_hostages select 0; // Unique otage
+        (alive _hostage) && !(_hostage getVariable ["isCaptive", true])
     };
     
     ["task_4", "ASSIGNED"] call BIS_fnc_taskSetState;
@@ -282,6 +243,9 @@ private _guardsSpawnRate = 0;
     
     MISSION_var_task4_heli = createVehicle [_heliClass, _spawnPos, [], 0, "FLY"];
     
+    // VERROUILLAGE HELICO
+    MISSION_var_task4_heli lock 2; // Locked for player
+    
     for "_i" from 1 to 6 do {
         private _unit = _grpHeli createUnit ["B_Helipilot_F", _spawnPos, [], 0, "NONE"];
         _unit moveInAny MISSION_var_task4_heli;
@@ -292,19 +256,13 @@ private _guardsSpawnRate = 0;
         };
     };
     
-    // Trouver LZ la plus proche des otages VIVANTS
-    private _aliveHostages = MISSION_var_task4_hostages select { alive _x };
-    private _centerPos = [0,0,0];
-    { _centerPos = _centerPos vectorAdd (getPos _x); } forEach _aliveHostages;
-    if (count _aliveHostages > 0) then {
-        _centerPos = _centerPos vectorMultiply (1 / (count _aliveHostages));
-    };
-    
+    // Trouver LZ la plus proche de l'otage
+    private _hostage = MISSION_var_task4_hostages select 0;
     private _closestLZ = objNull;
     private _minDist = 99999;
     
     {
-        private _d = _centerPos distance (getPos _x);
+        private _d = _hostage distance (getPos _x);
         if (_d < _minDist) then {
             _minDist = _d;
             _closestLZ = _x;
@@ -331,15 +289,15 @@ private _guardsSpawnRate = 0;
     
     MISSION_var_task4_heli land "LAND"; 
     
-    // Sécurité Atterrissage: Coupure moteur/fuel si < 5m ET si pas de civils à bord
+    // Sécurité Atterrissage
     waitUntil {
         sleep 0.5;
         (getPos MISSION_var_task4_heli select 2) < 5
     };
     
-    private _anyHostageInside = ({vehicle _x == MISSION_var_task4_heli} count MISSION_var_task4_hostages) > 0;
+    private _hostageInside = vehicle _hostage == MISSION_var_task4_heli;
     
-    if (!_anyHostageInside) then {
+    if (!_hostageInside) then {
         MISSION_var_task4_heli engineOn false;
         MISSION_var_task4_heli setFuel 0;
     };
@@ -354,76 +312,49 @@ private _guardsSpawnRate = 0;
         MISSION_var_task4_heli setVelocity [0,0,-5];
     };
     
-    // WARNING: Moteur reste éteint jusqu'à l'embarquement
-    
-    // Ordre de rejoindre l'hélicoptère (Logique modifiée : Suivre joueur JUSQU'A 10m de l'hélico)
-    // On ne force plus "inHeli" à true tout de suite pour laisser le script de suivi (Step 3) actif.
-
+    // Attente embarquement otage
     waitUntil {
-        sleep 10;
-        private _allInOrDead = true;
+        sleep 5;
         
-        {
-            private _hostage = _x;
-            if (alive _hostage) then {
-                if (vehicle _hostage == MISSION_var_task4_heli) then {
-                    // Déjà dedans
-                } else {
-                    _allInOrDead = false;
-                    
-                    // Si pas dedans, on vérifie la distance
-                    if (_hostage distance MISSION_var_task4_heli < 20) then {
-                        // Moins de 20m : On passe en mode embarquement (ce qui coupe le suivi joueur)
-                        if !(_hostage getVariable ["inHeli", false]) then {
-                            _hostage setVariable ["inHeli", true, true]; // Arrête le thread "Follow Player"
-                            _hostage assignAsCargo MISSION_var_task4_heli;
-                            [_hostage] orderGetIn true;
-                        };
+        if (alive _hostage) then {
+            if (vehicle _hostage == MISSION_var_task4_heli) then {
+                // Dedans -> OK
+            } else {
+                // Pas dedans
+                if (_hostage distance MISSION_var_task4_heli < 20) then {
+                    if !(_hostage getVariable ["inHeli", false]) then {
+                        _hostage setVariable ["inHeli", true, true];
+                        _hostage assignAsCargo MISSION_var_task4_heli;
+                        [_hostage] orderGetIn true;
                     };
-                    // Plus de 15m : On ne fait RIEN ici.
-                    // Le thread de Step 3 continue de faire "_hostage doMove (getPos _nearestPlayer)"
-                    // Donc le joueur doit amener l'otage près de l'hélico.
                 };
             };
-        } forEach MISSION_var_task4_hostages;
+        };
         
-        // Vérifie aussi qu'il reste au moins 1 vivant
-        private _aliveCount = { alive _x } count MISSION_var_task4_hostages;
-        (_allInOrDead && _aliveCount > 0) || (_aliveCount == 0)
+        // Condition sortie : Otage dedans OU Otage mort
+        (vehicle _hostage == MISSION_var_task4_heli) || (!alive _hostage)
     };
     
-    // Tout le monde est là : On remet le jus !
+    // Protection OTAGE MORT
+    if (!alive _hostage) exitWith {
+         // Sera géré par le thread d'échec global, mais on peut couper ici.
+    };
+    
+    // Départ
     MISSION_var_task4_heli setFuel 1;
     MISSION_var_task4_heli engineOn true;
 
-    // Laisse le temps au moteur de chauffer
     sleep 1;
-
-    while { ({ isPlayer _x } count (crew MISSION_var_task4_heli)) > 0 } do {
-        hint (localize "STR_HINT_HELI_PLAYER_ONBOARD");
-        MISSION_var_task4_heli setFuel 0;
-        MISSION_var_task4_heli engineOn false;
-        sleep 2;
-        MISSION_var_task4_heli setFuel 1;
-        MISSION_var_task4_heli engineOn true;
-        //si le joueur n'est plus dans l'hélicoptère il sort de la boucle
-        if (!({ isPlayer _x } count (crew MISSION_var_task4_heli)) > 0) then {
-            break;
-        }
-    };
     
     hint (localize "STR_HINT_EXTRACTION_TAKEOFF");
     deleteMarker "m_task4_lz";
     deleteVehicle _helipad;
     
-    // Annuler le mode atterrissage pour permettre le redécollage
     MISSION_var_task4_heli land "NONE";
     
-    // Force le statut du groupe pour éviter tout blocage combat
     _grpHeli setBehaviour "CARELESS"; 
     _grpHeli setCombatMode "BLUE";
     
-    // Commandes Pilote explicites
     private _pilot = driver MISSION_var_task4_heli;
     
     MISSION_var_task4_heli doMove [0,0,1000];
@@ -431,16 +362,14 @@ private _guardsSpawnRate = 0;
     
     MISSION_var_task4_heli flyInHeight 150;
     
-    // PAS de setVelocity manuel : on laisse l'IA piloter
-    
-    
     sleep 65;
-    // Vérification Finale et Victoire - MODIFIE: Au moins 1 survivant
-    if (({alive _x} count MISSION_var_task4_hostages) >= 1) then {
+    
+    // Victoire si otage vivant
+    if (alive _hostage) then {
         ["task_4", "SUCCEEDED"] call BIS_fnc_taskSetState;
         [] spawn MISSION_fnc_task_x_finish;
         
-        { deleteVehicle _x } forEach MISSION_var_task4_hostages;
+        deleteVehicle _hostage;
         { deleteVehicle _x } forEach MISSION_var_task4_crew;
         deleteVehicle MISSION_var_task4_heli;
     } else {
@@ -458,18 +387,13 @@ private _guardsSpawnRate = 0;
     waitUntil {
         sleep 2;
         
-        // Stop si la tâche est déjà terminée (Succès)
         if (["task_4"] call BIS_fnc_taskCompleted) exitWith { true };
         
-        // Echec: 3 Otages morts OU Pilotes morts
-        private _hostagesDead = { !alive _x } count MISSION_var_task4_hostages;
+        private _hostage = MISSION_var_task4_hostages select 0;
         private _crewDead = { !alive _x } count MISSION_var_task4_crew; 
-        
         private _crewWiped = (count MISSION_var_task4_crew > 0) && (_crewDead == count MISSION_var_task4_crew);
         
-        // Echec seulement si TOUS les otages sont morts (3)
-        if (_hostagesDead == 3 || _crewWiped) exitWith {
-            // Check de sécurité pour éviter le spam FAILED si SUCCEEDED en même temps
+        if (!alive _hostage || _crewWiped) exitWith {
             if !(["task_4"] call BIS_fnc_taskCompleted) then {
                 ["task_4", "FAILED"] call BIS_fnc_taskSetState;
                 [] spawn MISSION_fnc_task_x_failure;
