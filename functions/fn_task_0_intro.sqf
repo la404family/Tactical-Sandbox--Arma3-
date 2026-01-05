@@ -27,6 +27,12 @@
 if (hasInterface) then {
     [] spawn {
         waitUntil { time > 0.1 }; // Safety wait for engine initialization
+        
+        // ==============================================================================================
+        // ATTENTE DE SYNCHRONISATION (10 SECONDES)
+        // ==============================================================================================
+        sleep 10;
+        
         // ==============================================================================================
         // SECTION 1 : INITIALISATION ET SECURITE
         // ==============================================================================================
@@ -470,6 +476,11 @@ if (isServer) then {
         // Attendre que les données de configuration soient chargées
         waitUntil {!isNil "MISSION_var_helicopters" };   // Liste des hélicoptères disponibles
         waitUntil {!isNil "MISSION_var_model_player" };   // Modèle du joueur (pour les équipements)
+
+        // ==============================================================================================
+        // ATTENTE DE SYNCHRONISATION (10 SECONDES)
+        // ==============================================================================================
+        sleep 10;
 
         // ----------------------------------------------------------------------------------------------
         // RECUPERATION DES DONNEES DE L'HELICOPTERE

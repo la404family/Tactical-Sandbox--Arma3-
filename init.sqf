@@ -2,6 +2,14 @@
 // Les éléments de préparation de mission :
 //-------------------------------------------
 
+// ==================================================================================================
+// INITIALISATION IMMEDIATE (Blackout pour cacher le chargement)
+// ==================================================================================================
+if (hasInterface) then {
+    cutText ["", "BLACK FADED", 999];
+    0 fadeSound 0;
+};
+
 // marker_de_zone_1 est un marker qui affiche la "zone du choix des armes"
 // marker_de_zone_2 est un marker qui affiche la "zone du choix de mission"
 // marker_de_zone_3 est un marker qui affiche la "zone du choix de l'équipe"
@@ -206,4 +214,4 @@ MISSION_fnc_addSubmitAction = {
 //-------------------------------------------
 // Les fonctions de tache : (A remettre à la fin du développement)
 //-------------------------------------------
-// [] spawn MISSION_fnc_task_0_intro;
+[] spawn MISSION_fnc_task_0_intro;
