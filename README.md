@@ -30,7 +30,10 @@
 - 🇨🇿 Česky
 - 🇹🇷 Türkçe
 - 🇨🇳 中文
-- 🇨🇳 简体中文
+- 🇨🇳 简体中文*
+- 🇵🇹 Português
+- 🇯🇵 Japonais
+- 🇰🇷 Coréen
 
 ---
 
@@ -240,3 +243,61 @@ Tüm sistem otomatik olarak DLC ve mod içeriklerine uyum sağlar.
 整个系统会自动适应 DLC 和模組内容。
 
 **如果你喜欢这个任务，欢迎在 GitHub 上给我一个 ⭐ 并关注该项目。感谢你的支持！**
+
+## 🇵🇹 Português
+### Modo de Jogo: Sandbox Táctico (Dinâmico)
+
+"Tactical Sandbox" é um mod de jogo onde a liberdade táctica é total. Chegando ao Quartel Geral, os jogadores assumem o controle total de sua operação através de um conjunto de zonas interativas: Armas, veículos, tempo, missão...
+
+**O fluxo é simples e intuitivo:**
+1. Selecione o seu equipamento
+2. Selecione o clima e a hora
+3. Selecione a sua missão
+4. Selecione a sua equipe
+5. Selecione os seus inimigos
+6. Selecione o seu veículo
+
+Todo o sistema se adapta automaticamente ao conteúdo de DLCs e mods.
+
+**Se você gostou desta missão, deixe uma ⭐ no meu GitHub e siga o projeto. Obrigado pelo apoio!**
+
+---
+
+## 🇰🇷 한국어
+### 게임 모드: 타격 샌드박스 (동적)
+
+"Tactical Sandbox"는 타격 자유도가极高的 게임 모드입니다. 지휘소에 도착하면 플레이어는一系列의 상호작용 영역을 통해 전체적인 행동을 통제할 수 있습니다: 무기, 차량, 시간, 미션...
+
+**프로세스는 간단하고 직관적입니다:**
+1. 장비 선택
+2. 날씨와 시간 선택
+3. 미션 선택
+4. 팀 선택
+5. 적 선택
+6. 차량 선택
+
+전체 시스템은 DLC 및 모드의 내용에 자동으로 적응됩니다.
+
+**이 미션을 좋아했다면, GitHub에서 ⭐를 남겨서 프로젝트를 구독해주세요. 지원을 위해 감사드립니다!**
+
+---
+
+## 🇯🇵 日本語
+### ゲームモード: タクティカルサンダンボックス (ダイナミック)
+
+"Tactical Sandbox"は、タクティカルな自由度が非常に高いゲームモードです。指揮所に到着すると、プレイヤーは一系列の相互作用エリアを介して、行動を完全に制御できます：武器、車両、時間、ミッション...
+
+**プロセスは単純で直感的です：**
+1. 装備を選択
+2. 天気と時間を選択
+3. ミッションを選択
+4. チームを選択
+5. 敵を選択
+6. 車を選択
+
+システムはDLCとモードの内容に自動的に適応します。
+
+**このミッションを好きなら、GitHubで⭐を残してプロジェクトをフォローしてください。サポートを感謝します！**
+
+---
+

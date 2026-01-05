@@ -13,6 +13,9 @@
             <Turkish>Silahlar</Turkish>
             <Chinese>武器</Chinese>
             <Chinesesimp>武器</Chinesesimp>
+            <Japanese>武器</Japanese>
+            <Portuguese>Armas</Portuguese>
+            <Korean>무기</Korean>
         </Key>
         <Key ID="STR_SURVIVOR">
             <English>Survivor</English>
@@ -26,6 +29,9 @@
             <Turkish>Hayatta Kalan</Turkish>
             <Chinese>倖存者</Chinese>
             <Chinesesimp>幸存者</Chinesesimp>
+            <Japanese>生存者</Japanese>
+            <Portuguese>Sobrevivente</Portuguese>
+            <Korean>생존자</Korean>
         </Key>
         <Key ID="STR_INTRO_PRESENTS">
             <Original>presents</Original>
@@ -39,6 +45,9 @@
             <Turkish>sunuyor</Turkish>
             <Chinese>展示</Chinese>
             <Chinesesimp>展示</Chinesesimp>
+            <Japanese>プレゼンツ</Japanese>
+            <Portuguese>apresenta</Portuguese>
+            <Korean>제공</Korean>
         </Key>
         <Key ID="STR_INTRO_TITLE">
             <Original>Tactical Sandbox</Original>
@@ -52,6 +61,9 @@
             <Turkish>Tactical Sandbox</Turkish>
             <Chinese>战术沙盒</Chinese>
             <Chinesesimp>战术沙盒</Chinesesimp>
+            <Japanese>タクティカル・サンドボックス</Japanese>
+            <Portuguese>Tactical Sandbox</Portuguese>
+            <Korean>전술 샌드박스</Korean>
         </Key>
         <Key ID="STR_INTRO_SUBTITLE">
             <Original>Your missions, your weapons, your conditions...</Original>
@@ -65,6 +77,9 @@
             <Turkish>Senin misyonların, senin silahların, senin koşulların...</Turkish>
             <Chinese>你的任務，你的武器，你的條件...</Chinese>
             <Chinesesimp>你的任务，你的武器，你的条件...</Chinesesimp>
+            <Japanese>あなたの任務、あなたの武器、あなたの条件...</Japanese>
+            <Portuguese>Suas missões, suas armas, suas condições...</Portuguese>
+            <Korean>당신의 임무, 당신의 무기, 당신의 조건...</Korean>
         </Key>
         <Key ID="STR_FINISH_MISSION_SUCCESS">
             <English>MISSION ACCOMPLISHED.</English>
@@ -78,6 +93,9 @@
             <Turkish>GÖREV TAMAMLANDI.</Turkish>
             <Chinese>任務完成。</Chinese>
             <Chinesesimp>任务完成。</Chinesesimp>
+            <Japanese>作戦完了。</Japanese>
+            <Portuguese>MISSÃO CUMPRIDA.</Portuguese>
+            <Korean>임무 완수.</Korean>
         </Key>
         <Key ID="STR_FINISH_MISSION_FAILURE">
             <English>MISSION FAILED.</English>
@@ -91,6 +109,9 @@
             <Turkish>GÖREV BAŞARISIZ.</Turkish>
             <Chinese>任務失敗。</Chinese>
             <Chinesesimp>任务失败。</Chinesesimp>
+            <Japanese>作戦失敗。</Japanese>
+            <Portuguese>MISSÃO FALHADA.</Portuguese>
+            <Korean>임무 실패.</Korean>
         </Key>
         <Key ID="STR_FINISH_CONGRATULATIONS">
             <English>Congratulations for your efficiency.</English>
@@ -104,6 +125,9 @@
             <Turkish>Verimliliğiniz için tebrikler.</Turkish>
             <Chinese>恭喜您的效率。</Chinese>
             <Chinesesimp>恭喜您的效率。</Chinesesimp>
+            <Japanese>効率的な遂行、おめでとうございます。</Japanese>
+            <Portuguese>Parabéns pela sua eficiência.</Portuguese>
+            <Korean>당신의 효율성에 축하를 드립니다.</Korean>
         </Key>
         <Key ID="STR_FINISH_NEW_MISSIONS">
             <English>New missions will be entrusted to you soon....</English>
@@ -117,6 +141,9 @@
             <Turkish>Yeni görevler yakında size emanet edilecek....</Turkish>
             <Chinese>新任務即將交付給您....</Chinese>
             <Chinesesimp>新任务即将交付给您....</Chinesesimp>
+            <Japanese>新しい任務がまもなく通達されます....</Japanese>
+            <Portuguese>Novas missões serão confiadas a você em breve....</Portuguese>
+            <Korean>새로운 임무가 곧 하달될 것입니다....</Korean>
         </Key>
         <Key ID="STR_FINISH_SEE_YOU">
             <English>See you soon on...</English>
@@ -130,6 +157,9 @@
             <Turkish>Yakında görüşürüz...</Turkish>
             <Chinese>再見於...</Chinese>
             <Chinesesimp>再见于...</Chinesesimp>
+            <Japanese>また会いましょう...</Japanese>
+            <Portuguese>Até breve em...</Portuguese>
+            <Korean>...에서 다시 만나요</Korean>
         </Key>
         <Key ID="STR_INTRO_AUTHOR">
             <Original>@la404family</Original>
@@ -143,6 +173,9 @@
             <Turkish>@la404family</Turkish>
             <Chinese>@la404family</Chinese>
             <Chinesesimp>@la404family</Chinesesimp>
+            <Japanese>@la404family</Japanese>
+            <Portuguese>@la404family</Portuguese>
+            <Korean>@la404family</Korean>
         </Key>
         <Key ID="STR_MARKER_ZONE_2">
             <English>Missions</English>
@@ -156,6 +189,9 @@
             <Turkish>Görevler</Turkish>
             <Chinese>任務</Chinese>
             <Chinesesimp>任务</Chinesesimp>
+            <Japanese>任務</Japanese>
+            <Portuguese>Missões</Portuguese>
+            <Korean>임무</Korean>
         </Key>
         <Key ID="STR_MARKER_ZONE_3">
             <English>Brothers in Arms</English>
@@ -169,6 +205,9 @@
             <Turkish>Silah arkadaşları</Turkish>
             <Chinese>戰友</Chinese>
             <Chinesesimp>战友</Chinesesimp>
+            <Japanese>戦友</Japanese>
+            <Portuguese>Irmãos de Armas</Portuguese>
+            <Korean>전우</Korean>
         </Key>
         <Key ID="STR_MARKER_ZONE_4">
             <English>Vehicles</English>
@@ -182,6 +221,9 @@
             <Turkish>Araçlar</Turkish>
             <Chinese>載具</Chinese>
             <Chinesesimp>载具</Chinesesimp>
+            <Japanese>車両</Japanese>
+            <Portuguese>Veículos</Portuguese>
+            <Korean>차량</Korean>
         </Key>
         <Key ID="STR_MARKER_ZONE_5">
             <English>Weather and Time</English>
@@ -195,6 +237,9 @@
             <Turkish>Hava durumu ve saat</Turkish>
             <Chinese>天氣和時間</Chinese>
             <Chinesesimp>天气和时间</Chinesesimp>
+            <Japanese>天候と時間</Japanese>
+            <Portuguese>Clima e Hora</Portuguese>
+            <Korean>날씨와 시간</Korean>
         </Key>
         <Key ID="STR_MARKER_ZONE_6">
             <English>Enemies</English>
@@ -208,6 +253,9 @@
             <Turkish>Düşmanlar</Turkish>
             <Chinese>敵人</Chinese>
             <Chinesesimp>敌人</Chinesesimp>
+            <Japanese>敵</Japanese>
+            <Portuguese>Inimigos</Portuguese>
+            <Korean>적</Korean>
         </Key>
         <Key ID="STR_ADD_BROTHER">
             <English>Add a brother in arms</English>
@@ -221,6 +269,9 @@
             <Turkish>Silah arkadaşı ekle</Turkish>
             <Chinese>添加戰友</Chinese>
             <Chinesesimp>添加战友</Chinesesimp>
+            <Japanese>戦友を追加</Japanese>
+            <Portuguese>Adicionar Irmão de Armas</Portuguese>
+            <Korean>전우 추가</Korean>
         </Key>
         <Key ID="STR_BROTHERS_LIKE_ME">
             <English>A soldier like me!</English>
@@ -234,6 +285,9 @@
             <Turkish>Benim gibi bir asker!</Turkish>
             <Chinese>像我这样的士兵！</Chinese>
             <Chinesesimp>像我这样的士兵！</Chinesesimp>
+            <Japanese>私のような兵士！</Japanese>
+            <Portuguese>Um soldado como eu!</Portuguese>
+            <Korean>나 같은 군인!</Korean>
         </Key>
         <Key ID="STR_RECRUIT_TITLE">
             <English>Recruit Unit</English>
@@ -247,6 +301,9 @@
             <Turkish>Birim kirala</Turkish>
             <Chinese>招募單位</Chinese>
             <Chinesesimp>招募单位</Chinesesimp>
+            <Japanese>ユニットを雇用</Japanese>
+            <Portuguese>Recrutar Unidade</Portuguese>
+            <Korean>유닛 모집</Korean>
         </Key>
         <Key ID="STR_RECRUIT_BUTTON">
             <English>Recruit</English>
@@ -260,6 +317,9 @@
             <Turkish>Kirala</Turkish>
             <Chinese>招募</Chinese>
             <Chinesesimp>招募</Chinesesimp>
+            <Japanese>雇用</Japanese>
+            <Portuguese>Recrutar</Portuguese>
+            <Korean>모집</Korean>
         </Key>
         <Key ID="STR_BTN_RESET">
             <English>Reset</English>
@@ -273,6 +333,9 @@
             <Turkish>Sıfırla</Turkish>
             <Chinese>重置</Chinese>
             <Chinesesimp>重置</Chinesesimp>
+            <Japanese>リセット</Japanese>
+            <Portuguese>Redefinir</Portuguese>
+            <Korean>초기화</Korean>
         </Key>
         <Key ID="STR_CLOSE">
             <English>Close</English>
@@ -286,6 +349,9 @@
             <Turkish>Kapat</Turkish>
             <Chinese>關閉</Chinese>
             <Chinesesimp>关闭</Chinesesimp>
+            <Japanese>閉じる</Japanese>
+            <Portuguese>Fechar</Portuguese>
+            <Korean>닫기</Korean>
         </Key>
         <Key ID="STR_ACTION_GARAGE">
             <English>Garage</English>
@@ -299,6 +365,9 @@
             <Turkish>Garaj</Turkish>
             <Chinese>車庫</Chinese>
             <Chinesesimp>车库</Chinesesimp>
+            <Japanese>ガレージ</Japanese>
+            <Portuguese>Garagem</Portuguese>
+            <Korean>차고</Korean>
         </Key>
         <Key ID="STR_GARAGE_TITLE">
             <English>Garage</English>
@@ -312,6 +381,9 @@
             <Turkish>Garaj</Turkish>
             <Chinese>車庫</Chinese>
             <Chinesesimp>车库</Chinesesimp>
+            <Japanese>ガレージ</Japanese>
+            <Portuguese>Garagem</Portuguese>
+            <Korean>차고</Korean>
         </Key>
         <Key ID="STR_GARAGE_TAKE_OUT">
             <English>Spawn</English>
@@ -325,6 +397,9 @@
             <Turkish>Oluştur</Turkish>
             <Chinese>生成</Chinese>
             <Chinesesimp>生成</Chinesesimp>
+            <Japanese>出現</Japanese>
+            <Portuguese>Spawn</Portuguese>
+            <Korean>소환</Korean>
         </Key>
         <Key ID="STR_ERR_NO_UNIT_SELECTED">
             <English>Error: No unit selected.</English>
@@ -338,6 +413,9 @@
             <Turkish>Hata: Birim seçilmedi.</Turkish>
             <Chinese>錯誤：未選擇單位。</Chinese>
             <Chinesesimp>错误：未选择单位。</Chinesesimp>
+            <Japanese>エラー：ユニットが選択されていません。</Japanese>
+            <Portuguese>Erro: Nenhuma unidade selecionada.</Portuguese>
+            <Korean>오류: 유닛이 선택되지 않았습니다.</Korean>
         </Key>
         <Key ID="STR_ERR_NO_VEHICLE_SELECTED">
             <English>Error: No vehicle selected.</English>
@@ -351,6 +429,9 @@
             <Turkish>Hata: Araç seçilmedi.</Turkish>
             <Chinese>錯誤：未選擇載具。</Chinese>
             <Chinesesimp>错误：未选择载具。</Chinesesimp>
+            <Japanese>エラー：車両が選択されていません。</Japanese>
+            <Portuguese>Erro: Nenhum veículo selecionado.</Portuguese>
+            <Korean>오류: 차량이 선택되지 않았습니다.</Korean>
         </Key>
         <Key ID="STR_UNIT_ARRIVING">
             <English>%1 is arriving...</English>
@@ -364,6 +445,9 @@
             <Turkish>%1 geliyor...</Turkish>
             <Chinese>%1 正在抵達...</Chinese>
             <Chinesesimp>%1 正在抵达...</Chinesesimp>
+            <Japanese>%1 が到着しています...</Japanese>
+            <Portuguese>%1 está chegando...</Portuguese>
+            <Korean>%1 이(가) 도착하고 있습니다...</Korean>
         </Key>
         <Key ID="STR_UNIT_JOINED">
             <English>%1 has joined your squad.</English>
@@ -377,6 +461,9 @@
             <Turkish>%1 takımınıza katıldı.</Turkish>
             <Chinese>%1 加入了你的小隊。</Chinese>
             <Chinesesimp>%1 加入了你的小队。</Chinesesimp>
+            <Japanese>%1 が分隊に参加しました。</Japanese>
+            <Portuguese>%1 juntou-se ao seu esquadrão.</Portuguese>
+            <Korean>%1 이(가) 분대에 합류했습니다.</Korean>
         </Key>
         <Key ID="STR_AI_RESET_COUNT">
             <English>%1 AI unit(s) removed from your squad.</English>
@@ -390,6 +477,9 @@
             <Turkish>%1 yapay zeka birimi takımınızdan kaldırıldı.</Turkish>
             <Chinese>已從你的小隊移除 %1 個AI單位。</Chinese>
             <Chinesesimp>已从你的小队移除 %1 个AI单位。</Chinesesimp>
+            <Japanese>%1 AIユニットが分隊から削除されました。</Japanese>
+            <Portuguese>%1 unidade(s) de IA removida(s) do seu esquadrão.</Portuguese>
+            <Korean>%1 AI 유닛이 분대에서 제거되었습니다.</Korean>
         </Key>
         <Key ID="STR_AI_RESET_NONE">
             <English>No AI units to remove.</English>
@@ -403,6 +493,9 @@
             <Turkish>Kaldırılacak yapay zeka birimi yok.</Turkish>
             <Chinese>沒有AI單位可移除。</Chinese>
             <Chinesesimp>没有AI单位可移除。</Chinesesimp>
+            <Japanese>削除するAIユニットはありません。</Japanese>
+            <Portuguese>Nenhuma unidade de IA para remover.</Portuguese>
+            <Korean>제거할 AI 유닛이 없습니다.</Korean>
         </Key>
         <Key ID="STR_SELECTED_UNITS">
             <English>Selected Units</English>
@@ -416,6 +509,9 @@
             <Turkish>Seçilen Birimler</Turkish>
             <Chinese>已選擇的單位</Chinese>
             <Chinesesimp>已选择的单位</Chinesesimp>
+            <Japanese>選択されたユニット</Japanese>
+            <Portuguese>Unidades Selecionadas</Portuguese>
+            <Korean>선택된 유닛</Korean>
         </Key>
         <Key ID="STR_AVAILABLE_UNITS">
             <English>Available Units</English>
@@ -442,6 +538,9 @@
             <Turkish>Birim Ekle</Turkish>
             <Chinese>添加單位</Chinese>
             <Chinesesimp>添加单位</Chinesesimp>
+            <Japanese>ユニット追加</Japanese>
+            <Portuguese>Adicionar Unidade</Portuguese>
+            <Korean>유닛 추가</Korean>
         </Key>
         <Key ID="STR_BTN_VALIDATE">
             <English>Validate</English>
@@ -468,6 +567,9 @@
             <Turkish>Maksimum grup boyutu 14 birime ulaşıldı!</Turkish>
             <Chinese>已達到14個單位的群組上限！</Chinese>
             <Chinesesimp>已达到14个单位的群组上限！</Chinesesimp>
+            <Japanese>最大グループサイズ14ユニットに達しました！</Japanese>
+            <Portuguese>Tamanho máximo do grupo de 14 unidades alcançado!</Portuguese>
+            <Korean>최대 그룹 크기 14 유닛에 도달했습니다!</Korean>
         </Key>
         <Key ID="STR_NO_UNITS_SELECTED">
             <English>No units selected!</English>
@@ -481,6 +583,9 @@
             <Turkish>Birim seçilmedi!</Turkish>
             <Chinese>未選擇任何單位！</Chinese>
             <Chinesesimp>未选择任何单位！</Chinesesimp>
+            <Japanese>ユニットが選択されていません！</Japanese>
+            <Portuguese>Nenhuma unidade selecionada!</Portuguese>
+            <Korean>유닛이 선택되지 않았습니다!</Korean>
         </Key>
         <Key ID="STR_SPAWNING_UNITS">
             <English>Deploying %1 unit(s)...</English>
@@ -494,6 +599,9 @@
             <Turkish>%1 birim dağıtılıyor...</Turkish>
             <Chinese>正在部署 %1 個單位...</Chinese>
             <Chinesesimp>正在部署 %1 个单位...</Chinesesimp>
+            <Japanese>%1 ユニットを展開中...</Japanese>
+            <Portuguese>Implantando %1 unidade(s)...</Portuguese>
+            <Korean>%1 유닛 배치 중...</Korean>
         </Key>
         <Key ID="STR_ALL_UNITS_SPAWNED">
             <English>%1 unit(s) deployed and ready!</English>
@@ -507,6 +615,9 @@
             <Turkish>%1 birim dağıtıldı ve hazır!</Turkish>
             <Chinese>%1 個單位已部署並準備就緒！</Chinese>
             <Chinesesimp>%1 个单位已部署并准备就绪！</Chinesesimp>
+            <Japanese>%1 ユニットが展開され、準備完了！</Japanese>
+            <Portuguese>%1 unidade(s) implantada(s) e pronta(s)!</Portuguese>
+            <Korean>%1 유닛 배치 및 준비 완료!</Korean>
         </Key>
         <Key ID="STR_VEHICLE_AVAILABLE">
             <English>Vehicle %1 available.</English>
@@ -520,6 +631,9 @@
             <Turkish>Araç %1 mevcut.</Turkish>
             <Chinese>載具 %1 可用。</Chinese>
             <Chinesesimp>载具 %1 可用。</Chinesesimp>
+            <Japanese>車両 %1 利用可能。</Japanese>
+            <Portuguese>Veículo %1 disponível.</Portuguese>
+            <Korean>차량 %1 사용 가능.</Korean>
         </Key>
         <Key ID="STR_DEBUG_NO_SPAWNER">
             <English>DEBUG: vehicles_spawner not found, spawning on player.</English>
@@ -533,6 +647,9 @@
             <Turkish>DEBUG: vehicles_spawner bulunamadı, oyuncunun üzerinde oluşturuluyor.</Turkish>
             <Chinese>DEBUG: 未找到 vehicles_spawner, 在玩家位置生成。</Chinese>
             <Chinesesimp>DEBUG: 未找到 vehicles_spawner, 在玩家位置生成。</Chinesesimp>
+            <Japanese>DEBUG: vehicles_spawnerが見つかりません、プレイヤー上でスポーンします。</Japanese>
+            <Portuguese>DEBUG: vehicles_spawner não encontrado, spawning no jogador.</Portuguese>
+            <Korean>DEBUG: vehicles_spawner를 찾을 수 없음, 플레이어에서 소환.</Korean>
         </Key>
         <Key ID="STR_ACTION_ARSENAL">
             <English>Virtual Arsenal</English>
@@ -546,6 +663,9 @@
             <Turkish>Sanal Cephanelik</Turkish>
             <Chinese>虛擬軍火庫</Chinese>
             <Chinesesimp>虚拟军火库</Chinesesimp>
+            <Japanese>バーチャルアーセナル</Japanese>
+            <Portuguese>Arsenal Virtual</Portuguese>
+            <Korean>가상 무기고</Korean>
         </Key>
         <Key ID="STR_ACTION_WEATHER">
             <English>Modify time or weather</English>
@@ -559,6 +679,9 @@
             <Turkish>Zamanı veya hava durumunu değiştir</Turkish>
             <Chinese>修改時間或天氣</Chinese>
             <Chinesesimp>修改时间或天气</Chinesesimp>
+            <Japanese>時間または天候を変更</Japanese>
+            <Portuguese>Modificar hora ou clima</Portuguese>
+            <Korean>시간 또는 날씨 변경</Korean>
         </Key>
         <Key ID="STR_LABEL_TIME">
             <English>Time</English>
@@ -572,6 +695,9 @@
             <Turkish>Zaman</Turkish>
             <Chinese>時間</Chinese>
             <Chinesesimp>时间</Chinesesimp>
+            <Japanese>時間</Japanese>
+            <Portuguese>Hora</Portuguese>
+            <Korean>시간</Korean>
         </Key>
         <Key ID="STR_LABEL_CLOUDS">
             <English>Cloud Cover</English>
@@ -585,6 +711,9 @@
             <Turkish>Bulut Kaplaması</Turkish>
             <Chinese>雲量</Chinese>
             <Chinesesimp>云量</Chinesesimp>
+            <Japanese>雲量</Japanese>
+            <Portuguese>Cobertura de Nuvens</Portuguese>
+            <Korean>구름</Korean>
         </Key>
         <Key ID="STR_LABEL_FOG">
             <English>Fog</English>
@@ -598,6 +727,9 @@
             <Turkish>Sis</Turkish>
             <Chinese>霧</Chinese>
             <Chinesesimp>雾</Chinesesimp>
+            <Japanese>霧</Japanese>
+            <Portuguese>Neblina</Portuguese>
+            <Korean>안개</Korean>
         </Key>
         <Key ID="STR_BTN_MODIFY">
             <English>Modify</English>
@@ -611,6 +743,9 @@
             <Turkish>Değiştir</Turkish>
             <Chinese>修改</Chinese>
             <Chinesesimp>修改</Chinesesimp>
+            <Japanese>変更</Japanese>
+            <Portuguese>Modificar</Portuguese>
+            <Korean>변경</Korean>
         </Key>
         <Key ID="STR_BTN_SELECT">
             <English>Select</English>
@@ -624,6 +759,9 @@
             <Turkish>Seç</Turkish>
             <Chinese>選擇</Chinese>
             <Chinesesimp>选择</Chinesesimp>
+            <Japanese>選択</Japanese>
+            <Portuguese>Selecionar</Portuguese>
+            <Korean>선택</Korean>
         </Key>
         <Key ID="STR_BTN_DESELECT">
             <English>Deselect</English>
@@ -637,6 +775,9 @@
             <Turkish>Seçimi Kaldır</Turkish>
             <Chinese>取消選擇</Chinese>
             <Chinesesimp>取消选择</Chinesesimp>
+            <Japanese>選択解除</Japanese>
+            <Portuguese>Desmarcar</Portuguese>
+            <Korean>선택 해제</Korean>
         </Key>
         <Key ID="STR_ZONE_RESERVED">
             <English>RESERVED ZONE</English>
@@ -650,6 +791,9 @@
             <Turkish>REZERVE ALAN</Turkish>
             <Chinese>預留區域</Chinese>
             <Chinesesimp>预留区域</Chinesesimp>
+            <Japanese>予約エリア</Japanese>
+            <Portuguese>ZONA RESERVADA</Portuguese>
+            <Korean>예약 구역</Korean>
         </Key>
         <Key ID="STR_MISSIONS_MENU_TITLE">
             <English>Mission Command Center</English>
@@ -663,6 +807,9 @@
             <Turkish>Görev Komuta Merkezi</Turkish>
             <Chinese>任務指揮中心</Chinese>
             <Chinesesimp>任务指挥中心</Chinesesimp>
+            <Japanese>任務指揮センター</Japanese>
+            <Portuguese>Centro de Comando de Missões</Portuguese>
+            <Korean>임무 지휘 센터</Korean>
         </Key>
         <Key ID="STR_MISSIONS_LIST_LABEL">
             <English>Available Missions</English>
@@ -676,6 +823,9 @@
             <Turkish>Mevcut Görevler</Turkish>
             <Chinese>可用任務</Chinese>
             <Chinesesimp>可用任务</Chinesesimp>
+            <Japanese>利用可能な任務</Japanese>
+            <Portuguese>Missões Disponíveis</Portuguese>
+            <Korean>사용 가능한 임무</Korean>
         </Key>
         <Key ID="STR_MISSIONS_SELECT">
             <English>Select for deployment:</English>
@@ -689,6 +839,9 @@
             <Turkish>Dağıtım için seç:</Turkish>
             <Chinese>選擇部署：</Chinese>
             <Chinesesimp>选择部署：</Chinesesimp>
+            <Japanese>展開用に選択：</Japanese>
+            <Portuguese>Selecionar para implantação:</Portuguese>
+            <Korean>배치를 위해 선택:</Korean>
         </Key>
         <Key ID="STR_MISSIONS_LAUNCH">
             <English>LAUNCH</English>
@@ -702,6 +855,9 @@
             <Turkish>BAŞLAT</Turkish>
             <Chinese>啟動</Chinese>
             <Chinesesimp>启动</Chinesesimp>
+            <Japanese>開始</Japanese>
+            <Portuguese>LANÇAR</Portuguese>
+            <Korean>시작</Korean>
         </Key>
         <Key ID="STR_MISSIONS_QUIT">
             <English>QUIT</English>
@@ -715,6 +871,9 @@
             <Turkish>ÇIK</Turkish>
             <Chinese>退出</Chinese>
             <Chinesesimp>退出</Chinesesimp>
+            <Japanese>終了</Japanese>
+            <Portuguese>SAIR</Portuguese>
+            <Korean>종료</Korean>
         </Key>
         <Key ID="STR_MISSION_ALREADY_ACTIVE">
             <English>A mission is already in progress. Complete it first!</English>
@@ -728,6 +887,9 @@
             <Turkish>Bir görev zaten devam ediyor. Önce onu tamamlayın!</Turkish>
             <Chinese>任務已在進行中。請先完成它！</Chinese>
             <Chinesesimp>任务已在进行中。请先完成它！</Chinesesimp>
+            <Japanese>任務は進行中です。先に完了してください！</Japanese>
+            <Portuguese>Uma missão já está em andamento. Complete-a primeiro!</Portuguese>
+            <Korean>임무가 이미 진행 중입니다. 먼저 완료하세요!</Korean>
         </Key>
         <Key ID="STR_ONLY_GROUP_LEADER">
             <English>This option is reserved for the group leader.</English>
@@ -741,6 +903,9 @@
             <Turkish>Bu seçenek grup lideri için ayrılmıştır.</Turkish>
             <Chinese>此選項僅保留給群組隊長。</Chinese>
             <Chinesesimp>此选项仅保留给群组队长。</Chinesesimp>
+            <Japanese>このオプションはグループリーダー専用です。</Japanese>
+            <Portuguese>Esta opção é reservada para o líder do grupo.</Portuguese>
+            <Korean>이 옵션은 그룹 리더 전용입니다.</Korean>
         </Key>
         <Key ID="STR_ACTION_MISSIONS">
             <English>Access Mission Command</English>
@@ -754,6 +919,9 @@
             <Turkish>Görev Komutasına Eriş</Turkish>
             <Chinese>進入任務指揮</Chinese>
             <Chinesesimp>进入任务指挥</Chinesesimp>
+            <Japanese>任務指揮にアクセス</Japanese>
+            <Portuguese>Acessar Comando da Missão</Portuguese>
+            <Korean>임무 지휘 접속</Korean>
         </Key>
         <Key ID="STR_TASK_1_TITLE">
             <English>Manhunt</English>
@@ -767,6 +935,9 @@
             <Turkish>İnsan Avı</Turkish>
             <Chinese>追捕</Chinese>
             <Chinesesimp>追捕</Chinesesimp>
+            <Japanese>マンハント</Japanese>
+            <Portuguese>Caçada Humana</Portuguese>
+            <Korean>인간 사냥</Korean>
         </Key>
         <Key ID="STR_TASK_1_DESC">
             <English>Two fugitives are attempting to escape from the map. Your mission: 1) Wait for intelligence on their location 2) Intercept the fugitives 3) Capture them (approach within 15m) OR eliminate them. Mission fails if a fugitive escapes from the map. (Threats: 2 Fugitives)</English>
@@ -780,6 +951,9 @@
             <Turkish>İki kaçak haritadan kaçmaya çalışıyor. Göreviniz: 1) Konumları hakkında istihbarat bekleyin 2) Kaçakları yakalayın 3) Onları yakalayın (15m&apos;ye yaklaşın) VEYA etkisiz hale getirin. Bir kaçak haritadan kaçarsa görev başarısız. (Tehditler: 2 Kaçak)</Turkish>
             <Chinese>兩名逃犯正試圖逃離地圖。你的任務：1) 等待他們位置的情報 2) 攔截逃犯 3) 俘獲他們（接近15米）或消滅他們。如果逃犯逃離地圖，任務失敗。（威脅：2名逃犯）</Chinese>
             <Chinesesimp>两名逃犯正试图逃离地图。你的任务：1) 等待他们位置的情报 2) 拦截逃犯 3) 俘获他们（接近15米）或消灭他们。如果逃犯逃离地图，任务失败。（威胁：2名逃犯）</Chinesesimp>
+            <Japanese>2人の逃亡者がマップから脱出しようとしています。あなたの任務：1)彼らの位置情報を待つ 2)逃亡者を阻止する 3)彼らを捕獲する（15m以内に接近）または排除する。逃亡者がマップから脱出した場合、任務は失敗します。（脅威：2人の逃亡者）</Japanese>
+            <Portuguese>Dois fugitivos estão tentando escapar do mapa. Sua missão: 1) Aguarde informações sobre sua localização 2) Intercepte os fugitivos 3) Capture-os (aproxime-se a 15m) OU elimine-os. A missão falha se um fugitivo escapar do mapa. (Ameaças: 2 Fugitivos)</Portuguese>
+            <Korean>두 명의 도망자가 지도에서 탈출하려고 합니다. 임무: 1) 위치 정보 대기 2) 도망자 차단 3) 포획 (15m 이내 접근) 또는 제거. 도망자가 지도에서 탈출하면 임무 실패. (위협: 2 도망자)</Korean>
         </Key>
         <Key ID="STR_TASK_2_TITLE">
             <English>Assassination and Recovery</English>
@@ -793,6 +967,9 @@
             <Turkish>Suikast ve Kurtarma</Turkish>
             <Chinese>暗殺與恢復</Chinese>
             <Chinesesimp>暗杀与恢复</Chinesesimp>
+            <Japanese>暗殺と回収</Japanese>
+            <Portuguese>Assassinato e Recuperação</Portuguese>
+            <Korean>암살 및 회수</Korean>
         </Key>
         <Key ID="STR_TASK_2_DESC">
             <English>CLASSIFIED INTEL: An enemy officer is carrying top secret defense documents. Our intelligence has identified 3 potential targets, but only ONE of them holds the documents. Your mission: 1) Locate the 3 marked targets on the map 2) Neutralize the officers and their guards 3) Search each officer&apos;s body to recover the classified documents. The documents will only appear on the correct target. (Enemy forces: 3 Officers, ~9 Guards)</English>
@@ -806,6 +983,9 @@
             <Turkish>GİZLİ İSTİHBARAT: Bir düşman subayı çok gizli savunma belgeleri taşıyor. İstihbaratımız 3 potansiyel hedef belirledi, ancak belgeler yalnızca BİRİNDE. Göreviniz: 1) Haritada işaretli 3 hedefi bulun 2) Subayları ve korumalarını etkisiz hale getirin 3) Gizli belgeleri almak için her subayın cesedini arayın. Belgeler yalnızca doğru hedefte görünecek. (Düşman güçleri: 3 Subay, ~9 Koruma)</Turkish>
             <Chinese>機密情報：一名敵軍軍官攜帶絕密國防文件。我們的情報已確定3個潛在目標，但只有其中一個持有文件。你的任務：1) 在地圖上找到3個標記的目標 2) 消滅軍官及其警衛 3) 搜索每位軍官的屍體以取回機密文件。文件只會出現在正確的目標上。（敵軍：3名軍官，約9名警衛）</Chinese>
             <Chinesesimp>机密情报：一名敌军军官携带绝密国防文件。我们的情报已确定3个潜在目标，但只有其中一个持有文件。你的任务：1) 在地图上找到3个标记的目标 2) 消灭军官及其警卫 3) 搜索每位军官的尸体以取回机密文件。文件只会出现在正确的目标上。（敌军：3名军官，约9名警卫）</Chinesesimp>
+            <Japanese>機密情報：敵将校が最高機密の防衛文書を所持しています。我々の諜報機関は3つの潜在的な標的を特定しましたが、文書を持っているのはそのうちの1人だけです。あなたの任務：1)マップ上の3つのマークされた標的を特定する 2)将校とその護衛を無力化する 3)各将校の死体を捜索して機密文書を回収する。文書は正しい標的の上にのみ現れます。（敵戦力：将校3名、護衛約9名）</Japanese>
+            <Portuguese>INTELIGÊNCIA CLASSIFICADA: Um oficial inimigo está carregando documentos de defesa ultra-secretos. Nossa inteligência identificou 3 alvos potenciais, mas apenas UM deles detém os documentos. Sua missão: 1) Localize os 3 alvos marcados no mapa 2) Neutralize os oficiais e seus guardas 3) Vasculhe o corpo de cada oficial para recuperar os documentos classificados. Os documentos aparecerão apenas no alvo correto. (Forças inimigas: 3 Oficiais, ~9 Guardas)</Portuguese>
+            <Korean>기밀 정보: 적 장교가 일급 비밀 국방 문서를 소지하고 있습니다. 정보국이 3명의 잠재적 목표를 확인했지만, 그 중 한 명만이 문서를 가지고 있습니다. 임무: 1) 지도에 표시된 3개의 목표 위치 파악 2) 장교와 경비병 무력화 3) 각 장교의 시신을 수색하여 기밀 문서 회수. 문서는 올바른 목표에만 나타납니다. (적 병력: 장교 3명, 경비병 약 9명)</Korean>
         </Key>
         <Key ID="STR_MARKER_DOCUMENT">
             <English>Document</English>
@@ -819,6 +999,9 @@
             <Turkish>Belge</Turkish>
             <Chinese>文檔</Chinese>
             <Chinesesimp>文档</Chinesesimp>
+            <Japanese>文書</Japanese>
+            <Portuguese>Documento</Portuguese>
+            <Korean>문서</Korean>
         </Key>
         <Key ID="STR_TASK_6_TITLE">
             <English>Allied Rescue</English>
@@ -832,6 +1015,9 @@
             <Turkish>Müttefik kurtarma</Turkish>
             <Chinese>盟軍救援</Chinese>
             <Chinesesimp>盟军救援</Chinesesimp>
+            <Japanese>同盟軍救助</Japanese>
+            <Portuguese>Resgate Aliado</Portuguese>
+            <Korean>연합군 구조</Korean>
         </Key>
         <Key ID="STR_TASK_6_DESC">
             <English>CRITICAL RESCUE: An allied helicopter carrying vital intelligence has crashed. Survivors are critically injured and time is running out. Enemy patrols are approaching. Your mission: 1) Locate the crash site 2) Secure the area 3) Stabilize at least one survivor and keep them alive for 2 minutes to secure the intel. Mission fails if all survivors die. (Threats: Enemy Patrols 5 -10)</English>
@@ -845,6 +1031,9 @@
             <Turkish>KRİTİK KURTARMA: Önemli istihbarat taşıyan müttefik bir helikopter düştü. Hayatta kalanlar ağır yaralı ve zaman daralıyor. Düşman devriyeleri yaklaşıyor. Göreviniz: 1) Kaza alanını bulun 2) Bölgeyi güvenli hale getirin 3) En az bir hayatta kalanı stabilize edin ve istihbaratı güvence altına almak için 2 dakika hayatta tutun. Tüm hayatta kalanlar ölürse görev başarısız olur. (Tehditler: Düşman Devriyeleri 5 - 10)</Turkish>
             <Chinese>關鍵救援：一架載有重要情報的盟軍直升機墜毀。倖存者身受重傷，時間緊迫。敵軍巡邏隊正在逼近。你的任務：1) 定位墜機地點 2) 保護該區域 3) 穩定至少一名倖存者並讓他存活2分鐘以獲取情報。如果所有倖存者死亡，任務失敗。（威脅：敵軍巡邏隊 5 - 10）</Chinese>
             <Chinesesimp>关键救援：一架载有重要情报的盟军直升机坠毁。幸存者身受重伤，时间紧迫。敌军巡叶队正在逼近。你的任务：1) 定位坠机地点 2) 保护该区域 3) 稳定至少一名幸存者并让他存活2分钟以获取情报。如果所有幸存者死亡，任务失败。（威胁：敌军巡逻队 5 - 10）</Chinesesimp>
+            <Japanese>重要な救助：重要な情報を運んでいた同盟軍のヘリコプターが墜落しました。生存者は重傷を負っており、時間がありません。敵のパトロールが接近しています。あなたの任務：1) 墜落現場を特定する 2) エリアを確保する 3) 少なくとも1人の生存者を安定させ、情報を確保するために2分間生存させる。生存者全員が死亡した場合、任務は失敗します。（脅威：敵パトロール 5-10）</Japanese>
+            <Portuguese>RESGATE CRÍTICO: Um helicóptero aliado transportando inteligência vital caiu. Os sobreviventes estão gravemente feridos e o tempo está se esgotando. Patrulhas inimigas estão se aproximando. Sua missão: 1) Localize o local do acidente 2) Proteja a área 3) Estabilize pelo menos um sobrevivente e mantenha-o vivo por 2 minutos para garantir a inteligência. A missão falha se todos os sobreviventes morrerem. (Ameaças: Patrulhas Inimigas 5-10)</Portuguese>
+            <Korean>긴급 구조: 중요한 정보를 실은 연합군 헬리콥터가 추락했습니다. 생존자들은 치명상을 입었고 시간이 얼마 남지 않았습니다. 적 순찰대가 접근하고 있습니다. 임무: 1) 추락 지점 파악 2) 지역 확보 3) 적어도 한 명의 생존자를 안정시키고 정보를 확보하기 위해 2분 동안 살려두십시오. 모든 생존자가 사망하면 임무 실패. (위협: 적 순찰대 5-10)</Korean>
         </Key>
         <Key ID="STR_ACTION_REVIVE">
             <Original>Porter Assistance</Original>
@@ -853,6 +1042,9 @@
             <Italian>Rianima Alleato</Italian>
             <Spanish>Reanimar Aliado</Spanish>
             <German>Verbündeten Wiederbeleben</German>
+            <Japanese>同盟軍を蘇生</Japanese>
+            <Portuguese>Renascer Aliado</Portuguese>
+            <Korean>아군 소생</Korean>
         </Key>
         <Key ID="STR_NOTIF_SURVIVOR_SAVED">
             <Original>Un survivant a été stabilisé !</Original>
@@ -861,16 +1053,25 @@
             <Italian>Un sopravvissuto è stato stabilizzato!</Italian>
             <Spanish>¡Un superviviente ha sido estabilizado!</Spanish>
             <German>Ein Überlebender wurde stabilisiert!</German>
+            <Japanese>生存者が安定しました！</Japanese>
+            <Portuguese>Um sobrevivente foi estabilizado!</Portuguese>
+            <Korean>생존자가 안정되었습니다!</Korean>
         </Key>
         <Key ID="STR_NOTIF_TOO_LATE">
             <Original>Trop tard...</Original>
             <French>Trop tard...</French>
             <English>Too late...</English>
+            <Japanese>手遅れだ...</Japanese>
+            <Portuguese>Tarde demais...</Portuguese>
+            <Korean>너무 늦었어...</Korean>
         </Key>
         <Key ID="STR_ERR_NO_SPAWN_FOUND">
             <Original>ERREUR CRITIQUE Tâche 6 : Aucun objet spawn trouvé (task_1_spawn_XX) !</Original>
             <French>ERREUR CRITIQUE Tâche 6 : Aucun objet spawn trouvé (task_1_spawn_XX) !</French>
             <English>CRITICAL ERROR Task 6: No spawn object found (task_1_spawn_XX)!</English>
+            <Japanese>重大エラー タスク6：スポーンオブジェクトが見つかりません (task_1_spawn_XX)！</Japanese>
+            <Portuguese>ERRO CRÍTICO Tarefa 6: Nenhum objeto de spawn encontrado (task_1_spawn_XX)!</Portuguese>
+            <Korean>치명적 오류 작업 6: 스폰 개체를 찾을 수 없음 (task_1_spawn_XX)!</Korean>
         </Key>
         <Key ID="STR_MARKER_SURVIVOR">
             <Original>Survivor</Original>
@@ -885,6 +1086,9 @@
             <Turkish>Hayatta kalan</Turkish>
             <Chinese>倖存者</Chinese>
             <Chinesesimp>幸存者</Chinesesimp>
+            <Japanese>生存者</Japanese>
+            <Portuguese>Sobrevivente</Portuguese>
+            <Korean>생존자</Korean>
         </Key>
         <Key ID="STR_MARKER_TARGET">
             <English>Target</English>
@@ -898,6 +1102,9 @@
             <Turkish>Hedef</Turkish>
             <Chinese>目標</Chinese>
             <Chinesesimp>目标</Chinesesimp>
+            <Japanese>標的</Japanese>
+            <Portuguese>Alvo</Portuguese>
+            <Korean>목표</Korean>
         </Key>
         <Key ID="STR_MARKER_CARGAISON">
             <English>Cargo</English>
@@ -911,6 +1118,9 @@
             <Turkish>Kargo</Turkish>
             <Chinese>貨物</Chinese>
             <Chinesesimp>货物</Chinesesimp>
+            <Japanese>貨物</Japanese>
+            <Portuguese>Carga</Portuguese>
+            <Korean>화물</Korean>
         </Key>
         <Key ID="STR_TASK_3_TITLE">
             <English>Cargo Destruction</English>
@@ -924,6 +1134,9 @@
             <Turkish>Kargo İmhası</Turkish>
             <Chinese>貨物銷毀</Chinese>
             <Chinesesimp>货物销毁</Chinesesimp>
+            <Japanese>貨物破壊</Japanese>
+            <Portuguese>Destruição de Carga</Portuguese>
+            <Korean>화물 파괴</Korean>
         </Key>
         <Key ID="STR_TASK_3_DESC">
             <English>MISSION: Destroy enemy ammunition convoys hidden and guarded by hostile forces. Locations are marked on the map. IMPORTANT: Bring equipment to destroy vehicles! Allied air support will perform reconnaissance overflights, but infantry must confirm destruction. (Enemy forces: 4 Cargo Vehicles, ~32 Infantry)</English>
@@ -937,6 +1150,9 @@
             <Turkish>GÖREV: Düşman güçleri tarafından gizlenen ve korunan mühimmat konvoylarını imha edin. Konumlar haritada işaretli. ÖNEMLİ: Araçları yok etmek için ekipman getirin! Müttefik hava desteği keşif uçuşları yapacak, ancak piyade imhayı onaylamalı. (Düşman güçleri: 4 Kargo Aracı, ~32 Piyade)</Turkish>
             <Chinese>任務：摧毀被敵軍隱藏和保護的彈藥車隊。位置已在地圖上標記。重要：攜帶摧毀車輛的裝備！盟軍空中支援將進行偵察飛行，但步兵必須確認銷毀。（敵軍：4輛貨車，約32名步兵）</Chinese>
             <Chinesesimp>任务：摧毁被敌军隐藏和保护的弹药车队。位置已在地图上标记。重要：携带摧毁车辆的装备！盟军空中支援将进行侦察飞行，但步兵必须确认销毁。（敌军：4辆货车，约32名步兵）</Chinesesimp>
+            <Japanese>任務：敵部隊によって隠され守られている敵の弾薬輸送隊を破壊せよ。位置はマップにマークされている。重要：車両を破壊するための装備を持参せよ！同盟軍の航空支援が偵察飛行を行うが、破壊の確認は歩兵が行わなければならない。（敵戦力：貨物車両4台、歩兵約32名）</Japanese>
+            <Portuguese>MISSÃO: Destrua comboios de munição inimigos escondidos e guardados por forças hostis. Os locais estão marcados no mapa. IMPORTANTE: Traga equipamento para destruir veículos! O apoio aéreo aliado realizará sobrevoos de reconhecimento, mas a infantaria deve confirmar a destruição. (Forças inimigas: 4 Veículos de Carga, ~32 Infantaria)</Portuguese>
+            <Korean>임무: 적군이 숨기고 보호하고 있는 적의 탄약 수송대를 파괴하십시오. 위치는 지도에 표시되어 있습니다. 중요: 차량 파괴 장비를 가져오십시오! 연합군 공중 지원이 정찰 비행을 수행하지만 보병이 파괴를 확인해야 합니다. (적 병력: 화물 차량 4대, 보병 약 32명)</Korean>
         </Key>
         <Key ID="STR_TASK_X_TITLE">
             <English>XXX</English>
@@ -950,6 +1166,9 @@
             <Turkish>XXX</Turkish>
             <Chinese>XXX</Chinese>
             <Chinesesimp>XXX</Chinesesimp>
+            <Japanese>XXX</Japanese>
+            <Portuguese>XXX</Portuguese>
+            <Korean>XXX</Korean>
         </Key>
         <Key ID="STR_TASK_X_DESC">
             <English>XXX</English>
@@ -963,6 +1182,9 @@
             <Turkish>XXX</Turkish>
             <Chinese>XXX</Chinese>
             <Chinesesimp>XXX</Chinesesimp>
+            <Japanese>XXX</Japanese>
+            <Portuguese>XXX</Portuguese>
+            <Korean>XXX</Korean>
         </Key>
         <Key ID="STR_BTN_DELETE">
             <English>Delete</English>
@@ -976,6 +1198,9 @@
             <Turkish>Sil</Turkish>
             <Chinese>刪除</Chinese>
             <Chinesesimp>删除</Chinesesimp>
+            <Japanese>削除</Japanese>
+            <Portuguese>Excluir</Portuguese>
+            <Korean>삭제</Korean>
         </Key>
         <Key ID="STR_VEHICLES_DELETED">
             <English>%1 vehicle(s) deleted.</English>
@@ -989,6 +1214,9 @@
             <Turkish>%1 araç silindi.</Turkish>
             <Chinese>已刪除 %1 輛載具。</Chinese>
             <Chinesesimp>已删除 %1 辆载具。</Chinesesimp>
+            <Japanese>%1 車両が削除されました。</Japanese>
+            <Portuguese>%1 veículo(s) excluído(s).</Portuguese>
+            <Korean>%1 차량이 삭제되었습니다.</Korean>
         </Key>
         <Key ID="STR_TASK_ALREADY_ACTIVE">
             <English>Mission %1 is already active!</English>
@@ -1002,6 +1230,9 @@
             <Turkish>Görev %1 zaten aktif!</Turkish>
             <Chinese>任務 %1 已經啟動！</Chinese>
             <Chinesesimp>任务 %1 已经启动！</Chinesesimp>
+            <Japanese>任務 %1 は既にアクティブです！</Japanese>
+            <Portuguese>A missão %1 já está ativa!</Portuguese>
+            <Korean>임무 %1 이(가) 이미 활성화되었습니다!</Korean>
         </Key>
         <Key ID="STR_MARKER_TANK">
             <English>Tank</English>
@@ -1015,6 +1246,9 @@
             <Turkish>Tank</Turkish>
             <Chinese>坦克</Chinese>
             <Chinesesimp>坦克</Chinesesimp>
+            <Japanese>戦車</Japanese>
+            <Portuguese>Tanque</Portuguese>
+            <Korean>탱크</Korean>
         </Key>
         <Key ID="STR_HINT_AIR_SUPPORT_INCOMING">
             <English>ATTENTION! Air support incoming.</English>
@@ -1028,6 +1262,9 @@
             <Turkish>DİKKAT! Hava desteği geliyor.</Turkish>
             <Chinese>注意！空中支援即將到來。</Chinese>
             <Chinesesimp>注意！空中支援即将到来。</Chinesesimp>
+            <Japanese>注意！航空支援が接近中。</Japanese>
+            <Portuguese>ATENÇÃO! Apoio aéreo chegando.</Portuguese>
+            <Korean>주의! 공중 지원이 오고 있습니다.</Korean>
         </Key>
         <Key ID="STR_HINT_AIR_SUPPORT_END">
             <English>End of Air Support</English>
@@ -1041,6 +1278,9 @@
             <Turkish>Hava desteğinin sonu</Turkish>
             <Chinese>空中支援結束</Chinese>
             <Chinesesimp>空中支援结束</Chinesesimp>
+            <Japanese>航空支援終了</Japanese>
+            <Portuguese>Fim do apoio aéreo</Portuguese>
+            <Korean>공중 지원 종료</Korean>
         </Key>
         <Key ID="STR_TASK_4_TITLE">
             <English>Hostage Exfiltration</English>
@@ -1054,6 +1294,9 @@
             <Turkish>Rehine Kurtarma</Turkish>
             <Chinese>人質撤離</Chinese>
             <Chinesesimp>人质撤离</Chinesesimp>
+            <Japanese>人質救出</Japanese>
+            <Portuguese>Resgate de Reféns</Portuguese>
+            <Korean>인질 구출</Korean>
         </Key>
         <Key ID="STR_TASK_4_DESC">
             <English>A civilian has been captured by enemy forces and is held at one of 3 possible locations. Your mission: 1) Search the 3 zones on the map to locate the hostage 2) Secure the area by neutralizing the guards 3) Free the hostage and escort them to the extraction point. An exfiltration helicopter will be dispatched automatically. (Enemy forces: 3 Patrol Zones, ~24 Guards total)</English>
@@ -1067,6 +1310,9 @@
             <Turkish>Bir sivil düşman güçleri tarafından yakalandı ve 3 olası konumdan birinde tutuluyor. Göreviniz: 1) Rehineyi bulmak için haritadaki 3 bölgeyi arayın 2) Korumaları etkisiz hale getirerek bölgeyi güvence altına alın 3) Rehineyi kurtarın ve tahliye noktasına kadar eşlik edin. Tahliye helikopteri otomatik olarak gönderilecek. (Düşman güçleri: 3 Devriye Bölgesi, Toplam ~24 Koruma)</Turkish>
             <Chinese>一名平民被敵軍俘虜，被關押在 3 個可能地點之一。你的任務：1) 搜索地圖上的 3 個區域以找到人質 2) 通過消滅守衛來確保該區域的安全 3) 釋放人質並將其護送到撤離點。撤離直升機將自動派遣。（敵軍：3 個巡邏區，共約 24 名守衛）</Chinese>
             <Chinesesimp>一名平民被敌军俘虏，被关押在 3 个可能地点之一。你的任务：1) 搜索地图上的 3 个区域以找到人质 2) 通过消灭守卫来确保该区域的安全 3) 释放人质并将其护送到撤离点。撤离直升机将自动派遣。（敌军：3 个巡逻区，共约 24 名守卫）</Chinesesimp>
+            <Japanese>民間人が敵部隊に捕らえられ、3つの場所のいずれかに監禁されています。あなたの任務：1) マップ上の3つのゾーンを捜索して人質を見つける 2) 警備兵を無力化してエリアを確保する 3) 人質を解放し、撤離地点まで護衛する。撤離用ヘリコプターが自動的に派遣されます。（敵戦力：3つのパトロールゾーン、合計約24名の警備兵）</Japanese>
+            <Portuguese>Um civil foi capturado pelas forças inimigas e é mantido em um dos 3 locais possíveis. Sua missão: 1) Pesquise as 3 zonas no mapa para localizar o refém 2) Proteja a área neutralizando os guardas 3) Liberte o refém e acompanhe-o até o ponto de extração. Um helicóptero de exfiltração será despachado automaticamente. (Forças inimigas: 3 Zonas de Patrulha, ~24 Guardas no total)</Portuguese>
+            <Korean>민간인이 적군에게 포로로 잡혀 3곳 중 한 곳에 억류되어 있습니다. 임무: 1) 지도의 3개 구역을 수색하여 인질 찾기 2) 경비병을 무력화하여 지역 확보 3) 인질을 석방하고 탈출 지점까지 호위. 탈출 헬리콥터가 자동으로 파견됩니다. (적 병력: 3개 순찰 구역, 총 약 24명 경비병)</Korean>
         </Key>
         <Key ID="STR_TASK_5_TITLE">
             <English>Bomb Disarmament</English>
@@ -1080,6 +1326,9 @@
             <Turkish>Bomb disarmanimento</Turkish>
             <Chinese>炸弹拆弹</Chinese>
             <Chinesesimp>炸弹拆弹</Chinesesimp>
+            <Japanese>爆弾解除</Japanese>
+            <Portuguese>Desarmamento de Bomba</Portuguese>
+            <Korean>폭탄 제거</Korean>
         </Key>
         <Key ID="STR_ACTION_FREE_HOSTAGE">
             <English>Free the hostage</English>
@@ -1093,6 +1342,9 @@
             <Turkish>Rehineyi kurtar</Turkish>
             <Chinese>解救人質</Chinese>
             <Chinesesimp>解救人质</Chinesesimp>
+            <Japanese>人質を解放</Japanese>
+            <Portuguese>Libertar o refém</Portuguese>
+            <Korean>인질 석방</Korean>
         </Key>
         <Key ID="STR_NOTIF_CIVIL_KILLED">
             <English>CIVILIAN CASUALTY: %1</English>
@@ -1106,6 +1358,9 @@
             <Turkish>SİVİL KAYIP: %1</Turkish>
             <Chinese>平民傷亡：%1</Chinese>
             <Chinesesimp>平民伤亡：%1</Chinesesimp>
+            <Japanese>民間人の犠牲者：%1</Japanese>
+            <Portuguese>VÍTIMA CIVIL: %1</Portuguese>
+            <Korean>민간인 사상자: %1</Korean>
         </Key>
         <Key ID="STR_MARKER_SEARCH_ZONE">
             <English>Search Zone</English>
@@ -1119,6 +1374,9 @@
             <Turkish>Arama Bölgesi</Turkish>
             <Chinese>搜索區域</Chinese>
             <Chinesesimp>搜索区域</Chinesesimp>
+            <Japanese>捜索エリア</Japanese>
+            <Portuguese>Zona de Busca</Portuguese>
+            <Korean>수색 구역</Korean>
         </Key>
         <Key ID="STR_HINT_EXTRACTION_INCOMING">
             <English>Extraction incoming!</English>
@@ -1132,6 +1390,9 @@
             <Turkish>Çıkarma geliyor!</Turkish>
             <Chinese>撤離即將到達！</Chinese>
             <Chinesesimp>撤离即将到达！</Chinesesimp>
+            <Japanese>撤離部隊が接近中！</Japanese>
+            <Portuguese>Extração chegando!</Portuguese>
+            <Korean>탈출 팀이 오고 있습니다!!</Korean>
         </Key>
         <Key ID="STR_MARKER_EXTRACTION">
             <English>Extraction</English>
@@ -1145,6 +1406,9 @@
             <Turkish>Çıkarma</Turkish>
             <Chinese>撤離</Chinese>
             <Chinesesimp>撤离</Chinesesimp>
+            <Japanese>撤離</Japanese>
+            <Portuguese>Extração</Portuguese>
+            <Korean>탈출</Korean>
         </Key>
         <Key ID="STR_HINT_HELI_PLAYER_ONBOARD">
             <English>The helicopter will not leave while a player is on board!</English>
@@ -1158,6 +1422,9 @@
             <Turkish>Bir oyuncu gemideyken helikopter kalkmaz!</Turkish>
             <Chinese>有玩家在機上時直升機不會起飛！</Chinese>
             <Chinesesimp>有玩家在机上时直升机不会起飞！</Chinesesimp>
+            <Japanese>プレイヤーが搭乗している間、ヘリコプターは離陸しません！</Japanese>
+            <Portuguese>O helicóptero não partirá enquanto um jogador estiver a bordo!</Portuguese>
+            <Korean>플레이어가 탑승해 있는 동안 헬리콥터는 이륙하지 않습니다!</Korean>
         </Key>
         <Key ID="STR_HINT_EXTRACTION_TAKEOFF">
             <English>Extraction takeoff!</English>
@@ -1171,6 +1438,9 @@
             <Turkish>Çıkarma kalkış!</Turkish>
             <Chinese>撤離起飛！</Chinese>
             <Chinesesimp>撤离起飞！</Chinesesimp>
+            <Japanese>撤離離陸！</Japanese>
+            <Portuguese>Decolagem de extração!</Portuguese>
+            <Korean>탈출 이륙!</Korean>
         </Key>
         <Key ID="STR_TASK_COMPLETED">
             <English>COMPLETED</English>
@@ -1184,6 +1454,9 @@
             <Turkish>TAMAMLANDI</Turkish>
             <Chinese>已完成</Chinese>
             <Chinesesimp>已完成</Chinesesimp>
+            <Japanese>完了</Japanese>
+            <Portuguese>CONCLUÍDO</Portuguese>
+            <Korean>완료</Korean>
         </Key>
         <Key ID="STR_TASK_5_DESC">
             <English>Two bombs have been planted in a civilian area indicated on the map. Your mission: 1) Locate the 2 bombs by listening for the beeping sound 2) Defuse both explosives before detonation 3) WARNING: Terrorists disguised as civilians are present - minimize collateral damage. At least 2 bombs must be defused. Mission fails if a bomb explodes OR 2 civilians are killed. (Threats: 2 Bombs, ~3 Terrorists among 50 civilians)</English>
@@ -1197,6 +1470,9 @@
             <Turkish>Haritada işaretli sivil bölgeye iki bomba yerleştirildi. Göreviniz: 1) Bip sesini dinleyerek 2 bombayı bulun 2) Patlamadan önce her iki patlayıcıyı da etkisiz hale getirin 3) UYARI: Sivil kılığında teröristler mevcut - yan hasarı minimize edin. Her iki bomba etkisiz hale getirilmeli. Patlama VEYA 2 sivil ölümü durumunda görev başarısız. (Tehditler: 2 Bomba, 50 sivil arasında ~3 Terörist)</Turkish>
             <Chinese>兩枚炸彈已被放置在地圖上標記的平民區域。你的任務：1) 通過聆聽嗶嗶聲定位2枚炸彈 2) 在引爆前拆除兩個爆炸物 3) 警告：有偽裝成平民的恐怖分子 - 盡量減少附帶損害。必須拆除2枚炸彈。炸彈爆炸或2名平民死亡則任務失敗。（威脅：2枚炸彈，50名平民中約3名恐怖分子）</Chinese>
             <Chinesesimp>两枚炸弹已被放置在地图上标记的平民区域。你的任务：1) 通过聆听哔哔声定位2枚炸弹 2) 在引爆前拆除两个爆炸物 3) 警告：有伪装成平民的恐怖分子 - 尽量减少附带损害。必须拆除2枚炸弹。炸弹爆炸或2名平民死亡则任务失败。（威胁：2枚炸弹，50名平民中约3名恐怖分子）</Chinesesimp>
+            <Japanese>マップに示された民間地域に2つの爆弾が仕掛けられました。あなたの任務：1) ビープ音を聞いて2つの爆弾を見つける 2) 起爆前に両方の爆発物を解除する 3) 警告：民間人に変装したテロリストが存在します - 付随的被害を最小限に抑えてください。少なくとも2つの爆弾を解除する必要があります。爆弾が爆発するか、民間人が2人死亡した場合、任務は失敗します。（脅威：爆弾2つ、民間人50人中約3人のテロリスト）</Japanese>
+            <Portuguese>Duas bombas foram plantadas em uma área civil indicada no mapa. Sua missão: 1) Localize as 2 bombas ouvindo o som de bip 2) Desarme ambos os explosivos antes da detonação 3) AVISO: Terroristas disfarçados de civis estão presentes - minimize os danos colaterais. Pelo menos 2 bombas devem ser desarmadas. A missão falha se uma bomba explodir OU 2 civis forem mortos. (Ameaças: 2 Bombas, ~3 Terroristas entre 50 civis)</Portuguese>
+            <Korean>지도에 표시된 민간 지역에 두 개의 폭탄이 설치되었습니다. 임무: 1) 경고음을 듣고 폭탄 2개 찾기 2) 폭발 전 두 폭발물 모두 해제 3) 경고: 민간인으로 위장한 테러리스트가 있습니다 - 부수적 피해를 최소화하십시오. 최소 2개의 폭탄을 해제해야 합니다. 폭탄이 폭발하거나 민간인 2명이 사망하면 임무 실패. (위협: 2 폭탄, 50명 민간인 중 약 3명 테러리스트)</Korean>
         </Key>
         <Key ID="STR_ACTION_DEFUSE_EXPLOSIVE">
             <English>Defuse the explosive</English>
@@ -1210,6 +1486,9 @@
             <Turkish>Patlayıcıyı etkisiz hale getir</Turkish>
             <Chinese>拆除爆裂物</Chinese>
             <Chinesesimp>拆除爆裂物</Chinesesimp>
+            <Japanese>爆発物を解除</Japanese>
+            <Portuguese>Desarmar o explosivo</Portuguese>
+            <Korean>폭발물 해제</Korean>
         </Key>
         <Key ID="STR_HINT_EXPLOSIVE_DEFUSED">
             <English>Explosive defused!</English>
@@ -1223,6 +1502,9 @@
             <Turkish>Patlayıcı etkisiz hale getirildi!</Turkish>
             <Chinese>爆裂物已拆除！</Chinese>
             <Chinesesimp>爆裂物已拆除！</Chinesesimp>
+            <Japanese>爆発物が解除されました！</Japanese>
+            <Portuguese>Explosivo desarmado!</Portuguese>
+            <Korean>폭발물이 해제되었습니다!</Korean>
         </Key>
         <Key ID="STR_NOTIF_TASK1_START">
             <English>Await intelligence on fugitive locations</English>
@@ -1236,6 +1518,9 @@
             <Turkish>Kaçaklar hakkında istihbarat bekleyin</Turkish>
             <Chinese>等待逃犯位置情报</Chinese>
             <Chinesesimp>等待逃犯位置情报</Chinesesimp>
+            <Japanese>逃亡者の位置情報を待機中</Japanese>
+            <Portuguese>Aguarde informações sobre a localização dos fugitivos</Portuguese>
+            <Korean>도망자 위치 정보 대기 중</Korean>
             <Key ID="STR_MARKER_FUGITIVE">
                 <English>FUGITIVE</English>
                 <French>FUGITIF</French>
@@ -1248,6 +1533,9 @@
                 <Turkish>KAÇAK</Turkish>
                 <Chinese>逃犯</Chinese>
                 <Chinesesimp>逃犯</Chinesesimp>
+                <Japanese>逃亡者</Japanese>
+                <Portuguese>FUGITIVO</Portuguese>
+                <Korean>도망자</Korean>
             </Key>
             <Key ID="STR_MARKER_EXECUTED">
                 <English>EXECUTED</English>
@@ -1261,6 +1549,9 @@
                 <Turkish>İNFAZ EDİLDİ</Turkish>
                 <Chinese>已被處決</Chinese>
                 <Chinesesimp>已被处决</Chinesesimp>
+                <Japanese>処刑済み</Japanese>
+                <Portuguese>EXECUTADO</Portuguese>
+                <Korean>처형됨</Korean>
             </Key>
             <Key ID="STR_MARKER_CAPTIVE">
                 <English>CAPTIVE</English>
@@ -1287,6 +1578,9 @@
                 <Turkish>Uydu verileri dönüştürülüyor... Haritanızı kontrol edin!</Turkish>
                 <Chinese>衛星數據轉換中... 檢查地圖！</Chinese>
                 <Chinesesimp>卫星数据转换中... 检查地图！</Chinesesimp>
+                <Japanese>衛星データの変換中... マップを確認してください！</Japanese>
+                <Portuguese>Conversão de dados de satélite em andamento... Verifique seu mapa!</Portuguese>
+                <Korean>위성 데이터 변환 중... 지도를 확인하세요!</Korean>
             </Key>
             <Key ID="STR_HINT_FUGITIVE_SURRENDERED">
                 <English>A fugitive has surrendered!</English>
@@ -1300,6 +1594,9 @@
                 <Turkish>Bir kaçak teslim oldu!</Turkish>
                 <Chinese>一名逃犯已投降！</Chinese>
                 <Chinesesimp>一名逃犯已投降！</Chinesesimp>
+                <Japanese>逃亡者が降伏しました！</Japanese>
+                <Portuguese>Um fugitivo se rendeu!</Portuguese>
+                <Korean>도망자가 항복했습니다!</Korean>
             </Key>
             <Key ID="STR_NOTIF_TASK1_FAILED">
                 <English>MISSION FAILED - A fugitive has escaped!</English>
@@ -1313,6 +1610,9 @@
                 <Turkish>GÖREV BAŞARISIZ - Bir kaçak kaçtı!</Turkish>
                 <Chinese>任務失敗 - 一名逃犯逃脫了！</Chinese>
                 <Chinesesimp>任务失败 - 一名逃犯逃脱了！</Chinesesimp>
+                <Japanese>作戦失敗 - 逃亡者が逃走しました！</Japanese>
+                <Portuguese>MISSÃO FALHADA - Um fugitivo escapou!</Portuguese>
+                <Korean>임무 실패 - 도망자가 탈출했습니다!</Korean>
             </Key>
             <Key ID="STR_MARKER_CAPTIVE">
                 <English>Captive</English>
@@ -1339,6 +1639,9 @@
                 <Turkish>HEDEF ETKİSİZ</Turkish>
                 <Chinese>目标已制伏</Chinese>
                 <Chinesesimp>目标已制伏</Chinesesimp>
+                <Japanese>標的を無力化</Japanese>
+                <Portuguese>ALVO NEUTRALIZADO</Portuguese>
+                <Korean>목표 무력화됨</Korean>
             </Key>
             <Key ID="STR_ACTION_SUBMIT">
                 <English>Subdue suspect</English>
@@ -1352,6 +1655,9 @@
                 <Turkish>Şüpheliyi bastır</Turkish>
                 <Chinese>制服嫌疑人</Chinese>
                 <Chinesesimp>制服嫌疑人</Chinesesimp>
+                <Japanese>容疑者を制圧</Japanese>
+                <Portuguese>Dominar suspeito</Portuguese>
+                <Korean>용의자 제압</Korean>
             </Key>
             <Key ID="STR_ACTION_NEUTRALIZE">
                 <English>Neutralize target</English>
@@ -1365,6 +1671,9 @@
                 <Turkish>Hedefi etkisiz hale getir</Turkish>
                 <Chinese>制伏目標</Chinese>
                 <Chinesesimp>制伏目标</Chinesesimp>
+                <Japanese>標的を無力化</Japanese>
+                <Portuguese>Neutralizar alvo</Portuguese>
+                <Korean>목표 무력화</Korean>
             </Key>
             <Key ID="STR_NOTIF_TASK5_START_TITLE">
                 <English>TASK 5 ACTIVATED</English>
@@ -1378,6 +1687,9 @@
                 <Turkish>GÖREV 5 AKTİF</Turkish>
                 <Chinese>任務 5 已啟動</Chinese>
                 <Chinesesimp>任务 5 已启动</Chinesesimp>
+                <Japanese>任務5 開始</Japanese>
+                <Portuguese>TAREFA 5 ATIVADA</Portuguese>
+                <Korean>임무 5 활성화됨</Korean>
             </Key>
             <Key ID="STR_NOTIF_TASK5_START_DESC">
                 <English>CITY SECURITY AND DEFUSAL</English>
@@ -1391,6 +1703,9 @@
                 <Turkish>ŞEHİR GÜVENLİĞİ VE ETKİSİZLEŞTİRME</Turkish>
                 <Chinese>城市安全與拆除</Chinese>
                 <Chinesesimp>城市安全与拆除</Chinesesimp>
+                <Japanese>都市の安全確保と爆弾処理</Japanese>
+                <Portuguese>SEGURANÇA DA CIDADE E DESARMAMENTO</Portuguese>
+                <Korean>도시 보안 및 해제</Korean>
             </Key>
             <Key ID="STR_NOTIF_BOMB_FOUND_TITLE">
                 <English>BOMB DISCOVERED</English>
@@ -1404,6 +1719,9 @@
                 <Turkish>BOMBA BULUNDU</Turkish>
                 <Chinese>發現炸彈</Chinese>
                 <Chinesesimp>发现炸弹</Chinesesimp>
+                <Japanese>爆弾発見</Japanese>
+                <Portuguese>BOMBA DESCOBERTA</Portuguese>
+                <Korean>폭탄 발견됨</Korean>
             </Key>
             <Key ID="STR_NOTIF_CIV_KILLED_TITLE">
                 <English>CIVILIAN KILLED</English>
@@ -1417,6 +1735,9 @@
                 <Turkish>SİVİL ÖLDÜRÜLDÜ</Turkish>
                 <Chinese>平民死亡</Chinese>
                 <Chinesesimp>平民死亡</Chinesesimp>
+                <Japanese>民間人死亡</Japanese>
+                <Portuguese>CIVIL MORTO</Portuguese>
+                <Korean>민간인 사망</Korean>
             </Key>
             <Key ID="STR_NOTIF_CIV_KILLED_DESC">
                 <English>Civilian casualties: %1 / 2</English>
@@ -1430,6 +1751,9 @@
                 <Turkish>Sivil kayıplar: %1 / 2</Turkish>
                 <Chinese>平民傷亡：%1 / 2</Chinese>
                 <Chinesesimp>平民伤亡：%1 / 2</Chinesesimp>
+                <Japanese>民間人の犠牲者：%1 / 2</Japanese>
+                <Portuguese>Baixas civis: %1 / 2</Portuguese>
+                <Korean>민간인 사상자: %1 / 2</Korean>
             </Key>
             <Key ID="STR_NOTIF_FAIL_TITLE">
                 <English>MISSION FAILED</English>
@@ -1443,6 +1767,9 @@
                 <Turkish>GÖREV BAŞARISIZ</Turkish>
                 <Chinese>任務失敗</Chinese>
                 <Chinesesimp>任务失败</Chinesesimp>
+                <Japanese>作戦失敗</Japanese>
+                <Portuguese>MISSÃO FALHADA</Portuguese>
+                <Korean>임무 실패</Korean>
             </Key>
             <Key ID="STR_NOTIF_FAIL_CIVILIANS">
                 <English>FAILURE: Critical civilian casualties (5)!</English>
@@ -1456,6 +1783,9 @@
                 <Turkish>BAŞARISIZLIK: Kritik sivil kayıplar (5)!</Turkish>
                 <Chinese>失敗：重大平民傷亡 (5)！</Chinese>
                 <Chinesesimp>失败：重大平民伤亡 (5)！</Chinesesimp>
+                <Japanese>失敗：重大な民間人の犠牲 (5)！</Japanese>
+                <Portuguese>FALHA: Baixas civis críticas (5)!</Portuguese>
+                <Korean>실패: 치명적인 민간인 사상자 (5)!</Korean>
             </Key>
             <Key ID="STR_NOTIF_FAIL_BOMB">
                 <English>FAILURE: Bomb exploded!</English>
@@ -1469,6 +1799,9 @@
                 <Turkish>BAŞARISIZLIK: Bomba patladı!</Turkish>
                 <Chinese>失敗：炸彈爆炸！</Chinese>
                 <Chinesesimp>失败：炸弹爆炸！</Chinesesimp>
+                <Japanese>失敗：爆弾が爆発しました！</Japanese>
+                <Portuguese>FALHA: Bomba explodiu!</Portuguese>
+                <Korean>실패: 폭탄 폭발!</Korean>
             </Key>
             <Key ID="STR_NOTIF_WIN_TITLE">
                 <English>MISSION ACCOMPLISHED</English>
@@ -1482,6 +1815,9 @@
                 <Turkish>GÖREV TAMAMLANDI</Turkish>
                 <Chinese>任務完成</Chinese>
                 <Chinesesimp>任务完成</Chinesesimp>
+                <Japanese>作戦完了</Japanese>
+                <Portuguese>MISSÃO CUMPRIDA</Portuguese>
+                <Korean>임무 완수</Korean>
             </Key>
             <Key ID="STR_NOTIF_WIN_SECURED">
                 <English>SUCCESS: Zone secured!</English>
@@ -1495,19 +1831,25 @@
                 <Turkish>BAŞARI: Bölge güvence altında!</Turkish>
                 <Chinese>成功：區域已安全！</Chinese>
                 <Chinesesimp>成功：区域已安全！</Chinesesimp>
+                <Japanese>成功：エリア確保！</Japanese>
+                <Portuguese>SUCESSO: Zona segura!</Portuguese>
+                <Korean>성공: 구역 확보!</Korean>
             </Key>
             <Key ID="STR_GAME_DESCRIPTION">
-                <English>TACTICAL SANDBOX: Manage your operations from A to Z from the HQ. Solo or Coop (1-15 players). The game loop: EQUIPMENT: Choose weapons, vehicles (ground/air) and recruit your AI allies. SETTINGS: Adjust time and weather according to your strategy. OBJECTIVE: Activate dynamic and stackable missions (assassination, destruction...). ACTION: Deploy, fight and return to HQ. COMPATIBILITY with essential mods: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</English>
-                <French>TACTICAL SANBOX : Gérez vos opérations de A à Z depuis le QG. Solo ou Coop (1-15 joueurs). La boucle de jeu : EQUIPEMENENT : Choisissez armes, véhicules (sol/air) et recrutez vos alliés IA. PARAMETRES : Réglez l&apos;heure et la météo selon votre stratégie. OBJECTIF : Activez des missions dynamiques et cumulables (assassinat, destruction...).  ACTION : Déployez-vous, combattez et revenez au QG. COMPATIBILITE avec les mods incontournables : RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</French>
-                <German>TACTICAL SANDBOX: Verwalten Sie Ihre Operationen von A bis Z vom HQ aus. Einzelspieler oder Koop (1-15 Spieler). Der Spielablauf: AUSRÜSTUNG: Wählen Sie Waffen, Fahrzeuge (Boden/Luft) und rekrutieren Sie Ihre KI-Verbündeten. EINSTELLUNGEN: Stellen Sie Zeit und Wetter entsprechend Ihrer Strategie ein. ZIEL: Aktivieren Sie dynamische und stapelbare Missionen (Attentat, Zerstörung...). AKTION: Einsatz, Kampf und Rückkehr zum HQ. KOMPATIBILITÄT mit unverzichtbaren Mods: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</German>
-                <Spanish>SANDBOX TÁCTICO: Gestiona tus operaciones de la A a la Z desde el Cuartel General. Solo o Cooperativo (1-15 jugadores). El ciclo de juego: EQUIPAMIENTO: Elige armas, vehículos (tierra/aire) y recluta a tus aliados de la IA. AJUSTES: Configura la hora y el clima según tu estrategia. OBJETIVO: Activa misiones dinámicas y acumulables (asesinato, destrucción...). ACCIÓN: Despliégate, combate y regresa al Cuartel General. COMPATIBILIDAD con mods imprescindibles: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Spanish>
-                <Italian>SANDBOX TATTICO: Gestisci le tue operazioni dalla A alla Z dal QG. Singolo o Coop (1-15 giocatori). Il ciclo di gioco: EQUIPAGGIAMENTO: Scegli armi, veicoli (terra/aria) e recluta i tuoi alleati IA. IMPOSTAZIONI: Regola l&apos;ora e il meteo secondo la tua strategia. OBIETTIVO: Attiva missioni dinamiche e cumulabili (assassinio, distruzione...). AZIONE: Schieramento, combattimento e ritorno al QG. COMPATIBILITÀ con mod essenziali: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Italian>
-                <Russian>ТАКТИЧЕСКАЯ ПЕСОЧНИЦА: Управляйте своими операциями от А до Я из штаба. Одиночная или кооперативная игра (1-15 игроков). Игровой цикл: СНАРЯЖЕНИЕ: Выбирайте оружие, технику (наземную/воздушную) и нанимайте союзников ИИ. НАСТРОЙКИ: Настраивайте время и погоду в соответствии с вашей стратегией. ЦЕЛЬ: Активируйте динамические и суммируемые миссии (убийство, уничтожение...). ДЕЙСТВИЕ: Развертывание, бой и возвращение в штаб. СОВМЕСТИМОСТЬ с основными модами: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Russian>
-                <Polish>TAKTYCZNA PIASKOWNICA: Zarządzaj operacjami od A do Z z Kwatery Głównej. Solo lub Kooperacja (1-15 graczy). Pętla gry: WYPOSAŻENIE: Wybierz broń, pojazdy (lądowe/powietrzne) i rekrutuj sojuszników AI. USTAWIENIA: Dostosuj czas i pogodę do swojej strategii. CEL: Aktywuj dynamiczne i możliwe do łączenia misje (zabójstwo, zniszczenie...). AKCJA: Rozmieszczenie, walka i powrót do KG. KOMPATYBILNOŚĆ z niezbędnymi modami: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Polish>
-                <Czech>TAKTICKÝ SANDBOX: Spravujte své operace od A do Z z velitelství. Sólo nebo Kooperace (1-15 hráčů). Herní smyčka: VYBAVENÍ: Vyberte zbraně, vozidla (pozemní/vzdušná) a naverbujte AI spojence. NASTAVENÍ: Upravte čas a počasí podle své strategie. CÍL: Aktivujte dynamické a stohovatelné mise (atentát, zničení...). AKCE: Nasadit, bojovat a vrátit se na velitelství. KOMPATIBILITA s nezbytnými mody: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Czech>
-                <Turkish>TAKTİKSEL SANDBOX: Operasyonlarınızı A&apos;dan Z&apos;ye Karargah&apos;tan yönetin. Tekli veya İşbirliği (1-15 oyuncu). Oyun döngüsü: EKİPMAN: Silahları, araçları (kara/hava) seçin ve yapay zeka müttefiklerinizi toplayın. AYARLAR: Stratejinize göre zamanı ve hava durumunu ayarlayın. HEDEF: Dinamik ve birleştirilebilir görevleri etkinleştirin (suikast, imha...). EYLEM: Konuşlanın, savaşın ve Karargah&apos;a dönün. Temel modlarla UYUMLULUK: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Turkish>
-                <Chinese>戰術沙盒：從總部全權管理您的行動。單人或合作（1-15 名玩家）。遊戲循環：裝備：選擇武器、載具（地面/空中）並招募 AI 盟友。設置：根據您的策略調整時間和天氣。目標：啟動動態和可疊加的任務（暗殺、破壞...）。行動：部署、戰鬥並返回總部。兼容必備模組：RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Chinese>
-                <Chinesesimp>战术沙盒：从总部全权管理您的行动。单人或合作（1-15 名玩家）。游戏循环：装备：选择武器、载具（地面/空中）并招募 AI 盟友。设置：根据您的策略调整时间和天气。目标：启动动态和可叠加的任务（暗杀、破坏...）。行动：部署、战斗并返回总部。兼容必备模组：RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Chinesesimp>
+                <English>TACTICAL SANDBOX: Manage your operations from A to Z from the HQ. Solo or Coop (1-15 players). The game loop: EQUIPMENT: Choose weapons, vehicles (ground/air) and recruit your AI allies. SETTINGS: Adjust time and weather according to your strategy. OBJECTIVE: Activate dynamic missions (assassination, destruction...). ACTION: Deploy, fight and return to HQ. COMPATIBILITY with essential mods: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</English>
+                <French>TACTICAL SANDBOX : Gérez vos opérations de A à Z depuis le QG. Solo ou Coop (1-15 joueurs). Boucle de jeu : ÉQUIPEMENT : Choisissez vos armes, véhicules (sol/air) et recrutez vos alliés IA. PARAMÈTRES : Ajustez l&apos;heure et la météo selon votre stratégie. OBJECTIF : Activez des missions dynamiques (assassinat, destruction...). ACTION : Déployez-vous, combattez et retournez au QG. COMPATIBILITÉ avec les mods essentiels : RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</French>
+                <German>TACTICAL SANDBOX: Verwalten Sie Ihre Operationen von A bis Z vom HQ aus. Einzelspieler oder Koop (1–15 Spieler). Spielablauf: AUSRÜSTUNG: Wählen Sie Waffen, Fahrzeuge (Boden/Luft) und rekrutieren Sie KI-Verbündete. EINSTELLUNGEN: Passen Sie Zeit und Wetter Ihrer Strategie an. ZIEL: Aktivieren Sie dynamische Missionen (Attentat, Zerstörung...). AKTION: Einsatz, Kampf und Rückkehr zum HQ. KOMPATIBILITÄT mit wichtigen Mods: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</German>
+                <Spanish>SANDBOX TÁCTICO: Gestiona tus operaciones de la A a la Z desde el Cuartel General. Solo o Cooperativo (1-15 jugadores). Ciclo de juego: EQUIPAMIENTO: Elige armas, vehículos (tierra/aire) y recluta aliados controlados por IA. AJUSTES: Ajusta la hora y el clima según tu estrategia. OBJETIVO: Activa misiones dinámicas (asesinato, destrucción...). ACCIÓN: Despliega, combate y regresa al Cuartel General. COMPATIBILIDAD con mods esenciales: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Spanish>
+                <Italian>SANDBOX TATTICO: Gestisci le tue operazioni dalla A alla Z dal QG. Giocatore singolo o Coop (1-15 giocatori). Ciclo di gioco: EQUIPAGGIAMENTO: Scegli armi, veicoli (terra/aria) e recluta alleati IA. IMPOSTAZIONI: Regola l&apos;ora e il meteo in base alla tua strategia. OBIETTIVO: Attiva missioni dinamiche (assassinio, distruzione...). AZIONE: Schierati, combatti e torna al QG. COMPATIBILITÀ con mod essenziali: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Italian>
+                <Russian>ТАКТИЧЕСКАЯ ПЕСОЧНИЦА: Управляйте своими операциями от А до Я из штаба. Одиночная игра или кооператив (1–15 игроков). Игровой цикл: СНАРЯЖЕНИЕ: Выбирайте оружие, технику (наземную/воздушную) и набирайте союзников под управлением ИИ. НАСТРОЙКИ: Настраивайте время и погоду в соответствии со стратегией. ЦЕЛЬ: Активируйте динамические миссии (убийство, уничтожение...). ДЕЙСТВИЕ: Развертывание, бой и возвращение в штаб. СОВМЕСТИМОСТЬ с основными модами: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Russian>
+                <Polish>TAKTYCZNY SANDBOX: Zarządzaj operacjami od A do Z z Kwatery Głównej. Tryb solo lub kooperacja (1–15 graczy). Pętla rozgrywki: WYPOSAŻENIE: Wybierz broń, pojazdy (lądowe/powietrzne) i rekrutuj sojuszników AI. USTAWIENIA: Dostosuj czas i pogodę do swojej strategii. CEL: Aktywuj dynamiczne misje (zabójstwo, zniszczenie...). AKCJA: Rozmieszczenie, walka i powrót do KG. KOMPATYBILNOŚĆ z kluczowymi modami: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Polish>
+                <Czech>TAKTICKÝ SANDBOX: Spravujte své operace od A do Z z velitelství. Sólo nebo kooperace (1–15 hráčů). Herní smyčka: VYBAVENÍ: Vyberte zbraně, vozidla (pozemní/vzdušná) a naverbujte spojence řízené AI. NASTAVENÍ: Upravte čas a počasí podle své strategie. CÍL: Aktivujte dynamické mise (atentát, zničení...). AKCE: Nasazení, boj a návrat na velitelství. KOMPATIBILITA s důležitými mody: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Czech>
+                <Turkish>TAKTİKSEL SANDBOX: Operasyonlarınızı karargahtan A&apos;dan Z&apos;ye yönetin. Tek oyunculu veya iş birliği (1-15 oyuncu). Oyun döngüsü: EKİPMAN: Silahları, araçları (kara/hava) seçin ve yapay zekâ müttefikler toplayın. AYARLAR: Stratejinize göre zamanı ve hava durumunu ayarlayın. HEDEF: Dinamik görevleri etkinleştirin (suikast, imha...). AKSİYON: Konuşlanın, savaşın ve karargâha dönün. Temel modlarla UYUMLULUK: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Turkish>
+                <Chinese>戰術沙盒：從總部全面管理您的行動。單人或合作模式（1–15 名玩家）。遊戲循環：裝備：選擇武器、載具（地面/空中），並招募 AI 盟友。設定：根據您的策略調整時間與天氣。目標：啟動動態任務（暗殺、破壞……）。行動：部署、戰鬥並返回總部。相容重要模組：RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Chinese>
+                <Chinesesimp>战术沙盒：从总部全面管理您的行动。单人或合作模式（1–15 名玩家）。游戏循环：装备：选择武器、载具（地面/空中），并招募 AI 盟友。设置：根据您的策略调整时间和天气。目标：启动动态任务（暗杀、破坏……）。行动：部署、战斗并返回总部。兼容重要模组：RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Chinesesimp>
+                <Japanese>タクティカル・サンドボックス：HQから作戦をAからZまで管理。ソロまたはCoop（1-15プレイヤー）。ゲームループ：装備：武器、車両（地上/空中）を選択し、AIの同盟国を募集。設定：戦略に合わせて時間と天候を調整。目標：動的な任務（暗殺、破壊...）を起動。アクション：展開、戦闘、HQへの帰還。主要MODとの互換性：RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Japanese>
+                <Portuguese>TACTICAL SANDBOX: Gerencie suas operações de A a Z a partir do QG. Solo ou Coop (1-15 jogadores). Ciclo do jogo: EQUIPAMENTO: Escolha armas, veículos (terrestres/aéreos) e recrute seus aliados de IA. CONFIGURAÇÕES: Ajuste a hora e o clima de acordo com sua estratégia. OBJETIVO: Ative missões dinâmicas (assassinato, destruição...). AÇÃO: Implante, lute e retorne ao QG. COMPATIBILIDADE com mods essenciais: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Portuguese>
+                <Korean>전술 샌드박스: 본부에서 작전을 A부터 Z까지 관리하십시오. 솔로 또는 협동 (1-15 플레이어). 게임 루프: 장비: 무기, 차량 (지상/공중) 선택 및 AI 동맹 모집. 설정: 전략에 따라 시간과 날씨 조정. 목표: 동적 임무 (암살, 파괴...) 활성화. 행동: 배치, 전투 및 본부 복귀. 필수 모드 호환성: RHS, CUP, TMT, R3F, BWMod, FFAA, VME PLA, NIArms...</Korean>
             </Key>
         </Key>
         <Key ID="STR_ENEMIES_MENU_TITLE">
@@ -1522,6 +1864,9 @@
             <Turkish>Düşman Seçimi</Turkish>
             <Chinese>敵人選擇</Chinese>
             <Chinesesimp>敌人选择</Chinesesimp>
+            <Japanese>敵選択</Japanese>
+            <Portuguese>Seleção de Inimigos</Portuguese>
+            <Korean>적 선택</Korean>
         </Key>
         <Key ID="STR_SELECT_OFFICERS">
             <English>Select 3 Officers</English>
@@ -1535,6 +1880,9 @@
             <Turkish>3 Subay Seçin</Turkish>
             <Chinese>選擇 3 名軍官</Chinese>
             <Chinesesimp>选择 3 名军官</Chinesesimp>
+            <Japanese>将校を3名選択</Japanese>
+            <Portuguese>Selecione 3 Oficiais</Portuguese>
+            <Korean>장교 3명 선택</Korean>
         </Key>
         <Key ID="STR_SELECT_SOLDIERS">
             <English>Select 12 Soldiers</English>
@@ -1548,6 +1896,9 @@
             <Turkish>12 Asker Seçin</Turkish>
             <Chinese>選擇 12 名士兵</Chinese>
             <Chinesesimp>选择 12 名士兵</Chinesesimp>
+            <Japanese>兵士を12名選択</Japanese>
+            <Portuguese>Selecione 12 Soldados</Portuguese>
+            <Korean>병사 12명 선택</Korean>
         </Key>
         <Key ID="STR_AVAILABLE_UNITS">
             <English>Available Units</English>
@@ -1561,6 +1912,9 @@
             <Turkish>Mevcut Birimler</Turkish>
             <Chinese>可用單位</Chinese>
             <Chinesesimp>可用单位</Chinesesimp>
+            <Japanese>利用可能なユニット</Japanese>
+            <Portuguese>Unidades Disponíveis</Portuguese>
+            <Korean>사용 가능한 유닛</Korean>
         </Key>
         <Key ID="STR_BTN_ADD_OFFICER">
             <English>+ Officer</English>
@@ -1574,6 +1928,9 @@
             <Turkish>+ Subay</Turkish>
             <Chinese>+ 軍官</Chinese>
             <Chinesesimp>+ 军官</Chinesesimp>
+            <Japanese>+ 将校</Japanese>
+            <Portuguese>+ Oficial</Portuguese>
+            <Korean>+ 장교</Korean>
         </Key>
         <Key ID="STR_BTN_ADD_SOLDIER">
             <English>+ Soldier</English>
@@ -1587,6 +1944,9 @@
             <Turkish>+ Asker</Turkish>
             <Chinese>+ 士兵</Chinese>
             <Chinesesimp>+ 士兵</Chinesesimp>
+            <Japanese>+ 兵士</Japanese>
+            <Portuguese>+ Soldado</Portuguese>
+            <Korean>+ 병사</Korean>
         </Key>
         <Key ID="STR_BTN_VALIDATE">
             <English>Validate</English>
@@ -1600,6 +1960,9 @@
             <Turkish>Onayla</Turkish>
             <Chinese>確認</Chinese>
             <Chinesesimp>确认</Chinesesimp>
+            <Japanese>確認</Japanese>
+            <Portuguese>Validar</Portuguese>
+            <Korean>확인</Korean>
         </Key>
         <Key ID="STR_ACTION_ENEMIES">
             <English>Choose enemies</English>
@@ -1613,6 +1976,9 @@
             <Turkish>Düşmanları seç</Turkish>
             <Chinese>選擇敵人</Chinese>
             <Chinesesimp>选择敌人</Chinesesimp>
+            <Japanese>敵を選択</Japanese>
+            <Portuguese>Escolher inimigos</Portuguese>
+            <Korean>적 선택</Korean>
         </Key>
         <Key ID="STR_ERR_MAX_OFFICERS">
             <English>Maximum 3 officers!</English>
@@ -1626,6 +1992,9 @@
             <Turkish>Maksimum 3 subay!</Turkish>
             <Chinese>最多 3 名軍官！</Chinese>
             <Chinesesimp>最多 3 名军官！</Chinesesimp>
+            <Japanese>最大3名の将校！</Japanese>
+            <Portuguese>Máximo 3 oficiais!</Portuguese>
+            <Korean>최대 3명 장교!</Korean>
         </Key>
         <Key ID="STR_ERR_MAX_SOLDIERS">
             <English>Maximum 12 soldiers!</English>
@@ -1639,6 +2008,9 @@
             <Turkish>Maksimum 12 asker!</Turkish>
             <Chinese>最多 12 名士兵！</Chinese>
             <Chinesesimp>最多 12 名士兵！</Chinesesimp>
+            <Japanese>最大12名の兵士！</Japanese>
+            <Portuguese>Máximo 12 soldados!</Portuguese>
+            <Korean>최대 12명 병사!</Korean>
         </Key>
         <Key ID="STR_ERR_SELECTION_INCOMPLETE">
             <English>Selection incomplete! You need 3 officers and 12 soldiers.</English>
@@ -1652,6 +2024,9 @@
             <Turkish>Seçim eksik! 3 subay ve 12 asker gerekli.</Turkish>
             <Chinese>選擇不完整！需要 3 名軍官和 12 名士兵。</Chinese>
             <Chinesesimp>选择不完整！需要 3 名军官和 12 名士兵。</Chinesesimp>
+            <Japanese>選択が不完全です！将校3名と兵士12名が必要です。</Japanese>
+            <Portuguese>Seleção incompleta! Você precisa de 3 oficiais e 12 soldados.</Portuguese>
+            <Korean>선택이 완료되지 않았습니다! 장교 3명과 병사 12명이 필요합니다.</Korean>
         </Key>
         <Key ID="STR_ENEMIES_UPDATED">
             <English>Enemies updated: %1 officers, %2 soldiers</English>
@@ -1665,6 +2040,9 @@
             <Turkish>Düşmanlar güncellendi: %1 subay, %2 asker</Turkish>
             <Chinese>敵人已更新：%1 名軍官，%2 名士兵</Chinese>
             <Chinesesimp>敌人已更新：%1 名军官，%2 名士兵</Chinesesimp>
+            <Japanese>敵が更新されました：将校 %1 名、兵士 %2 名</Japanese>
+            <Portuguese>Inimigos atualizados: %1 oficiais, %2 soldados</Portuguese>
+            <Korean>적 업데이트됨: 장교 %1 명, 병사 %2 명</Korean>
         </Key>
         <Key ID="STR_ENEMIES_RESET">
             <English>Selection cleared</English>
@@ -1678,6 +2056,1561 @@
             <Turkish>Seçim temizlendi</Turkish>
             <Chinese>選擇已清除</Chinese>
             <Chinesesimp>选择已清除</Chinesesimp>
-        </Key>&lt;/Key&gt;
+            <Japanese>選択クリア</Japanese>
+            <Portuguese>Seleção limpa</Portuguese>
+            <Korean>선택 초기화</Korean>
+        </Key><!-- BRIEFING : GENERIC HEADERS -->
+        <Key ID="STR_BRIEF_HEADER_SITUATION">
+            <English>1. SITUATION</English>
+            <French>1. SITUATION</French>
+            <German>1. LAGE</German>
+            <Spanish>1. SITUACIÓN</Spanish>
+            <Italian>1. SITUAZIONE</Italian>
+            <Russian>1. ОБСТАНОВКА</Russian>
+            <Polish>1. SYTUACJA</Polish>
+            <Czech>1. SITUACE</Czech>
+            <Turkish>1. DURUM</Turkish>
+            <Chinese>1. 形势</Chinese>
+            <Chinesesimp>1. 形势</Chinesesimp>
+            <Japanese>1. 状況</Japanese>
+            <Portuguese>1. SITUAÇÃO</Portuguese>
+            <Korean>1. 상황</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_HEADER_MISSION">
+            <English>2. MISSION</English>
+            <French>2. MISSION</French>
+            <German>2. AUFTRAG</German>
+            <Spanish>2. MISIÓN</Spanish>
+            <Italian>2. MISSIONE</Italian>
+            <Russian>2. ЗАДАЧА</Russian>
+            <Polish>2. ZADANIE</Polish>
+            <Czech>2. MISE</Czech>
+            <Turkish>2. GÖREV</Turkish>
+            <Chinese>2. 任务</Chinese>
+            <Chinesesimp>2. 任务</Chinesesimp>
+            <Japanese>2. 任務</Japanese>
+            <Portuguese>2. MISSÃO</Portuguese>
+            <Korean>2. 임무</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_HEADER_EXECUTION">
+            <English>3. EXECUTION</English>
+            <French>3. EXÉCUTION</French>
+            <German>3. DURCHFÜHRUNG</German>
+            <Spanish>3. EJECUCIÓN</Spanish>
+            <Italian>3. ESECUZIONE</Italian>
+            <Russian>3. ВЫПОЛНЕНИЕ</Russian>
+            <Polish>3. REALIZACJA</Polish>
+            <Czech>3. PROVEDENÍ</Czech>
+            <Turkish>3. İCRA</Turkish>
+            <Chinese>3. 执行</Chinese>
+            <Chinesesimp>3. 执行</Chinesesimp>
+            <Japanese>3. 実行</Japanese>
+            <Portuguese>3. EXECUÇÃO</Portuguese>
+            <Korean>3. 실행</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_HEADER_SIGNAL">
+            <English>4. SIGNAL</English>
+            <French>4. SIGNALISATION</French>
+            <German>4. FÜHRUNG UND FERMELDEWESEN</German>
+            <Spanish>4. SEÑALIZACIÓN</Spanish>
+            <Italian>4. SEGNALAZIONE</Italian>
+            <Russian>4. СВЯЗЬ И СИГНАЛЫ</Russian>
+            <Polish>4. ŁĄCZNOŚĆ</Polish>
+            <Czech>4. SIGNÁLY</Czech>
+            <Turkish>4. İŞARET</Turkish>
+            <Chinese>4. 信号</Chinese>
+            <Chinesesimp>4. 信号</Chinesesimp>
+            <Japanese>4. 通信・合図</Japanese>
+            <Portuguese>4. SINALIZAÇÃO</Portuguese>
+            <Korean>4. 신호</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_HEADER_THREAT">
+            <English>THREAT:</English>
+            <French>MENACE :</French>
+            <German>BEDROHUNG:</German>
+            <Spanish>AMENAZA:</Spanish>
+            <Italian>MINACCIA:</Italian>
+            <Russian>УГРОЗА:</Russian>
+            <Polish>ZAGROŻENIE:</Polish>
+            <Czech>HROZBA:</Czech>
+            <Turkish>TEHDİT:</Turkish>
+            <Chinese>威胁：</Chinese>
+            <Chinesesimp>威胁：</Chinesesimp>
+            <Japanese>脅威：</Japanese>
+            <Portuguese>AMEAÇA:</Portuguese>
+            <Korean>위협:</Korean>
+        </Key><!-- TASK 1 -->
+        <Key ID="STR_BRIEF_T1_OP_TITLE">
+            <English>OP ORDER: MANHUNT</English>
+            <French>ORDRE D&apos;OPÉRATION : CHASSE À L&apos;HOMME</French>
+            <German>OP BEFEHL: MANNHAGD</German>
+            <Spanish>ORDEN OP: CACERÍA</Spanish>
+            <Italian>ORDINE OP: CACCIA ALL&apos;UOMO</Italian>
+            <Russian>БОЕВОЙ ПРИКАЗ: ОХОТА</Russian>
+            <Polish>ROZKAZ OP: OBŁAWA</Polish>
+            <Czech>ROZKAZ OP: HON NA ČLOVĚKA</Czech>
+            <Turkish>OP EMRİ:insan avı</Turkish>
+            <Chinese>行动指令：搜捕</Chinese>
+            <Chinesesimp>行动指令：搜捕</Chinesesimp>
+            <Japanese>作戦命令：マンハント</Japanese>
+            <Portuguese>ORDEM OP: CAÇADA</Portuguese>
+            <Korean>작전 명령: 인간 사냥</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T1_SITUATION">
+            <English>Two fugitives are attempting to exfiltrate the island. Intel indicates they are heading towards coastal extraction points where speedboats await them.</English>
+            <French>Deux fugitifs tentent de s&apos;exfiltrer de l&apos;île. Les renseignements indiquent qu&apos;ils font route vers des points d&apos;extraction côtiers où des bateaux rapides les attendent.</French>
+            <German>Zwei Flüchtige versuchen, von der Insel zu fliehen. Der Geheimdienst meldet, dass sie sich zu küstennahen Extraktionspunkten bewegen, wo Schnellboote auf sie warten.</German>
+            <Spanish>Dos fugitivos intentan exfiltrarse de la isla. La inteligencia indica que se dirigen a puntos de extracción costeros donde les esperan lanchas rápidas.</Spanish>
+            <Italian>Due fuggitivi tentano di esfiltrare dall&apos;isola. L&apos;intelligence indica che si stanno dirigendo verso punti di estrazione costieri dove li attendono motoscafi.</Italian>
+            <Russian>Двое беглецов пытаются покинуть остров. Разведка сообщает, что они направляются к точкам эвакуации на побережье, где их ждут катера.</Russian>
+            <Polish>Dwóch zbiegów próbuje uciec z wyspy. Wywiad wskazuje, że kierują się do punktów ewakuacyjnych na wybrzeżu, gdzie czekają na nich łodzie.</Polish>
+            <Czech>Dva uprchlíci se pokoušejí opustit ostrov. Zpravodajství naznačuje, že míří k pobřežním evakuačním místům, kde na ně čekají rychlé čluny.</Czech>
+            <Turkish>İki kaçak adadan kaçmaya çalışıyor. İstihbarat, sürat teknelerinin onları beklediği kıyı tahliye noktalarına doğru gittiklerini gösteriyor.</Turkish>
+            <Chinese>两名逃犯正试图逃离岛屿。情报显示他们正前往沿海撤离点，那里有快艇接应。</Chinese>
+            <Chinesesimp>两名逃犯正试图逃离岛屿。情报显示他们正前往沿海撤离点，那里有快艇接应。</Chinesesimp>
+            <Japanese>2名の逃亡者が島からの脱出を試みている。情報によると、彼らはスピードボートが待機している沿岸の脱出地点に向かっている。</Japanese>
+            <Portuguese>Dois fugitivos tentam fugir da ilha. A inteligência indica que eles estão indo para pontos de extração costeiros onde lanchas os aguardam.</Portuguese>
+            <Korean>두 명의 탈옥수가 섬을 탈출하려고 합니다. 정보에 따르면 그들은 스피드보트가 기다리고 있는 해안 탈출 지점으로 향하고 있습니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T1_THREAT_TEXT">
+            <English>Both fugitives are confirmed armed (P07) and hostile. Exercise extreme caution.</English>
+            <French>Les deux fugitifs sont confirmés armés (P07) et hostiles. Soyez extrêmement prudents.</French>
+            <German>Beide Flüchtigen sind bestätigt bewaffnet (P07) und feindselig. Äußerste Vorsicht ist geboten.</German>
+            <Spanish>Ambos fugitivos están confirmados como armados (P07) y hostiles. Tenga extrema precaución.</Spanish>
+            <Italian>Entrambi i fuggitivi sono armati (P07) e ostili. Esercitare estrema cautela.</Italian>
+            <Russian>Оба беглеца вооружены (P07) и враждебны. Соблюдать предельную осторожность.</Russian>
+            <Polish>Obaj zbiegowie są uzbrojeni (P07) i wrogo nastawieni. Zachować szczególną ostrożność.</Polish>
+            <Czech>Oba uprchlíci jsou ozbrojeni (P07) a nepřátelští. Dbejte zvýšené opatrnosti.</Czech>
+            <Turkish>Her iki kaçağın da silahlı (P07) ve düşman olduğu doğrulandı. Azami dikkat gösterin.</Turkish>
+            <Chinese>已确认两名逃犯均持有武器 (P07) 且具有敌意。请务必小心。</Chinese>
+            <Chinesesimp>已确认两名逃犯均持有武器 (P07) 且具有敌意。请务必小心。</Chinesesimp>
+            <Japanese>逃亡者は両名とも武装（P07）しており、敵対的であると確認されている。厳重な警戒を。</Japanese>
+            <Portuguese>Ambos os fugitivos estão armados (P07) e são hostis. Tenha extremo cuidado.</Portuguese>
+            <Korean>두 탈옥수 모두 무장(P07)하고 적대적인 것으로 확인되었습니다. 각별히 주의하십시오.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T1_MISSION">
+            <English>Locate, intercept, and neutralize both fugitives before they can leave territorial waters.</English>
+            <French>Localiser, intercepter et neutraliser les deux fugitifs avant qu&apos;ils ne parviennent à quitter les eaux territoriales.</French>
+            <German>Lokalisieren, Abfangen und Neutralisieren beider Flüchtigen, bevor sie die Hoheitsgewässer verlassen können.</German>
+            <Spanish>Localizar, interceptar y neutralizar a ambos fugitivos antes de que puedan abandonar las aguas territoriales.</Spanish>
+            <Italian>Localizzare, intercettare e neutralizzare entrambi i fuggitivi prima che possano lasciare le acque territoriali.</Italian>
+            <Russian>Обнаружить, перехватить и нейтрализовать обоих беглецов до того, как они покинут территориальные воды.</Russian>
+            <Polish>Zlokalizować, przechwycić i zneutralizować obu zbiegów, zanim opuszczą wody terytorialne.</Polish>
+            <Czech>Lokalizujte, zachyťte a zneškodněte oba uprchlíky dříve, než opustí teritoriální vody.</Czech>
+            <Turkish>Her iki kaçağı da karasularını terk etmeden önce bulun, durdurun ve etkisiz hale getirin.</Turkish>
+            <Chinese>在两名逃犯离开领海之前定位、拦截并消灭他们。</Chinese>
+            <Chinesesimp>在两名逃犯离开领海之前定位、拦截并消灭他们。</Chinesesimp>
+            <Japanese>両名の逃亡者が領海を出る前に位置を特定し、迎撃、無力化せよ。</Japanese>
+            <Portuguese>Localize, intercepte e neutralize ambos os fugitivos antes que possam sair das águas territoriais.</Portuguese>
+            <Korean>영해를 벗어나기 전에 두 탈옥수의 위치를 파악하고, 차단하고, 무력화하십시오.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T1_EXE_A_TITLE">
+            <English>a. Surveillance</English>
+            <French>a. Surveillance</French>
+            <German>a. Überwachung</German>
+            <Spanish>a. Vigilancia</Spanish>
+            <Italian>a. Sorveglianza</Italian>
+            <Russian>а. Наблюдение</Russian>
+            <Polish>a. Obserwacja</Polish>
+            <Czech>a. Dohled</Czech>
+            <Turkish>a. Gözetim</Turkish>
+            <Chinese>a. 监视</Chinese>
+            <Chinesesimp>a. 监视</Chinesesimp>
+            <Japanese>a. 監視</Japanese>
+            <Portuguese>a. Vigilância</Portuguese>
+            <Korean>a. 감시</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T1_EXE_A_TEXT">
+            <English>Command has activated satellite tracking. Target positions will be marked on your map with a RED marker (&apos;FUGITIVE&apos;).</English>
+            <French>Le commandement a activé le suivi satellite. La position des cibles sera marquée sur votre carte par un marqueur &lt;font color=&apos;#FF0000&apos;&gt;ROUGE&lt;/font&gt; (&apos;FUGITIVE&apos;).</French>
+            <German>Das Kommando hat die Satellitenverfolgung aktiviert. Zielpositionen werden auf Ihrer Karte mit einer ROTEN Markierung (&apos;FLÜCHTIG&apos;) angezeigt.</German>
+            <Spanish>El mando ha activado el rastreo satelital. Las posiciones se marcarán en su mapa con un marcador ROJO (&apos;FUGITIVO&apos;).</Spanish>
+            <Italian>Il comando ha attivato il tracciamento satellitare. Le posizioni saranno segnate sulla mappa con un marcatore ROSSO (&apos;FUGGITIVO&apos;).</Italian>
+            <Russian>Командование активировало спутниковое слежение. Позиции целей будут отмечены на карте КРАСНЫМ маркером (&apos;БЕГЛЕЦ&apos;).</Russian>
+            <Polish>Dowództwo aktywowało śledzenie satelitarne. Pozycje celów zostaną oznaczone na mapie CZERWONYM znacznikiem (&apos;ZBIEG&apos;).</Polish>
+            <Czech>Velitelství aktivovalo satelitní sledování. Pozice cílů budou na vaší mapě označeny ČERVENÝM značkovačem (&apos;UPRCHLÍK&apos;).</Czech>
+            <Turkish>Komuta, uydu takibini etkinleştirdi. Hedef konumları haritanızda KIRMIZI bir işaretleyici (&apos;KAÇAK&apos;) ile işaretlenecektir.</Turkish>
+            <Chinese>指挥部已启动卫星追踪。目标位置将在您的地图上以红色标记（“逃犯”）标出。</Chinese>
+            <Chinesesimp>指挥部已启动卫星追踪。目标位置将在您的地图上以红色标记（“逃犯”）标出。</Chinesesimp>
+            <Japanese>司令部は衛星追跡を有効化した。目標の位置はマップ上に赤色のマーカー（「逃亡者」）で表示される。</Japanese>
+            <Portuguese>O comando ativou o rastreamento por satélite. As posições dos alvos serão marcadas no seu mapa com um marcador VERMELHO (&apos;FUGITIVO&apos;).</Portuguese>
+            <Korean>사령부에서 위성 추적을 활성화했습니다. 목표 위치는 지도에 빨간색 마커(&apos;탈옥수&apos;)로 표시됩니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T1_NOTE_TECH">
+            <English>TECH NOTE: Satellite link is unstable. Position updates have variable delay (15-120s). Do not rely solely on the marker!</English>
+            <French>NOTE TECH : Le lien satellite est instable. La position est mise à jour avec un délai variable (entre 15 et 120 secondes). Ne vous fiez pas uniquement au marqueur !</French>
+            <German>TECH NOTIZ: Satellitenverbindung instabil. Positionsupdates haben variable Verzögerung (15-120s). Verlassen Sie sich nicht nur auf den Marker!</German>
+            <Spanish>NOTA TÉCNICA: Enlace satelital inestable. Actualizaciones de posición con retraso variable (15-120s). ¡No confíe solo en el marcador!</Spanish>
+            <Italian>NOTA TECNICA: Collegamento satellitare instabile. Aggiornamenti posizione con ritardo variabile (15-120s). Non affidatevi solo al marcatore!</Italian>
+            <Russian>ТЕХ ПРИМЕЧАНИЕ: Спутниковая связь нестабильна. Обновление позиции с задержкой (15-120с). Не полагайтесь только на маркер!</Russian>
+            <Polish>UWAGA TECH: Łącze satelitarne niestabilne. Aktualizacje pozycji z opóźnieniem (15-120s). Nie polegaj wyłącznie na znaczniku!</Polish>
+            <Czech>TECHNICKÁ POZNÁMKA: Satelitní spojení je nestabilní. Aktualizace polohy mají proměnlivé zpoždění (15-120s). Nespoléhejte se pouze na značku!</Czech>
+            <Turkish>TEKNİK NOT: Uydu bağlantısı kararsız. Konum güncellemeleri değişken gecikmeye sahip (15-120s). Sadece işaretleyiciye güvenmeyin!</Turkish>
+            <Chinese>技术说明：卫星链路不稳定。位置更新有可变延迟（15-120秒）。不要完全依赖标记！</Chinese>
+            <Chinesesimp>技术说明：卫星链路不稳定。位置更新有可变延迟（15-120秒）。不要完全依赖标记！</Chinesesimp>
+            <Japanese>技術メモ：衛星リンクは不安定。位置情報の更新には可変の遅延（15-120秒）がある。マーカーだけに頼らないこと！</Japanese>
+            <Portuguese>NOTA TÉCNICA: O link de satélite está instável. As atualizações de posição têm atraso variável (15-120s). Não confie apenas no marcador!</Portuguese>
+            <Korean>기술 참고: 위성 링크가 불안정합니다. 위치 업데이트에 가변적인 지연(15-120초)이 있습니다. 마커에만 의존하지 마십시오!</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T1_EXE_B_TITLE">
+            <English>b. Intervention</English>
+            <French>b. Intervention</French>
+            <German>b. Zugriff</German>
+            <Spanish>b. Intervención</Spanish>
+            <Italian>b. Intervento</Italian>
+            <Russian>б. Перехват</Russian>
+            <Polish>b. Interwencja</Polish>
+            <Czech>b. Zásah</Czech>
+            <Turkish>b. Müdahale</Turkish>
+            <Chinese>b. 干预</Chinese>
+            <Chinesesimp>b. 干预</Chinesesimp>
+            <Japanese>b. 介入</Japanese>
+            <Portuguese>b. Intervenção</Portuguese>
+            <Korean>b. 개입</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T1_EXE_B_TEXT">
+            <English>Deploy rapidly to cut off their route to the sea. If fugitives reach the boats, they will be very hard to stop.</English>
+            <French>Déployez-vous rapidement pour couper leur route vers la mer. Si les fugitifs atteignent les bateaux, ils seront très difficiles à arrêter.</French>
+            <German>Verlegen Sie schnell, um ihren Weg zum Meer abzuschneiden. Wenn sie die Boote erreichen, sind sie schwer zu stoppen.</German>
+            <Spanish>Despliéguense rápidamente para cortar su ruta al mar. Si alcanzan los botes, serán muy difíciles de detener.</Spanish>
+            <Italian>Schieratevi rapidamente per tagliare la loro via verso il mare. Se raggiungono le barche, sarà difficile fermarli.</Italian>
+            <Russian>Развернитесь быстро, чтобы отрезать путь к морю. Если беглецы доберутся до катеров, остановить их будет трудно.</Russian>
+            <Polish>Rozwińcie się szybko, by odciąć drogę do morza. Jeśli zbiegowie dotrą do łodzi, trudno będzie ich zatrzymać.</Polish>
+            <Czech>Rychle se rozmístěte, abyste jim odřízli cestu k moři. Pokud uprchlíci dosáhnou lodí, bude velmi těžké je zastavit.</Czech>
+            <Turkish>Denize giden yollarını kesmek için hızla konuşlanın. Kaçaklar teknelere ulaşırsa, onları durdurmak çok zor olacaktır.</Turkish>
+            <Chinese>迅速部署以切断他们通往大海的路线。如果逃犯到达船只，将很难阻止他们。</Chinese>
+            <Chinesesimp>迅速部署以切断他们通往大海的路线。如果逃犯到达船只，将很难阻止他们。</Chinesesimp>
+            <Japanese>海への経路を遮断するため、迅速に展開せよ。逃亡者がボートに到達した場合、阻止は非常に困難になる。</Japanese>
+            <Portuguese>Desloquem-se rapidamente para cortar a rota deles para o mar. Se os fugitivos chegarem aos barcos, será muito difícil pará-los.</Portuguese>
+            <Korean>신속하게 배치하여 바다로 가는 경로를 차단하십시오. 탈옥수가 보트에 도달하면 저지하기가 매우 어려울 것입니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T1_ROE_TITLE">
+            <English>c. Rules of Engagement (ROE)</English>
+            <French>c. Règles d&apos;Engagement (ROE)</French>
+            <German>c. Einsatzregeln (ROE)</German>
+            <Spanish>c. Reglas de Enfrentamiento (ROE)</Spanish>
+            <Italian>c. Regole di Ingaggio (ROE)</Italian>
+            <Russian>в. Правила ведения боя (ROE)</Russian>
+            <Polish>c. Zasady użycia siły (ROE)</Polish>
+            <Czech>c. Pravidla nasazení (ROE)</Czech>
+            <Turkish>c. Angajman Kuralları (ROE)</Turkish>
+            <Chinese>c. 交战规则 (ROE)</Chinese>
+            <Chinesesimp>c. 交战规则 (ROE)</Chinesesimp>
+            <Japanese>c. 交戦規定 (ROE)</Japanese>
+            <Portuguese>c. Regras de Engajamento (ROE)</Portuguese>
+            <Korean>c. 교전 수칙 (ROE)</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T1_ROE_1">
+            <English>CAPTURE : If a fugitive surrenders (hands on head or kneeling), use the neutralize action to secure him.</English>
+            <French>CAPTURE : Si un fugitif se rend (mains sur la tête ou à genoux), utilisez l&apos;action de neutralisation pour le sécuriser.</French>
+            <German>FESTNAHME : Wenn sich ein Flüchtiger ergibt, nutzen Sie die Neutralisierungsaktion.</German>
+            <Spanish>CAPTURA : Si un fugitivo se rinde, use la acción de neutralizar para asegurarlo.</Spanish>
+            <Italian>CATTURA : Se un fuggitivo si arrende, usa l&apos;azione di neutralizzazione.</Italian>
+            <Russian>ЗАХВАТ : Если беглец сдается, используйте действие нейтрализации.</Russian>
+            <Polish>POJMANIE : Jeśli zbieg się poddaje, użyj akcji neutralizacji.</Polish>
+            <Czech>ZACHYCENÍ: Pokud se uprchlík vzdá (ruce na hlavě nebo klečí), použijte akci neutralizace k jeho zajištění.</Czech>
+            <Turkish>YAKALAMA: Eğer bir kaçak teslim olursa (elleri başının üstünde veya diz çökmüş), onu etkisiz hale getirme eylemini kullanarak emniyete alın.</Turkish>
+            <Chinese>抓捕：如果逃犯投降（双手抱头或跪下），使用“中和”行动来制服他。</Chinese>
+            <Chinesesimp>抓捕：如果逃犯投降（双手抱头或跪下），使用“中和”行动来制服他。</Chinesesimp>
+            <Japanese>捕獲：逃亡者が投降した場合（頭に手を置くか跪く）、無力化アクションを使用して確保せよ。</Japanese>
+            <Portuguese>CAPTURA: Se um fugitivo se render (mãos na cabeça ou ajoelhado), use a ação de neutralizar para o prender.</Portuguese>
+            <Korean>포획 : 탈옥수가 항복(손을 머리 위로 올리거나 무릎을 꿇음)하면 무력화 동작을 사용하여 그를 확보하십시오.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T1_ROE_2">
+            <English>LETHAL : Fire authorized on weapon bearers or if escape is imminent and otherwise unstoppable.</English>
+            <French>LETHAL : Tir autorisé sur porteur d&apos;arme ou si la fuite est imminente et inarrêtable autrement.</French>
+            <German>TÖDLICH : Feuerfreigabe auf Waffenträger oder wenn Flucht unmittelbar droht.</German>
+            <Spanish>LETAL : Fuego autorizado sobre portadores de armas o si la fuga es inminente.</Spanish>
+            <Italian>LETALE : Fuoco autorizzato su portatori di armi o se la fuga è imminente.</Italian>
+            <Russian>ЛЕТАЛЬНО : Огонь разрешен по вооруженным или при угрозе побега.</Russian>
+            <Polish>UŻYCIE BRONI : Ogień dozwolony do uzbrojonych lub w razie nieuchronnej ucieczki.</Polish>
+            <Czech>SMRTELNÉ: Střelba povolena na ozbrojené osoby nebo pokud je útěk bezprostřední a jinak nezastavitelný.</Czech>
+            <Turkish>ÖLÜMCÜL: Silah taşıyanlara veya kaçışın yakın ve başka türlü durdurulamaz olduğu durumlarda ateş açma yetkisi verilmiştir.</Turkish>
+            <Chinese>致命：对持武器者或在逃跑迫在眉睫且无法阻止的情况下，授权开火。</Chinese>
+            <Chinesesimp>致命：对持武器者或在逃跑迫在眉睫且无法阻止的情况下，授权开火。</Chinesesimp>
+            <Japanese>致死：武器を所持している者、または逃走が差し迫っており、他に阻止する方法がない場合に発砲を許可する。</Japanese>
+            <Portuguese>LETAL: Fogo autorizado contra portadores de armas ou se a fuga for iminente e imparável.</Portuguese>
+            <Korean>치명적 : 무기 소지자나 탈출이 임박하고 다른 방법으로 저지할 수 없는 경우 사격이 허용됩니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T1_ROE_3">
+            <English>FAILURE : Mission fails immediately if even ONE fugitive escapes by sea.</English>
+            <French>ÉCHEC : La mission échoue immédiatement si UN seul fugitif parvient à s&apos;échapper en mer.</French>
+            <German>FEHLSCHLAG : Mission scheitert sofort, wenn auch nur EIN Flüchtiger entkommt.</German>
+            <Spanish>FALLO : Misión fallida inmediatamente si UN solo fugitivo escapa.</Spanish>
+            <Italian>FALLIMENTO : La missione fallisce se anche un solo fuggitivo scappa.</Italian>
+            <Russian>ПРОВАЛ : Миссия провалена, если сбежит хотя бы ОДИН беглец.</Russian>
+            <Polish>PORAŻKA : Misja kończy się porażką, jeśli ucieknie choć JEDEN zbieg.</Polish>
+            <Czech>SELHÁNÍ: Mise okamžitě selže, pokud se byť jen JEDEN uprchlík dostane na moře.</Czech>
+            <Turkish>BAŞARISIZLIK: Tek bir kaçak bile deniz yoluyla kaçarsa görev hemen başarısız olur.</Turkish>
+            <Chinese>失败：如果哪怕只有一名逃犯通过海路逃脱，任务将立即失败。</Chinese>
+            <Chinesesimp>失败：如果哪怕只有一名逃犯通过海路逃脱，任务将立即失败。</Chinesesimp>
+            <Japanese>失敗：たった1名の逃亡者でも海から脱出した場合、任務は即座に失敗となる。</Japanese>
+            <Portuguese>FALHA: A missão falha imediatamente se mesmo UM fugitivo escapar pelo mar.</Portuguese>
+            <Korean>실패 : 탈옥수 중 한 명이라도 바다로 탈출하면 임무는 즉시 실패합니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_SIG_RED">
+            <English>RED MARKER:</English>
+            <French>MARQUEUR ROUGE :</French>
+            <German>ROTE MARKIERUNG:</German>
+            <Spanish>MARCADOR ROJO:</Spanish>
+            <Italian>MARCATORE ROSSO:</Italian>
+            <Russian>КРАСНЫЙ МАРКЕР:</Russian>
+            <Polish>CZERWONY ZNACZNIK:</Polish>
+            <Czech>ČERVENÁ ZNAČKA:</Czech>
+            <Turkish>KIRMIZI İŞARET:</Turkish>
+            <Chinese>红色标记：</Chinese>
+            <Chinesesimp>红色标记：</Chinesesimp>
+            <Japanese>赤色マーカー：</Japanese>
+            <Portuguese>MARCADOR VERMELHO:</Portuguese>
+            <Korean>빨간 마커:</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_SIG_BLUE">
+            <English>BLUE MARKER:</English>
+            <French>MARQUEUR BLEU :</French>
+            <German>BLAUE MARKIERUNG:</German>
+            <Spanish>MARCADOR AZUL:</Spanish>
+            <Italian>MARCATORE BLU:</Italian>
+            <Russian>СИНИЙ МАРКЕР:</Russian>
+            <Polish>NIEBIESKI ZNACZNIK:</Polish>
+            <Czech>MODRÁ ZNAČKA:</Czech>
+            <Turkish>MAVİ İŞARET:</Turkish>
+            <Chinese>蓝色标记：</Chinese>
+            <Chinesesimp>蓝色标记：</Chinesesimp>
+            <Japanese>青色マーカー：</Japanese>
+            <Portuguese>MARCADOR AZUL:</Portuguese>
+            <Korean>파란 마커:</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_SIG_YELLOW">
+            <English>YELLOW MARKER:</English>
+            <French>MARQUEUR JAUNE :</French>
+            <German>GELBE MARKIERUNG:</German>
+            <Spanish>MARCADOR AMARILLO:</Spanish>
+            <Italian>MARCATORE GIALLO:</Italian>
+            <Russian>ЖЕЛТЫЙ МАРКЕР:</Russian>
+            <Polish>ŻÓŁTY ZNACZNIK:</Polish>
+            <Czech>ŽLUTÁ ZNAČKA:</Czech>
+            <Turkish>SARI İŞARET:</Turkish>
+            <Chinese>黄色标记：</Chinese>
+            <Chinesesimp>黄色标记：</Chinesesimp>
+            <Japanese>黄色マーカー：</Japanese>
+            <Portuguese>MARCADOR AMARELO:</Portuguese>
+            <Korean>노란 마커:</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T1_SIG_RED_TEXT">
+            <English>Last known position (Fugitive).</English>
+            <French>Dernière position connue (Fugitif).</French>
+            <German>Letzte bekannte Position (Flüchtiger).</German>
+            <Spanish>Última posición conocida (Fugitivo).</Spanish>
+            <Italian>Ultima posizione nota (Fuggitivo).</Italian>
+            <Russian>Последняя известная позиция (Беглец).</Russian>
+            <Polish>Ostatnia znana pozycja (Zbieg).</Polish>
+            <Czech>Poslední známá pozice (Uprchlík).</Czech>
+            <Turkish>Bilinen son konum (Kaçak).</Turkish>
+            <Chinese>最后已知位置（逃犯）。</Chinese>
+            <Chinesesimp>最后已知位置（逃犯）。</Chinesesimp>
+            <Japanese>最終確認位置（逃亡者）。</Japanese>
+            <Portuguese>Última posição conhecida (Fugitivo).</Portuguese>
+            <Korean>마지막으로 알려진 위치 (탈옥수).</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T1_SIG_BLUE_TEXT">
+            <English>Fugitive captured.</English>
+            <French>Fugitif capturé.</French>
+            <German>Flüchtiger gefasst.</German>
+            <Spanish>Fugitivo capturado.</Spanish>
+            <Italian>Fuggitivo catturato.</Italian>
+            <Russian>Беглец захвачен.</Russian>
+            <Polish>Zbieg pojmany.</Polish>
+            <Czech>Uprchlík zajat.</Czech>
+            <Turkish>Kaçak yakalandı.</Turkish>
+            <Chinese>逃犯被捕。</Chinese>
+            <Chinesesimp>逃犯被捕。</Chinesesimp>
+            <Japanese>逃亡者捕獲。</Japanese>
+            <Portuguese>Fugitivo capturado.</Portuguese>
+            <Korean>탈옥수 생포.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T1_SIG_YELLOW_TEXT">
+            <English>Fugitive eliminated.</English>
+            <French>Fugitif éliminé.</French>
+            <German>Flüchtiger eliminiert.</German>
+            <Spanish>Fugitivo eliminado.</Spanish>
+            <Italian>Fuggitivo eliminato.</Italian>
+            <Russian>Беглец ликвидирован.</Russian>
+            <Polish>Zbieg wyeliminowany.</Polish>
+            <Czech>Uprchlík zlikvidován.</Czech>
+            <Turkish>Kaçak etkisiz hale getirildi.</Turkish>
+            <Chinese>逃犯被消灭。</Chinese>
+            <Chinesesimp>逃犯被消灭。</Chinesesimp>
+            <Japanese>逃亡者排除。</Japanese>
+            <Portuguese>Fugitivo eliminado.</Portuguese>
+            <Korean>탈옥수 제거됨.</Korean>
+        </Key><!-- TASK 2 -->
+        <Key ID="STR_BRIEF_T2_OP_TITLE">
+            <English>OP ORDER: DOCUMENT RETRIEVAL</English>
+            <French>ORDRE D&apos;OPÉRATION : OBTENTION DE DOCUMENTS</French>
+            <German>OP BEFEHL: DOKUMENTENSICHERUNG</German>
+            <Spanish>ORDEN OP: RECUPERACIÓN DE DOCUMENTOS</Spanish>
+            <Italian>ORDINE OP: RECUPERO DOCUMENTI</Italian>
+            <Russian>БОЕВОЙ ПРИКАЗ: ИЗЪЯТИЕ ДОКУМЕНТОВ</Russian>
+            <Polish>ROZKAZ OP: ODZYSKANIE DOKUMENTÓW</Polish>
+            <Czech>ROZKAZ OP: ZÍSKÁNÍ DOKUMENTŮ</Czech>
+            <Turkish>OP EMRİ: BELGE ALIMI</Turkish>
+            <Chinese>行动指令：文件回收</Chinese>
+            <Chinesesimp>行动指令：文件回收</Chinesesimp>
+            <Japanese>作戦命令：文書回収</Japanese>
+            <Portuguese>ORDEM OP: RECUPERAÇÃO DE DOCUMENTOS</Portuguese>
+            <Korean>작전 명령: 문서 회수</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T2_SITUATION">
+            <English>Three high-ranking enemy officers (Colonel rank) are overseeing operations in the sector. One of them possesses classified documents.</English>
+            <French>Trois officiers ennemis de haut rang (Grade Colonel) supervisent les opérations dans le secteur. L&apos;un d&apos;eux possède des documents classés secret défense.</French>
+            <German>Drei hochrangige feindliche Offiziere (Rang Oberst) überwachen die Operationen im Sektor. Einer von ihnen besitzt geheime Dokumente.</German>
+            <Spanish>Tres oficiales enemigos de alto rango (Coronel) supervisan las operaciones en el sector. Uno de ellos posee documentos clasificados.</Spanish>
+            <Italian>Tre ufficiali nemici di alto rango (Colonnello) supervisionano le operazioni nel settore. Uno di loro possiede documenti classificati.</Italian>
+            <Russian>Три высокопоставленных офицера (полковники) руководят операциями в секторе. У одного из них есть секретные документы.</Russian>
+            <Polish>Trzech wysokich rangą oficerów wroga (pułkownicy) nadzoruje operacje w sektorze. Jeden z nich posiada tajne dokumenty.</Polish>
+            <Czech>Tři vysoce postavení nepřátelští důstojníci (hodnost plukovník) dohlížejí na operace v sektoru. Jeden z nich má tajné dokumenty.</Czech>
+            <Turkish>Sektördeki operasyonları üç üst düzey düşman subayı (Albay rütbesi) denetliyor. Onlardan biri gizli belgelere sahip.</Turkish>
+            <Chinese>三名敌军高级军官（上校军衔）正在该扇区监督行动。其中一人持有机密文件。</Chinese>
+            <Chinesesimp>三名敌军高级军官（上校军衔）正在该扇区监督行动。其中一人持有机密文件。</Chinesesimp>
+            <Japanese>3名の敵高官（大佐階級）がこの区域の作戦を監督している。そのうちの1名が機密文書を所持している。</Japanese>
+            <Portuguese>Três oficiais inimigos de alta patente (Coronel) supervisionam operações no setor. Um deles possui documentos classificados.</Portuguese>
+            <Korean>세 명의 고위 적 장교(대령 계급)가 해당 구역의 작전을 감독하고 있습니다. 그 중 한 명은 기밀 문서를 소지하고 있습니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T2_THREAT_TEXT">
+            <English>Each officer is escorted by a close protection detail of 8 elite soldiers. They patrol a 50m perimeter around their position.</English>
+            <French>Chaque officier est escorté par une garde rapprochée de 8 soldats d&apos;élite. Ils patrouillent un périmètre de 50m autour de leur position.</French>
+            <German>Jeder Offizier wird von 8 Elitesoldaten eskortiert. Sie patrouillieren in einem Radius von 50m um ihre Position.</German>
+            <Spanish>Cada oficial es escoltado por un equipo de protección de 8 soldados de élite. Patrullan un perímetro de 50m alrededor de su posición.</Spanish>
+            <Italian>Ogni ufficiale è scortato da una scorta di 8 soldati d&apos;élite. Pattugliano un perimetro di 50m attorno alla loro posizione.</Italian>
+            <Russian>Каждого офицера охраняет отряд из 8 элитных солдат. Они патрулируют периметр 50м вокруг позиции.</Russian>
+            <Polish>Każdy oficer jest eskortowany przez 8 elitarnych żołnierzy. Patrolują w promieniu 50m od swojej pozycji.</Polish>
+            <Czech>Každý důstojník je doprovázen ochrankou 8 elitních vojáků. Hlídkují v okruhu 50 m kolem své pozice.</Czech>
+            <Turkish>Her subay, 8 elit askerden oluşan bir yakın koruma ekibi tarafından korunuyor. Konumlarının etrafında 50 metrelik bir çevrede devriye geziyorlar.</Turkish>
+            <Chinese>每名军官都有 8 名精锐士兵贴身保护。他们在周围 50 米范围内巡逻。</Chinese>
+            <Chinesesimp>每名军官都有 8 名精锐士兵贴身保护。他们在周围 50 米范围内巡逻。</Chinesesimp>
+            <Japanese>各将校は8名の精鋭兵による警護部隊に守られている。彼らは位置周辺50mの範囲をパトロールしている。</Japanese>
+            <Portuguese>Cada oficial é escoltado por um detalhe de proteção de 8 soldados de elite. Eles patrulham um perímetro de 50m ao redor de sua posição.</Portuguese>
+            <Korean>각 장교는 8명의 정예 병사로 구성된 근접 경호대의 호위를 받습니다. 그들은 위치 주변 50m 반경을 순찰합니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T2_MISSION">
+            <English>Identify the target, neutralize officers if necessary, and retrieve the documents.</English>
+            <French>Identifier la cible, neutraliser les officiers si nécessaire et récupérer les documents.</French>
+            <German>Ziel identifizieren, Offiziere wenn nötig neutralisieren und Dokumente sicherstellen.</German>
+            <Spanish>Identificar el objetivo, neutralizar oficiales si es necesario y recuperar los documentos.</Spanish>
+            <Italian>Identificare il bersaglio, neutralizzare gli ufficiali se necessario e recuperare i documenti.</Italian>
+            <Russian>Идентифицировать цель, при необходимости нейтрализовать офицеров и изъять документы.</Russian>
+            <Polish>Zidentyfikować cel, zneutralizować oficerów w razie potrzeby i odzyskać dokumenty.</Polish>
+            <Czech>Identifikujte cíl, v případě potřeby zneškodněte důstojníky a získejte dokumenty.</Czech>
+            <Turkish>Hedefi belirleyin, gerekirse subayları etkisiz hale getirin ve belgeleri alın.</Turkish>
+            <Chinese>确认目标，必要时消灭军官，并回收文件。</Chinese>
+            <Chinesesimp>确认目标，必要时消灭军官，并回收文件。</Chinesesimp>
+            <Japanese>標的を特定し、必要であれば将校を無力化し、文書を回収せよ。</Japanese>
+            <Portuguese>Identifique o alvo, neutralize os oficiais se necessário e recupere os documentos.</Portuguese>
+            <Korean>목표를 식별하고, 필요한 경우 장교를 무력화하고, 문서를 회수하십시오.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T2_EXE_A_TEXT">
+            <English>Three probable positions identified (Red &apos;TARGET&apos; markers). The document holder is unknown prior to engagement.</English>
+            <French>Trois positions probables ont été identifiées (Marqueurs &apos;TARGET&apos; rouges). L&apos;officier porteur des documents est inconnu avant engagement.</French>
+            <German>Drei wahrscheinliche Positionen identifiziert (Rote &apos;TARGET&apos; Marker). Der Dokumententräger ist vor dem Gefecht unbekannt.</German>
+            <Spanish>Tres posiciones probables identificadas (Marcadores &apos;TARGET&apos; rojos). Se desconoce quién porta los documentos antes del enfrentamiento.</Spanish>
+            <Italian>Tre posizioni probabili identificate (Marcatori &apos;TARGET&apos; rossi). Il portatore dei documenti è sconosciuto prima dell&apos;ingaggio.</Italian>
+            <Russian>Выявлено три вероятные позиции (Красные маркеры &apos;TARGET&apos;). Владелец документов неизвестен до начала боя.</Russian>
+            <Polish>Zidentyfikowano trzy prawdopodobne pozycje (Czerwone znaczniki &apos;TARGET&apos;). Posiadacz dokumentów nie jest znany przed walką.</Polish>
+            <Czech>Identifikovány tři pravděpodobné pozice (červené značky &apos;TARGET&apos;). Držitel dokumentu není před bojem znám.</Czech>
+            <Turkish>Üç olası konum belirlendi (Kırmızı &apos;HEDEF&apos; işaretleri). Belge sahibi çatışmadan önce bilinmiyor.</Turkish>
+            <Chinese>已确定三个可能的去向（红色“目标”标记）。交战前未知文件持有者。</Chinese>
+            <Chinesesimp>已确定三个可能的去向（红色“目标”标记）。交战前未知文件持有者。</Chinesesimp>
+            <Japanese>3つの予想位置が特定された（赤色の「TARGET」マーカー）。交戦前、誰が文書を所持しているかは不明である。</Japanese>
+            <Portuguese>Três posições prováveis identificadas (Marcadores vermelhos &apos;TARGET&apos;). O portador do documento é desconhecido antes do engajamento.</Portuguese>
+            <Korean>세 개의 예상 위치가 식별되었습니다(빨간색 &apos;TARGET&apos; 마커). 교전 전에는 문서 소지자를 알 수 없습니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T2_EXE_B_TITLE">
+            <English>b. Action on Objective</English>
+            <French>b. Action sur objectif</French>
+            <German>b. Aktion am Ziel</German>
+            <Spanish>b. Acción en el objetivo</Spanish>
+            <Italian>b. Azione sull&apos;obiettivo</Italian>
+            <Russian>б. Действия на цели</Russian>
+            <Polish>b. Działanie na celu</Polish>
+            <Czech>b. Akce na cíl</Czech>
+            <Turkish>b. Hedef Üzerinde Eylem</Turkish>
+            <Chinese>b. 目标行动</Chinese>
+            <Chinesesimp>b. 目标行动</Chinesesimp>
+            <Japanese>b. 目標地点での行動</Japanese>
+            <Portuguese>b. Ação no Objetivo</Portuguese>
+            <Korean>b. 목표 지점에서의 행동</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T2_EXE_B_TEXT">
+            <English>- Neutralize guards and officers.<br/>- Once the carrier is killed, documents will be near the body.</English>
+            <French>- Neutraliser les gardes et l&apos;officier.<br/>- Une fois l&apos;officier porteur tué, les documents seront à proximité de son corps.</French>
+            <German>- Wachen und Offizier neutralisieren.<br/>- Sobald der Träger getötet ist, liegen die Dokumente in der Nähe seiner Leiche.</German>
+            <Spanish>- Neutralizar guardias y oficiales.<br/>- Una vez abatido el portador, los documentos estarán cerca de su cuerpo.</Spanish>
+            <Italian>- Neutralizzare guardie e ufficiali.<br/>- Una volta ucciso il portatore, i documenti saranno vicino al corpo.</Italian>
+            <Russian>- Нейтрализовать охрану и офицеров.<br/>- После убийства носителя документы будут рядом с телом.</Russian>
+            <Polish>- Zneutralizować strażników i oficerów.<br/>- Po zabiciu posiadacza dokumenty będą przy ciele.</Polish>
+            <Czech>- Zneškodněte stráže a důstojníky.<br/>- Jakmile je nositel zabit, dokumenty budou v blízkosti jeho těla.</Czech>
+            <Turkish>- Korumaları ve subayları etkisiz hale getirin.<br/>- Taşıyıcı öldürüldüğünde, belgeler cesedin yakınında olacaktır.</Turkish>
+            <Chinese>- 消灭守卫和军官。<br/>- 携带者被击毙后，文件会在其尸体附近。</Chinese>
+            <Chinesesimp>- 消灭守卫和军官。<br/>- 携带者被击毙后，文件会在其尸体附近。</Chinesesimp>
+            <Japanese>- 警備兵と将校を無力化せよ。<br/>- 所持者が死亡すると、遺体の近くに文書が現れる。</Japanese>
+            <Portuguese>- Neutralize guardas e oficiais.<br/>- Assim que o portador for morto, os documentos estarão perto do corpo.</Portuguese>
+            <Korean>- 경비병과 장교를 무력화하십시오.<br/>- 소지자가 사망하면 문서는 시신 근처에 있을 것입니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_HEADER_RECOVERY">
+            <English>RECOVERY:</English>
+            <French>RÉCUPÉRATION :</French>
+            <German>BERGUNG:</German>
+            <Spanish>RECUPERACIÓN:</Spanish>
+            <Italian>RECUPERO:</Italian>
+            <Russian>ИЗЪЯТИЕ:</Russian>
+            <Polish>ODZYSKANIE:</Polish>
+            <Czech>ZÍSKÁNÍ:</Czech>
+            <Turkish>ALMA:</Turkish>
+            <Chinese>回收：</Chinese>
+            <Chinesesimp>回收：</Chinesesimp>
+            <Japanese>回収：</Japanese>
+            <Portuguese>RECUPERAÇÃO:</Portuguese>
+            <Korean>회수:</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T2_RECOVERY_TEXT">
+            <English>Interact with the officer&apos;s body to retrieve the documents.</English>
+            <French>Interagissez avec le corps de l&apos;officier pour récupérer les documents.</French>
+            <German>Interagieren Sie mit der Leiche des Offiziers, um die Dokumente zu bergen.</German>
+            <Spanish>Interactúe con el cuerpo del oficial para recuperar los documentos.</Spanish>
+            <Italian>Interagisci con il corpo dell&apos;ufficiale per recuperare i documenti.</Italian>
+            <Russian>Взаимодействуйте с телом офицера, чтобы забрать документы.</Russian>
+            <Polish>Wejdź w interakcję z ciałem oficera, aby odzyskać dokumenty.</Polish>
+            <Czech>Interagujte s tělem důstojníka a získejte dokumenty.</Czech>
+            <Turkish>Belgeleri almak için subayın cesediyle etkileşime geçin.</Turkish>
+            <Chinese>与军官尸体互动以取回文件。</Chinese>
+            <Chinesesimp>与军官尸体互动以取回文件。</Chinesesimp>
+            <Japanese>将校の遺体を調べて文書を回収せよ。</Japanese>
+            <Portuguese>Interaja com o corpo do oficial para recuperar os documentos.</Portuguese>
+            <Korean>장교의 시신과 상호작용하여 문서를 회수하십시오.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_SIG_TARGET">
+            <English>TARGET MARKER:</English>
+            <French>MARQUEUR CIBLE :</French>
+            <German>ZIELMARKIERUNG:</German>
+            <Spanish>MARCADOR OBJETIVO:</Spanish>
+            <Italian>MARCATORE BERSAGLIO:</Italian>
+            <Russian>МАРКЕР ЦЕЛИ:</Russian>
+            <Polish>ZNACZNIK CELU:</Polish>
+            <Czech>ZNAČKA CÍLE:</Czech>
+            <Turkish>HEDEF İŞARETİ:</Turkish>
+            <Chinese>目标标记：</Chinese>
+            <Chinesesimp>目标标记：</Chinesesimp>
+            <Japanese>ターゲットマーカー：</Japanese>
+            <Portuguese>MARCADOR DE ALVO:</Portuguese>
+            <Korean>대상 마커:</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_SIG_DOC">
+            <English>DOCUMENT MARKER:</English>
+            <French>MARQUEUR DOCUMENT :</French>
+            <German>DOKUMENTENMARKIERUNG:</German>
+            <Spanish>MARCADOR DOCUMENTO:</Spanish>
+            <Italian>MARCATORE DOCUMENTO:</Italian>
+            <Russian>МАРКЕР ДОКУМЕНТА:</Russian>
+            <Polish>ZNACZNIK DOKUMENTU:</Polish>
+            <Czech>ZNAČKA DOKUMENTU:</Czech>
+            <Turkish>BELGE İŞARETİ:</Turkish>
+            <Chinese>文件标记：</Chinese>
+            <Chinesesimp>文件标记：</Chinesesimp>
+            <Japanese>文書マーカー：</Japanese>
+            <Portuguese>MARCADOR DE DOCUMENTO:</Portuguese>
+            <Korean>문서 마커:</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T2_SIG_TARGET_TEXT">
+            <English>Estimated officer positions.</English>
+            <French>Position estimée des officiers.</French>
+            <German>Geschätzte Offizierspositionen.</German>
+            <Spanish>Posiciones estimadas de oficiales.</Spanish>
+            <Italian>Posizioni stimate ufficiali.</Italian>
+            <Russian>Предполагаемые позиции офицеров.</Russian>
+            <Polish>Szacowane pozycje oficerów.</Polish>
+            <Czech>Odhadované pozice důstojníků.</Czech>
+            <Turkish>Tahmini subay konumları.</Turkish>
+            <Chinese>预估军官位置。</Chinese>
+            <Chinesesimp>预估军官位置。</Chinesesimp>
+            <Japanese>将校の推定位置。</Japanese>
+            <Portuguese>Posições estimadas dos oficiais.</Portuguese>
+            <Korean>장교의 예상 위치.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T2_SIG_DOC_TEXT">
+            <English>Appears once the carrier is eliminated.</English>
+            <French>Apparaît une fois l&apos;officier porteur éliminé.</French>
+            <German>Erscheint, sobald der Träger eliminiert ist.</German>
+            <Spanish>Aparece una vez eliminado el portador.</Spanish>
+            <Italian>Appare una volta eliminato il portatore.</Italian>
+            <Russian>Появляется после устранения носителя.</Russian>
+            <Polish>Pojawia się po wyeliminowaniu posiadacza.</Polish>
+            <Czech>Objeví se po zlikvidování nositele.</Czech>
+            <Turkish>Taşıyıcı etkisiz hale getirildiğinde görünür.</Turkish>
+            <Chinese>在携带者被消灭后出现。</Chinese>
+            <Chinesesimp>在携带者被消灭后出现。</Chinesesimp>
+            <Japanese>所持者が排除されると表示される。</Japanese>
+            <Portuguese>Aparece assim que o portador for eliminado.</Portuguese>
+            <Korean>소지자가 제거되면 나타납니다.</Korean>
+        </Key><!-- TASK 3 -->
+        <Key ID="STR_BRIEF_T3_OP_TITLE">
+            <English>OP ORDER: LOGISTICS STRIKE</English>
+            <French>ORDRE D&apos;OPÉRATION : FRAPPE LOGISTIQUE</French>
+            <German>OP BEFEHL: LOGISTIKSCHLAG</German>
+            <Spanish>ORDEN OP: GOLPE LOGÍSTICO</Spanish>
+            <Italian>ORDINE OP: ATTACCO LOGISTICO</Italian>
+            <Russian>БОЕВОЙ ПРИКАЗ: УДАР ПО ЛОГИСТИКЕ</Russian>
+            <Polish>ROZKAZ OP: UDERZENIE W LOGISTYKĘ</Polish>
+            <Czech>ROZKAZ OP: LOGISTICKÝ ÚDER</Czech>
+            <Turkish>OP EMRİ: LOJİSTİK DARBE</Turkish>
+            <Chinese>行动指令：后勤打击</Chinese>
+            <Chinesesimp>行动指令：后勤打击</Chinesesimp>
+            <Japanese>作戦命令：兵站攻撃</Japanese>
+            <Portuguese>ORDEM OP: ATAQUE LOGÍSTICO</Portuguese>
+            <Korean>작전 명령: 보급로 타격</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T3_SITUATION">
+            <English>The enemy has positioned ammunition convoys at several strategic locations. These trucks serve as forward resupply points.</English>
+            <French>L&apos;ennemi a positionné des convois de munitions à plusieurs endroits stratégiques. Ces camions servent de points de ravitaillement avancés.</French>
+            <German>Der Feind hat Munitionskonvois an mehreren strategischen Orten positioniert. Diese Lastwagen dienen als vorgeschobene Versorgungspunkte.</German>
+            <Spanish>El enemigo ha posicionado convoyes de munición en varias ubicaciones estratégicas. Estos camiones sirven como puntos de reabastecimiento avanzados.</Spanish>
+            <Italian>Il nemico ha posizionato convogli di munizioni in diverse posizioni strategiche. Questi camion servono come punti di rifornimento avanzati.</Italian>
+            <Russian>Враг разместил конвои с боеприпасами в нескольких стратегических точках. Эти грузовики служат передовыми пунктами снабжения.</Russian>
+            <Polish>Wróg rozmieścił konwoje z amunicją w kilku strategicznych miejscach. Ciężarówki te służą jako wysunięte punkty zaopatrzenia.</Polish>
+            <Czech>Nepřítel rozmístil muniční konvoje na několika strategických místech. Tyto nákladní vozy slouží jako předsunutá zásobovací místa.</Czech>
+            <Turkish>Düşman birkaç stratejik noktaya mühimmat konvoyları yerleştirdi. Bu kamyonlar ileri ikmal noktaları olarak hizmet veriyor.</Turkish>
+            <Chinese>敌人已在多个战略地点部署了弹药车队。这些卡车作为前沿补给点。</Chinese>
+            <Chinesesimp>敌人已在多个战略地点部署了弹药车队。这些卡车作为前沿补给点。</Chinesesimp>
+            <Japanese>敵はいくつかの要衝に弾薬輸送部隊を配置した。これらのトラックは前線補給地点として機能している。</Japanese>
+            <Portuguese>O inimigo posicionou comboios de munição em vários locais estratégicos. Esses caminhões servem como pontos de reabastecimento avançados.</Portuguese>
+            <Korean>적은 몇몇 전략적 위치에 탄약 수송대를 배치했습니다. 이 트럭들은 전방 보급소 역할을 합니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T3_THREAT_TEXT">
+            <English>4 ammo trucks identified. Each vehicle is protected by a full squad (8 men). Expect fierce resistance (~32 infantry total).</English>
+            <French>4 camions de munition identifiés. Chaque véhicule est protégé par une escouade complète (8 hommes). Attendez-vous à une résistance farouche (~32 fantassins au total).</French>
+            <German>4 Munitionswagen identifiziert. Jedes Fahrzeug wird von einer vollen Gruppe (8 Mann) geschützt. Erwarten Sie heftigen Widerstand (~32 Infanteristen insgesamt).</German>
+            <Spanish>4 camiones de munición identificados. Cada vehículo está protegido por un escuadrón completo (8 hombres). Espere fuerte resistencia (~32 infantes en total).</Spanish>
+            <Italian>4 camion di munizioni identificati. Ogni veicolo è protetto da una squadra completa (8 uomini). Aspettatevi una resistenza feroce (~32 fanti in totale).</Italian>
+            <Russian>Выявлено 4 грузовика с боеприпасами. Каждый охраняется полным отделением (8 человек). Ожидайте ожесточенного сопротивления (~32 пехотинца всего).</Russian>
+            <Polish>Zidentyfikowano 4 ciężarówki z amunicją. Każdy pojazd jest chroniony przez pełną drużynę (8 ludzi). Spodziewaj się silnego oporu (~32 piechurów łącznie).</Polish>
+            <Czech>Identifikovány 4 muniční vozy. Každé vozidlo je chráněno celým družstvem (8 mužů). Očekávejte prudký odpor (~32 pěšáků celkem).</Czech>
+            <Turkish>4 mühimmat kamyonu tespit edildi. Her araç tam bir manga (8 adam) tarafından korunuyor. Şiddetli direniş bekleyin (toplamda ~32 piyade).</Turkish>
+            <Chinese>已确认 4 辆弹药卡车。每辆车都有一个完整的班（8 人）保护。预计会有激烈抵抗（总共约 32 名步兵）。</Chinese>
+            <Chinesesimp>已确认 4 辆弹药卡车。每辆车都有一个完整的班（8 人）保护。预计会有激烈抵抗（总共约 32 名步兵）。</Chinesesimp>
+            <Japanese>4台の弾薬トラックを確認。各車両は分隊（8名）によって守られている。激しい抵抗が予想される（歩兵計約32名）。</Japanese>
+            <Portuguese>4 caminhões de munição identificados. Cada veículo é protegido por um esquadrão completo (8 homens). Espere resistência feroz (~32 de infantaria no total).</Portuguese>
+            <Korean>4대의 탄약 트럭이 확인되었습니다. 각 차량은 완전한 분대(8명)의 보호를 받고 있습니다. 격렬한 저항이 예상됩니다(총 ~32명의 보병).</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T3_MISSION">
+            <English>Destroy the 4 cargo trucks before they can resupply the front.</English>
+            <French>Détruire les 4 camions de cargaison avant qu&apos;ils ne puissent ravitailler le front.</French>
+            <German>Zerstören Sie die 4 Lastwagen, bevor sie die Front versorgen können.</German>
+            <Spanish>Destruya los 4 camiones de carga antes de que puedan reabastecer el frente.</Spanish>
+            <Italian>Distruggi i 4 camion da carico prima che possano rifornire il fronte.</Italian>
+            <Russian>Уничтожить 4 грузовика до того, как они смогут снабдить фронт.</Russian>
+            <Polish>Zniszcz 4 ciężarówki, zanim zaopatrzą front.</Polish>
+            <Czech>Zničte 4 nákladní vozy dříve, než stačí zásobit frontu.</Czech>
+            <Turkish>Cepheye ikmal yapmadan önce 4 kargo kamyonunu yok edin.</Turkish>
+            <Chinese>在前线得到补给之前摧毁 4 辆卡车。</Chinese>
+            <Chinesesimp>在前线得到补给之前摧毁 4 辆卡车。</Chinesesimp>
+            <Japanese>前線への補給が行われる前に、4台の貨物トラックを破壊せよ。</Japanese>
+            <Portuguese>Destrua os 4 caminhões de carga antes que eles possam reabastecer o fronte.</Portuguese>
+            <Korean>전선에 보급하기 전에 4대의 화물 트럭을 파괴하십시오.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T3_EXE_A_TITLE">
+            <English>a. Maneuver</English>
+            <French>a. Manoeuvre</French>
+            <German>a. Manöver</German>
+            <Spanish>a. Maniobra</Spanish>
+            <Italian>a. Manovra</Italian>
+            <Russian>а. Маневр</Russian>
+            <Polish>a. Manewr</Polish>
+            <Czech>a. Manévr</Czech>
+            <Turkish>a. Manevra</Turkish>
+            <Chinese>a. 机动</Chinese>
+            <Chinesesimp>a. 机动</Chinesesimp>
+            <Japanese>a. 機動</Japanese>
+            <Portuguese>a. Manobra</Portuguese>
+            <Korean>a. 기동</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T3_EXE_A_TEXT">
+            <English>Approach targets and destroy vehicles by any means available (Explosive charges, rocket launchers, heavy caliber fire).</English>
+            <French>Approchez les cibles et détruisez les véhicules par tout moyen disponible (Charges explosives, lance-roquettes, tirs de gros calibre).</French>
+            <German>Nähern Sie sich den Zielen und zerstören Sie die Fahrzeuge mit allen verfügbaren Mitteln (Sprengladungen, Raketenwerfer, schweres Kaliber).</German>
+            <Spanish>Acérquese a los objetivos y destruya los vehículos por cualquier medio (Cargas explosivas, lanzacohetes, fuego de gran calibre).</Spanish>
+            <Italian>Avvicinati ai bersagli e distruggi i veicoli con ogni mezzo disponibile (Cariche esplosive, lanciarazzi, fuoco di grosso calibro).</Italian>
+            <Russian>Приблизиться к целям и уничтожить технику любыми средствами (Взрывчатка, РПГ, крупный калибр).</Russian>
+            <Polish>Zbliż się do celów i zniszcz pojazdy wszelkimi dostępnymi środkami (Ładunki wybuchowe, wyrzutnie rakiet, ogień wielkokalibrowy).</Polish>
+            <Czech>Přibližte se k cílům a zničte vozidla jakýmikoli dostupnými prostředky (výbušniny, raketomety, palba velkého kalibru).</Czech>
+            <Turkish>Hedeflere yaklaşın ve mevcut her türlü araçla (Patlayıcılar, roketatarlar, ağır kalibreli ateş) araçları yok edin.</Turkish>
+            <Chinese>接近目标并用一切可用手段（炸药、火箭筒、大口径火力）摧毁车辆。</Chinese>
+            <Chinesesimp>接近目标并用一切可用手段（炸药、火箭筒、大口径火力）摧毁车辆。</Chinesesimp>
+            <Japanese>目標に接近し、利用可能なあらゆる手段（爆薬、ロケットランチャー、大口径射撃）で車両を破壊せよ。</Japanese>
+            <Portuguese>Aproxime-se dos alvos e destrua os veículos por qualquer meio disponível (Cargas explosivas, lança-foguetes, fogo de grosso calibre).</Portuguese>
+            <Korean>목표에 접근하여 가능한 모든 수단(폭약, 로켓 발사기, 대구경 화기)으로 차량을 파괴하십시오.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T3_EXE_B_TITLE">
+            <English>b. Support</English>
+            <French>b. Support</French>
+            <German>b. Unterstützung</German>
+            <Spanish>b. Apoyo</Spanish>
+            <Italian>b. Supporto</Italian>
+            <Russian>б. Поддержка</Russian>
+            <Polish>b. Wsparcie</Polish>
+            <Czech>b. Podpora</Czech>
+            <Turkish>b. Destek</Turkish>
+            <Chinese>b. 支援</Chinese>
+            <Chinesesimp>b. 支援</Chinesesimp>
+            <Japanese>b. 支援</Japanese>
+            <Portuguese>b. Apoio</Portuguese>
+            <Korean>b. 지원</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_HEADER_AIR_SUPPORT">
+            <English>AIR SUPPORT:</English>
+            <French>APPUI AÉRIEN :</French>
+            <German>LUFTUNTERSTÜTZUNG:</German>
+            <Spanish>APOYO AÉREO:</Spanish>
+            <Italian>SUPPORTO AEREO:</Italian>
+            <Russian>ВОЗДУШНАЯ ПОДДЕРЖКА:</Russian>
+            <Polish>WSPARCIE LOTNICZE:</Polish>
+            <Czech>LETECKÁ PODPORA:</Czech>
+            <Turkish>HAVA DESTEĞİ:</Turkish>
+            <Chinese>空中支援：</Chinese>
+            <Chinesesimp>空中支援：</Chinesesimp>
+            <Japanese>航空支援：</Japanese>
+            <Portuguese>APOIO AÉREO:</Portuguese>
+            <Korean>공중 지원:</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T3_EXE_B_TEXT">
+            <English>Allied fighter patrol is en route. ETA 5-10 minutes to engage targets and infantry.</English>
+            <French>Une patrouille de chasse alliée est en route. Elle arrivera sur zone dans un délai estimé de 5 à 10 minutes pour traiter les cibles et l&apos;infanterie.</French>
+            <German>Alliierte Jägerpatrouille ist im Anflug. ETA 5-10 Minuten zur Bekämpfung von Zielen und Infanterie.</German>
+            <Spanish>Patrulla de caza aliada en camino. ETA 5-10 minutos para atacar objetivos e infantería.</Spanish>
+            <Italian>Pattuglia di caccia alleata in arrivo. ETA 5-10 minuti per ingaggiare bersagli e fanteria.</Italian>
+            <Russian>Патруль союзной авиации в пути. Прибытие через 5-10 минут для атаки целей и пехоты.</Russian>
+            <Polish>Sojuszniczy patrol myśliwski w drodze. ETA 5-10 minut do ataku na cele i piechotę.</Polish>
+            <Czech>Spojenecká stíhací hlídka je na cestě. ETA 5-10 minut k zapojení cílů a pěchoty.</Czech>
+            <Turkish>Müttefik avcı devriyesi yolda. Hedeflere ve piyadelere saldırmak için tahmini varış süresi 5-10 dakika.</Turkish>
+            <Chinese>盟军战斗机巡逻队正在途中。预计 5-10 分钟后到达并攻击目标和步兵。</Chinese>
+            <Chinesesimp>盟军战斗机巡逻队正在途中。预计 5-10 分钟后到达并攻击目标和步兵。</Chinesesimp>
+            <Japanese>友軍戦闘機部隊が向かっている。目標および歩兵への攻撃開始まで5〜10分。</Japanese>
+            <Portuguese>A patrulha de caça aliada está a caminho. ETA 5-10 minutos para engajar alvos e infantaria.</Portuguese>
+            <Korean>연합군 전투기 순찰대가 이동 중입니다. 목표와 보병을 공격하기까지 예상 도착 시간은 5-10분입니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_SIG_CARGO">
+            <English>CARGO MARKER:</English>
+            <French>MARQUEUR CARGAISON :</French>
+            <German>FRACHTMARKER:</German>
+            <Spanish>MARCADOR CARGA:</Spanish>
+            <Italian>MARCATORE CARICO:</Italian>
+            <Russian>МАРКЕР ГРУЗА:</Russian>
+            <Polish>ZNACZNIK ŁADUNKU:</Polish>
+            <Czech>ZNAČKA NÁKLADU:</Czech>
+            <Turkish>KARGO İŞARETİ:</Turkish>
+            <Chinese>货物标记：</Chinese>
+            <Chinesesimp>货物标记：</Chinesesimp>
+            <Japanese>貨物マーカー：</Japanese>
+            <Portuguese>MARCADOR DE CARGA:</Portuguese>
+            <Korean>화물 마커:</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T3_SIG_CARGO_TEXT">
+            <English>Confirmed position of trucks to destroy.</English>
+            <French>Position confirmée des camions à détruire.</French>
+            <German>Bestätigte Position der zu zerstörenden Lastwagen.</German>
+            <Spanish>Posición confirmada de camiones a destruir.</Spanish>
+            <Italian>Posizione confermata dei camion da distruggere.</Italian>
+            <Russian>Подтвержденная позиция грузовиков для уничтожения.</Russian>
+            <Polish>Potwierdzona pozycja ciężarówek do zniszczenia.</Polish>
+            <Czech>Potvrzená pozice vozů ke zničení.</Czech>
+            <Turkish>Yok edilecek kamyonların onaylanmış konumu.</Turkish>
+            <Chinese>已确认待摧毁卡车的位置。</Chinese>
+            <Chinesesimp>已确认待摧毁卡车的位置。</Chinesesimp>
+            <Japanese>破壊対象トラックの確認位置。</Japanese>
+            <Portuguese>Posição confirmada dos caminhões a destruir.</Portuguese>
+            <Korean>파괴할 트럭의 확인된 위치.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T3_SIG_NOTE">
+            <English>Markers disappear once target is destroyed.</English>
+            <French>Les marqueurs disparaissent une fois la cible détruite.</French>
+            <German>Marker verschwinden, sobald das Ziel zerstört ist.</German>
+            <Spanish>Los marcadores desaparecen una vez destruido el objetivo.</Spanish>
+            <Italian>I marcatori scompaiono una volta distrutto il bersaglio.</Italian>
+            <Russian>Маркеры исчезают после уничтожения цели.</Russian>
+            <Polish>Znaczniki znikają po zniszczeniu celu.</Polish>
+            <Czech>Značky zmizí, jakmile je cíl zničen.</Czech>
+            <Turkish>Hedef yok edildiğinde işaretçiler kaybolur.</Turkish>
+            <Chinese>目标被摧毁后标记消失。</Chinese>
+            <Chinesesimp>目标被摧毁后标记消失。</Chinesesimp>
+            <Japanese>目標が破壊されるとマーカーは消滅する。</Japanese>
+            <Portuguese>Os marcadores desaparecem assim que o alvo é destruído.</Portuguese>
+            <Korean>목표가 파괴되면 마커가 사라집니다.</Korean>
+        </Key><!-- TASK 4 -->
+        <Key ID="STR_BRIEF_T4_OP_TITLE">
+            <English>OP ORDER: HOSTAGE RESCUE</English>
+            <French>ORDRE D&apos;OPÉRATION : LIBÉRATION D&apos;OTAGE</French>
+            <German>OP BEFEHL: GEISELBEFREIUNG</German>
+            <Spanish>ORDEN OP: RESCATE DE REHÉN</Spanish>
+            <Italian>ORDINE OP: SALVATAGGIO OSTAGGIO</Italian>
+            <Russian>БОЕВОЙ ПРИКАЗ: СПАСЕНИЕ ЗАЛОЖНИКА</Russian>
+            <Polish>ROZKAZ OP: ODBICIE ZAKŁADNIKA</Polish>
+            <Czech>ROZKAZ OP: ZÁCHRANA RUKOJMÍHO</Czech>
+            <Turkish>OP EMRİ: REHİNE KURTARMA</Turkish>
+            <Chinese>行动指令：人质救援</Chinese>
+            <Chinesesimp>行动指令：人质救援</Chinesesimp>
+            <Japanese>作戦命令：人質救助</Japanese>
+            <Portuguese>ORDEM OP: RESGATE DE REFÉM</Portuguese>
+            <Korean>작전 명령: 인질 구출</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T4_SITUATION">
+            <English>A civilian national has been kidnapped by hostile forces. He is being held in one of the three identified search zones.</English>
+            <French>Un ressortissant civil a été enlevé par les forces hostiles. Il est retenu dans l&apos;une des trois zones de recherche identifiées.</French>
+            <German>Ein Zivilist wurde von feindlichen Kräften entführt. Er wird in einer der drei identifizierten Suchzonen festgehalten.</German>
+            <Spanish>Un civil ha sido secuestrado por fuerzas hostiles. Está retenido en una de las tres zonas de búsqueda identificadas.</Spanish>
+            <Italian>Un civile è stato rapito da forze ostili. È trattenuto in una delle tre zone di ricerca identificate.</Italian>
+            <Russian>Гражданский был похищен враждебными силами. Его удерживают в одной из трех зон поиска.</Russian>
+            <Polish>Cywil został porwany przez wrogie siły. Jest przetrzymywany w jednej z trzech stref poszukiwań.</Polish>
+            <Czech>Nepřátelskými silami byl unesen civilista. Je zadržován v jedné ze tří identifikovaných pátracích zón.</Czech>
+            <Turkish>Bir sivil düşman güçleri tarafından kaçırıldı. Belirlenen üç arama bölgesinden birinde tutuluyor.</Turkish>
+            <Chinese>一名平民被敌对势力绑架。他被关押在三个已确定的搜索区域之一。</Chinese>
+            <Chinesesimp>一名平民被敌对势力绑架。他被关押在三个已确定的搜索区域之一。</Chinesesimp>
+            <Japanese>民間人が敵対勢力に拉致された。彼は特定された3つの捜索エリアのいずれかに監禁されている。</Japanese>
+            <Portuguese>Um cidadão civil foi sequestrado por forças hostis. Ele está sendo mantido em uma das três zonas de busca identificadas.</Portuguese>
+            <Korean>일반인이 적대적 군대에 의해 끌려갔습니다. 그는 식별된 3개의 검색 영역 중 하나에 감금되었습니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T4_THREAT_TEXT">
+            <English>~24 heavily armed guards patrol the holding areas (spread across 3 sites).</English>
+            <French>~24 gardes lourdement armés patrouillent les zones de séquestration (répartis sur les 3 sites).</French>
+            <German>~24 schwer bewaffnete Wachen patrouillieren die Gebiete (verteilt auf 3 Standorte).</German>
+            <Spanish>~24 guardias fuertemente armados patrullan las zonas (repartidos en 3 sitios).</Spanish>
+            <Italian>~24 guardie pesantemente armate pattugliano le zone (distribuite su 3 siti).</Italian>
+            <Russian>~24 тяжело вооруженных охранника патрулируют зоны (распределены по 3 точкам).</Russian>
+            <Polish>~24 ciężko uzbrojonych strażników patroluje strefy (rozmieszczeni w 3 miejscach).</Polish>
+            <Czech>~24 těžce ozbrojených strážců hlídkuje v oblastech zadržování (rozmístěných na 3 místech).</Czech>
+            <Turkish>Yaklaşık 24 ağır silahlı koruma tutulma alanlarında devriye geziyor (3 bölgeye yayılmış).</Turkish>
+            <Chinese>约 24 名全副武装的警卫在关押区巡逻（分布在 3 个地点）。</Chinese>
+            <Chinesesimp>约 24 名全副武装的警卫在关押区巡逻（分布在 3 个地点）。</Chinesesimp>
+            <Japanese>約24名の重武装した警備兵が監禁エリアをパトロールしている（3箇所に分散）。</Japanese>
+            <Portuguese>Aproximadamente 24 guardas fortemente armados patrulham as áreas de detenção (espalhados por 3 locais).</Portuguese>
+            <Korean>약 24명의 중무장한 경비병들이 감금 구역을 순찰하고 있습니다 (3곳에 분산됨).</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T4_MISSION">
+            <English>Locate the hostage, free him from his restraints, and ensure his safe aerial exfiltration.</English>
+            <French>Localiser l&apos;otage, le libérer de ses liens et assurer son exfiltration saine et sauve par voie aérienne.</French>
+            <German>Finden Sie die Geisel, befreien Sie sie von Fesseln und sichern Sie ihre Evakuierung per Luft.</German>
+            <Spanish>Localice al rehén, libérelo y asegure su exfiltración aérea segura.</Spanish>
+            <Italian>Localizza l&apos;ostaggio, liberalo e assicura la sua esfiltrazione aerea.</Italian>
+            <Russian>Найти заложника, освободить его и обеспечить безопасную эвакуацию по воздуху.</Russian>
+            <Polish>Zlokalizuj zakładnika, uwolnij go z więzów i zapewnij bezpieczną ewakuację powietrzną.</Polish>
+            <Czech>Lokalizujte rukojmího, osvoboďte ho z pout a zajistěte jeho bezpečnou leteckou exfiltraci.</Czech>
+            <Turkish>Rehineyi bulun, bağlarından kurtarın ve güvenli bir şekilde hava yoluyla tahliyesini sağlayın.</Turkish>
+            <Chinese>找到人质，解开他的束缚，并确保他安全地从空中撤离。</Chinese>
+            <Chinesesimp>找到人质，解开他的束缚，并确保他安全地从空中撤离。</Chinesesimp>
+            <Japanese>人質を発見し、拘束を解き、空路による安全な脱出を確保せよ。</Japanese>
+            <Portuguese>Localize o refém, liberte-o de suas amarras e garanta sua exfiltração aérea segura.</Portuguese>
+            <Korean>인질을 찾아 구속을 풀고, 안전하게 공중으로 탈출시키십시오.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T4_PHASE_1_TITLE">
+            <English>a. Phase 1: Search</English>
+            <French>a. Phase 1 : Recherche</French>
+            <German>a. Phase 1: Suche</German>
+            <Spanish>a. Fase 1: Búsqueda</Spanish>
+            <Italian>a. Fase 1: Ricerca</Italian>
+            <Russian>а. Фаза 1: Поиск</Russian>
+            <Polish>a. Faza 1: Poszukiwania</Polish>
+            <Czech>a. Fáze 1: Pátrání</Czech>
+            <Turkish>a. Faz 1: Arama</Turkish>
+            <Chinese>a. 第一阶段：搜索</Chinese>
+            <Chinesesimp>a. 第一阶段：搜索</Chinesesimp>
+            <Japanese>a. フェーズ1：捜索</Japanese>
+            <Portuguese>a. Fase 1: Busca</Portuguese>
+            <Korean>a. 1단계: 수색</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T4_PHASE_1_TEXT">
+            <English>Three suspicious zones marked (ORANGE). Search these areas methodically.</English>
+            <French>Trois zones suspectes ont été marquées (ORANGE). Fouillez ces zones méthodiquement.</French>
+            <German>Drei verdächtige Zonen markiert (ORANGE). Durchsuchen Sie diese Bereiche methodisch.</German>
+            <Spanish>Tres zonas sospechosas marcadas (NARANJA). Busque metódicamente.</Spanish>
+            <Italian>Tre zone sospette segnate (ARANCIONE). Perlustrate queste aree metodicamente.</Italian>
+            <Russian>Отмечены три подозрительные зоны (ОРАНЖЕВЫЕ). Обыщите их методично.</Russian>
+            <Polish>Oznaczono trzy podejrzane strefy (POMARAŃCZOWE). Przeszukaj je metodycznie.</Polish>
+            <Czech>Vyznačeny tři podezřelé zóny (ORANŽOVÉ). Tyto oblasti metodicky prohledejte.</Czech>
+            <Turkish>Üç şüpheli bölge işaretlendi (TURUNCU). Bu alanları sistematik olarak arayın.</Turkish>
+            <Chinese>已标记三个可疑区域（橙色）。有条不紊地搜索这些区域。</Chinese>
+            <Chinesesimp>已标记三个可疑区域（橙色）。有条不紊地搜索这些区域。</Chinesesimp>
+            <Japanese>3つの疑わしいゾーンがマークされている（オレンジ）。これらのエリアを体系的に捜索せよ。</Japanese>
+            <Portuguese>Três zonas suspeitas marcadas (LARANJA). Vasculhe essas áreas metodicamente.</Portuguese>
+            <Korean>3개의 의심스러운 영역이 표시되었습니다 (오렌지). 이 영역들을 체계적으로 탐색합니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T4_PHASE_2_TITLE">
+            <English>b. Phase 2: Liberation</English>
+            <French>b. Phase 2 : Libération</French>
+            <German>b. Phase 2: Befreiung</German>
+            <Spanish>b. Fase 2: Liberación</Spanish>
+            <Italian>b. Fase 2: Liberazione</Italian>
+            <Russian>б. Фаза 2: Освобождение</Russian>
+            <Polish>b. Faza 2: Uwolnienie</Polish>
+            <Czech>b. Fáze 2: Osvobození</Czech>
+            <Turkish>b. Faz 2: Kurtarma</Turkish>
+            <Chinese>b. 第二阶段：解救</Chinese>
+            <Chinesesimp>b. 第二阶段：解救</Chinesesimp>
+            <Japanese>b. フェーズ2：解放</Japanese>
+            <Portuguese>b. Fase 2: Libertação</Portuguese>
+            <Korean>b. 2단계: 해방</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T4_PHASE_2_TEXT">
+            <English>Once hostage is found, eliminate the close guard. Interact with hostage to cut restraints (Action &apos;Free&apos;).</English>
+            <French>Une fois l&apos;otage trouvé, éliminez la garde rapprochée. Interagissez avec l&apos;otage pour couper ses liens (Action &apos;Libérer&apos;).</French>
+            <German>Sobald Geisel gefunden, Wache eliminieren. Interagieren um Fesseln zu lösen (Aktion &apos;Befreien&apos;).</German>
+            <Spanish>Al encontrar al rehén, elimine la guardia. Interactúe para cortar ataduras (Acción &apos;Liberar&apos;).</Spanish>
+            <Italian>Una volta trovato l&apos;ostaggio, elimina la guardia. Interagisci per tagliare i legacci (Azione &apos;Liberare&apos;).</Italian>
+            <Russian>Найдя заложника, устраните охрану. Взаимодействуйте, чтобы разрезать путы (Действие &apos;Освободить&apos;).</Russian>
+            <Polish>Po znalezieniu zakładnika wyeliminuj straż. Użyj interakcji, by rozciąć więzy (Akcja &apos;Uwolnij&apos;).</Polish>
+            <Czech>Jakmile je rukojmí nalezen, zlikvidujte blízkou stráž. Interagujte s rukojmím a přeřízněte pouta (akce &apos;Osvobodit&apos;).</Czech>
+            <Turkish>Rehine bulunduğunda, yakın korumayı etkisiz hale getirin. Bağları kesmek için rehineyle etkileşime geçin (&apos;Serbest Bırak&apos; eylemi).</Turkish>
+            <Chinese>找到人质后，消灭贴身警卫。与人质互动以切断束缚（“释放”行动）。</Chinese>
+            <Chinesesimp>找到人质后，消灭贴身警卫。与人质互动以切断束缚（“释放”行动）。</Chinesesimp>
+            <Japanese>人質を発見したら、近接警備兵を排除せよ。人質に対して拘束を切るアクション（「解放」）を行え。</Japanese>
+            <Portuguese>Assim que o refém for encontrado, elimine a guarda próxima. Interaja com o refém para cortar as amarras (Ação &apos;Libertar&apos;).</Portuguese>
+            <Korean>인질이 발견되면 근접 경비병을 처치하십시오. 인질과 상호작용하여 구속을 푸십시오 (&apos;풀어주기&apos; 동작).</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T4_PHASE_3_TITLE">
+            <English>c. Phase 3: Extraction</English>
+            <French>c. Phase 3 : Extraction</French>
+            <German>c. Phase 3: Extraktion</German>
+            <Spanish>c. Fase 3: Extracción</Spanish>
+            <Italian>c. Fase 3: Estrazione</Italian>
+            <Russian>в. Фаза 3: Эвакуация</Russian>
+            <Polish>c. Faza 3: Ewakuacja</Polish>
+            <Czech>c. Fáze 3: Extrakce</Czech>
+            <Turkish>c. Faz 3: Tahliye</Turkish>
+            <Chinese>c. 第三阶段：撤离</Chinese>
+            <Chinesesimp>c. 第三阶段：撤离</Chinesesimp>
+            <Japanese>c. フェーズ3：離脱</Japanese>
+            <Portuguese>c. Fase 3: Extração</Portuguese>
+            <Korean>c. 3단계: 철수</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T4_PHASE_3_TEXT">
+            <English>Upon liberation, an allied helicopter will be dispatched to a nearby LZ. Escort the hostage to the helicopter.</English>
+            <French>Dès la libération, un hélicoptère allié sera dépêché sur une zone d&apos;atterrissage (LZ) proche. Escortez l&apos;otage jusqu&apos;à l&apos;hélicoptère.</French>
+            <German>Nach Befreiung wird ein alliierter Helikopter zur LZ entsandt. Eskortieren Sie die Geisel zum Helikopter.</German>
+            <Spanish>Tras la liberación, se enviará un helicóptero a una LZ cercana. Escolte al rehén hasta el helicóptero.</Spanish>
+            <Italian>Dopo la liberazione, un elicottero alleato sarà inviato a una LZ vicina. Scorta l&apos;ostaggio all&apos;elicottero.</Italian>
+            <Russian>После освобождения на LZ будет отправлен вертолет. Сопроводите заложника к вертолету.</Russian>
+            <Polish>Po uwolnieniu na LZ zostanie wysłany śmigłowiec. Odeskortuj zakładnika do śmigłowca.</Polish>
+            <Czech>Po osvobození bude na blízkou LZ vyslán spojenecký vrtulník. Doprovoďte rukojmího k vrtulníku.</Czech>
+            <Turkish>Kurtarıldıktan sonra, müttefik bir helikopter yakındaki bir iniş bölgesine (LZ) gönderilecek. Rehineye helikoptere kadar eşlik edin.</Turkish>
+            <Chinese>获释后，一架盟军直升机将被派往附近的着陆区（LZ）。护送人质到直升机。</Chinese>
+            <Chinesesimp>获释后，一架盟军直升机将被派往附近的着陆区（LZ）。护送人质到直升机。</Chinesesimp>
+            <Japanese>解放後、友軍ヘリが近くのLZ（着陸帯）に派遣される。人質をヘリまで護衛せよ。</Japanese>
+            <Portuguese>Após a libertação, um helicóptero aliado será enviado para uma LZ próxima. Escolte o refém até o helicóptero.</Portuguese>
+            <Korean>해방 후, 연합군 헬기가 인근 LZ로 파견될 것입니다. 인질을 헬기까지 호위하십시오.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T4_NOTE">
+            <English>Helicopter will only takeoff when hostage is aboard.</English>
+            <French>L&apos;hélicoptère ne décollera que lorsque l&apos;otage sera à bord.</French>
+            <German>Helikopter hebt erst ab, wenn Geisel an Bord ist.</German>
+            <Spanish>El helicóptero solo despegará cuando el rehén esté a bordo.</Spanish>
+            <Italian>L&apos;elicottero decollerà solo quando l&apos;ostaggio sarà a bordo.</Italian>
+            <Russian>Вертолет взлетит только когда заложник будет на борту.</Russian>
+            <Polish>Śmigłowiec wystartuje dopiero, gdy zakładnik będzie na pokładzie.</Polish>
+            <Czech>Vrtulník vzlétne, až když bude rukojmí na palubě.</Czech>
+            <Turkish>Helikopter sadece rehine gemide olduğunda kalkacaktır.</Turkish>
+            <Chinese>直升机只有在人质登机后才会起飞。</Chinese>
+            <Chinesesimp>直升机只有在人质登机后才会起飞。</Chinesesimp>
+            <Japanese>ヘリは人質が搭乗しない限り離陸しない。</Japanese>
+            <Portuguese>O helicóptero só decolará quando o refém estiver a bordo.</Portuguese>
+            <Korean>헬기는 인질이 탑승해야만 이륙합니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_HEADER_NOTE">
+            <English>NOTE:</English>
+            <French>NOTE :</French>
+            <German>HINWEIS:</German>
+            <Spanish>NOTA:</Spanish>
+            <Italian>NOTA:</Italian>
+            <Russian>ПРИМЕЧАНИЕ:</Russian>
+            <Polish>UWAGA:</Polish>
+            <Czech>POZNÁMKA:</Czech>
+            <Turkish>NOT:</Turkish>
+            <Chinese>注意：</Chinese>
+            <Chinesesimp>注意：</Chinesesimp>
+            <Japanese>注意：</Japanese>
+            <Portuguese>NOTA:</Portuguese>
+            <Korean>참고:</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_SIG_ORANGE">
+            <English>ORANGE MARKER:</English>
+            <French>MARQUEUR ORANGE :</French>
+            <German>ORANGE MARKIERUNG:</German>
+            <Spanish>MARCADOR NARANJA:</Spanish>
+            <Italian>MARCATORE ARANCIONE:</Italian>
+            <Russian>ОРАНЖЕВЫЙ МАРКЕР:</Russian>
+            <Polish>POMARAŃCZOWY ZNACZNIK:</Polish>
+            <Czech>ORANŽOVÁ ZNAČKA:</Czech>
+            <Turkish>TURUNCU İŞARET:</Turkish>
+            <Chinese>橙色标记：</Chinese>
+            <Chinesesimp>橙色标记：</Chinesesimp>
+            <Japanese>オレンジマーカー：</Japanese>
+            <Portuguese>MARCADOR LARANJA:</Portuguese>
+            <Korean>오렌지 마커:</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T4_SIG_ORANGE_TEXT">
+            <English>Potential search zone.</English>
+            <French>Zone de recherche potentielle.</French>
+            <German>Potenzielle Suchzone.</German>
+            <Spanish>Zona de búsqueda potencial.</Spanish>
+            <Italian>Zona di ricerca potenziale.</Italian>
+            <Russian>Потенциальная зона поиска.</Russian>
+            <Polish>Potencjalna strefa poszukiwań.</Polish>
+            <Czech>Potenciální pátrací zóna.</Czech>
+            <Turkish>Olası arama bölgesi.</Turkish>
+            <Chinese>潜在搜索区域。</Chinese>
+            <Chinesesimp>潜在搜索区域。</Chinesesimp>
+            <Japanese>潜在の捜索ゾーン。</Japanese>
+            <Portuguese>Zona de busca potencial.</Portuguese>
+            <Korean>가능한 탐색 영역.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_SIG_EXTRACTION">
+            <English>EXTRACTION MARKER:</English>
+            <French>MARQUEUR EXTRACTION :</French>
+            <German>EXTRAKTIONSMARKIERUNG:</German>
+            <Spanish>MARCADOR EXTRACCIÓN:</Spanish>
+            <Italian>MARCATORE ESTRAZIONE:</Italian>
+            <Russian>МАРКЕР ЭВАКУАЦИИ:</Russian>
+            <Polish>ZNACZNIK EWAKUACJI:</Polish>
+            <Czech>ZNAČKA EXTRAKCE:</Czech>
+            <Turkish>TAHLİYE İŞARETİ:</Turkish>
+            <Chinese>撤离标记：</Chinese>
+            <Chinesesimp>撤离标记：</Chinesesimp>
+            <Japanese>離脱マーカー：</Japanese>
+            <Portuguese>MARCADOR DE EXTRAÇÃO:</Portuguese>
+            <Korean>철수 마커:</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T4_SIG_EXTRACTION_TEXT">
+            <English>Rendezvous point with helicopter (Appears after liberation).</English>
+            <French>Point de rendez-vous avec l&apos;hélicoptère (Apparaît après libération).</French>
+            <German>Treffpunkt mit Helikopter (Erscheint nach Befreiung).</German>
+            <Spanish>Punto de encuentro con helicóptero (Aparece tras liberación).</Spanish>
+            <Italian>Punto di incontro con elicottero (Appare dopo liberazione).</Italian>
+            <Russian>Точка встречи с вертолетом (Появляется после освобождения).</Russian>
+            <Polish>Punkt spotkania ze śmigłowcem (Pojawia się po uwolnieniu).</Polish>
+            <Czech>Místo setkání s vrtulníkem (objeví se po osvobození).</Czech>
+            <Turkish>Helikopterle buluşma noktası (Kurtarıldıktan sonra görünür).</Turkish>
+            <Chinese>直升机汇合点（获释后出现）。</Chinese>
+            <Chinesesimp>直升机汇合点（获释后出现）。</Chinesesimp>
+            <Japanese>ヘリとの合流地点（解放後に表示）。</Japanese>
+            <Portuguese>Ponto de encontro com o helicóptero (Aparece após a libertação).</Portuguese>
+            <Korean>헬기와 만나는 지점 (해방 후 나타납니다).</Korean>
+        </Key><!-- TASK 5 -->
+        <Key ID="STR_BRIEF_T5_OP_TITLE">
+            <English>OP ORDER: EMERGENCY DEFUSAL</English>
+            <French>ORDRE D&apos;OPÉRATION : DÉSAMORÇAGE D&apos;URGENCE</French>
+            <German>OP BEFEHL: NOTENTSCHÄRFUNG</German>
+            <Spanish>ORDEN OP: DESACTIVACIÓN DE EMERGENCIA</Spanish>
+            <Italian>ORDINE OP: DISINNESCO D&apos;EMERGENZA</Italian>
+            <Russian>БОЕВОЙ ПРИКАЗ: ЭКСТРЕННОЕ РАЗМИНИРОВАНИЕ</Russian>
+            <Polish>ROZKAZ OP: AWARYJNE ROZBRAJANIE</Polish>
+            <Czech>ROZKAZ OP: NOUZOVÉ ZNEŠKODNĚNÍ</Czech>
+            <Turkish>OP EMRİ: ACİL İMHA</Turkish>
+            <Chinese>行动指令：紧急拆弹</Chinese>
+            <Chinesesimp>行动指令：紧急拆弹</Chinesesimp>
+            <Japanese>作戦命令：緊急信管除去</Japanese>
+            <Portuguese>ORDEM OP: DESARMAMENTO DE EMERGÊNCIA</Portuguese>
+            <Korean>작전 명령: 긴급 해체</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T5_SITUATION">
+            <English>Insurgents have infiltrated the town and placed two improvised explosive devices (IEDs) in civilian buildings. The area is densely populated (approx. 50 civilians).</English>
+            <French>Des insurgés ont infiltré la ville et placé deux engins explosifs improvisés (IED) dans des bâtiments civils. La zone est densément peuplée (environ 50 civils).</French>
+            <German>Aufständische sind in die Stadt eingedrungen und haben zwei IEDs in zivilen Gebäuden platziert. Dicht besiedeltes Gebiet (ca. 50 Zivilisten).</German>
+            <Spanish>Insurgentes han infiltrado la ciudad y colocado dos IEDs en edificios civiles. Zona densamente poblada (aprox. 50 civiles).</Spanish>
+            <Italian>Insorti hanno infiltrato la città e piazzato due IED in edifici civili. Area densamente popolata (circa 50 civili).</Italian>
+            <Russian>Боевики проникли в город и заложили два СВУ в гражданских зданиях. Район густо населен (ок. 50 гражданских).</Russian>
+            <Polish>Powstańcy zinfiltrowali miasto i umieścili dwa IED w budynkach cywilnych. Obszar gęsto zaludniony (ok. 50 cywilów).</Polish>
+            <Czech>Povstalci pronikli do města a umístili dvě nástražná výbušná zařízení (IED) do civilních budov. Oblast je hustě osídlena (cca 50 civilistů).</Czech>
+            <Turkish>İsyancılar şehre sızdı ve sivil binalara iki el yapımı patlayıcı (EYP) yerleştirdi. Bölge yoğun nüfusludur (yaklaşık 50 sivil).</Turkish>
+            <Chinese>叛乱分子已渗透进城镇，并在民用建筑中放置了两个简易爆炸装置 (IED)。该地区人口稠密（约 50 名平民）。</Chinese>
+            <Chinesesimp>叛乱分子已渗透进城镇，并在民用建筑中放置了两个简易爆炸装置 (IED)。该地区人口稠密（约 50 名平民）。</Chinesesimp>
+            <Japanese>反乱軍が町に潜入し、民間施設に2つの即席爆発装置（IED）を仕掛けた。人口密集地域（民間人約50名）である。</Japanese>
+            <Portuguese>Insurgentes se infiltraram na cidade e colocaram dois dispositivos explosivos improvisados (IEDs) em edifícios civis. A área é densamente povoada (aprox. 50 civis).</Portuguese>
+            <Korean>반란군이 마을에 침투하여 민간 건물에 두 개의 급조폭발물(IED)을 설치했습니다. 인구 밀집 지역입니다 (약 50명의 민간인).</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T5_THREAT_TEXT">
+            <English>Sleeper agents (Traitors) are hiding among the population. They are armed (P07) and will activate if you approach.</English>
+            <French>Des agents dormants (Traîtres) se cachent parmi la population. Ils sont armés (P07) et s&apos;activeront si vous approchez.</French>
+            <German>Schläfer (Verräter) verstecken sich in der Bevölkerung. Sie sind bewaffnet (P07) und werden aktiv, wenn Sie sich nähern.</German>
+            <Spanish>Agentes durmientes (Traidores) se esconden entre la población. Están armados (P07) y se activarán si te acercas.</Spanish>
+            <Italian>Agenti dormienti (Traditori) si nascondono tra la popolazione. Sono armati (P07) e si attiveranno se ti avvicini.</Italian>
+            <Russian>Спящие агенты (Предатели) скрываются среди населения. Они вооружены (P07) и активируются при вашем приближении.</Russian>
+            <Polish>Uśpieni agenci (Zdrajcy) ukrywają się wśród ludności. Są uzbrojeni (P07) i aktywują się, gdy podejdziesz.</Polish>
+            <Czech>Spící agenti (zrádci) se skrývají mezi obyvatelstvem. Jsou ozbrojeni (P07) a aktivují se, pokud se přiblížíte.</Czech>
+            <Turkish>Uyuyan ajanlar (Hainler) halkın arasına saklanıyor. Silahlılar (P07) ve yaklaşırsanız aktifleşecekler.</Turkish>
+            <Chinese>潜伏特工（叛徒）藏身于人群之中。他们持有武器 (P07)，一旦您靠近就会采取行动。</Chinese>
+            <Chinesesimp>潜伏特工（叛徒）藏身于人群之中。他们持有武器 (P07)，一旦您靠近就会采取行动。</Chinesesimp>
+            <Japanese>潜伏工作員（裏切り者）が住民の中に紛れている。彼らは武装（P07）しており、接近すると攻撃してくる。</Japanese>
+            <Portuguese>Agentes adormecidos (Traidores) estão escondidos entre a população. Eles estão armados (P07) e atacarão se você se aproximar.</Portuguese>
+            <Korean>잠복 요원(배신자)들이 주민들 사이에 숨어 있습니다. 그들은 무장(P07)하고 있으며 당신이 접근하면 공격할 것입니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T5_MISSION">
+            <English>Locate and defuse BOTH bombs before time runs out (35-45 minutes).</English>
+            <French>Localiser et désamorcer les DEUX bombes avant la fin du temps imparti (35-45 minutes).</French>
+            <German>Finden und entschärfen Sie BEIDE Bomben vor Ablauf der Zeit (35-45 Minuten).</German>
+            <Spanish>Localice y desactive AMBAS bombas antes de que se agote el tiempo (35-45 minutos).</Spanish>
+            <Italian>Localizza e disinnesca ENTRAMBE le bombe prima che scada il tempo (35-45 minuti).</Italian>
+            <Russian>Найти и обезвредить ОБЕ бомбы до истечения времени (35-45 минут).</Russian>
+            <Polish>Znajdź i rozbrój OBIE bomby przed upływem czasu (35-45 minut).</Polish>
+            <Czech>Najděte a zneškodněte OBĚ bomby, než vyprší čas (35-45 minut).</Czech>
+            <Turkish>Zaman dolmadan önce HER İKİ bombayı da bulun ve etkisiz hale getirin (35-45 dakika).</Turkish>
+            <Chinese>在时间耗尽之前找到并拆除两枚炸弹（35-45 分钟）。</Chinese>
+            <Chinesesimp>在时间耗尽之前找到并拆除两枚炸弹（35-45 分钟）。</Chinesesimp>
+            <Japanese>制限時間（35〜45分）切れになる前に、両方の爆弾を発見し解除せよ。</Japanese>
+            <Portuguese>Localize e desarme AMBAS as bombas antes que o tempo acabe (35-45 minutos).</Portuguese>
+            <Korean>제한 시간 (35〜45분)이 끝나기 전에 두 개의 폭탄을 찾고 해체하세요.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T5_EXE_A_TITLE">
+            <English>a. Search</English>
+            <French>a. Recherche</French>
+            <German>a. Suche</German>
+            <Spanish>a. Búsqueda</Spanish>
+            <Italian>a. Ricerca</Italian>
+            <Russian>а. Поиск</Russian>
+            <Polish>a. Poszukiwania</Polish>
+            <Czech>a. Pátrání</Czech>
+            <Turkish>a. Arama</Turkish>
+            <Chinese>a. 搜索</Chinese>
+            <Chinesesimp>a. 搜索</Chinesesimp>
+            <Japanese>a. 捜索</Japanese>
+            <Portuguese>a. Busca</Portuguese>
+            <Korean>a. 탐색</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T5_EXE_A_TEXT">
+            <English>Bombs do not appear on the map. You must locate them by SOUND (Audible beep ~50m). Search suspicious buildings.</English>
+            <French>Les bombes n&apos;apparaissent pas sur la carte. Vous devez les repérer au SON (Bip sonore audible à ~50m). Fouillez les bâtiments suspects.</French>
+            <German>Bomben erscheinen nicht auf der Karte. Ortung über GERÄUSCH (Hörbares Piepen ~50m). Verdächtige Gebäude durchsuchen.</German>
+            <Spanish>Las bombas no aparecen en el mapa. Localícelas por SONIDO (Pitido audible ~50m). Busque en edificios sospechosos.</Spanish>
+            <Italian>Le bombe non appaiono sulla mappa. Localizzale tramite SUONO (Bip udibile a ~50m). Ispeziona edifici sospetti.</Italian>
+            <Russian>Бомбы не отмечены на карте. Ориентируйтесь на ЗВУК (Слышимый писк ~50м). Обыщите подозрительные здания.</Russian>
+            <Polish>Bomby nie są widoczne na mapie. Zlokalizuj je na SŁUCH (Słyszalne pikanie ~50m). Przeszukaj podejrzane budynki.</Polish>
+            <Czech>Bomby se na mapě nezobrazují. Musíte je lokalizovat podle ZVUKU (slyšitelné pípání ~ 50 m). Prohledejte podezřelé budovy.</Czech>
+            <Turkish>Bombalar haritada görünmez. SES ile yerlerini bulmalısınız (~50m&apos;den duyulabilir bip sesi). Şüpheli binaları arayın.</Turkish>
+            <Chinese>炸弹不会显示在地图上。您必须通过声音定位它们（约 50 米内可听到嘟嘟声）。搜查可疑建筑。</Chinese>
+            <Chinesesimp>炸弹不会显示在地图上。您必须通过声音定位它们（约 50 米内可听到嘟嘟声）。搜查可疑建筑。</Chinesesimp>
+            <Japanese>爆弾はマップに表示されない。音（約50mで聞こえるビープ音）で位置を特定せよ。疑わしい建物を捜索すること。</Japanese>
+            <Portuguese>As bombas não aparecem no mapa. Você deve localizá-las pelo SOM (bip audível ~50m). Vasculhe edifícios suspeitos.</Portuguese>
+            <Korean>폭탄은 지도에 표시되지 않습니다. 소리를 통해 위치를 찾으세요 (~50m에서 들리는 비프음). 의심스러운 건물들을 탐색하세요.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T5_EXE_B_TITLE">
+            <English>b. Defusal</English>
+            <French>b. Désamorçage</French>
+            <German>b. Entschärfung</German>
+            <Spanish>b. Desactivación</Spanish>
+            <Italian>b. Disinnesco</Italian>
+            <Russian>б. Разминирование</Russian>
+            <Polish>b. Rozbrajanie</Polish>
+            <Czech>b. Zneškodnění</Czech>
+            <Turkish>b. İmha</Turkish>
+            <Chinese>b. 拆除</Chinese>
+            <Chinesesimp>b. 拆除</Chinesesimp>
+            <Japanese>b. 解除</Japanese>
+            <Portuguese>b. Desarmamento</Portuguese>
+            <Korean>b. 해체</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T5_EXE_B_TEXT">
+            <English>Once a device is found, approach and hold the &apos;Defuse&apos; action.</English>
+            <French>Une fois un engin trouvé, approchez-vous et maintenez l&apos;action &apos;Désamorcer&apos;.</French>
+            <German>Sobald Gerät gefunden, annähern und &apos;Entschärfen&apos; halten.</German>
+            <Spanish>Al encontrar un dispositivo, acérquese y mantenga &apos;Desactivar&apos;.</Spanish>
+            <Italian>Una volta trovato un ordigno, avvicinati e tieni premuto &apos;Disinnesca&apos;.</Italian>
+            <Russian>Обнаружив устройство, подойдите и удерживайте &apos;Обезвредить&apos;.</Russian>
+            <Polish>Po znalezieniu urządzenia podejdź i przytrzymaj &apos;Rozbrój&apos;.</Polish>
+            <Czech>Jakmile je zařízení nalezeno, přistupte k němu a podržte akci &apos;Zneškodnit&apos;.</Czech>
+            <Turkish>Bir cihaz bulunduğunda, yaklaşın ve &apos;İmha Et&apos; eylemini basılı tutun.</Turkish>
+            <Chinese>找到装置后，靠近并按住“拆除”行动。</Chinese>
+            <Chinesesimp>找到装置后，靠近并按住“拆除”行动。</Chinesesimp>
+            <Japanese>装置を発見したら接近し、「解除」アクションを長押しせよ。</Japanese>
+            <Portuguese>Assim que um dispositivo for encontrado, aproxime-se e segure a ação &apos;Desarmar&apos;.</Portuguese>
+            <Korean>기기 발견 후 접근하고 &apos;해체&apos; 액션을 유지하세요.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T5_ROE_TITLE">
+            <English>c. Rules of Engagement</English>
+            <French>c. Règles d&apos;Engagement</French>
+            <German>c. Einsatzregeln</German>
+            <Spanish>c. Reglas de Enfrentamiento</Spanish>
+            <Italian>c. Regole di Ingaggio</Italian>
+            <Russian>в. Правила ведения боя</Russian>
+            <Polish>c. Zasady użycia siły</Polish>
+            <Czech>c. Pravidla nasazení</Czech>
+            <Turkish>c. Angajman Kuralları</Turkish>
+            <Chinese>c. 交战规则</Chinese>
+            <Chinesesimp>c. 交战规则</Chinesesimp>
+            <Japanese>c. 交戦規定</Japanese>
+            <Portuguese>c. Regras de Engajamento</Portuguese>
+            <Korean>c. 교전 수칙</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_ROE_STRICT">
+            <English>STRICT:</English>
+            <French>STRICT :</French>
+            <German>STRIKT:</German>
+            <Spanish>ESTRICTO:</Spanish>
+            <Italian>STRETTO:</Italian>
+            <Russian>СТРОГО:</Russian>
+            <Polish>ŚCISŁE:</Polish>
+            <Czech>PŘÍSNÉ:</Czech>
+            <Turkish>KATI:</Turkish>
+            <Chinese>严格：</Chinese>
+            <Chinesesimp>严格：</Chinesesimp>
+            <Japanese>厳守：</Japanese>
+            <Portuguese>ESTRITO:</Portuguese>
+            <Korean>엄격:</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T5_ROE_STRICT_TEXT">
+            <English>No fire on unarmed civilians. Mission fails immediately if 2 civilians are killed.</English>
+            <French>Tir interdit sur les civils non armés. La mission échoue immédiatement si 2 civils sont tués.</French>
+            <German>Kein Feuer auf unbewaffnete Zivilisten. Mission scheitert, wenn 2 Zivilisten getötet werden.</German>
+            <Spanish>No disparar a civiles desarmados. Misión fallida si mueren 2 civiles.</Spanish>
+            <Italian>Vietato sparare a civili disarmati. Missione fallita se muoiono 2 civili.</Italian>
+            <Russian>Огонь по гражданским запрещен. Провал миссии при гибели 2 гражданских.</Russian>
+            <Polish>Zakaz ognia do cywilów. Porażka, jeśli zginie 2 cywilów.</Polish>
+            <Czech>Zákaz střelby na neozbrojené civilisty. Mise okamžitě selže, pokud jsou zabiti 2 civilisté.</Czech>
+            <Turkish>Silahsız sivillere ateş açmak yok. 2 sivil öldürülürse görev hemen başarısız olur.</Turkish>
+            <Chinese>禁止向手无寸铁的平民开火。如果 2 名平民被杀，任务立即失败。</Chinese>
+            <Chinesesimp>禁止向手无寸铁的平民开火。如果 2 名平民被杀，任务立即失败。</Chinesesimp>
+            <Japanese>非武装の民間人への発砲禁止。民間人が2名死亡した場合、任務は即座に失敗となる。</Japanese>
+            <Portuguese>Não atire em civis desarmados. A missão falha imediatamente se 2 civis forem mortos.</Portuguese>
+            <Korean>무기 없는 시민을 공격하는 것은 금지됩니다. 2명의 시민이 죽으면 미션은 즉시 실패합니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_ROE_VIGILANCE">
+            <English>VIGILANCE:</English>
+            <French>VIGILANCE :</French>
+            <German>WACHSAMKEIT:</German>
+            <Spanish>VIGILANCIA:</Spanish>
+            <Italian>VIGILANZA:</Italian>
+            <Russian>БДИТЕЛЬНОСТЬ:</Russian>
+            <Polish>CZUJNOŚĆ:</Polish>
+            <Czech>BDĚLOST:</Czech>
+            <Turkish>TEYAKKUZ:</Turkish>
+            <Chinese>警惕：</Chinese>
+            <Chinesesimp>警惕：</Chinesesimp>
+            <Japanese>警戒：</Japanese>
+            <Portuguese>VIGILÂNCIA:</Portuguese>
+            <Korean>경계:</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T5_ROE_VIGILANCE_TEXT">
+            <English>Watch your six. Traitors will only attack if you are very close (&lt;15m).</English>
+            <French>Surveillez vos arrières. Les traîtres n&apos;attaqueront que si vous êtes très proches (&lt;15m).</French>
+            <German>Achten Sie auf Ihren Rücken. Verräter greifen nur an, wenn Sie sehr nah sind (&lt;15m).</German>
+            <Spanish>Cuide su espalda. Los traidores solo atacarán si está muy cerca (&lt;15m).</Spanish>
+            <Italian>Guardati le spalle. I traditori attaccheranno solo se sei molto vicino (&lt;15m).</Italian>
+            <Russian>Смотрите в оба. Предатели атакуют только с близкого расстояния (&lt;15м).</Russian>
+            <Polish>Uważaj na plecy. Zdrajcy zaatakują tylko z bliska (&lt;15m).</Polish>
+            <Czech>Kryjte si záda. Zrádci zaútočí, jen když budete velmi blízko (&lt;15m).</Czech>
+            <Turkish>Arkanı kolla. Hainler sadece çok yakınsanız saldırır (&lt;15m).</Turkish>
+            <Chinese>注意身后。叛徒只有在您非常靠近（&lt;15米）时才会攻击。</Chinese>
+            <Chinesesimp>注意身后。叛徒只有在您非常靠近（&lt;15米）时才会攻击。</Chinesesimp>
+            <Japanese>背後に注意せよ。裏切り者は至近距離（15m未満）に近づくと攻撃してくる。</Japanese>
+            <Portuguese>Cuidado com a retaguarda. Os traidores só atacarão se você estiver muito perto (&lt;15m).</Portuguese>
+            <Korean>후방을 주의하세요. 훈훈한 사람들이 매우 가까이에 있을 때만 공격합니다 (&lt;15m).</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_HEADER_DEFEAT">
+            <English>4. DEFEAT</English>
+            <French>4. DÉFAITE</French>
+            <German>4. NIEDERLAGE</German>
+            <Spanish>4. DERROTA</Spanish>
+            <Italian>4. SCONFITTA</Italian>
+            <Russian>4. ПОРАЖЕНИЕ</Russian>
+            <Polish>4. PORAŻKA</Polish>
+            <Czech>4. PORÁŽKA</Czech>
+            <Turkish>4. YENİLGİ</Turkish>
+            <Chinese>4. 失败</Chinese>
+            <Chinesesimp>4. 失败</Chinesesimp>
+            <Japanese>4. 敗北</Japanese>
+            <Portuguese>4. DERROTA</Portuguese>
+            <Korean>4. 패배</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T5_DEFEAT_TEXT_1">
+            <English>Bomb explosion (Time out).</English>
+            <French>Explosion d&apos;une bombe (Fin du chrono).</French>
+            <German>Bombenexplosion (Zeit abgelaufen).</German>
+            <Spanish>Explosión de bomba (Tiempo agotado).</Spanish>
+            <Italian>Esplosione bomba (Tempo scaduto).</Italian>
+            <Russian>Взрыв бомбы (Время истекло).</Russian>
+            <Polish>Eksplozja bomby (Koniec czasu).</Polish>
+            <Czech>Výbuch bomby (vypršel čas).</Czech>
+            <Turkish>Bomba patlaması (Süre doldu).</Turkish>
+            <Chinese>炸弹爆炸（超时）。</Chinese>
+            <Chinesesimp>炸弹爆炸（超时）。</Chinesesimp>
+            <Japanese>爆弾の爆発（タイムオーバー）。</Japanese>
+            <Portuguese>Explosão da bomba (Fim do tempo).</Portuguese>
+            <Korean>폭탄 폭발 (시간 초과).</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T5_DEFEAT_TEXT_2">
+            <English>Death of 2 innocent civilians.</English>
+            <French>Mort de 2 civils innocents.</French>
+            <German>Tod von 2 unschuldigen Zivilisten.</German>
+            <Spanish>Muerte de 2 civiles inocentes.</Spanish>
+            <Italian>Morte di 2 civili innocenti.</Italian>
+            <Russian>Гибель 2 невинных гражданских.</Russian>
+            <Polish>Śmierć 2 niewinnych cywilów.</Polish>
+            <Czech>Smrt 2 nevinných civilistů.</Czech>
+            <Turkish>2 masum sivilin ölümü.</Turkish>
+            <Chinese>2 名无辜平民死亡。</Chinese>
+            <Chinesesimp>2 名无辜平民死亡。</Chinesesimp>
+            <Japanese>2名の無実の民間人の死。</Japanese>
+            <Portuguese>Morte de 2 civis inocentes.</Portuguese>
+            <Korean>무고한 시민 2명 사망.</Korean>
+        </Key><!-- TASK 6 -->
+        <Key ID="STR_BRIEF_T6_OP_TITLE">
+            <English>OP ORDER: CRITICAL RESCUE</English>
+            <French>ORDRE D&apos;OPÉRATION : SAUVETAGE CRITIQUE</French>
+            <German>OP BEFEHL: KRITISCHE RETTUNG</German>
+            <Spanish>ORDEN OP: RESCATE CRÍTICO</Spanish>
+            <Italian>ORDINE OP: SALVATAGGIO CRITICO</Italian>
+            <Russian>БОЕВОЙ ПРИКАЗ: КРИТИЧЕСКОЕ СПАСЕНИЕ</Russian>
+            <Polish>ROZKAZ OP: RATUNEK KRYTYCZNY</Polish>
+            <Czech>ROZKAZ OP: KRITICKÁ ZÁCHRANA</Czech>
+            <Turkish>OP EMRİ: KRİTİK KURTARMA</Turkish>
+            <Chinese>行动指令：紧急救援</Chinese>
+            <Chinesesimp>行动指令：紧急救援</Chinesesimp>
+            <Japanese>作戦命令：緊急救助</Japanese>
+            <Portuguese>ORDEM OP: RESGATE CRÍTICO</Portuguese>
+            <Korean>작전 명령: 긴급 구조</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T6_SITUATION">
+            <English>An allied helicopter carrying a squad has been shot down. Distress beacon is active. We have 8 survivors on the ground in critical condition.</English>
+            <French>Un hélicoptère allié transportant une escouade a été abattu. La balise de détresse est active. Nous avons 8 survivants au sol dans un état critique.</French>
+            <German>Ein alliierter Helikopter wurde abgeschossen. Notsignal aktiv. 8 Überlebende am Boden in kritischem Zustand.</German>
+            <Spanish>Helicóptero aliado derribado. Baliza activa. 8 supervivientes en tierra en estado crítico.</Spanish>
+            <Italian>Elicottero alleato abbattuto. Segnale di soccorso attivo. 8 sopravvissuti a terra in condizioni critiche.</Italian>
+            <Russian>Союзный вертолет сбит. Аварийный маяк активен. 8 выживших на земле в критическом состоянии.</Russian>
+            <Polish>Zestrzelono sojuszniczy śmigłowiec. Nadajnik włączony. 8 ocalałych na ziemi w stanie krytycznym.</Polish>
+            <Czech>Spojenecký vrtulník přepravující družstvo byl sestřelen. Nouzový maják je aktivní. Na zemi máme 8 přeživších v kritickém stavu.</Czech>
+            <Turkish>Bir manga taşıyan müttefik helikopter düşürüldü. Acil durum sinyali aktif. Yerde kritik durumda 8 hayatta kalan var.</Turkish>
+            <Chinese>一架载有一个班的盟军直升机被击落。求救信号已激活。地面有 8 名幸存者，情况危急。</Chinese>
+            <Chinesesimp>一架载有一个班的盟军直升机被击落。求救信号已激活。地面有 8 名幸存者，情况危急。</Chinesesimp>
+            <Japanese>分隊を輸送していた友軍ヘリが撃墜された。救難信号が発信されている。地上には8名の生存者がおり、危機的な状態だ。</Japanese>
+            <Portuguese>Um helicóptero aliado transportando um esquadrão foi abatido. O sinal de socorro está ativo. Temos 8 sobreviventes no solo em estado crítico.</Portuguese>
+            <Korean>분대를 태운 연합군 헬기가 격추되었습니다. 조난 신호가 작동 중입니다. 지상에 위독한 상태의 생존자 8명이 있습니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T6_THREAT_TEXT">
+            <English>Enemy reaction force (5-10 hostiles) is already in the area to finish off the wounded.</English>
+            <French>Une force de réaction ennemie (5 à 10 ennemis) est déjà sur zone pour achever les blessés.</French>
+            <German>Feindliche Eingreiftruppe (5-10 Feinde) bereits vor Ort, um Verwundete zu töten.</German>
+            <Spanish>Fuerza de reacción enemiga (5-10 hostiles) en zona para rematar heridos.</Spanish>
+            <Italian>Forza di reazione nemica (5-10 ostili) già in zona per finire i feriti.</Italian>
+            <Russian>Вражеская группа реагирования (5-10 врагов) уже в зоне, чтобы добить раненых.</Russian>
+            <Polish>Wrogie siły reakcji (5-10 wrogów) są już w strefie, by dobić rannych.</Polish>
+            <Czech>Nepřátelská reakční síla (5-10 nepřátel) je již v oblasti, aby dorazila raněné.</Czech>
+            <Turkish>Düşman reaksiyon gücü (5-10 düşman) yaralıları bitirmek için zaten bölgede.</Turkish>
+            <Chinese>敌方反应部队（5-10 名敌人）已在该地区，准备处决伤员。</Chinese>
+            <Chinesesimp>敌方反应部队（5-10 名敌人）已在该地区，准备处决伤员。</Chinesesimp>
+            <Japanese>敵の即応部隊（5〜10名）が、負傷者にトドメを刺すために既にエリア内にいる。</Japanese>
+            <Portuguese>Uma força de reação inimiga (5-10 hostis) já está na área para acabar com os feridos.</Portuguese>
+            <Korean>5-10명의 적군이 부상자들을 처리하기 위해 이미 지역에 있습니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T6_MISSION">
+            <English>Secure crash site and stabilize survivors before they succumb to wounds (Internal bleeding).</English>
+            <French>Sécuriser le site du crash et stabiliser les survivants avant qu&apos;ils ne succombent à leurs blessures (Hémorragie interne).</French>
+            <German>Absturzstelle sichern und Überlebende stabilisieren, bevor sie wunden erliegen (Innere Blutungen).</German>
+            <Spanish>Asegure el sitio y estabilice supervivientes antes de que sucumban (Hemorragia interna).</Spanish>
+            <Italian>Metti in sicurezza il sito e stabilizza i sopravvissuti (Emorragia interna).</Italian>
+            <Russian>Зачистить место крушения и стабилизировать выживших (Внутреннее кровотечение).</Russian>
+            <Polish>Zabezpiecz miejsce katastrofy i ustabilizuj ocalałych (Krwotok wewnętrzny).</Polish>
+            <Czech>Zabezpečte místo dopadu a stabilizujte přeživší, než podlehnou zraněním (vnitřní krvácení).</Czech>
+            <Turkish>Kaza yerini emniyete alın ve yaralarından (İç kanama) ölmeden önce hayatta kalanları stabilize edin.</Turkish>
+            <Chinese>保护坠机现场并在幸存者因伤势（内出血）死亡前稳定他们的情况。</Chinese>
+            <Chinesesimp>保护坠机现场并在幸存者因伤势（内出血）死亡前稳定他们的情况。</Chinesesimp>
+            <Japanese>墜落現場を確保し、生存者が傷（内出血）で死亡する前に容体を安定させよ。</Japanese>
+            <Portuguese>Proteja o local do acidente e estabilize os sobreviventes antes que sucumbam aos ferimentos (Hemorragia interna).</Portuguese>
+            <Korean>사고 장소를 보호하고 생존자가 내출혈으로 사망하기 전에 상황을 안정화하세요.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T6_EXE_A_TITLE">
+            <English>a. Approach</English>
+            <French>a. Approche</French>
+            <German>a. Annäherung</German>
+            <Spanish>a. Aproximación</Spanish>
+            <Italian>a. Approccio</Italian>
+            <Russian>а. Подход</Russian>
+            <Polish>a. Podejście</Polish>
+            <Czech>a. Přiblížení</Czech>
+            <Turkish>a. Yaklaşma</Turkish>
+            <Chinese>a. 接近</Chinese>
+            <Chinesesimp>a. 接近</Chinesesimp>
+            <Japanese>a. 接近</Japanese>
+            <Portuguese>a. Abordagem</Portuguese>
+            <Korean>a. 접근</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T6_EXE_A_TEXT">
+            <English>Crash site marked on map. Approach with caution, enemy is guarding.</English>
+            <French>Le site du crash est marqué sur la carte. Approchez avec prudence, l&apos;ennemi monte la garde.</French>
+            <German>Absturzstelle auf Karte markiert. Vorsichtig nähern, Feind hält Wache.</German>
+            <Spanish>Sitio marcado en mapa. Acérquese con precaución, hay guardia enemiga.</Spanish>
+            <Italian>Sito incidente segnato. Avvicinati con cautela, il nemico è di guardia.</Italian>
+            <Russian>Место крушения отмечено. Подходите осторожно, враг на страже.</Russian>
+            <Polish>Miejsce katastrofy oznaczone. Podchodź ostrożnie, wróg pilnuje.</Polish>
+            <Czech>Místo dopadu je vyznačeno na mapě. Přibližujte se opatrně, nepřítel hlídkuje.</Czech>
+            <Turkish>Kaza yeri haritada işaretlendi. Dikkatli yaklaşın, düşman nöbet tutuyor.</Turkish>
+            <Chinese>坠机现场已在地图上标出。小心接近，有敌人看守。</Chinese>
+            <Chinesesimp>坠机现场已在地图上标出。小心接近，有敌人看守。</Chinesesimp>
+            <Japanese>墜落現場はマップに表示されている。敵が警備しているため、慎重に接近せよ。</Japanese>
+            <Portuguese>Local do acidente marcado no mapa. Aproxime-se com cautela, o inimigo está de guarda.</Portuguese>
+            <Korean>사고 장소가 지도에 표시되었습니다. 적이 지켜있다는 것을 주의로 접근하세요.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T6_EXE_B_TITLE">
+            <English>b. Medical</English>
+            <French>b. Médical</French>
+            <German>b. Medizinisch</German>
+            <Spanish>b. Médico</Spanish>
+            <Italian>b. Medico</Italian>
+            <Russian>б. Медицина</Russian>
+            <Polish>b. Medyczne</Polish>
+            <Czech>b. Zdravotní</Czech>
+            <Turkish>b. Tıbbi</Turkish>
+            <Chinese>b. 医疗</Chinese>
+            <Chinesesimp>b. 医疗</Chinesesimp>
+            <Japanese>b. 医療</Japanese>
+            <Portuguese>b. Médico</Portuguese>
+            <Korean>b. 의료</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_HEADER_URGENCY">
+            <English>URGENCY:</English>
+            <French>URGENCE :</French>
+            <German>DRINGLICHKEIT:</German>
+            <Spanish>URGENCIA:</Spanish>
+            <Italian>URGENZA:</Italian>
+            <Russian>СРОЧНОСТЬ:</Russian>
+            <Polish>PILNE:</Polish>
+            <Czech>NALÉHAVÉ:</Czech>
+            <Turkish>ACİLİYET:</Turkish>
+            <Chinese>紧急：</Chinese>
+            <Chinesesimp>紧急：</Chinesesimp>
+            <Japanese>緊急：</Japanese>
+            <Portuguese>URGÊNCIA:</Portuguese>
+            <Korean>긴급:</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T6_EXE_B_TEXT_1">
+            <English>Survivors are bleeding out. You have 10 minutes max after arrival.</English>
+            <French>Les survivants saignent. Vous avez 10 minutes maximum après votre arrivée sur zone.</French>
+            <German>Überlebende verbluten. Max. 10 Minuten nach Ankunft.</German>
+            <Spanish>Supervivientes desangrándose. 10 minutos máximo tras llegada.</Spanish>
+            <Italian>I sopravvissuti stanno morendo dissanguati. Hai max 10 minuti dall&apos;arrivo.</Italian>
+            <Russian>Выжившие истекают кровью. У вас максимум 10 минут после прибытия.</Russian>
+            <Polish>Ocalali się wykrwawiają. Masz maks. 10 minut od przybycia.</Polish>
+            <Czech>Přeživší krvácejí. Máte maximálně 10 minut po příjezdu do oblasti.</Czech>
+            <Turkish>Hayatta kalanlar kan kaybediyor. Bölgeye vardıktan sonra en fazla 10 dakikanız var.</Turkish>
+            <Chinese>幸存者正在失血。抵达该地区后，您最多有 10 分钟时间。</Chinese>
+            <Chinesesimp>幸存者正在失血。抵达该地区后，您最多有 10 分钟时间。</Chinesesimp>
+            <Japanese>生存者は出血多量で危険な状態だ。エリア到着後、最大10分の猶予しかない。</Japanese>
+            <Portuguese>Os sobreviventes estão sangrando. Você tem no máximo 10 minutos após a chegada.</Portuguese>
+            <Korean>생존자들이 과다출혈 상태입니다. 도착 후 최대 10분의 시간이 있습니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T6_EXE_B_TEXT_2">
+            <English>- Use &apos;Heal&apos; action on wounded.<br/>- Healed survivor will join your squad.</English>
+            <French>- Utilisez l&apos;action &apos;Soigner&apos; sur les blessés.<br/>- Un blessé soigné rejoindra votre escouade.</French>
+            <German>- &apos;Heilen&apos; Aktion bei Verwundeten nutzen.<br/>- Geheilter Überlebender tritt Gruppe bei.</German>
+            <Spanish>- Use acción &apos;Curar&apos;.<br/>- Superviviente curado se unirá al escuadrón.</Spanish>
+            <Italian>- Usa azione &apos;Curare&apos;.<br/>- Il sopravvissuto curato si unirà alla squadra.</Italian>
+            <Russian>- Используйте действие &apos;Лечить&apos;.<br/>- Вылеченный присоединится к отряду.</Russian>
+            <Polish>- Użyj akcji &apos;Lecz&apos;.<br/>- Wyleczony dołączy do oddziału.</Polish>
+            <Czech>- Použijte akci &apos;Léčit&apos; na zraněné.<br/>- Vyléčený přeživší se připojí k vašemu družstvu.</Czech>
+            <Turkish>- Yaralılar üzerinde &apos;İyileştir&apos; eylemini kullanın.<br/>- İyileşen hayatta kalan manganıza katılacak.</Turkish>
+            <Chinese>- 对伤员使用“治疗”行动。<br/>- 治愈后的幸存者将加入您的队伍。</Chinese>
+            <Chinesesimp>- 对伤员使用“治疗”行动。<br/>- 治愈后的幸存者将加入您的队伍。</Chinesesimp>
+            <Japanese>- 負傷者に対して「治療」アクションを使用せよ。<br/>- 治療された生存者は分隊に加わる。</Japanese>
+            <Portuguese>- Use a ação &apos;Curar&apos; nos feridos.<br/>- O sobrevivente curado se juntará ao seu esquadrão.</Portuguese>
+            <Korean>- 부상자에게 &apos;치료&apos; 행동을 사용하세요.<br/>- 치료된 생존자는 팀에 참여합니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T6_EXE_C_TITLE">
+            <English>c. Victory Condition</English>
+            <French>c. Condition de Victoire</French>
+            <German>c. Siegbedingung</German>
+            <Spanish>c. Condición de Victoria</Spanish>
+            <Italian>c. Condizione di Vittoria</Italian>
+            <Russian>в. Условие победы</Russian>
+            <Polish>c. Warunek zwycięstwa</Polish>
+            <Czech>c. Podmínka vítězství</Czech>
+            <Turkish>c. Zafer Koşulu</Turkish>
+            <Chinese>c. 胜利条件</Chinese>
+            <Chinesesimp>c. 胜利条件</Chinesesimp>
+            <Japanese>c. 勝利条件</Japanese>
+            <Portuguese>c. Condição de Vitória</Portuguese>
+            <Korean>c. 승리 조건</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T6_EXE_C_TEXT">
+            <English>Save at least ONE survivor and keep him alive for 2 minutes after healing.</English>
+            <French>Il faut sauver au moins UN survivant et le maintenir en vie pendant 2 minutes après le soin.</French>
+            <German>Retten Sie mindestens EINEN und halten Sie ihn 2 Minuten nach Heilung am Leben.</German>
+            <Spanish>Salve al menos a UNO y manténgalo vivo 2 minutos tras curarlo.</Spanish>
+            <Italian>Salva almeno UNO e tienilo in vita per 2 minuti dopo la cura.</Italian>
+            <Russian>Спасти хотя бы ОДНОГО и сохранить ему жизнь 2 минуты после лечения.</Russian>
+            <Polish>Uratuj przynajmniej JEDNEGO i utrzymaj go przy życiu przez 2 minuty.</Polish>
+            <Czech>Musíte zachránit alespoň JEDNOHO přeživšího a udržet ho naživu 2 minuty po ošetření.</Czech>
+            <Turkish>En az BİR hayatta kalanı kurtarın ve iyileştikten sonra 2 dakika boyunca hayatta tutun.</Turkish>
+            <Chinese>至少拯救一名幸存者，并在治疗后让他存活 2 分钟。</Chinese>
+            <Chinesesimp>至少拯救一名幸存者，并在治疗后让他存活 2 分钟。</Chinesesimp>
+            <Japanese>少なくとも1名の生存者を救助し、治療後2分間生存させること。</Japanese>
+            <Portuguese>Salve pelo menos UM sobrevivente e mantenha-o vivo por 2 minutos após a cura.</Portuguese>
+            <Korean>최소한 한 명의 생존자를 구하고 치료 후 2분 동안 살아있게 유지하세요.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_SIG_CRASH">
+            <English>CRASH MARKER:</English>
+            <French>MARQUEUR ACCIDENT :</French>
+            <German>ABSTURZMARKIERUNG:</German>
+            <Spanish>MARCADOR ACCIDENTE:</Spanish>
+            <Italian>MARCATORE INCIDENTE:</Italian>
+            <Russian>МАРКЕР КРУШЕНИЯ:</Russian>
+            <Polish>ZNACZNIK KATASTROFY:</Polish>
+            <Czech>ZNAČKA NEHODY:</Czech>
+            <Turkish>KAZA İŞARETİ:</Turkish>
+            <Chinese>坠机标记：</Chinese>
+            <Chinesesimp>坠机标记：</Chinesesimp>
+            <Japanese>墜落マーカー：</Japanese>
+            <Portuguese>MARCADOR DE ACIDENTE:</Portuguese>
+            <Korean>추락 지점 마커:</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T6_SIG_CRASH_TEXT">
+            <English>Crash site.</English>
+            <French>Lieu du crash.</French>
+            <German>Absturzstelle.</German>
+            <Spanish>Lugar del accidente.</Spanish>
+            <Italian>Luogo incidente.</Italian>
+            <Russian>Место крушения.</Russian>
+            <Polish>Miejsce katastrofy.</Polish>
+            <Czech>Místo nehody.</Czech>
+            <Turkish>Kaza yeri.</Turkish>
+            <Chinese>坠机地点。</Chinese>
+            <Chinesesimp>坠机地点。</Chinesesimp>
+            <Japanese>墜落現場。</Japanese>
+            <Portuguese>Local do acidente.</Portuguese>
+            <Korean>추락 지점.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_SIG_BLUE">
+            <English>BLUE MARKER:</English>
+            <French>MARQUEUR BLEU :</French>
+            <German>BLAUE MARKIERUNG:</German>
+            <Spanish>MARCADOR AZUL:</Spanish>
+            <Italian>MARCATORE BLU:</Italian>
+            <Russian>СИНИЙ МАРКЕР:</Russian>
+            <Polish>NIEBIESKI ZNACZNIK:</Polish>
+            <Czech>MODRÁ ZNAČKA:</Czech>
+            <Turkish>MAVİ İŞARET:</Turkish>
+            <Chinese>蓝色标记：</Chinese>
+            <Chinesesimp>蓝色标记：</Chinesesimp>
+            <Japanese>青のマーカー：</Japanese>
+            <Portuguese>MARCADOR AZUL:</Portuguese>
+            <Korean>파란 마커:</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T6_SIG_BLUE_TEXT">
+            <English>Survivor position (Disappears if dead or healed).</English>
+            <French>Position d&apos;un survivant (Disparaît si mort ou soigné).</French>
+            <German>Überlebendenposition (Verschwindet wen tot/geheilt).</German>
+            <Spanish>Posición superviviente (Desaparece si muerto/curado).</Spanish>
+            <Italian>Posizione sopravvissuto (Scompare se morto/curato).</Italian>
+            <Russian>Позиция выжившего (Исчезает при смерти/лечении).</Russian>
+            <Polish>Pozycja ocalałego (Znika po śmierci/leczeniu).</Polish>
+            <Czech>Pozice přeživšího (zmizí, pokud je mrtvý nebo vyléčený).</Czech>
+            <Turkish>Hayatta kalanın konumu (Ölürse veya iyileşirse kaybolur).</Turkish>
+            <Chinese>幸存者位置（如果死亡或被治愈则消失）。</Chinese>
+            <Chinesesimp>幸存者位置（如果死亡或被治愈则消失）。</Chinesesimp>
+            <Japanese>生存者の位置（死亡または回復した場合は消滅）。</Japanese>
+            <Portuguese>Posição do sobrevivente (Desaparece se morto ou curado).</Portuguese>
+            <Korean>생존자 위치 (죽거나 치료되면 사라집니다).</Korean>
+        </Key>
     </Package>
 </Project>

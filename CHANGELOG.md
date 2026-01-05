@@ -8,6 +8,12 @@ This document tracks the evolution of the **Tactical Sandbox** mod.
 
 ---
 
+## 🚀 v1.2
+
+- Ajout des langues suivantes : Portuguese, Japanese, Korean
+- Ajout des briefings pour toutes les missions
+
+
 ## 🚀 v1.1 
 
 ### 🆕 Features

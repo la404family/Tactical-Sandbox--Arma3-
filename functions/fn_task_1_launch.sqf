@@ -45,6 +45,7 @@ private _taskPos = if (!isNull _firstSpawn) then { getPos _firstSpawn } else { [
 ] call BIS_fnc_taskCreate;
 
 hint (localize "STR_NOTIF_TASK1_START");
+["task_1"] remoteExec ["MISSION_fnc_task_briefing", 0, true];
 
 // ============================================================================
 // SECTION 3: SÉLECTION ALÉATOIRE DES FUGITIFS ET CHEMINS
@@ -123,7 +124,6 @@ private _selectedPaths = _availablePaths select [0, 2];
     // SPAWN DES FUGITIFS ET IA
     // ========================================================================
     private _grpFugitives = createGroup [east, true];
-    private _chosenArmedIndex = floor (random (count _fugitiveTemplates));
     
     {
         private _template = _x;
@@ -146,7 +146,7 @@ private _selectedPaths = _availablePaths select [0, 2];
             _fugitive setVariable ["isFugitive", true, true];
             _fugitive setVariable ["isCaptured", false, true];
             _fugitive setVariable ["isArmed", false, true];
-            _fugitive setVariable ["willBeArmed", (_forEachIndex == _chosenArmedIndex), true];
+            _fugitive setVariable ["willBeArmed", true, true];
             _fugitive setVariable ["boarded", false, true];
             _fugitive setVariable ["captureActionID", -1];
             _fugitive setVariable ["pathIndex", _pathIndex, true];
