@@ -205,18 +205,29 @@ MISSION_fnc_addSubmitAction = {
 
 // mise en memoire et suppression des unités ennemies
 ["SAVE"] call MISSION_fnc_task_x_memory;
-// application de la tache 1 (attaque du QG allié) - Lancé via le menu missions
+// application de la tache 1 (fugitif) - Lancé via le menu missions
 // [] call MISSION_fnc_task_1_launch;
 // application de la tache 2 (assassinat et récupération) - Lancé via le menu missions
 // [] call MISSION_fnc_task_2_launch;
-// application de la tache 3 (guerre totale) - Lancé via le menu missions
+// application de la tache 3 (destruction de cargaisons) - Lancé via le menu missions
 // [] call MISSION_fnc_task_3_launch;
 // application de la tache 4 (exfiltration d'otage) - Lancé via le menu missions
 // [] call MISSION_fnc_task_4_launch;
 // application de la tache 5 (bombe) - Lancé via le menu missions
 // [] call MISSION_fnc_task_5_launch;
+// application de la tache 6 (secours alliés) - Lancé via le menu missions
+// [] call MISSION_fnc_task_6_launch;
 
 //-------------------------------------------
 // Les fonctions de tache : (A remettre à la fin du développement)
 //-------------------------------------------
 [] spawn MISSION_fnc_task_0_intro;
+
+// toutes les 5 secondes on vérifie si le joueur est en vie et leader : [] call MISSION_fnc_ajust_change_team_leader;
+[] spawn {
+    while {true} do {
+        sleep 5;
+        [] call MISSION_fnc_ajust_change_team_leader;
+    };
+};
+

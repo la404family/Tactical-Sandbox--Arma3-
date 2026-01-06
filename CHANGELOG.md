@@ -8,12 +8,10 @@ This document tracks the evolution of the **Tactical Sandbox** mod.
 
 ---
 
-## 🚀 v1.3
+## 🚀 v1.2.5
 
 - Increase of the hostage civilian’s courage to prevent him from stopping.
-- ajustement of the team leader when a player changes 
-- task 7 drone alternance 
-- task 8 
+- ajustement of the team leader when a player changes or die
 
 ## 🚀 v1.2
 

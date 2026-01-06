@@ -320,27 +320,79 @@ if (isNil "MISSION_var_enemies") then { MISSION_var_enemies = []; };
         MISSION_var_task4_heli setVelocity [0,0,-5];
     };
     
-    // Attente embarquement otage
+    // --- Logique Embarquement Robuste ---
+    private _takeOff = false;
+    MISSION_var_task4_heli lock 0; // Déverrouiller pour permettre l'embarquement (IA + Joueurs éventuels pour qu'ils ressortent)
+    
+    // Variable pour éviter le spam de l'action "GetInCargo"
+    private _lastGetInActionTime = 0;
+
     waitUntil {
-        sleep 5;
+        sleep 2;
         
-        if (alive _hostage) then {
-            if (vehicle _hostage == MISSION_var_task4_heli) then {
-                // Dedans -> OK
+        // Sécurité : Si l'hélico ou l'otage est détruit, on sort de la boucle (gestion échec plus bas)
+        if (!alive MISSION_var_task4_heli || !alive _hostage) exitWith { true };
+
+        private _hostageInVehicle = (vehicle _hostage == MISSION_var_task4_heli);
+        private _playersInVehicle = ({isPlayer _x} count (crew MISSION_var_task4_heli)) > 0;
+
+        if (_hostageInVehicle) then {
+            // L'otage est à bord
+            if (_playersInVehicle) then {
+                // Un joueur est aussi à bord -> BLOQUER LE DECOLLAGE
+                MISSION_var_task4_heli engineOn true; // Garder moteur allumé mais au sol
+                MISSION_var_task4_heli setFuel 1;
+                hint "ATTENTION : L'hélicoptère ne partira pas tant qu'un joueur est à bord ! Sortez !";
+                
+                // On s'assure que c'est déverrouillé pour qu'il puisse sortir
+                if (locked MISSION_var_task4_heli == 2) then { MISSION_var_task4_heli lock 0; };
             } else {
-                // Pas dedans
-                if (_hostage distance MISSION_var_task4_heli < 20) then {
-                    if !(_hostage getVariable ["inHeli", false]) then {
-                        _hostage setVariable ["inHeli", true, true];
-                        _hostage assignAsCargo MISSION_var_task4_heli;
-                        [_hostage] orderGetIn true;
-                    };
+                // Otage IN, Joueurs OUT -> OK POUR DECOLLAGE
+                _takeOff = true;
+                MISSION_var_task4_heli lock 2; // Verrouiller pour empêcher les joueurs de remonter
+            };
+        } else {
+            // L'otage n'est PAS encore à bord
+            private _dist = _hostage distance MISSION_var_task4_heli;
+            
+            if (_dist < 50) then {
+                // Il est proche : On active le mode "Embarquement"
+                _hostage setVariable ["inHeli", true, true]; // Coupe le script de suivi
+                _hostage setUnitPos "UP";
+                _hostage setBehaviour "CARELESS";
+
+                // --- JOIN PREMIER ---
+                // Le faire rejoindre le groupe de l'hélico pour faciliter les ordres de véhicule
+                if (group _hostage != _grpHeli) then {
+                     [_hostage] joinSilent _grpHeli;
+                     // On s'assure qu'il est ami (West)
+                     _hostage setCaptive false; 
                 };
+
+                // On assigne l'hélico SI ce n'est pas déjà fait
+                if (assignedVehicle _hostage != MISSION_var_task4_heli) then {
+                    _hostage assignAsCargo MISSION_var_task4_heli;
+                };
+                
+                // On ordonne de monter (suffisant pour que l'IA gère le pathfinding vers la porte)
+                [_hostage] orderGetIn true;
+                
+                if (_dist < 8) then {
+                     // TRES PROCHE mais pas encore dedans
+                     // On déclenche l'action pour aider l'IA, mais pas trop souvent
+                     if (time - _lastGetInActionTime > 4) then {
+                        if (unitReady _hostage) then {
+                             _hostage action ["GetInCargo", MISSION_var_task4_heli];
+                             _lastGetInActionTime = time;
+                        };
+                     };
+                };
+                // NOTE: On ne fait PLUS de "doMove" manuel ici car cela casse l'ordre "Get In".
             };
         };
         
-        // Condition sortie : Otage dedans OU Otage mort
-        (vehicle _hostage == MISSION_var_task4_heli) || (!alive _hostage)
+        // Sortie de boucle uniquement si _takeOff est validé
+        _takeOff
     };
     
     // Protection OTAGE MORT
