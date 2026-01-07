@@ -1,11 +1,14 @@
 [h1]Tactical Sandbox — A Fully Customizable Mission Launcher[/h1]
-[quote]Tactical Sandbox is a mission launcher designed to be tailored exactly the way you want. Experience the ultimate freedom in mission planning and execution.[/quote]
+[quote]Tactical Sandbox is a mission launcher designed to be tailored exactly the way you want.
+Experience the ultimate freedom in mission planning and execution.[/quote]
 
 [hr]
 
 [h2]⭐️ KEY FEATURES[/h2]
 [b]Universal Compatibility[/b]
-The system automatically adapts to your installed Mods and DLCs. New units appear seamlessly, and friendly forces will wear the uniforms from your loaded mods.
+The system automatically adapts to your installed Mods and DLCs.
+New units appear seamlessly, and friendly forces will wear the uniforms from your loaded mods.
+Allies appearing in missions (via helicopter or others) will wear the server players' outfits (it's better for immersion!).
 
 [b]Dynamic Gameplay[/b]
 [list]
@@ -20,12 +23,14 @@ The system automatically adapts to your installed Mods and DLCs. New units appea
 Prepare for your mission in a fully interactive HQ featuring specialized zones:
 
 [list]
-[*] [b]🔫 1. Virtual Arsenal:[/b] Choose your uniforms, patches, weapons, and gear without restriction.
-[*] [b]⛅ 2. Weather & Time Room:[/b] Take full control over the time of day and all weather conditions (Fog, Rain, Storms, Clear Skies).
-[*] [b]🗺️ 3. Mission Selector:[/b] Choose from multiple dynamic mission types suited to your mood.
-[*] [b]🪖 4. Recruitment Center:[/b] Build and customize your AI squad ([i]"Brothers in Arms"[/i]). Add or remove soldiers at any time.
-[*] [b]🎯 5. Enemy Selector:[/b] Customize opposing forces. [i]Note: Default vanilla units are included, but you are free to use [b]ANY[/b] OPFOR or Independent faction.[/i]
-[*] [b]🚙 6. Garage:[/b] Select your transport. Choose from a wide variety of ground vehicles and helicopters.
+[*] [b]🔫 Virtual Arsenal:[/b] Choose your uniforms, patches, weapons, and gear without restriction.
+[*] [b]⛅ Weather & Time Room:[/b] Take full control over the time of day and all weather conditions (Fog, Rain, Storms, Clear Skies).
+[*] [b]🗺️ Mission Selector:[/b] Choose from multiple dynamic mission types suited to your mood.
+[*] [b]🪖 Recruitment Center:[/b] Build and customize your AI squad ([i]"Brothers in Arms"[/i]). Add or remove soldiers at any time.
+[*] [b]🎯 Enemy Selector:[/b] Customize opposing forces. [i]Note: Default vanilla units are included, but you are free to use [b]ANY[/b] OPFOR or Independent faction.[/i]
+You must modify the enemies before launching a mission (the selected enemies will be the mission's enemies).
+[*] [b]🚙 Garage:[/b] Select your transport.
+Choose from a wide variety of ground vehicles and helicopters.
 [/list]
 
 [hr]
@@ -50,8 +55,10 @@ Prepare for your mission in a fully interactive HQ featuring specialized zones:
 [hr]
 
 [h2]💻 SOURCE CODE & DEVELOPMENT[/h2]
-This project is Open Source. Feel free to follow my work or check the code!
+This project is Open Source.
+Feel free to follow my work or check the code!
 
-[h2]❤️ PLEASE !! [/h2]
+[h2]❤️ PLEASE !!
+[/h2]
 [b]Follow me on GitHub:[/b] [url=https://github.com/la404family]La404Family Profile[/url]
 [b]Drop a Star on the project:[/b] [url=https://github.com/la404family/Arma3-Tactical-Sandbox]Tactical Sandbox Repository[/url]
