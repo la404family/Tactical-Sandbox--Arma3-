@@ -1,0 +1,57 @@
+[h1]Tactical Sandbox — A Fully Customizable Mission Launcher[/h1]
+[quote]Tactical Sandbox is a mission launcher designed to be tailored exactly the way you want. Experience the ultimate freedom in mission planning and execution.[/quote]
+
+[hr]
+
+[h2]⭐️ KEY FEATURES[/h2]
+[b]Universal Compatibility[/b]
+The system automatically adapts to your installed Mods and DLCs. New units appear seamlessly, and friendly forces will wear the uniforms from your loaded mods.
+
+[b]Dynamic Gameplay[/b]
+[list]
+[*] [b]Detailed Briefings:[/b] All missions include specific task instructions.
+[*] [b]Infinite Replayability:[/b] Every objective takes place in a different location with over [b]50+ possible areas per mission[/b].
+[*] [b]⚠️ Permadeath System:[/b] Survival truly matters. If you fall, the consequences are real.
+[/list]
+
+[hr]
+
+[h2]🏢 THE HEADQUARTERS[/h2]
+Prepare for your mission in a fully interactive HQ featuring specialized zones:
+
+[list]
+[*] [b]🔫 Virtual Arsenal:[/b] Choose your uniforms, patches, weapons, and gear without restriction.
+[*] [b]⛅ Weather & Time Room:[/b] Take full control over the time of day and all weather conditions (Fog, Rain, Storms, Clear Skies).
+[*] [b]🗺️ Mission Selector:[/b] Choose from multiple dynamic mission types suited to your mood.
+[*] [b]🪖 Recruitment Center:[/b] Build and customize your AI squad ([i]"Brothers in Arms"[/i]). Add or remove soldiers at any time.
+[*] [b]🎯 Enemy Selector:[/b] Customize opposing forces. [i]Note: Default vanilla units are included, but you are free to use [b]ANY[/b] OPFOR or Independent faction.[/i]
+[*] [b]🚙 Garage:[/b] Select your transport. Choose from a wide variety of ground vehicles and helicopters.
+[/list]
+
+[hr]
+
+[h2]🌍 SUPPORTED LANGUAGES[/h2]
+[list]
+[*] 🇬🇧 English
+[*] 🇫🇷 Français
+[*] 🇩🇪 Deutsch
+[*] 🇪🇸 Spanish
+[*] 🇮🇹 Italiano
+[*] 🇷🇺 Русский
+[*] 🇵🇱 Polski
+[*] 🇨🇿 Česky
+[*] 🇹🇷 Türkçe
+[*] 🇨🇳 中文 (Simplified & Traditional)
+[*] 🇯🇵 日本語
+[*] 🇰🇷 한국어
+[*] 🇵🇹 Português
+[/list]
+
+[hr]
+
+[h2]💻 SOURCE CODE & DEVELOPMENT[/h2]
+This project is Open Source. Feel free to follow my work or check the code!
+
+[h2]❤️ PLEASE !! [/h2]
+[b]Follow me on GitHub:[/b] [url=https://github.com/la404family]La404Family Profile[/url]
+[b]Drop a Star on the project:[/b] [url=https://github.com/la404family/Arma3-Tactical-Sandbox]Tactical Sandbox Repository[/url]

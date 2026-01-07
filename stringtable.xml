@@ -923,6 +923,38 @@
             <Portuguese>Acessar Comando da Missão</Portuguese>
             <Korean>임무 지휘 접속</Korean>
         </Key>
+        <Key ID="STR_TASK_7_TITLE">
+            <English>Radar Destruction</English>
+            <French>Destruction de Radar</French>
+            <German>Radarzerstörung</German>
+            <Spanish>Destrucción de Radar</Spanish>
+            <Italian>Distruzione Radar</Italian>
+            <Russian>Уничтожение Радара</Russian>
+            <Polish>Zniszczenie Radaru</Polish>
+            <Czech>Zničení Radaru</Czech>
+            <Turkish>Radar İmhası</Turkish>
+            <Chinese>雷達破壞</Chinese>
+            <Chinesesimp>雷达破坏</Chinesesimp>
+            <Japanese>レーダー破壊</Japanese>
+            <Portuguese>Destruição de Radar</Portuguese>
+            <Korean>이동식 레이더 파괴</Korean>
+        </Key>
+        <Key ID="STR_TASK_7_DESC">
+            <English>The enemy has installed a long-range radar in the mountains of Altis. These facilities monitor the entire sky and prevent our allies from sending reinforcements or supplies by air. Before launching a major offensive, your squad must infiltrate the hostile area, locate the antennas, and destroy them. As long as the radars are operational, no air operations are possible. Neutralize them and finally open the sky to allied forces. (WARNING: radars are dome structures, not antennas!)</English>
+            <French>L’ennemi a installé un radar longue portée dans les montagnes d’Altis. Ces installations surveillent tout le ciel et empêchent nos alliés d’envoyer des renforts ou du ravitaillement par air. Avant le lancement d’une offensive majeure, votre escouade doit infiltrer la zone hostile, localiser les antennes et les détruire. Tant que les radars sont opérationnels, aucune opération aérienne n’est possible. Neutralisez-les et ouvrez enfin le ciel aux forces alliées. (ATTENTION les radars sont des batiments avec un dome, pas des antennes ! )</French>
+            <German>Der Feind hat ein Langstreckenradar in den Bergen von Altis installiert. Diese Anlagen überwachen den gesamten Himmel und hindern unsere Verbündeten daran, Verstärkung oder Nachschub aus der Luft zu schicken. Bevor eine Großoffensive gestartet werden kann, muss Ihr Trupp das feindliche Gebiet infiltrieren, die Antennen lokalisieren und zerstören. Solange die Radare in Betrieb sind, sind keine Luftoperationen möglich. Neutralisieren Sie sie und öffnen Sie den Himmel endlich für die alliierten Streitkräfte. (ACHTUNG: Radare sind Kuppelstrukturen, keine Antennen!)</German>
+            <Spanish>El enemigo ha instalado un radar de largo alcance en las montañas de Altis. Estas instalaciones vigilan todo el cielo e impiden que nuestros aliados envíen refuerzos o suministros por aire. Antes de lanzar una ofensiva mayor, su escuadra debe infiltrarse en la zona hostil, localizar las antenas y destruirlas. Mientras los radares estén operativos, no son posibles las operaciones aéreas. Neutralícelos y abra finalmente el cielo a las fuerzas aliadas. (ADVERTENCIA: ¡los radares son estructuras de cúpula, no antenas!)</Spanish>
+            <Italian>Il nemico ha installato un radar a lungo raggio sulle montagne di Altis. Queste strutture monitorano tutto il cielo e impediscono ai nostri alleati di inviare rinforzi o rifornimenti via aerea. Prima di lanciare una grande offensiva, la tua squadra deve infiltrarsi nell&apos;area ostile, localizzare le antenne e distruggerle. Finché i radar sono operativi, nessuna operazione aerea è possibile. Neutralizzali e apri finalmente il cielo alle forze alleate. (ATTENZIONE: i radar sono strutture a cupola, non antenne!)</Italian>
+            <Russian>Враг установил радар дальнего действия в горах Алтиса. Эти установки контролируют все небо и не позволяют нашим союзникам отправлять подкрепления или припасы по воздуху. Перед началом крупного наступления ваш отряд должен проникнуть в враждебную зону, найти антенны и уничтожить их. Пока радары работают, воздушные операции невозможны. Нейтрализуйте их и наконец откройте небо для союзных сил. (ВНИМАНИЕ: радары - это купольные сооружения, а не антенны!)</Russian>
+            <Polish>Wróg zainstalował radar dalekiego zasięgu w górach Altis. Obiekty te monitorują całe niebo i uniemożliwiają naszym sojusznikom wysyłanie posiłków lub zaopatrzenia drogą powietrzną. Przed rozpoczęciem dużej ofensywy twój oddział musi przeniknąć na wrogi teren, zlokalizować anteny i je zniszczyć. Dopóki radary działają, żadne operacje powietrzne nie są możliwe. Zneutralizuj je i wreszcie otwórz niebo dla sił sojuszniczych. (UWAGA: radary to struktury kopułowe, a nie anteny!)</Polish>
+            <Czech>Nepřítel nainstaloval radar dlouhého dosahu v horách Altis. Tato zařízení monitorují celou oblohu a brání našim spojencům v posílání posil nebo zásob vzduchem. Před zahájením velké ofenzívy musí vaše jednotka proniknout do nepřátelské oblasti, lokalizovat antény a zničit je. Dokud jsou radary v provozu, nejsou možné žádné letecké operace. Zneškodněte je a konečně otevřete nebe spojeneckým silám. (VAROVÁNÍ: radary jsou kopulovité struktury, ne antény!)</Czech>
+            <Turkish>Düşman, Altis dağlarında uzun menzilli bir radar kurdu. Bu tesisler tüm gökyüzünü izliyor ve müttefiklerimizin havadan takviye veya malzeme göndermesini engelliyor. Büyük bir saldırı başlatmadan önce, ekibiniz düşman bölgesine sızmalı, antenleri bulmalı ve yok etmelidir. Radarlar çalıştığı sürece hava operasyonları mümkün değildir. Onları etkisiz hale getirin ve sonunda gökyüzünü müttefik kuvvetlere açın. (UYARI: radarlar kubbe yapılardır, anten değil!)</Turkish>
+            <Chinese>敵人在阿爾蒂斯山區安裝了遠程雷達。這些設施監視著整個天空，阻止我們的盟友通過空中發送增援或補給。在發動大規模進攻之前，你的小隊必須滲透敵對區域，定位天線並將其摧毀。只要雷達還在運作，就不可能進行空中行動。消滅它們，最終為盟軍打開天空。（警告：雷達是圓頂結構，不是天線！）</Chinese>
+            <Chinesesimp>敌人在阿尔蒂斯山区安装了远程雷达。这些设施监视着整个天空，阻止我们的盟友通过空中发送增援 or 补给。在发动大规模进攻之前，你的小队必须渗透敌对区域，定位天线并将其摧毁。只要雷达还在运作，就不可能进行空中行动。消灭它们，最终为盟军打开天空。（警告：雷达是圆顶结构，不是天线！）</Chinesesimp>
+            <Japanese>敵はアルティスの山脈に長距離レーダーを設置しました。これらの施設は全空域を監視し、同盟軍が空からの増援や物資を送るのを妨げています。大規模な攻勢を開始する前に、あなたの分隊は敵対地域に潜入し、アンテナを特定して破壊しなければなりません。レーダーが稼働している限り、航空作戦は不可能なのです。それらを無力化し、ついに同盟軍のために空を開放してください。（警告：レーダーはドーム型の構造物であり、アンテナではありません！）</Japanese>
+            <Portuguese>O inimigo instalou um radar de longo alcance nas montanhas de Altis. Essas instalações monitoram todo o céu e impedem que nossos aliados enviem reforços ou suprimentos por via aérea. Antes de lançar uma grande ofensiva, seu esquadrão deve se infiltrar na área hostil, localizar as antenas e destruí-las. Enquanto os radares estiverem operacionais, nenhuma operação aérea é possível. Neutralize-os e finalmente abra o céu para as forças aliadas. (AVISO: radares são estruturas em cúpula, não antenas!)</Portuguese>
+            <Korean>적군이 알티스 산맥에 장거리 레이더를 설치했습니다. 이 시설들은 하늘 전체를 감시하며 아군이 공중으로 지원군이나 보급품을 보내는 것을 막고 있습니다. 대규모 공세를 시작하기 전에 귀하의 분대는 적대 지역에 침투하여 안테나를 찾아 파괴해야 합니다. 레이더가 작동하는 한 공중 작전은 불가능합니다. 이를 무력화하고 마침내 연합군에게 하늘을 열어주십시오. (경고: 레이더는 안테나가 아니라 돔 구조물입니다!)</Korean>
+        </Key>
         <Key ID="STR_TASK_1_TITLE">
             <English>Manhunt</English>
             <French>Chasse à l&apos;homme</French>
@@ -3611,6 +3643,150 @@
             <Japanese>生存者の位置（死亡または回復した場合は消滅）。</Japanese>
             <Portuguese>Posição do sobrevivente (Desaparece se morto ou curado).</Portuguese>
             <Korean>생존자 위치 (죽거나 치료되면 사라집니다).</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T7_OP_TITLE">
+            <English>OPERATION: BLIND SIGHT</English>
+            <French>OPÉRATION : BLIND SIGHT</French>
+            <German>OPERATION: BLIND SIGHT</German>
+            <Spanish>OPERACIÓN: BLIND SIGHT</Spanish>
+            <Italian>OPERAZIONE: BLIND SIGHT</Italian>
+            <Russian>ОПЕРАЦИЯ: BLIND SIGHT</Russian>
+            <Polish>OPERACJA: BLIND SIGHT</Polish>
+            <Czech>OPERACE: BLIND SIGHT</Czech>
+            <Turkish>OPERASYON: BLIND SIGHT</Turkish>
+            <Chinese>行動：盲視</Chinese>
+            <Chinesesimp>行动：盲视</Chinesesimp>
+            <Japanese>オペレーション：ブラインド・サイト</Japanese>
+            <Portuguese>OPERAÇÃO: BLIND SIGHT</Portuguese>
+            <Korean>작전명: 블라인드 사이트</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T7_SITUATION">
+            <English>Enemy anti-air defenses are preventing any allied air support in the sector. Intelligence has located a high-priority Long Range Radar station hidden in the mountains. This facility is the eyes of the enemy air defense network.</English>
+            <French>Les défenses anti-aériennes ennemies empêchent tout soutien aérien allié dans le secteur. Les renseignements ont localisé une station radar longue portée prioritaire cachée dans les montagnes. Cette installation constitue les yeux du réseau de défense aérienne ennemi.</French>
+            <German>Feindliche Flugabwehr verhindert jede alliierte Luftunterstützung in dem Sektor. Der Geheimdienst hat eine hochprioritäre Langstreckenradarstation in den Bergen lokalisiert. Diese Anlage ist das Auge des feindlichen Luftverteidigungsnetzwerks.</German>
+            <Spanish>Las defensas antiaéreas enemigas impiden cualquier apoyo aéreo aliado en el sector. Inteligencia ha localizado una estación de radar de largo alcance de alta prioridad escondida en las montañas. Esta instalación son los ojos de la red de defensa aérea enemiga.</Spanish>
+            <Italian>Le difese antiaeree nemiche impediscono qualsiasi supporto aereo alleato nel settore. L&apos;intelligence ha localizzato una stazione radar a lungo raggio ad alta priorità nascosta nelle montagne. Questa struttura è gli occhi della rete di difesa aerea nemica.</Italian>
+            <Russian>Вражеская ПВО препятствует любой авиационной поддержке союзников в секторе. Разведка обнаружила приоритетную станцию дальнего радиолокационного обнаружения, скрытую в горах. Этот объект является глазами вражеской системы ПВО.</Russian>
+            <Polish>Wroga obrona przeciwlotnicza uniemożliwia jakiekolwiek wsparcie lotnicze sojuszników w sektorze. Wywiad zlokalizował priorytetową stację radarową dalekiego zasięgu ukrytą w górach. Ten obiekt to oczy wrogiej sieci obrony powietrznej.</Polish>
+            <Czech>Nepřátelská protiletecká obrana brání jakékoli spojenecké letecké podpoře v sektoru. Rozvědka lokalizovala prioritní radarovou stanici dlouhého dosahu ukrytou v horách. Toto zařízení je očima nepřátelské sítě protivzdušné obrany.</Czech>
+            <Turkish>Düşman hava savunması, sektördeki herhangi bir müttefik hava desteğini engelliyor. İstihbarat, dağlarda gizlenmiş yüksek öncelikli bir Uzun Menzilli Radar istasyonu tespit etti. Bu tesis, düşman hava savunma ağının gözleridir.</Turkish>
+            <Chinese>敵方防空系統阻止了該區域的所有盟軍空中支援。情報部門在山區定位了一個高優先級的遠程雷達站。該設施是敵方防空網絡的眼睛。</Chinese>
+            <Chinesesimp>敌方防空系统阻止了该区域的所有盟军空中支援。情报部门在山区定位了一个高优先级的远程雷达站。该设施是敌方防空网络的眼睛。</Chinesesimp>
+            <Japanese>敵の対空防衛網により、この区域への航空支援が阻まれています。情報部は山中に隠された重要度の高い長距離レーダー基地を特定しました。この施設は敵防空ネットワークの要です。</Japanese>
+            <Portuguese>As defesas antiaéreas inimigas estão impedindo qualquer apoio aéreo aliado no setor. A inteligência localizou uma estação de radar de longo alcance de alta prioridade escondida nas montanhas. Esta instalação é os olhos da rede de defesa aérea inimiga.</Portuguese>
+            <Korean>적의 대공 방어망이 해당 구역의 아군 공중 지원을 막고 있습니다. 정보부가 산속에 숨겨진 고우선 순위 장거리 레이더 기지를 파악했습니다. 이 시설은 적 방공 네트워크의 눈입니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T7_THREAT_TEXT">
+            <English>The radar is guarded by a dedicated security details involving 15 to 20 infantry units patrolling the perimeter. No heavy armor detected, but expect heavy resistance.</English>
+            <French>Le radar est gardé par un détachement de sécurité dédié comprenant 15 à 20 unités d&apos;infanterie patrouillant le périmètre. Aucun blindé lourd détecté, mais attendez-vous à une forte résistance.</French>
+            <German>Das Radar wird von einem speziellen Sicherheitsdienst bewacht, der 15 bis 20 Infanterieeinheiten umfasst, die den Umfang patrouillieren. Keine schweren Panzerungen erkannt, aber erwarten Sie starken Widerstand.</German>
+            <Spanish>El radar está custodiado por un destacamento de seguridad dedicado que incluye de 15 a 20 unidades de infantería patrullando el perímetro. No se detectó blindaje pesado, pero espere una fuerte resistencia.</Spanish>
+            <Italian>Il radar è custodito da un distaccamento di sicurezza dedicato che comprende da 15 a 20 unità di fanteria che pattugliano il perimetro. Nessuna armatura pesante rilevata, ma aspettatevi una forte resistenza.</Italian>
+            <Russian>Радар охраняется специальным отрядом безопасности, включающим от 15 до 20 пехотинцев, патрулирующих периметр. Тяжелая бронетехника не обнаружена, но ожидайте сильного сопротивления.</Russian>
+            <Polish>Radar jest strzeżony przez dedykowany oddział ochrony składający się z 15 do 20 jednostek piechoty patrolujących obwód. Nie wykryto ciężkiego pancerza, ale spodziewaj się silnego oporu.</Polish>
+            <Czech>Radar je střežen vyhrazeným bezpečnostním oddílem zahrnujícím 15 až 20 pěchotních jednotek hlídkujících v obvodu. Nebylo zjištěno žádné těžké brnění, ale očekávejte silný odpor.</Czech>
+            <Turkish>Radar, çevreyi devriye gezen 15 ila 20 piyade birimini içeren özel bir güvenlik ekibi tarafından korunuyor. Ağır zırh tespit edilmedi, ancak güçlü direniş bekleyin.</Turkish>
+            <Chinese>雷達由一支專門的安保部隊看守，包括15到20名步兵在周邊巡邏。未檢測到重型裝甲，但預計會有激烈的抵抗。</Chinese>
+            <Chinesesimp>雷达由一支专门的安保部队看守，包括15到20名步兵在周边巡逻。未检测到重型装甲，但预计会有激烈的抵抗。</Chinesesimp>
+            <Japanese>レーダーは15〜20名の歩兵による専門の警備部隊によって守られており、周辺をパトロールしています。重装甲車両は確認されていませんが、激しい抵抗が予想されます。</Japanese>
+            <Portuguese>O radar é guardado por um destacamento de segurança dedicado envolvendo 15 a 20 unidades de infantaria patrulhando o perímetro. Nenhuma blindagem pesada detectada, mas espere forte resistência.</Portuguese>
+            <Korean>레이더는 15~20명의 보병으로 구성된 전담 보안 부대가 주변을 순찰하며 지키고 있습니다. 중장거리는 감지되지 않았지만 강력한 저항이 예상됩니다.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T7_MISSION">
+            <English>Destroy the Radar Dome to blind enemy defenses.</English>
+            <French>Détruisez le Dôme Radar pour aveugler les défenses ennemies.</French>
+            <German>Zerstören Sie die Radarkuppel, um die feindliche Verteidigung zu blenden.</German>
+            <Spanish>Destruya la cúpula del radar para cegar las defensas enemigas.</Spanish>
+            <Italian>Distruggi la cupola radar per accecare le difese nemiche.</Italian>
+            <Russian>Уничтожьте купол радара, чтобы ослепить вражескую оборону.</Russian>
+            <Polish>Zniszcz kopułę radaru, aby oślepić obronę wroga.</Polish>
+            <Czech>Zničte radarovou kopuli, abyste oslepili nepřátelskou obranu.</Czech>
+            <Turkish>Düşman savunmasını kör etmek için Radar Kubbesini yok edin.</Turkish>
+            <Chinese>摧毀雷達圓頂以致盲敵方防禦。</Chinese>
+            <Chinesesimp>摧毁雷达圆顶以致盲敌方防御。</Chinesesimp>
+            <Japanese>敵の防衛網を無力化するため、レーダードームを破壊してください。</Japanese>
+            <Portuguese>Destrua a Cúpula do Radar para cegar as defesas inimigas.</Portuguese>
+            <Korean>레이더 돔을 파괴하여 적의 방어망을 무력화하십시오.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T7_EXE_A_TITLE">
+            <English>1. Infiltration</English>
+            <French>1. Infiltration</French>
+            <German>1. Infiltration</German>
+            <Spanish>1. Infiltración</Spanish>
+            <Italian>1. Infiltrazione</Italian>
+            <Russian>1. Инфильтрация</Russian>
+            <Polish>1. Infiltracja</Polish>
+            <Czech>1. Infiltrace</Czech>
+            <Turkish>1. Sızma</Turkish>
+            <Chinese>1. 滲透</Chinese>
+            <Chinesesimp>1. 渗透</Chinesesimp>
+            <Japanese>1. 潜入</Japanese>
+            <Portuguese>1. Infiltração</Portuguese>
+            <Korean>1. 침투</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T7_EXE_A_TEXT">
+            <English>Approach the target area using the mountainous terrain for cover. Avoid direct confrontation until you have eyes on the target.</English>
+            <French>Approchez de la zone cible en utilisant le terrain montagneux pour vous couvrir. Évitez la confrontation directe jusqu&apos;à ce que vous ayez un visuel sur la cible.</French>
+            <German>Nähern Sie sich dem Zielgebiet und nutzen Sie das bergige Gelände als Deckung. Vermeiden Sie direkte Konfrontationen, bis Sie Sichtkontakt zum Ziel haben.</German>
+            <Spanish>Acércate al área objetivo utilizando el terreno montañoso para cubrirte. Evita la confrontación directa hasta que tengas contacto visual con el objetivo.</Spanish>
+            <Italian>Avvicinati all&apos;area target usando il terreno montuoso per coprirti. Evita lo scontro diretto finché non hai il bersaglio in vista.</Italian>
+            <Russian>Приближайтесь к целевой зоне, используя горную местность для укрытия. Избегайте прямой конфронтации, пока не увидите цель.</Russian>
+            <Polish>Zbliż się do obszaru docelowego, wykorzystując górzysty teren jako osłonę. Unikaj bezpośredniej konfrontacji, dopóki nie będziesz mieć celu w zasięgu wzroku.</Polish>
+            <Czech>Přibližte se k cílové oblasti s využitím horského terénu pro krytí. Vyhněte se přímé konfrontaci, dokud nebudete mít cíl na dohled.</Czech>
+            <Turkish>Dağlık araziyi siper olarak kullanarak hedef bölgeye yaklaşın. Hedefi görene kadar doğrudan çatışmadan kaçının.</Turkish>
+            <Chinese>利用山區地形作掩護接近目標區域。在確認目標之前避免直接交火。</Chinese>
+            <Chinesesimp>利用山区地形作掩护接近目标区域。在确认目标之前避免直接交火。</Chinesesimp>
+            <Japanese>山岳地帯を隠れ蓑にして目標地域に接近してください。目標を視認するまでは直接戦闘を避けてください。</Japanese>
+            <Portuguese>Aproxime-se da área alvo usando o terreno montanhoso para cobertura. Evite confronto direto até ter o alvo à vista.</Portuguese>
+            <Korean>산악 지형을 은폐물로 활용하여 목표 지역에 접근하십시오. 목표를 시야에 확보할 때까지 직접적인 교전을 피하십시오.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T7_EXE_B_TITLE">
+            <English>2. Destruction</English>
+            <French>2. Destruction</French>
+            <German>2. Zerstörung</German>
+            <Spanish>2. Destrucción</Spanish>
+            <Italian>2. Distruzione</Italian>
+            <Russian>2. Уничтожение</Russian>
+            <Polish>2. Zniszczenie</Polish>
+            <Czech>2. Zničení</Czech>
+            <Turkish>2. İmha</Turkish>
+            <Chinese>2. 破壞</Chinese>
+            <Chinesesimp>2. 破坏</Chinesesimp>
+            <Japanese>2. 破壊</Japanese>
+            <Portuguese>2. Destruição</Portuguese>
+            <Korean>2. 파괴</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T7_EXE_B_TEXT">
+            <English>Place explosive charges on the structure or use heavy ordnance (Launchers/Vehicle) to destroy the radar. Confirm destruction visually.</English>
+            <French>Placez des charges explosives sur la structure ou utilisez de l&apos;armement lourd (Lanceurs/Véhicules) pour détruire le radar. Confirmez la destruction visuellement.</French>
+            <German>Platzieren Sie Sprengladungen an der Struktur oder verwenden Sie schwere Waffen (Raketenwerfer/Fahrzeuge), um das Radar zu zerstören. Bestätigen Sie die Zerstörung visuell.</German>
+            <Spanish>Coloque cargas explosivas en la estructura o use armamento pesado (lanzadores/vehículos) para destruir el radar. Confirme la destrucción visualmente.</Spanish>
+            <Italian>Piazza cariche esplosive sulla struttura o usa armi pesanti (lanciatori/veicoli) per distruggere il radar. Conferma visivamente la distruzione.</Italian>
+            <Russian>Установите взрывчатку на конструкцию или используйте тяжелое вооружение (гранатометы/техника) для уничтожения радара. Подтвердите уничтожение визуально.</Russian>
+            <Polish>Umieść ładunki wybuchowe na konstrukcji lub użyj ciężkiego uzbrojenia (wyrzutnie/pojazdy), aby zniszczyć radar. Potwierdź zniszczenie wizualnie.</Polish>
+            <Czech>Umístěte výbušné nálože na strukturu nebo použijte těžkou munici (raketomety/vozidla) ke zničení radaru. Vizuálně potvrďte zničení.</Czech>
+            <Turkish>Yapıya patlayıcılar yerleştirin veya radarı yok etmek için ağır mühimmat (Roketatarlar/Araçlar) kullanın. İmrayı görsel olarak doğrulayın.</Turkish>
+            <Chinese>在這結構上放置炸藥或使用重型武器（發射器/載具）摧毀雷達。目視確認摧毀。</Chinese>
+            <Chinesesimp>在这结构上放置炸药 or 使用重型武器（发射器/载具）摧毁雷达。目视确认摧毁。</Chinesesimp>
+            <Japanese>建造物に爆薬を仕掛けるか、重火器（ランチャー/車両）を使用してレーダーを破壊してください。破壊を目視で確認してください。</Japanese>
+            <Portuguese>Coloque cargas explosivas na estrutura ou use armamento pesado (lançadores/veículos) para destruir o radar. Confirme a destruição visualmente.</Portuguese>
+            <Korean>구조물에 폭발물을 설치하거나 중화기(발사기/차량)를 사용하여 레이더를 파괴하십시오. 파괴를 육안으로 확인하십시오.</Korean>
+        </Key>
+        <Key ID="STR_BRIEF_T7_SIG_RADAR_TEXT">
+            <English>The target is the large white geodesic dome structure.</English>
+            <French>La cible est la grande structure en dôme géodésique blanc.</French>
+            <German>Das Ziel ist die große weiße geodätische Kuppelstruktur.</German>
+            <Spanish>El objetivo es la gran estructura de cúpula geodésica blanca.</Spanish>
+            <Italian>L&apos;obiettivo è la grande struttura a cupola geodetica bianca.</Italian>
+            <Russian>Цель - большая белая геодезическая купольная конструкция.</Russian>
+            <Polish>Celem jest duża biała kopuła geodezyjna.</Polish>
+            <Czech>Cílem je velká bílá geodetická kopule.</Czech>
+            <Turkish>Hedef, büyük beyaz jeodezik kubbe yapısıdır.</Turkish>
+            <Chinese>目標是巨大的白色測地線圓頂結構。</Chinese>
+            <Chinesesimp>目标是巨大的白色测地线圆顶结构。</Chinesesimp>
+            <Japanese>目標は巨大な白いジオデシック・ドーム構造物です。</Japanese>
+            <Portuguese>O alvo é a grande estrutura de cúpula geodésica branca.</Portuguese>
+            <Korean>목표는 거대한 흰색 지오데식 돔 구조물입니다.</Korean>
         </Key>
     </Package>
 </Project>

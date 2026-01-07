@@ -1,15 +1,27 @@
 // ============================================================================
-// FONCTION : fn_task_briefing.sqf
-// DESCRIPTION : Ajoute une entrée de briefing (Diary) spécifique à la tâche en cours.
-// APPEL : ["task_1"] remoteExec ["MISSION_fnc_task_briefing", 0, true];
+// FONCTION : fn_task_briefing.sqf corrigée pour DLC & Multijoueur
 // ============================================================================
 
 params ["_taskID"];
 
-// Sécurité : Si le joueur n'est pas initialisé (ex: serveur dédié ou chargement), on quitte.
-if (!hasInterface) exitWith {};
+// Sécurité : Quitter si ce n'est pas un joueur (évite les erreurs sur Serveur Dédié/HC)
+if (!hasInterface) exitWith {}; 
 
-switch (_taskID) do {
+[_taskID] spawn {
+    params ["_taskID"];
+
+    // ÉTAPE 1 : ATTENTE DE SYNCHRONISATION
+    // On attend que l'objet 'player' soit tangible et que la mission ait démarré.
+    waitUntil {!isNull player && {time > 0}};
+
+    // ÉTAPE 2 : GARANTIE DU CONTENEUR (SUJET)
+    // Les cDLC peuvent ne pas initialiser le sujet "Diary" par défaut.
+    if !(player diarySubjectExists "Diary") then {
+        player createDiarySubject ["Diary", localize "STR_DIARY_TITLE"];
+    };
+
+    // ÉTAPE 3 : CRÉATION ATOMIQUE DE LA TÂCHE (BIS_fnc_taskCreate)
+    switch (_taskID) do {
     case "task_1": {
         player createDiaryRecord ["Diary", [
             localize "STR_TASK_1_TITLE", 
@@ -292,4 +304,44 @@ switch (_taskID) do {
             ]
         ]];
     };
+    case "task_7": {
+        player createDiaryRecord ["Diary", [
+            localize "STR_TASK_7_TITLE", 
+            format ["
+<font size='20' color='#FF0000'>%1</font><br/><br/>
+
+<font color='#eba134'>%2</font><br/>
+%3<br/>
+<font color='#FF0000'>%4</font> %5<br/><br/>
+
+<font color='#eba134'>%6</font><br/>
+%7<br/><br/>
+
+<font color='#eba134'>%8</font><br/>
+<font color='#999999'>%9</font><br/>
+%10<br/><br/>
+
+<font color='#999999'>%11</font><br/>
+%12<br/><br/>
+
+<font color='#eba134'>%13</font><br/>
+- <font color='#FF0000'>%14</font> %15<br/>
+            ",
+            localize "STR_BRIEF_T7_OP_TITLE",
+            localize "STR_BRIEF_HEADER_SITUATION",
+            localize "STR_BRIEF_T7_SITUATION",
+            localize "STR_BRIEF_HEADER_THREAT", localize "STR_BRIEF_T7_THREAT_TEXT",
+            localize "STR_BRIEF_HEADER_MISSION",
+            localize "STR_BRIEF_T7_MISSION",
+            localize "STR_BRIEF_HEADER_EXECUTION",
+            localize "STR_BRIEF_T7_EXE_A_TITLE",
+            localize "STR_BRIEF_T7_EXE_A_TEXT",
+            localize "STR_BRIEF_T7_EXE_B_TITLE",
+            localize "STR_BRIEF_T7_EXE_B_TEXT",
+            localize "STR_BRIEF_HEADER_SIGNAL",
+            localize "STR_BRIEF_SIG_TARGET", localize "STR_BRIEF_T7_SIG_RADAR_TEXT"
+            ]
+        ]];
+    };
+};
 };

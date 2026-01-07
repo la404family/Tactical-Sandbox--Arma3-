@@ -167,6 +167,8 @@ if (_mode == "SAVE") exitWith {
         deleteVehicle _docObj;
     };
 
+
+
     // Debug (désactivé) - Affiche le nombre d'éléments sauvegardés
     // systemChat format ["Memory: Officers=%1, Enemies=%2, Vehicles=%3, Tanks=%4", 
     //     count MISSION_var_officers, 

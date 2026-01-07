@@ -69,7 +69,7 @@ private _selectedPaths = _availablePaths select [0, 2];
     // ========================================================================
     // ATTENTE DE 5 MINUTES
     // ========================================================================
-    sleep 300; // 5 minutes
+    sleep 60; // 1 minutes
     
     if (!MISSION_var_task1_running) exitWith {};
     
@@ -167,7 +167,7 @@ private _selectedPaths = _availablePaths select [0, 2];
                 private _markerName = format ["task1_track_%1", _pathIndex];
                 
                 // Variables de timing pour le marqueur rouge
-                private _initialDelay = 120 + random 60; // 2 à 3 minutes
+                private _initialDelay = 10 + random 50; // 10 à 60 secondes
                 private _spawnTime = time;
                 private _nextUpdate = _spawnTime + _initialDelay; 
                 
@@ -210,8 +210,8 @@ private _selectedPaths = _availablePaths select [0, 2];
                                 _markerName setMarkerPos (getPos _fugitive);
                             };
                             
-                            // Prochaine mise à jour aléatoire (15 à 120 secondes)
-                            _nextUpdate = time + (15 + random 105);
+                            // Prochaine mise à jour aléatoire (5 à 60 secondes)
+                            _nextUpdate = time + (5 + random 55);
                         };
                     };
                     

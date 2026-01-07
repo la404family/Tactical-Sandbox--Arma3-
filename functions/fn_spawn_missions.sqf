@@ -71,7 +71,10 @@ if (_mode == "OPEN") exitWith {
         if (_i == 6) then {
             _taskName = format ["Tâche %1 - %2", _i, localize "STR_TASK_6_TITLE"];
         };
-        if (_i > 6) then {
+        if (_i == 7) then {
+            _taskName = format ["Tâche %1 - %2", _i, localize "STR_TASK_7_TITLE"];
+        };
+        if (_i > 7) then {
             _taskName = format ["Tâche %1 - %2", _i, localize "STR_TASK_X_TITLE"];
         };
         
@@ -121,7 +124,11 @@ if (_mode == "SELECT") exitWith {
         _titleCtrl ctrlSetText (localize "STR_TASK_6_TITLE");
         _descCtrl ctrlSetText (localize "STR_TASK_6_DESC");
     };
-    if (_taskNum > 6) then {
+    if (_taskNum == 7) then {
+        _titleCtrl ctrlSetText (localize "STR_TASK_7_TITLE");
+        _descCtrl ctrlSetText (localize "STR_TASK_7_DESC");
+    };
+    if (_taskNum > 7) then {
         _titleCtrl ctrlSetText (localize "STR_TASK_X_TITLE");
         _descCtrl ctrlSetText (localize "STR_TASK_X_DESC");
     };
@@ -179,7 +186,11 @@ if (_mode == "LAUNCH") exitWith {
             // Utilisation de execVM pour forcer le rechargement du fichier à chaque lancement (Debug)
             [] execVM "functions\fn_task_6_launch.sqf";
         };
-        // Tâches 7-20 : à implémenter plus tard
+        case 7: {
+            // Tâche 7 - Destruction de Radar
+            [] spawn MISSION_fnc_task_7_launch;
+        };
+        // Tâches 8-20 : à implémenter plus tard
         default {};
     };
 };

@@ -162,9 +162,9 @@ if (hasInterface) then {
         // TEXTE 1 : Auteur & Présente (5 secondes)
         titleText [
             format [
-                "<t size='1.6' color='#bbbbbb' font='PuristaMedium'>%1</t><br/>" +
-                "<t size='1.2' color='#a0a0a0' font='PuristaLight'>%2</t>",
-                localize "STR_INTRO_AUTHOR",
+                "<t size='4.5' color='#ffffff' font='PuristaBold' shadow='2' align='center'>%1</t><br/>" +
+                "<t size='1.2' color='#a0a0a0' font='PuristaLight' align='center' letterSpacing='0.1'>%2</t>",
+                toUpper (localize "STR_INTRO_AUTHOR"),
                 localize "STR_INTRO_PRESENTS"
             ],
             "PLAIN", 1, true, true

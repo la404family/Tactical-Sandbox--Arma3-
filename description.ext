@@ -92,6 +92,7 @@ class CfgFunctions
             class task_4_launch {};
             class task_5_launch {};
             class task_6_launch {};
+            class task_7_launch {};
             class spawn_missions {};
             class spawn_arsenal {};
             class task_x_finish {};

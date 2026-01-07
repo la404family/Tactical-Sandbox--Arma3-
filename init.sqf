@@ -199,6 +199,9 @@ MISSION_fnc_addSubmitAction = {
 // Les éléments de la tache 7 : spwawn a positionner dans une zone montagneuse
 //-------------------------------------------
 
+// task_7_spawn_1 à task_7_spawn_7 sont des héliports qui servent de lieux de spawn pour les ennemis de la tache 7
+// task_7_spawn_8 à task_7_spawn_14 sont des héliports qui servent de lieux de spawn pour les radar à détruire
+
 //-------------------------------------------
 // Les fonctions de tache :
 //-------------------------------------------
@@ -217,6 +220,8 @@ MISSION_fnc_addSubmitAction = {
 // [] call MISSION_fnc_task_5_launch;
 // application de la tache 6 (secours alliés) - Lancé via le menu missions
 // [] call MISSION_fnc_task_6_launch;
+// application de la tache 7 (destruction de radar) - Lancé via le menu missions
+// [] call MISSION_fnc_task_7_launch;
 
 //-------------------------------------------
 // Les fonctions de tache : (A remettre à la fin du développement)

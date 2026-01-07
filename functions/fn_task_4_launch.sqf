@@ -19,9 +19,9 @@ MISSION_var_task4_heli = objNull;
 MISSION_var_task4_crew = [];
 
 // 1. Définition des Spawns
-// Spawns Otages/Gardes: 01 à 12
+// Spawns Otages/Gardes: 01 à 28
 private _unitSpawns = [];
-for "_i" from 1 to 12 do {
+for "_i" from 1 to 28 do {
     private _markerName = format ["task_4_spawn_0%1", _i];
     private _spawnObj = missionNamespace getVariable [_markerName, objNull];
     if (!isNull _spawnObj) then {
@@ -29,9 +29,9 @@ for "_i" from 1 to 12 do {
     };
 };
 
-// Spawns LZ Hélico: 13 à 18
+// Spawns LZ Hélico: 29 à 49
 private _lzSpawns = [];
-for "_i" from 13 to 18 do {
+for "_i" from 29 to 49 do {
     private _numStr = if (_i < 10) then { format ["0%1", _i] } else { str _i };
     private _markerName = format ["task_4_spawn_%1", _numStr];
     private _spawnObj = missionNamespace getVariable [_markerName, objNull];
