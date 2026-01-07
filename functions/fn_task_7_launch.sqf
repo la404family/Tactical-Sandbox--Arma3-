@@ -48,8 +48,8 @@ if (isNull _radarSpawnObj) exitWith {
 // ClassName : Land_Radar_Small_F
 private _radar = createVehicle ["Land_Radar_Small_F", _radarPos, [], 0, "NONE"];
 _radar setDir _radarDir;
-_radar setPos _radarPos; // Force la position exacte (avec altitude)
-_radar setVectorUp surfaceNormal _radarPos; // S'aligne au terrain si nécessaire
+_radar setPosATL [(_radarPos select 0), (_radarPos select 1), -0.05]; // Force la position exacte avec Z = -0.05
+_radar setVectorUp [0,0,1]; // De niveau (parfaitement vertical, ignore la pente)
 
 // On le rend destructible
 _radar allowDamage true;
