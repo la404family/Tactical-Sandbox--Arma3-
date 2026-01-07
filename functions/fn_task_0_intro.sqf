@@ -192,18 +192,18 @@ if (hasInterface) then {
         // Description : Caméra à l'intérieur de l'hélicoptère regardant vers l'arrière (cargo).
         //               Mouvement progressif avec balancement subtil pour le réalisme.
         
+        // ✅ ATTENDRE que le serveur ait créé et partagé l'hélicoptère
+        waitUntil { !isNil "MISSION_intro_heli" };
+        private _camHeli = MISSION_intro_heli;
+
+        // Vérification de sécurité
+        if (isNull _camHeli) exitWith {
+            hint "ERREUR: Hélicoptère introuvable";
+        };
+
         // ==============================================================================================
         // CORRECTION : OUVERTURE ROBUSTE DE LA RAMPE
         // ==============================================================================================
-        private _heli = vehicle player; 
-
-        // 1. On utilise remoteExec avec l'argument 'true' (JIP) pour forcer la synchro même en cas de lag
-        // Le Huron utilise principalement "Door_Rear_Source"
-        [_heli, ["Door_Rear_Source", 1]] remoteExec ["animateSource", 0, true];
-        
-        // 2. Sécurité : On force aussi l'animation "Ramp" qui est parfois utilisée par certaines variantes
-        [_heli, ["Ramp", 1]] remoteExec ["animateSource", 0, true];
-
         // 3. Petite pause pour laisser le moteur initier l'animation avant de détacher la caméra
         sleep 0.1;
 
@@ -253,7 +253,7 @@ if (hasInterface) then {
         private _fixedPos = [0, -3, -0.5];
         
         // Attacher la caméra à l'hélicoptère (elle suivra ses mouvements automatiquement)
-        _cam attachTo [_heli, _fixedPos];
+        _cam attachTo [_camHeli, _fixedPos];
         
         // Orientation : regarder vers l'AVANT de l'hélicoptère (vers le cockpit)
         // [0, 1, 0] = Direction positive sur l'axe Y (avant de l'hélico)
@@ -318,8 +318,8 @@ if (hasInterface) then {
             // -----------------------------------------------------------------------------------------
             // CALCUL DE LA POSITION ORBITALE
             // -----------------------------------------------------------------------------------------
-            private _heliPos = getPosATL _heli;
-            private _heliDir = getDir _heli;
+            private _heliPos = getPosATL _camHeli;
+            private _heliDir = getDir _camHeli;
             private _finalAngle = _heliDir + _orbitAngle;
             
             // Conversion polaire -> cartésienne pour la position de la caméra
@@ -331,7 +331,7 @@ if (hasInterface) then {
             // CIBLE FIXE SUR L'HELICOPTERE (sans décalage pour éviter les tremblements)
             // -----------------------------------------------------------------------------------------
             _cam camSetPos [_camX, _camY, _camZ];
-            _cam camSetTarget _heli;
+            _cam camSetTarget _camHeli;
             _cam camSetFov 0.75;
             _cam camCommit _commitTime;  // Temps de transition plus long pour fluidité
             
@@ -365,7 +365,7 @@ if (hasInterface) then {
         private _rampOpened = false;
         private _plan5StartTime = time;
         
-        while { !isTouchingGround _heli && (getPos _heli select 2) > 1 } do {
+        while { !isTouchingGround _camHeli && (getPos _camHeli select 2) > 1 } do {
             
             // ✅ MOUVEMENT AMPLIFIÉ : Oscillations et descente plus prononcées
             private _progress = (time - _plan5StartTime) / 10;
@@ -378,17 +378,9 @@ if (hasInterface) then {
             _cam camSetFov (0.55 + (_progress * 0.15));  // Au lieu de 0.1 - zoom out plus prononcé
             _cam camCommit 0.5;
             
-            // Ouverture de la rampe
-            _heli animateSource ["door_rear_source", 1];
-            // Remplacement pour les lignes 91 à 94
-            if (!_rampOpened && (getPos _heli select 2) < 30) then {
-                // Force l'ouverture de la rampe arrière (Huron spécifique) sur toutes les machines
-                [_heli, ["Door_Rear_Source", 1]] remoteExec ["animateSource", 0, true];
-                
-                // Sécurité : Force aussi l'animation "Ramp" qui existe sur certaines variantes
-                [_heli, ["Ramp", 1]] remoteExec ["animateSource", 0, true];
-                
-                _rampOpened = true;
+            // Rampe déjà ouverte côté serveur au Plan 3
+            if (!_rampOpened && (getPos _camHeli select 2) < 30) then {
+                 _rampOpened = true;
             };
             
             sleep 0.2;
@@ -519,6 +511,10 @@ if (isServer) then {
         _heli flyInHeight 150;                  // Altitude de croisière
         _heli allowDamage false;                // Invulnérable pendant l'intro
         
+        // ✅ AJOUT : Rendre l'hélico accessible globalement
+        MISSION_intro_heli = _heli;
+        publicVariable "MISSION_intro_heli";
+        
 
         // ----------------------------------------------------------------------------------------------
         // CREATION ET CONFIGURATION DE L'EQUIPAGE
@@ -614,7 +610,46 @@ if (isServer) then {
         _heli flyInHeight 150;     // Maintenir 150m d'altitude
         _heli limitspeed 200;      // Vitesse élevée pour l'approche
 
-        sleep 14;  // Durée des Plans 1+2
+        // CORRECTION : On attend 29s pour s'aligner avec le client (15+3+5+1+5)
+        sleep 15;
+
+        // ==============================================================================================
+        // SYNCHRO : OUVERTURE DE LA RAMPE (Debut Plan 3 - Vue intérieure)
+        // ==============================================================================================
+        // On déclenche l'ouverture ici, exactement au moment où la caméra passe à l'intérieur
+        
+        // ==============================================================================================
+        // SYNCHRO : OUVERTURE FLUIDE DE LA RAMPE
+        // ==============================================================================================
+        
+        // 1. On envoie la commande UNE SEULE FOIS (pas de boucle while !)
+        // Notez qu'on a retiré le "true" à la fin des paramètres pour laisser l'animation se jouer
+        [_heli, ["door_rear_source", 1]] remoteExec ["animateSource", 0, true];
+        _heli animateDoor ["door_rear_source", 1];
+
+        // Méthode 1 : Standard Huron (Animation Source)
+        [_heli, ["Door_Rear_Source", 1]] remoteExec ["animateSource", 0, true];
+        _heli animateDoor ["Door_Rear_Source", 1];
+        
+        // Méthode 2 : Alternative fréquente (Ramp)
+        [_heli, ["Ramp", 1]] remoteExec ["animateSource", 0, true];
+        _heli animateDoor ["Ramp", 1];
+        
+        // Méthode 3 : Ancienne méthode (Animate) - Parfois nécessaire
+        [_heli, ["Door_Rear_Source", 1]] remoteExec ["animate", 0, true];
+        _heli animateDoor ["Door_Rear_Source", 1];
+        
+        // Méthode 4 : Force spécifique aux portes de soute (Arma 3 standard)
+        [_heli, ["Door_1_source", 1]] remoteExec ["animateSource", 0, true];
+        _heli animateDoor ["Door_1_source", 1];
+        
+        // Sécurité pour les variantes (Ramp)
+        [_heli, ["Ramp", 1]] remoteExec ["animateSource", 0, true];
+        _heli animateDoor ["Ramp", 1];
+
+        // 2. IMPORTANT : On attend que l'animation se termine visuellement
+        // L'animation du Huron prend environ 3 à 4 secondes. On met 5 pour être large.
+        sleep 5;
 
         // ----------------------------------------------------------------------------------------------
         // PHASE 2 : Vol intermédiaire (Plan 3 = 15 secondes)
