@@ -7,11 +7,9 @@
 Ce document suit l'évolution du mod **Tactical Sandbox**.
 
 ---
-
 ## 🚀 v1.4
 
 - Ajout de la tâche 8 (???)
-- Système de Revive pour/par les IA (Médical)
 - Gestion du badge pour l'équipe (arsenal virtuel et création de nouvelles unités)
 
 ## 🚀 v1.3.5

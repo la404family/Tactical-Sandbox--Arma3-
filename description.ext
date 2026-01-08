@@ -103,6 +103,7 @@ class CfgFunctions
             class ajust_change_team_leader {};
             class task_x_tableau {};
             class task_x_briefing {};
+            class task_x_badge {};
         };
     };
 };

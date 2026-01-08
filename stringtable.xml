@@ -497,6 +497,22 @@
             <Portuguese>Nenhuma unidade de IA para remover.</Portuguese>
             <Korean>제거할 AI 유닛이 없습니다.</Korean>
         </Key>
+        <Key ID="STR_BADGE_SYNCED">
+            <English>Team badge updated: %1</English>
+            <French>Badge d&apos;équipe mis à jour : %1</French>
+            <German>Team-Abzeichen aktualisiert: %1</German>
+            <Spanish>Insignia del equipo actualizada: %1</Spanish>
+            <Italian>Badge del team aggiornato: %1</Italian>
+            <Russian>Знак отряда обновлён: %1</Russian>
+            <Polish>Odznaka drużyny zaktualizowana: %1</Polish>
+            <Czech>Odznak týmu aktualizován: %1</Czech>
+            <Turkish>Takım rozeti güncellendi: %1</Turkish>
+            <Chinese>隊徽已更新：%1</Chinese>
+            <Chinesesimp>队徽已更新：%1</Chinesesimp>
+            <Japanese>チームバッジ更新：%1</Japanese>
+            <Portuguese>Distintivo da equipe atualizado: %1</Portuguese>
+            <Korean>팀 배지 업데이트됨: %1</Korean>
+        </Key>
         <Key ID="STR_SELECTED_UNITS">
             <English>Selected Units</English>
             <French>Unités sélectionnées</French>

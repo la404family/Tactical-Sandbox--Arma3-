@@ -42,6 +42,8 @@ if (hasInterface) then {
 ["INIT"] call MISSION_fnc_spawn_weather_and_time;
 // fonction qui spawn l'arsenal
 ["INIT"] call MISSION_fnc_spawn_arsenal;
+// fonction qui gère les badges d'équipe
+["INIT"] call MISSION_fnc_task_x_badge;
 // fonction qui spawn les taches séléctionnées
 ["INIT"] call MISSION_fnc_spawn_missions;
 // fonction qui spawn le menu des ennemis

@@ -353,6 +353,12 @@ switch (_mode) do {
                     // 2. Rendre l'unité jouable (Switchable)
                     addSwitchableUnit _newUnit;
                     
+                    // 3. Appliquer le badge du chef de groupe
+                    private _leaderInsignia = [player] call BIS_fnc_getUnitInsignia;
+                    if (_leaderInsignia != "") then {
+                        [_newUnit, _leaderInsignia] call BIS_fnc_setUnitInsignia;
+                    };
+                    
                     // ============================================================
                     
                     // ============================================================
