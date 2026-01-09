@@ -7,6 +7,13 @@
 Ce document suit l'évolution du mod **Tactical Sandbox**.
 
 ---
+
+## 🚀 v1.3.8
+
+- gestion de la voix de l'équipe (si le chef de groupe change de voix toutes les unités changent de voix)
+- Ajout du bouton d'action de groupe (Soignez-vous)
+- 
+
 ## 🚀 v1.3.7
 
 - randomisation de la tache 4 ajouté sur 28 points différents

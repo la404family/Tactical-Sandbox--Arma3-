@@ -811,6 +811,22 @@
             <Portuguese>ZONA RESERVADA</Portuguese>
             <Korean>예약 구역</Korean>
         </Key>
+        <Key ID="STR_ACTION_HEAL_YOURSELVES">
+            <English>Heal yourselves!</English>
+            <French>Soignez vous !</French>
+            <German>Heilt euch!</German>
+            <Spanish>¡Curáos!</Spanish>
+            <Italian>Curatevi!</Italian>
+            <Russian>Лечитесь!</Russian>
+            <Polish>Leczcie się!</Polish>
+            <Czech>Vylečte se!</Czech>
+            <Turkish>Kendinizi iyileştirin!</Turkish>
+            <Chinese>治療自己！</Chinese>
+            <Chinesesimp>治疗自己！</Chinesesimp>
+            <Japanese>自分を治療しろ！</Japanese>
+            <Portuguese>Curem-se!</Portuguese>
+            <Korean>스스로 치료하십시오!</Korean>
+        </Key>
         <Key ID="STR_MISSIONS_MENU_TITLE">
             <English>Mission Command Center</English>
             <French>Centre de Commandement des Missions</French>
@@ -3931,6 +3947,6 @@
             <Japanese>立つ</Japanese>
             <Portuguese>Levantar-se</Portuguese>
             <Korean>일어서기</Korean>
-        </Key>
+        </Key>&lt;/Key&gt;
     </Package>
 </Project>

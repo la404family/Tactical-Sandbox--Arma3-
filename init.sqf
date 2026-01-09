@@ -52,6 +52,9 @@ if (hasInterface) then {
 // Lancement automatique de l'ajustement des skills I.A.
 [] spawn MISSION_fnc_ajust_AI_skills;
 
+// Lancement de la gestion du soin du groupe
+[] spawn MISSION_fnc_task_x_revival;
+
 //-------------------------------------------
 // Les fonctions helper globales (pour le multijoueur) :
 //-------------------------------------------

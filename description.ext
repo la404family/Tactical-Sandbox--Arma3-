@@ -104,6 +104,7 @@ class CfgFunctions
             class task_x_tableau {};
             class task_x_briefing {};
             class task_x_badge {};
+            class task_x_revival {};
         };
     };
 };
