@@ -22,7 +22,8 @@ MISSION_var_task4_crew = [];
 // Spawns Otages/Gardes: 01 à 28
 private _unitSpawns = [];
 for "_i" from 1 to 28 do {
-    private _markerName = format ["task_4_spawn_0%1", _i];
+    private _numStr = if (_i < 10) then { format ["0%1", _i] } else { str _i };
+    private _markerName = format ["task_4_spawn_%1", _numStr];
     private _spawnObj = missionNamespace getVariable [_markerName, objNull];
     if (!isNull _spawnObj) then {
         _unitSpawns pushBack _spawnObj;

@@ -7,10 +7,10 @@
 Ce document suit l'évolution du mod **Tactical Sandbox**.
 
 ---
-## 🚀 v1.4
+## 🚀 v1.3.7
 
-- Ajout de la tâche 8 (???)
-- Gestion du badge pour l'équipe (arsenal virtuel et création de nouvelles unités)
+- randomisation de la tache 4 ajouté sur 28 points différents
+- Gestion du badge pour l'équipe (arsenal virtuel : si le chef de groupe porte un badge, les unités le portent)
 
 ## 🚀 v1.3.5
 
