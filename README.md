@@ -17,6 +17,8 @@ Revive or medical overhaul mods don’t fully adapt to this mission, but you can
 
 ## 🏢 THE HEADQUARTERS
 
+![Headquarters](Slide14.JPG)
+
 Prepare for your mission in a fully interactive HQ featuring specialized zones:
 
 - **🔫 1. Virtual Arsenal:** Choose your uniforms, patches, weapons, and gear without restriction.
