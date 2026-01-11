@@ -58,63 +58,8 @@ Feel free to follow my work or check the code!
 **Follow me on GitHub** 
 **Drop a Star on the project**
 
-# 🎯 Mission Overview — Tactical Sandbox
 
----
-
-## 🏃‍♂️ Task 1 — Manhunt
-Track down fugitives attempting to escape the island by sea.  
-Neutralize all targets before they reach their boats.  
-⚠️ Mission fails instantly if even one fugitive escapes.
-
----
-
-## 🎯 Task 2 — Assassination
-Locate three enemy officers — only **one** carries vital intel.  
-Identify, eliminate, and recover classified documents from the correct body.  
-Stealth or brute force — your call.
-
----
-
-## 💣 Task 3 — Cargo Destruction
-Enemy ammunition caches are hidden and guarded by infantry.  
-Find and destroy them all.  
-Allied air support will assist with target spotting.
-
----
-
-## 🕶️ Task 4 — Hostage Extraction
-A hostage is held in one of three possible locations.  
-Eliminate guards without harming the civilian.  
-Escort the hostage to the extraction point for helicopter pickup.  
-**Failure if the hostage dies.**
-
----
-
-## 👥 Task 5 — Civilian Zone & Bomb Defusal
-Two bombs are armed in a populated area.  
-Civilians are everywhere — but traitors hide among them.  
-Disarm the explosives while avoiding civilian casualties.  
-Time is limited.
-
----
-
-## 🚁 Task 6 — Allied Rescue
-An allied helicopter has crashed behind enemy lines.  
-Secure the crash site and aid the wounded survivors.  
-Defend against enemy waves.  
-At least one survivor must live.
-
----
-
-## 📡 Task 7 — Radar Destruction
-A mobile enemy radar is scanning the skies.  
-Find the correct site and destroy the installation.  
-Heavy infantry presence — strike hard and fast.
-
----
-
-## 📊 STEAM WORKSHOP STATS
+## 📊 STEAM WORKSHOP STATS (after 7 days)
 
 ![Steam Stats](ReadmeStat.png)
 

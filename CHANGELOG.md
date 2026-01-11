@@ -8,10 +8,9 @@ Ce document suit l'évolution du mod **Tactical Sandbox**.
 
 ---
 
-## 🚀 v1.3.9
+## 🚀 v1.4
 
-- tache 8 (la bataille de KAVALA) 
-- 
+- task 8 (Battle of Kavala) 
 
 ## 🚀 v1.3.8
 

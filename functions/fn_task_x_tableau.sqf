@@ -20,7 +20,18 @@ if (isNull _tableau) exitWith {
 private _texteAffiche = if (_taskNumber == 0) then {
     localize "STR_TABLEAU_EN_ATTENTE"                   // "En Attente"
 } else {
-    format ["%1 %2", localize "STR_TABLEAU_BRIEFING", _taskNumber]  // "Briefing X" (dynamique)
+    // Gestion des affichages spécifiques (Titres de mission)
+    private _titreSpecial = switch (_taskNumber) do {
+        case 1: { "" }; // Pas encore défini
+        case 8: { localize "STR_TASK_8_TITLE" }; // "La bataille de Kavala"
+        default { "" };
+    };
+    
+    if (_titreSpecial != "") then {
+        _titreSpecial
+    } else {
+        format ["%1 %2", localize "STR_TABLEAU_BRIEFING", _taskNumber]  // "Briefing X" (dynamique)
+    };
 };
 
 // ============================================================================

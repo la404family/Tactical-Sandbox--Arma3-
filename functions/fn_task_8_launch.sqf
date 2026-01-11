@@ -111,6 +111,9 @@ private _taskDest = missionNamespace getVariable ["task_8_spawn_11", objNull]; /
     // ========================================================================
     // 3. SYSTÈME DE DÉPLACEMENT ALÉATOIRE (Distance < 10m OU Délai > 55s)
     // ========================================================================
+    // ========================================================================
+    // 3. SYSTÈME DE DÉPLACEMENT ALÉATOIRE (Distance < 10m OU Délai > 55s)
+    // ========================================================================
     [] spawn {
         // Collecte des points de passage (14 à 43)
         private _movePoints = [];
@@ -125,30 +128,40 @@ private _taskDest = missionNamespace getVariable ["task_8_spawn_11", objNull]; /
         while {["task_8"] call BIS_fnc_taskExists} do {
             // Sélection des groupes concernés
             {
-                if ((_x getVariable ["MISSION_task8_randomMove", false]) && {side _x in [west, east]}) then {
-                    private _grp = _x;
-                    private _leader = leader _grp;
+                private _grp = _x;
+                if ((_grp getVariable ["MISSION_task8_randomMove", false]) && {side _grp in [west, east]}) then {
                     
-                    // Récupération variables d'état du groupe
-                    private _lastMoveTime = _grp getVariable ["MISSION_task8_lastMoveTime", -999];
-                    private _targetPos = _grp getVariable ["MISSION_task8_targetPos", [0,0,0]];
-                    
-                    // Conditions de changement
-                    private _timeElapsed = (time - _lastMoveTime) > 55;
-                    private _reachedDest = (_leader distance _targetPos) < 10;
-                    
-                    // Si pas encore de cible (initial), ou temps écoulé, ou destination atteinte
-                    if (_lastMoveTime == -999 || _timeElapsed || _reachedDest) then {
-                        private _newPos = selectRandom _movePoints;
+                    // Traitement INDIVIDUEL de chaque unité du groupe
+                    {
+                        private _unit = _x;
                         
-                        _grp move _newPos;
-                        _grp setSpeedMode "FULL";
-                        _grp setBehaviour "COMBAT";
-                        
-                        // Mise à jour état
-                        _grp setVariable ["MISSION_task8_targetPos", _newPos];
-                        _grp setVariable ["MISSION_task8_lastMoveTime", time];
-                    };
+                        if (alive _unit) then {
+                            // Récupération variables d'état de l'UNITÉ (et non plus du groupe)
+                            private _lastMoveTime = _unit getVariable ["MISSION_task8_lastMoveTime", -999];
+                            private _targetPos = _unit getVariable ["MISSION_task8_targetPos", [0,0,0]];
+                            
+                            // Conditions de changement : Temps écoulé OU Destination atteinte
+                            private _timeElapsed = (time - _lastMoveTime) > 55;
+                            private _reachedDest = (_unit distance _targetPos) < 10;
+                            
+                            // Si pas encore de cible (initial), ou temps écoulé, ou destination atteinte
+                            if (_lastMoveTime == -999 || _timeElapsed || _reachedDest) then {
+                                private _newPos = selectRandom _movePoints;
+                                
+                                // Commande de mouvement INDIVIDUELLE (casse la formation)
+                                _unit doMove _newPos;
+                                _unit setUnitPos "AUTO"; 
+                                
+                                // Mise à jour état UNITÉ
+                                _unit setVariable ["MISSION_task8_targetPos", _newPos];
+                                _unit setVariable ["MISSION_task8_lastMoveTime", time];
+                            };
+                        };
+                    } forEach units _grp;
+
+                    // Configuration globale du groupe pour encourager le mouvement/combat
+                    _grp setSpeedMode "FULL";
+                    _grp setBehaviour "COMBAT";
                 };
             } forEach allGroups;
             

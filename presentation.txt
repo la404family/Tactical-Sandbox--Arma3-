@@ -99,5 +99,7 @@ Locate and destroy a mobile radar guarded by infantry.
 
 [hr]
 
-[b]👉 Share your ideas for future updates![/b]
-Feedback welcome!
+[h2]Task 8 — BATTLE OF KAVALA[/h2]
+Kavala has fallen. A major insurgent force has fortified the city, supported by T-140K Angara tanks.
+
+[b]👉 Feedback welcome![/b]
