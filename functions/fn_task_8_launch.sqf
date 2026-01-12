@@ -399,6 +399,25 @@ private _taskDest = missionNamespace getVariable ["task_8_spawn_11", objNull]; /
         
         private _officer = _grpOff createUnit [_typeOff, getPos _officerSpawn, [], 0, "NONE"];
         _officer setUnitRank "COLONEL";
+
+        // Deplacement aleatoire 15m
+        [_grpOff, getPos _officerSpawn, 15] call BIS_fnc_taskPatrol;
+
+        // Marqueur sur l'officier (Mise a jour toutes les 3s)
+        [_officer] spawn {
+            params ["_target"];
+            private _markerName = "task_8_officer_marker";
+            createMarker [_markerName, getPos _target];
+            _markerName setMarkerType "mil_objective";
+            _markerName setMarkerColor "ColorRed";
+            
+            while {alive _target} do {
+                _markerName setMarkerPos (getPos _target);
+                sleep 3;
+            };
+            
+            deleteMarker _markerName;
+        };
         
         // Logic de victoire : Mort de l'officier
         [_officer] spawn {
