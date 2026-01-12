@@ -162,7 +162,7 @@ task_x_tank_2 = "O_T_MBT_04_command_F";
 
 // task_3_spawn_01 à task_3_spawn_18 sont des héliports qui servent de lieux de spawn pour la tache 3
 // task_3_spawn_01 fait apparaitre un avion allié : A149 Gryphon (EMP_A149_Gryphon)
-// task_3_spawn_02 à task_  3_spawn_18 fait apparaître des ennemis aléatoirement :
+// task_3_spawn_02 à task_3_spawn_18 fait apparaître des ennemis aléatoirement :
 //          task_x_officer_1 à task_x_officer_3 sont les officiers ennemis
 //          task_x_enemy_00 à task_x_enemy_15 sont des unités ennemies
 //          task_x_vehicle_1 et task_x_vehicle_2 sont les véhicules ennemis

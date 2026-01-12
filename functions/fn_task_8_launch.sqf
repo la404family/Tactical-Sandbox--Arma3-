@@ -195,7 +195,7 @@ private _taskDest = missionNamespace getVariable ["task_8_spawn_11", objNull]; /
                 
                 private _tank = createVehicle [_type, getPos _sp, [], 0, "NONE"];
                 _tank setDir (getDir _sp);
-                _tank setFuel 0; // Pas de carburant
+                _tank setFuel 0.1; // Peu de carburant
                 createVehicleCrew _tank; 
                 _tank lock 3; // Verrouillé
                 
